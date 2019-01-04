@@ -1,0 +1,54 @@
+<SDRun>
+    <!-- this file defines a single run of the calculation, using morphology and
+-	 reaction data brought in from other files --> 
+
+    <reactionSchemeFile>Rxn_start</reactionSchemeFile>
+    <morphologyFile>morph_dend_0.2um_0.1_diameter_with_spine_and_injection_spines</morphologyFile>
+    <stimulationFile>Stim_100_Hz_asias_protocole</stimulationFile>
+    <initialConditionsFile>IC_switching_steady_L_pump_neurogranin_1.5_x_PDE4_AC</initialConditionsFile>
+    <outputSchemeFile>../Model_one_short_dendrite_PKAc_times_3_switching_L_pump_neurogranin_2.0_4_trains_massed_whole_output</outputSchemeFile>
+
+    <!--2D means the morphology is interpreted like a flatworm, 3D for
+roundworms. The 2D case is good for testing as it is easy to visualize the
+results (also, 3D may not work yet...)  -->
+   
+    <geometry>          2D           </geometry>
+    <depth2D>           0.4          </depth2D>
+    <distribution>      BINOMIAL     </distribution>
+    <algorithm>         INDEPENDENT  </algorithm>
+    <simulationSeed>    245         </simulationSeed>
+
+
+    <!-- run time for the calculation, milliseconds -->
+    <runtime>20000</runtime>
+
+    <!-- set the seed to get the same spines each time testing -->
+    <spineSeed>123</spineSeed>
+
+    <discretization>
+	<!-- default largest size for elements in bulk volumes (dendrites), microns -->	
+	<defaultMaxElementSide>0.2</defaultMaxElementSide>
+       <MaxElementSide region="dendrite">0.12</MaxElementSide>
+
+	<!-- discretization for spines, microns -->
+	<spineDeltaX>0.1</spineDeltaX>
+
+	<!-- override the default for a particular region. -->
+	<!-- Matches against id or regionClass in the morphology file -->
+
+
+    </discretization>
+
+    <fixedStepDt>.0029</fixedStepDt>
+
+
+    <!-- the tolerace is not used yet -->
+    <tolerance>0.001</tolerance>
+
+    <outputInterval>1000</outputInterval>
+
+
+
+    <calculation>GRID_STEPPED_STOCHASTIC</calculation>
+
+</SDRun>
