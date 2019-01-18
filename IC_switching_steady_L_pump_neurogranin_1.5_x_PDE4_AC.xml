@@ -39,14 +39,13 @@
     <NanoMolarity specieID="pComplex" value="0.0"/>
 
     <NanoMolarity specieID="PKAc" value="0.0"/> <!--PP1 conc 1.62 muM-->
-    <NanoMolarity specieID="I1" value="732.0"/> <!-- I1 conc 1.01 muM -->
+    <NanoMolarity specieID="I1" value="732.0"/> <!-- I1 conc 1.2 muM -->
     <NanoMolarity specieID="I1PKAc" value="0.0"/>
     <NanoMolarity specieID="Ip35" value="9.0"/>
     <NanoMolarity specieID="PP1" value="1122.0"/>
     <NanoMolarity specieID="Ip35PP1" value="443.0"/>
     <NanoMolarity specieID="Ip35PP1PP2BCaMCa4" value="0.0"/>
     <NanoMolarity specieID="Ip35PP2BCaMCa4" value="0.0"/>
-    <NanoMolarity specieID="PP1PP2BCaMCa4" value="12.0"/>
  
     <NanoMolarity specieID="pPDE4cAMP" value="0.0"/>
     <NanoMolarity specieID="PKAc_PDE4_cAMP" value="0.0"/>

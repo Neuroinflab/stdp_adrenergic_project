@@ -95,10 +95,10 @@
   <Specie name="Ng" id="Ng" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="NgCaM" id="NgCaM" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="CaM" id="CaM" kdiff="11" kdiffunit="mu2/s"/>
-  <Specie name="CaMCa2C" id="CaMCa2C" kdiff="11" kdiffunit="mu2/s"/>
-  <Specie name="CaMCa2N" id="CaMCa2N" kdiff="11" kdiffunit="mu2/s"/>
-  <Specie name="CaMCa4" id="CaMCa4" kdiff="11" kdiffunit="mu2/s"/>
+  <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s"/>
+  <Specie name="CaMCa2C" id="CaMCa2C" kdiff="4" kdiffunit="mu2/s"/>
+  <Specie name="CaMCa2N" id="CaMCa2N" kdiff="4" kdiffunit="mu2/s"/>
+  <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s"/>
   <Specie name="PP2B" id="PP2B" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2CaMCa2C" id="PP2BCaMCa2C" kdiff="0" kdiffunit="mu2/s"/>
@@ -106,10 +106,13 @@
 
   <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0" kdiffunit="mu2/s"/>
   
-  <Specie name="CK" id="CK" kdiff="7.62" kdiffunit="mu2/s"/>
+  <Specie name="CK" id="CK" kdiff=".1" kdiffunit="mu2/s"/>
   <Specie name="CKCaMCa4" id="CKCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>
-  <Specie name="CKpCaMCa4" id="CKpCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>
-  <Specie name="CKp" id="CKp" kdiff="0.1" kdiffunit="mu2/s"/>
+  <Specie name="CKCaMCa2C" id="CKCaMCa2C" kdiff="0.1" kdiffunit="mu2/s"/>
+  <Specie name="CKCaMCa2N" id="CKCaMCa2N" kdiff="0.1" kdiffunit="mu2/s"/>
+
+  <Specie name="CKpCaMCa4" id="CKpCaMCa4" kdiff="7.6" kdiffunit="mu2/s"/>
+  <Specie name="CKp" id="CKp" kdiff="7.6" kdiffunit="mu2/s"/>
   <Specie name="Complex" id="Complex" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="pComplex" id="pComplex" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="CKpPP1" id="CKpPP1" kdiff="0" kdiffunit="mu2/s"/>
@@ -128,7 +131,6 @@
   <Specie name="Ip35PP1" id="Ip35PP1" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="Ip35PP2BCaMCa4" id="Ip35PP2BCaMCa4" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="Ip35PP1PP2BCaMCa4" id="Ip35PP1PP2BCaMCa4" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PP1PP2BCaMCa4" id="PP1PP2BCaMCa4" kdiff="0" kdiffunit="mu2/s"/>
 
   <!-- AddRxns -->
 
@@ -1046,10 +1048,32 @@
 	<Q10>0.2</Q10>
     </Reaction>
 
+    <!--1) CaMCa2C + CK <-> CKCaM2C  -->
+<!--    <Reaction name = "CK_bind" id="CK_bind">
+	<Reactant specieID="CaMCaC2"/>
+	<Reactant specieID="CK"/>
+	<Product specieID="CKCaMCaC2"/>
+
+	<forwardRate>0.01e-3</forwardRate>
+	<reverseRate>3e-3</reverseRate>
+	<Q10>0.2</Q10>
+    </Reaction>-->
+    
+    <!--1) CaMCa2N + CK <-> CKCaM2N  -->
+   <!-- <Reaction name = "CK_bind" id="CK_bind">
+	<Reactant specieID="CaMCaN2"/>
+	<Reactant specieID="CK"/>
+	<Product specieID="CKCaMCaN2"/>
+
+	<forwardRate>0.01e-3</forwardRate>
+	<reverseRate>3e-3</reverseRate>
+	<Q10>0.2</Q10>
+    </Reaction>-->
+
 <!--2a) 3 CKCaMCa4 + 1 CKCaMCa4 <-> 3  CKCaMCa4 + 1 CKpCaMCa4-->
     <Reaction name = "CKCaM bind" id="CKCaM_bind">
-        <Reactant specieID="CKCaMCa4"  power="4"        />
-        <Product  specieID="CKCaMCa4"   power="3"         />
+        <Reactant specieID="CKCaMCa4"  power="3"        />
+        <Product  specieID="CKCaMCa4"   power="2"         />
         <Product  specieID="CKpCaMCa4"           />
 
         <forwardRate> 13.0e-18 </forwardRate>
@@ -1250,23 +1274,14 @@
     <Reaction name = "Ip35p1p2_reac" id="Ip35p1p2_reac">
 	<Reactant specieID="Ip35PP1PP2BCaMCa4"/>
         <Product specieID="I1"/>
-        <Product specieID="PP1PP2BCaMCa4"/>
+        <Product specieID="PP1"/>
+	<Product specieID="PP2BCaMCa4"/>
 
 	<forwardRate>0.055</forwardRate>
 	<reverseRate>0</reverseRate>
 	<Q10>0.2</Q10>
     </Reaction>
 
- <!--7b) PP1PP2B -> PP1 + PP2B-->
-    <Reaction name = "PP1PP2CaMCa4_diss" id="PP1PP2CaMCa4_diss">
-	<Reactant specieID="PP1PP2BCaMCa4"/>
-        <Product specieID="PP1"/>
-	<Product specieID="PP2BCaMCa4"/>
-
-	<forwardRate>1.5e-3</forwardRate>
-	<reverseRate>0</reverseRate>
-	<Q10>0.2</Q10>
-    </Reaction>
 
 
 <!-- AMPA receptor is phosporylation by PKAc,PhospCaMKII -->
