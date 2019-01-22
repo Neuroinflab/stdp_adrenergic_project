@@ -1,2 +1,3 @@
 2019/01/22 Addes a simple scheme for CaMKII. CaMKII can also bind CaMCa2, which makes it active, though less than CaMKIICaMCa4.
 We  also added CKCaMCa2 binding calcium, I guess.
+Simple scheme is adapted from the coarse grained model by Pepke et al. 2010.
