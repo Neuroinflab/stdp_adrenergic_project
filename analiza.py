@@ -17,8 +17,8 @@ def pico_sd(N, S):
 def get_grid_list(My_file):
     return np.array(My_file['model']['grid'])
 
-def get_times(My_file):
-    return np.array(My_file['trial0']['output']['__main__']['times'])
+def get_times(My_file, trial='trial0'):
+    return np.array(My_file[trial]['output']['__main__']['times'])
 
 def get_populations(My_file, trial='trial0'):
     return np.array(my_file[trial]['output']['__main__']['population'])
@@ -113,7 +113,6 @@ def get_regions(my_file):
     return sorted(list(set([grid[15] for grid in grid_list])))
 
 def get_concentrations_region_list(my_file, my_list, trial):
-    times = get_times(my_file)
     grid_list = get_grid_list(my_file)
     data = get_populations(my_file, trial=trial)
     species = get_all_species(my_file)
@@ -123,7 +122,6 @@ def get_concentrations_region_list(my_file, my_list, trial):
     return nano_molarity(numbers, vol)
     
 def get_concentrations(my_file, trial):
-    times = get_times(my_file)
     grid_list = get_grid_list(my_file)
     data = get_populations(my_file, trial=trial)
     species = get_all_species(my_file)
@@ -153,7 +151,6 @@ def get_concentrations(my_file, trial):
 
 def save_single_file(times, concentrations, species, fname):
     header = 'time'
-    
     for specie in species:
         header += ' ' + specie
     what_to_save = np.zeros((concentrations.shape[0], len(species) + 1))
@@ -164,18 +161,18 @@ def save_single_file(times, concentrations, species, fname):
     np.savetxt(fname, what_to_save, header=header, comments='')
     
 def save_concentrations(my_file, fname_base, trial='trial0'):
-    times = get_times(my_file)
+    times = get_times(my_file, trial=trial)
     species = get_all_species(my_file)
     regions = get_regions(my_file)
     concentrations = get_concentrations(my_file, trial)
 
     for i, region in enumerate(regions):
-        fname = '%s_%s_%s.txt' % (fname_base, region, trial)
+        fname = '%s_%s_%s.txt' % (fname_base, trial, region)
         save_single_file(times, concentrations[:, i, :], species, fname)
     totals = get_concentrations_region_list(my_file, regions, trial)
-    save_single_file(times, totals, species, '%s_%s_%s.txt' % (fname_base, 'total', trial))
+    save_single_file(times, totals, species, '%s_%s_%s.txt' % (fname_base, trial, 'total'))
     spine = get_concentrations_region_list(my_file, ['PSD', 'head', 'neck'], trial)
-    save_single_file(times, spine, species, '%s_%s_%s.txt' % (fname_base, 'spine', trial))
+    save_single_file(times, spine, species, '%s_%s_%s.txt' % (fname_base, trial, 'spine'))
     
     
 if __name__ == '__main__':
