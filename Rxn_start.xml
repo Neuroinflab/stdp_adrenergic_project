@@ -1129,7 +1129,7 @@
     <Reaction name="CKCaMCa2pCKCaMCa2_phospho" id="CKCaMCa2pCKCaMCa2_phospho">
       <Reactant specieID="CKCaMCa2pCKCaMCa2"/>
       <Product specieID="CKpCaMCa2" power="2"/>
-      <forwardRate>1.066e-3</forwardRate>
+      <forwardRate>0.88e-3</forwardRate>
       <reverseRate>0</reverseRate>
     </Reaction>
 
@@ -1137,7 +1137,7 @@
       <Reactant specieID="CKCaMCa2CKCaMCa4"/>
       <Product specieID="CKpCaMCa2"/>
       <Product specieID="CKCaMCa4"/>
-      <forwardRate>1.066e-3</forwardRate>
+      <forwardRate>0.88e-3</forwardRate>
       <reverseRate>0</reverseRate>
     </Reaction>
     
@@ -1153,14 +1153,14 @@
       <Reactant specieID="CKCaMCa4CKCaMCa4"/>
       <Product specieID="CKpCaMCa4"/>
       <Product specieID="CKCaMCa4"/>
-      <forwardRate>1.066e-3</forwardRate>
+      <forwardRate>0.88e-3</forwardRate>
       <reverseRate>0</reverseRate>
     </Reaction>
 
     <Reaction name="CKCaMCa4pCKCaMCa4_phospho" id="CKCaMCa4pCKCaMCa4_phospho">
       <Reactant specieID="CKCaMCa4pCKCaMCa4"/>
       <Product specieID="CKpCaMCa4" power="2"/>
-      <forwardRate>1.066e-3</forwardRate>
+      <forwardRate>0.88e-3</forwardRate>
       <reverseRate>0</reverseRate>
     </Reaction>
 
@@ -1168,7 +1168,7 @@
       <Reactant specieID="CKCaMCa2pCKCaMCa4"/>
       <Product specieID="CKpCaMCa2"/>
       <Product specieID="CKpCaMCa4"/>
-      <forwardRate>1.066e-3</forwardRate>
+      <forwardRate>0.88e-3</forwardRate>
       <reverseRate>0</reverseRate>
     </Reaction>
 
@@ -1176,7 +1176,7 @@
       <Reactant specieID="pCKCaMCa2CKCaMCa4"/>
       <Product specieID="CKpCaMCa2"/>
       <Product specieID="CKpCaMCa4"/>
-      <forwardRate>1.066e-3</forwardRate>
+      <forwardRate>0.88e-3</forwardRate>
       <reverseRate>0</reverseRate>
     </Reaction>
     
