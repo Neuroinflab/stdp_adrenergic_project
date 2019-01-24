@@ -94,17 +94,18 @@
   
   <Specie name="Ng" id="Ng" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="NgCaM" id="NgCaM" kdiff="0" kdiffunit="mu2/s"/>
-  
-  <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s"/>
-  <Specie name="CaMCa2" id="CaMCa2" kdiff="4" kdiffunit="mu2/s"/>
-  <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s"/>
+  <!-- -->
+  <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s"/> <!--Calmodulin-->
+  <Specie name="CaMCa2" id="CaMCa2" kdiff="4" kdiffunit="mu2/s"/> <!-- 2 Ca bound Calmodulin-->
+  <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s"/> <!-- 4 Ca bound Calmodulin-->
+  <!-- -->
   <Specie name="PP2B" id="PP2B" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2CaMCa2" id="PP2BCaMCa2" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0" kdiffunit="mu2/s"/>
   
-  <Specie name="CK" id="CK" kdiff="0.1" kdiffunit="mu2/s"/>
-  <Specie name="CKCaMCa2" id="CKCaMCa2" kdiff="0.1" kdiffunit="mu2/s"/>
+  <Specie name="CK" id="CK" kdiff="0.1" kdiffunit="mu2/s"/> <!--CaMKII-->
+  <Specie name="CKCaMCa2" id="CKCaMCa2" kdiff="0.1" kdiffunit="mu2/s"/> <!--CaMKII bound to 2 Ca bound Calmodulin-->
   <Specie name="CKpCaMCa2" id="CKpCaMCa2" kdiff="0.1" kdiffunit="mu2/s"/>
   <Specie name="CKCaMCa4" id="CKCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>
   <Specie name="CKpCaMCa4" id="CKpCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>

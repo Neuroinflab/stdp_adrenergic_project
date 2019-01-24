@@ -1,6 +1,6 @@
 <InitialConditions>
   <ConcentrationSet>
-    <NanoMolarity specieID="L" value="9.0"/>
+    <NanoMolarity specieID="L" value="9.0"/> <!--norepinephrine-->
     <NanoMolarity specieID="LOut" value="2500014.0"/>
 
     <NanoMolarity specieID="Ca" value="71.0"/>
@@ -56,7 +56,7 @@
     
   </ConcentrationSet>
   <ConcentrationSet region="head">
-    <NanoMolarity specieID="R" value="42.0"/>
+    <NanoMolarity specieID="R" value="42.0"/> <!--bAR-->
     <NanoMolarity specieID="LR" value="0.0"/>
     <NanoMolarity specieID="GsR" value="1134.0"/>
     <NanoMolarity specieID="LRGs" value="0.0"/>
@@ -161,8 +161,8 @@
     <NanoMolarity specieID="pPDE4" value="600.0"/>
  </ConcentrationSet>
 <ConcentrationSet region="dendrite">
-   <NanoMolarity specieID="PDE4" value="750.0"/>
-   <NanoMolarity specieID="pPDE4" value="300.0"/>
+   <NanoMolarity specieID="PDE4" value="450.0"/>
+   <NanoMolarity specieID="pPDE4" value="600.0"/>
   </ConcentrationSet>
   <SurfaceDensitySet region="dendrite">
 
