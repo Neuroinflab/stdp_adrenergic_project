@@ -346,7 +346,7 @@
 	<Reactant specieID="PKAc"/>
 	<Product specieID="PKAcLR"/>
 
-	<forwardRate>0.008e-4</forwardRate>
+	<forwardRate>0.004e-4</forwardRate>
 	<reverseRate>44.8e-04</reverseRate>
 	<Q10>0.2</Q10>
     </Reaction>
@@ -1198,10 +1198,10 @@
     <!-- CKpPP1 -> PP1 + CK -->
     <Reaction name = "CKpPP1 reac" id="CKpPP1_reac">
         <Reactant specieID="CKpPP1"                 />
-        <Product specieID="PP1"                     />
+        <Product specieID="PP1"                      />
         <Product specieID="CK"                      />
 
-        <forwardRate> 0.019e-03   </forwardRate>
+        <forwardRate> 0.025e-03   </forwardRate>
         <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
