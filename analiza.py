@@ -8,23 +8,30 @@ import sys
 
 spine = ['PSD', 'head', 'neck']
 
+
 def nano_molarity(N, V):
-    return 10*N/V/6.02214076
+    return 10 * N / V / 6.02214076
+
 
 def pico_sd(N, S):
-    return 10*N/S/6.02214076
+    return 10 * N / S / 6.02214076
+
 
 def get_grid_list(My_file):
     return np.array(My_file['model']['grid'])
 
+
 def get_times(My_file, trial='trial0'):
     return np.array(My_file[trial]['output']['__main__']['times'])
 
-def get_populations(My_file, trial='trial0'):
+
+def get_populations(my_file, trial='trial0'):
     return np.array(my_file[trial]['output']['__main__']['population'])
 
+
 def get_all_species(My_file):
-    return list(My_file['model']['output']['__main__']['species'])
+    return [s.decode('utf-8') for s in My_file['model']['output']['__main__']['species']]
+
 
 def get_all_anchored_species(root):
     all_species = []
@@ -36,6 +43,7 @@ def get_all_anchored_species(root):
                         all_species.append(grandson.get('id'))
     return list(set(all_species))
 
+
 def get_all_submembrane_species(my_file):
     root = etree.fromstring(my_file['model']['serialized_config'][0])
     all_anchored_species = get_all_anchored_species(root)
@@ -46,19 +54,21 @@ def get_all_submembrane_species(my_file):
                 if grandson.tag.endswith("SurfaceDensitySet"):
                     for grandgrandson in grandson:
                         name = grandgrandson.get("specieID")
-                        if  name in all_anchored_species:
+                        if name in all_anchored_species:
                             anchored.append(name)
     return list(set(anchored))
-                    
+
+
 def region_volumes(my_file):
     grid_list = get_grid_list(my_file)
-    regions =  get_regions(my_file)
+    regions = get_regions(my_file)
     volumes = {}
     for region in regions:
         volumes[region] = 0
     for cell in grid_list:
         volumes[cell[15]] += float(cell[12])
     return volumes
+
 
 def sum_volume(my_file, region_list):
     grid_list = get_grid_list(my_file)
@@ -69,6 +79,7 @@ def sum_volume(my_file, region_list):
             vol_sum += volumes[region]
     return vol_sum
 
+
 def sum_indices(my_file, region_list):
     reg_indices = get_region_indices(my_file)
     sum_indices = []
@@ -77,7 +88,7 @@ def sum_indices(my_file, region_list):
             sum_indices += reg_indices[region]
     return sum_indices
 
-    
+
 def region_surface(grid_list, direction=0):
     submembrane_regions = []
     submembrane_regions_dict = {}
@@ -93,11 +104,12 @@ def region_surface(grid_list, direction=0):
         for cell_idx in submembrane_regions_dict[key]:
             if direction == 0:
                 depth = grid_list[cell_idx][13]
-                width = abs(grid_list[cell_idx][0]-grid_list[cell_idx][3])
-                surface[key] += depth*width
+                width = abs(grid_list[cell_idx][0] - grid_list[cell_idx][3])
+                surface[key] += depth * width
             else:
                 print('Unimplemented direction', direction)
     return surface
+
 
 def get_region_indices(my_file):
     grid_list = get_grid_list(my_file)
@@ -108,9 +120,11 @@ def get_region_indices(my_file):
         region_ind[cell[15]].append(idx)
     return region_ind
 
+
 def get_regions(my_file):
     grid_list = get_grid_list(my_file)
     return sorted(list(set([grid[15] for grid in grid_list])))
+
 
 def get_concentrations_region_list(my_file, my_list, trial):
     grid_list = get_grid_list(my_file)
@@ -120,7 +134,8 @@ def get_concentrations_region_list(my_file, my_list, trial):
     vol = sum_volume(my_file, my_list)
     numbers = data[:, idxs, :].sum(axis=1)
     return nano_molarity(numbers, vol)
-    
+
+
 def get_concentrations(my_file, trial):
     grid_list = get_grid_list(my_file)
     data = get_populations(my_file, trial=trial)
@@ -130,7 +145,7 @@ def get_concentrations(my_file, trial):
     volume_dict = region_volumes(my_file)
     surface_dict = region_surface(grid_list)
     concentrations = np.zeros((data.shape[0], len(regions), len(species)))
-    numbers =  np.zeros_like(concentrations)
+    numbers = np.zeros_like(concentrations)
     region_indices = get_region_indices(my_file)
     for i, reg in enumerate(regions):
         # get numbers
@@ -157,9 +172,10 @@ def save_single_file(times, concentrations, species, fname):
     what_to_save[:, 0] = times[:concentrations.shape[0]]
     what_to_save[:, 1:] = concentrations
     camp_idx = species.index('cAMP')
-    print(fname, concentrations[:, camp_idx].mean(), concentrations[:, camp_idx].var()**0.5)
+    print(fname, concentrations[:, camp_idx].mean(), concentrations[:, camp_idx].var() ** 0.5)
     np.savetxt(fname, what_to_save, header=header, comments='')
-    
+
+
 def save_concentrations(my_file, fname_base, trial='trial0'):
     times = get_times(my_file, trial=trial)
     species = get_all_species(my_file)
@@ -173,8 +189,8 @@ def save_concentrations(my_file, fname_base, trial='trial0'):
     save_single_file(times, totals, species, '%s_%s_%s.txt' % (fname_base, trial, 'total'))
     spine = get_concentrations_region_list(my_file, ['PSD', 'head', 'neck'], trial)
     save_single_file(times, spine, species, '%s_%s_%s.txt' % (fname_base, trial, 'spine'))
-    
-    
+
+
 if __name__ == '__main__':
     if len(sys.argv) == 1:
         sys.exit('No filename given')
@@ -182,5 +198,7 @@ if __name__ == '__main__':
     my_file = h5py.File(fname, 'r')
 
     for trial in my_file.keys():
-        if trial != b'model':
+        if trial != 'model':
             save_concentrations(my_file, fname[:-3], trial=trial)
+
+    print('Done')
