@@ -7,8 +7,6 @@
     <NanoMolarity specieID="CaOut" value="1875021.0"/>
     <NanoMolarity specieID="Calbin" value="145713.0"/>
     <NanoMolarity specieID="CalbinC" value="14641.0"/>
-    <NanoMolarity specieID="CaB" value="0.0"/>
-    <NanoMolarity specieID="CaBCa" value="0.0"/>
 
     <NanoMolarity specieID="ATP" value="1992779.0"/>
     <NanoMolarity specieID="AMP" value="980.0"/>
