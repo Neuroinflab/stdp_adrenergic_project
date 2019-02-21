@@ -1,21 +1,10 @@
 <OutputScheme>
     <OutputSet filename="all" dt="10.0">
-
-
-        <OutputSpecie name="CaMCa4"/>
-        <OutputSpecie name="CaM"/>
-        <OutputSpecie name="Ca"/>
-        <OutputSpecie name="CaBuf"/>
-
-        <OutputSpecie name="PP1"/>
-
         <OutputSpecie name="CK"/>
         <OutputSpecie name="CKCaMCa4"/>
         <OutputSpecie name="CKpCaMCa4"/>
         <OutputSpecie name="CKp"/>
         <OutputSpecie name="CKpPP1"/>
         <OutputSpecie name="CKpCaMCa4PP1"/>
-
     </OutputSet>
-
 </OutputScheme>
