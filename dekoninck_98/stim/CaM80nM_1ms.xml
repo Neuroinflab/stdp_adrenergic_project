@@ -3,7 +3,7 @@
     <InjectionStim specieID="CaM" injectionSite="pointB">
         <onset> 8 </onset> <!-- in ms-->
         <duration> 1 </duration> <!-- in ms -->
-        <rate> 135495 </rate> <!-- 5uM --> <!-- particles/ms -->
+        <rate> 514 </rate> <!-- 5uM --> <!-- particles/ms -->
         <period> 1 </period> <!-- in ms -->
         <end>9</end> <!-- in ms -->
     </InjectionStim>

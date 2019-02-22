@@ -2,7 +2,7 @@
 
     <ConcentrationSet>
         <NanoMolarity specieID="Ca"       value="500000"/> <!-- nM/L -->
-        <NanoMolarity specieID="CK" value="20000"/>
+        <NanoMolarity specieID="CK" value="5000"/>
     </ConcentrationSet>
 
 </InitialConditions>
