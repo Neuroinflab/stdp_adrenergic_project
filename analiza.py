@@ -157,7 +157,8 @@ def save_single_file(times, concentrations, species, fname):
     what_to_save[:, 0] = times[:concentrations.shape[0]]
     what_to_save[:, 1:] = concentrations
     camp_idx = species.index('cAMP')
-    print(fname, concentrations[:, camp_idx].mean(), concentrations[:, camp_idx].var()**0.5)
+    ca_idx = species.index('Ca')
+    print(fname,'cAMP', concentrations[:, camp_idx].mean(), concentrations[:, camp_idx].var()**0.5,'Ca', concentrations[:, ca_idx].mean(), concentrations[:, ca_idx].var()**0.5)
     np.savetxt(fname, what_to_save, header=header, comments='')
     
 def save_concentrations(my_file, fname_base, trial='trial0'):
