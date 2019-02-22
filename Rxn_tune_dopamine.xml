@@ -70,6 +70,9 @@
   <Specie name="DaD1R"         id="DaD1R"         kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="DaD1RGs"       id="DaD1RGs"       kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="GsD1R"         id="GsD1R"         kdiff="0"     kdiffunit="mu2/s"/>
+  <Specie name="PKAcDaD1RGs"   id="PKAcDaD1RGs"   kdiff="0"     kdiffunit="mu2/s"/>
+  <Specie name="pDaD1RGs"      id="pDaD1RGs"      kdiff="0"     kdiffunit="mu2/s"/>
+  <Specie name="pGsD1R" id="pGsD1R" kdiff="0" kdiffunit="mu2/s"/>
   
   <Specie name="AC1" id="AC1" kdiff="0" kdiffunit="mu2/s"/>
   
@@ -332,7 +335,55 @@
         <reverseRate> 0.0           </reverseRate>
 </Reaction>
 
+<!--*****************PKAc phosphorylation of DaD1R *******************************-->
+    <!--4. PKAc + DaD1RGs -> PKAcDaD1RGs Km= 125nM-->
+    <Reaction name = "DaD1RGs phosp1" id="phospDaD1RGs1">
+        <Reactant specieID="PKAc"                   />
+        <Reactant specieID="DaD1RGs"                  />
+        <Product  specieID="PKAcDaD1RGs"              />
 
+        <forwardRate> 0.006e-03    </forwardRate>
+        <reverseRate> 0.6e-03    </reverseRate>
+    </Reaction>
+    <!--5. PKAcDaD1RGs -> PKAc + phosphoDaD1RGs -->
+    <Reaction name = "DaD1RGs phosp2" id="phospDaD1RGs2">
+        <Reactant specieID="PKAcDaD1RGs"              />
+        <Product  specieID="pDaD1RGs"                 />
+        <Product  specieID="PKAc"                   />
+
+        <forwardRate> 0.15e-03    </forwardRate>
+        <reverseRate> 0             </reverseRate>
+    </Reaction>
+
+    <!--6a. pDaD1RGs -> pD1RGs - Da dissociation 1 uM-->
+    <Reaction name = "Da_dissoc" id="Da_dissoc">
+        <Reactant specieID="pDaD1RGs"              />
+        <Product  specieID="pGsD1R"               />
+        <Product  specieID="Da"               />
+
+        <forwardRate>  0.1    </forwardRate>
+        <reverseRate>  0.1e-3            </reverseRate>
+    </Reaction>
+
+    <!--6b. pD1RGs -> D1RGs - fast dephos of unbound receptor -->
+    <Reaction name = "Da_dissoc" id="Da_dissoc">
+        <Reactant specieID="pGsD1R"              />
+        <Product  specieID="GsD1R"               />
+
+        <forwardRate>  0.02e-3    </forwardRate>
+        <reverseRate>  0            </reverseRate>
+    </Reaction>
+
+    <!--6c. pDaD1RGs -> DaD1RGs -->
+    <Reaction name = "dephosD1R" id="dphospD1R">
+        <Reactant specieID="pDaD1RGs"              />
+        <Product  specieID="Gs"               />
+        <Product  specieID="D1R"               />
+        <Product  specieID="Da"               />
+
+        <forwardRate>  0.0002e-03    </forwardRate>
+        <reverseRate>  0            </reverseRate>
+</Reaction>
     
 <!-- AMC 06/27/12: Below are the reactions for PKA-mediated LR desensitization and subsequent Gs-to-Gi switching --> 
 <!-- 5c1) LR + PKAc -> PKAcLR -->
