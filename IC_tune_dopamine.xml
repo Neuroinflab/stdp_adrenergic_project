@@ -39,11 +39,10 @@
     
   </ConcentrationSet>
   <ConcentrationSet region="head">
-    <NanoMolarity specieID="R" value="42.0"/> <!--bAR-->
-    <NanoMolarity specieID="LR" value="0.0"/>
-    <NanoMolarity specieID="GsR" value="1134.0"/>
-    <NanoMolarity specieID="LRGs" value="0.0"/>
-    <NanoMolarity specieID="LRGsbg" value="0.0"/>
+    <NanoMolarity specieID="BAR" value="42.0"/> <!--bABAR-->
+    <NanoMolarity specieID="LBAR" value="0.0"/>
+    <NanoMolarity specieID="GsBAR" value="1134.0"/>
+    <NanoMolarity specieID="LBARGs" value="0.0"/>
     <NanoMolarity specieID="Gs" value="2856.0"/>
     <NanoMolarity specieID="GasGDP" value="0.0"/>
     <NanoMolarity specieID="GasGTP" value="0.0"/>
@@ -52,27 +51,25 @@
     <NanoMolarity specieID="GsD1R" value="200" />
 
     
-    <NanoMolarity specieID="PKAcR" value="0.0"/>
-    <NanoMolarity specieID="pR" value="0.0"/>
-    <NanoMolarity specieID="PKAcpR" value="0.0"/>
-    <NanoMolarity specieID="ppR" value="0.0"/>
-    <NanoMolarity specieID="PKAcppR" value="0.0"/>
-    <NanoMolarity specieID="pppR" value="0.0"/>
-    <NanoMolarity specieID="PKAcpppR" value="0.0"/>
-    <NanoMolarity specieID="ppppR" value="0.0"/>
-    <NanoMolarity specieID="ppppRGi" value="0.0"/>
-    <NanoMolarity specieID="ppppRGibg" value="0.0"/>
+    <NanoMolarity specieID="PKAcBAR" value="0.0"/>
+    <NanoMolarity specieID="pBAR" value="0.0"/>
+    <NanoMolarity specieID="PKAcpBAR" value="0.0"/>
+    <NanoMolarity specieID="ppBAR" value="0.0"/>
+    <NanoMolarity specieID="PKAcppBAR" value="0.0"/>
+    <NanoMolarity specieID="pppBAR" value="0.0"/>
+    <NanoMolarity specieID="PKAcpppBAR" value="0.0"/>
+    <NanoMolarity specieID="ppppBAR" value="0.0"/>
+    <NanoMolarity specieID="ppppBARGi" value="0.0"/>
 
-    <NanoMolarity specieID="PKAcLR" value="0.0"/>
-    <NanoMolarity specieID="pLR" value="0.0"/>
-    <NanoMolarity specieID="PKAcpLR" value="0.0"/>
-    <NanoMolarity specieID="ppLR" value="0.0"/>
-    <NanoMolarity specieID="PKAcppLR" value="0.0"/>
-    <NanoMolarity specieID="pppLR" value="0.0"/>
-    <NanoMolarity specieID="PKAcpppLR" value="0.0"/>
-    <NanoMolarity specieID="ppppLR" value="0.0"/>
-    <NanoMolarity specieID="ppppLRGi" value="0.0"/>
-    <NanoMolarity specieID="ppppLRGibg" value="0.0"/>
+    <NanoMolarity specieID="PKAcLBAR" value="0.0"/>
+    <NanoMolarity specieID="pLBAR" value="0.0"/>
+    <NanoMolarity specieID="PKAcpLBAR" value="0.0"/>
+    <NanoMolarity specieID="ppLBAR" value="0.0"/>
+    <NanoMolarity specieID="PKAcppLBAR" value="0.0"/>
+    <NanoMolarity specieID="pppLBAR" value="0.0"/>
+    <NanoMolarity specieID="PKAcpppLBAR" value="0.0"/>
+    <NanoMolarity specieID="ppppLBAR" value="0.0"/>
+    <NanoMolarity specieID="ppppLBARGi" value="0.0"/>
 
     <NanoMolarity specieID="Gi" value="2000.0"/>
     <NanoMolarity specieID="GaiGTP" value="0.0"/>
@@ -117,11 +114,10 @@
   </ConcentrationSet>
   <SurfaceDensitySet region="dendrite">
    
-    <PicoSD specieID="R" value="17.0"/>
-    <PicoSD specieID="LR" value="1.0"/>
-    <PicoSD specieID="GsR" value="474.0"/>
-    <PicoSD specieID="LRGs" value="0.0"/>
-    <PicoSD specieID="LRGsbg" value="0.0"/>
+    <PicoSD specieID="BAR" value="17.0"/>
+    <PicoSD specieID="LBAR" value="1.0"/>
+    <PicoSD specieID="GsBAR" value="474.0"/>
+    <PicoSD specieID="LBARGs" value="0.0"/>
     <PicoSD specieID="Gs" value="1204.0"/>
     <PicoSD specieID="GasGTP" value="0.0"/>
     <PicoSD specieID="GasGDP" value="0.0"/>
@@ -129,27 +125,25 @@
     <PicoSD specieID="GsD1R" value="200" />
     <PicoSD specieID="D1R"                       value="0" />
     <PicoSD specieID="DaD1R" value="0" />
-    <PicoSD specieID="PKAcR" value="0.0"/>
-    <PicoSD specieID="pR" value="0.0"/>
-    <PicoSD specieID="PKAcpR" value="0.0"/>
-    <PicoSD specieID="ppR" value="0.0"/>
-    <PicoSD specieID="PKAcppR" value="0.0"/>
-    <PicoSD specieID="pppR" value="0.0"/>
-    <PicoSD specieID="PKAcpppR" value="0.0"/>
-    <PicoSD specieID="ppppR" value="0.0"/>
-    <PicoSD specieID="ppppRGi" value="0.0"/>
-    <PicoSD specieID="ppppRGibg" value="0.0"/>
+    <PicoSD specieID="PKAcBAR" value="0.0"/>
+    <PicoSD specieID="pBAR" value="0.0"/>
+    <PicoSD specieID="PKAcpBAR" value="0.0"/>
+    <PicoSD specieID="ppBAR" value="0.0"/>
+    <PicoSD specieID="PKAcppBAR" value="0.0"/>
+    <PicoSD specieID="pppBAR" value="0.0"/>
+    <PicoSD specieID="PKAcpppBAR" value="0.0"/>
+    <PicoSD specieID="ppppBAR" value="0.0"/>
+    <PicoSD specieID="ppppBARGi" value="0.0"/>
 
-    <PicoSD specieID="PKAcLR" value="0.0"/>
-    <PicoSD specieID="pLR" value="0.0"/>
-    <PicoSD specieID="PKAcpLR" value="0.0"/>
-    <PicoSD specieID="ppLR" value="0.0"/>
-    <PicoSD specieID="PKAcppLR" value="0.0"/>
-    <PicoSD specieID="pppLR" value="0.0"/>
-    <PicoSD specieID="PKAcpppLR" value="0.0"/>
-    <PicoSD specieID="ppppLR" value="0.0"/>
-    <PicoSD specieID="ppppLRGi" value="0.0"/>
-    <PicoSD specieID="ppppLRGibg" value="0.0"/>
+    <PicoSD specieID="PKAcLBAR" value="0.0"/>
+    <PicoSD specieID="pLBAR" value="0.0"/>
+    <PicoSD specieID="PKAcpLBAR" value="0.0"/>
+    <PicoSD specieID="ppLBAR" value="0.0"/>
+    <PicoSD specieID="PKAcppLBAR" value="0.0"/>
+    <PicoSD specieID="pppLBAR" value="0.0"/>
+    <PicoSD specieID="PKAcpppLBAR" value="0.0"/>
+    <PicoSD specieID="ppppLBAR" value="0.0"/>
+    <PicoSD specieID="ppppLBARGi" value="0.0"/>
 
     <PicoSD specieID="Gi" value="826.0"/>
     <PicoSD specieID="GaiGTP" value="0.0"/>

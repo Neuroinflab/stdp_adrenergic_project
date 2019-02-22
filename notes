@@ -7,3 +7,4 @@ Interrogating the Spatiotemporal Landscape of Neuromodulatory GPCR Signaling by 
 
 2019/2/21 Add Avramas D1R reactions. Did not add PKAc phosphorylation of the D1 receptor.
 
+2019/2/22 Go through BAR reactions. Rename R to BAR for clarity. Simplify the GasGTP dissociation from BAR and GaiGTP dissociation from ppppBAR -- there is no need for two reactions since NeuroRD accepts reactions with three products.
