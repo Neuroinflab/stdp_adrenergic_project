@@ -2,7 +2,12 @@
   <ConcentrationSet>
     <NanoMolarity specieID="L" value="9.0"/> <!--norepinephrine-->
     <NanoMolarity specieID="LOut" value="2500014.0"/>
-
+    
+    <NanoMolarity specieID="Da" value="10" />
+    <NanoMolarity specieID="DaOut" value="200000" />
+    <NanoMolarity specieID="Dbuf"            value="0" />
+    <NanoMolarity specieID="DaDbuf" value="0" />
+    
     <NanoMolarity specieID="Ca" value="71.0"/>
     <NanoMolarity specieID="CaOut" value="1875021.0"/>
     <NanoMolarity specieID="Calbin" value="145713.0"/>
@@ -14,11 +19,11 @@
     <NanoMolarity specieID="Epac1" value="488.0"/>
     <NanoMolarity specieID="Epac1cAMP" value="12.0"/>
 
-    <NanoMolarity specieID="PDE1" value="11468.0"/>
+    <NanoMolarity specieID="PDE1" value="8468.0"/>
     <NanoMolarity specieID="PDE1CaMCa4" value="295.0"/>
     <NanoMolarity specieID="PDE1CaMCa4cAMP" value="0.0"/>
 
-    <NanoMolarity specieID="CaM" value="8050.0"/>
+    <NanoMolarity specieID="CaM" value="11450.0"/>
     <NanoMolarity specieID="CaMCa2" value="120.0"/>
     <NanoMolarity specieID="CaMCa4" value="3.0"/>
     <NanoMolarity specieID="NgCaM" value="17992.0"/>
@@ -44,6 +49,9 @@
     <NanoMolarity specieID="GasGTP" value="0.0"/>
     <NanoMolarity specieID="Gsbg" value="0.0"/>
 
+    <NanoMolarity specieID="GsD1R" value="200" />
+
+    
     <NanoMolarity specieID="PKAcR" value="0.0"/>
     <NanoMolarity specieID="pR" value="0.0"/>
     <NanoMolarity specieID="PKAcpR" value="0.0"/>
@@ -97,7 +105,8 @@
     <NanoMolarity specieID="ncxCa" value="0.0"/>
     <NanoMolarity specieID="pmca" value="0.0"/>
     <NanoMolarity specieID="pmcaCa" value="0.0"/>
-  
+      <NanoMolarity specieID="CaOutLeak" value="700.0"/>
+
   </ConcentrationSet>
 
   <ConcentrationSet region="neck">
@@ -117,7 +126,9 @@
     <PicoSD specieID="GasGTP" value="0.0"/>
     <PicoSD specieID="GasGDP" value="0.0"/>
     <PicoSD specieID="Gsbg" value="0.0"/>
-
+    <PicoSD specieID="GsD1R" value="200" />
+    <PicoSD specieID="D1R"                       value="0" />
+    <PicoSD specieID="DaD1R" value="0" />
     <PicoSD specieID="PKAcR" value="0.0"/>
     <PicoSD specieID="pR" value="0.0"/>
     <PicoSD specieID="PKAcpR" value="0.0"/>

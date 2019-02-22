@@ -4,3 +4,6 @@ Simple scheme is adapted from the coarse grained model by Pepke et al. 2010.
 
 2019/2/20 Bath application of dopamine (10 uM) cAMP in the CA1 pytramidal neurons 1.5x basal (Fig. 7). However, basal is 300 nM, which is super weird. Maximum is achieved for 3 min, dropps slightly afterwards. They do speculate about Gs, so I guess we'll stick to Gs and take striatal values.
 Interrogating the Spatiotemporal Landscape of Neuromodulatory GPCR Signaling by Real-Time Imaging of cAMP in Intact Neurons and Circuits. Brian S.Muntean, Stefano Zucca, Courtney M.MacMullen, Maria T.Dao, CaitlinJohnston, HidekiIwamoto, Randy D.Blakely, Ronald L.Davis, Kirill A.Martemyanov
+
+2019/2/21 Add Avramas D1R reactions. Did not add PKAc phosphorylation of the D1 receptor.
+
