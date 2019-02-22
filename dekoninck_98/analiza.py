@@ -1,10 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 from __future__ import print_function, division
+
+import sys
+import time
+
 import h5py
 import numpy as np
 from lxml import etree
-import sys
+import pandas as pd
 
 spine = ['PSD', 'head', 'neck']
 
@@ -164,17 +168,21 @@ def get_concentrations(my_file, trial):
     return concentrations
 
 
-def save_single_file(times, concentrations, species, fname):
-    header = 'time'
+def to_csv(times, concentrations, species, fname):
+    header = ['time']
     for specie in species:
-        header += ' ' + specie
-    what_to_save = np.zeros((concentrations.shape[0], len(species) + 1))
-    what_to_save[:, 0] = times[:concentrations.shape[0]]
-    what_to_save[:, 1:] = concentrations
-    camp_idx = species.index('cAMP')
-    ca_idx = species.index('Ca')
-    print(fname,'cAMP', concentrations[:, camp_idx].mean(), concentrations[:, camp_idx].var()**0.5,'Ca', concentrations[:, ca_idx].mean(), concentrations[:, ca_idx].var()**0.5)
-    np.savetxt(fname, what_to_save, header=header, comments='')
+        header.append(specie)
+
+    data = np.zeros((concentrations.shape[0], len(species) + 1))
+    data[:, 0] = times[:concentrations.shape[0]]
+    data[:, 1:] = concentrations
+
+    df = pd.DataFrame(data, columns=header)
+    df.to_csv('%s.csv' % fname)
+
+
+def date():
+    return time.strftime("%Y-%m-%d_%H-%M-%S", time.gmtime())
 
 
 def save_concentrations(my_file, fname_base, trial='trial0'):
@@ -184,12 +192,13 @@ def save_concentrations(my_file, fname_base, trial='trial0'):
     concentrations = get_concentrations(my_file, trial)
 
     for i, region in enumerate(regions):
-        fname = '%s_%s_%s.txt' % (fname_base, trial, region)
-        save_single_file(times, concentrations[:, i, :], species, fname)
-    totals = get_concentrations_region_list(my_file, regions, trial)
-    save_single_file(times, totals, species, '%s_%s_%s.txt' % (fname_base, trial, 'total'))
-    spine = get_concentrations_region_list(my_file, ['PSD', 'head', 'neck'], trial)
-    save_single_file(times, spine, species, '%s_%s_%s.txt' % (fname_base, trial, 'spine'))
+        fname = '%s_%s_%s_%s' % (fname_base, trial, region.decode('utf-8'), date())
+        to_csv(times, concentrations[:, i, :], species, fname)
+
+    #totals = get_concentrations_region_list(my_file, regions, trial)
+    #to_csv(times, totals, species, '%s_%s_%s.txt' % (fname_base, trial, 'total'))
+    #spine = get_concentrations_region_list(my_file, ['PSD', 'head', 'neck'], trial)
+    #to_csv(times, spine, species, '%s_%s_%s.txt' % (fname_base, trial, 'spine'))
 
 
 if __name__ == '__main__':
@@ -197,6 +206,9 @@ if __name__ == '__main__':
         sys.exit('No filename given')
     fname = sys.argv[1]
     my_file = h5py.File(fname, 'r')
+
+    v = sum([i[12] for i in my_file['model']['grid'][:]])
+    print('Voxel sum vol:', v)
 
     for trial in my_file.keys():
         if trial != 'model':
