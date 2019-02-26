@@ -3,14 +3,14 @@
 
     <!-- spine morphologies: width for sections along the spine -->
 
-    <SpineType id="spineA">
-    	<Section width="0.1" at="0.0" regionClass="neck"/>
-    	<Section width="0.1" at="0.8" regionClass="neck"/>
-    	<Section width="0.1" at="0.9" regionClass="head"/>
-    	<Section width="0.6" at="1.0" regionClass="head"/>
-    	<Section width="0.6" at="1.1" regionClass="PSD"/>
-    	<Section width="0.2" at="1.2" label="pointA"/>
-    </SpineType>
+   <SpineType id="spineA">
+	<Section width="0.2" at="0.0" regionClass="neck"/>
+	<Section width="0.2" at="0.2" regionClass="neck"/>
+	<Section width="0.2" at="0.3" regionClass="head"/>
+	<Section width="0.6" at="0.4" regionClass="head"/>  
+	<Section width="0.6" at="0.5" regionClass="PSD"/>
+	<Section width="0.2" at="0.6" label="pointA"/>
+   </SpineType>
 
     <!-- regionClass labels can apply to sections or segments and label regions for applying initial conditaions etc -->
  
