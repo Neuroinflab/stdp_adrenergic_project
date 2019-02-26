@@ -6,7 +6,7 @@
     <xi:include href="Rxn_tune_dopamine.xml" />
     <xi:include href="morpho_small_with_spine_tune_dopamine.xml" />
     <xi:include href="IC_tune_dopamine.xml" />       
-    <xi:include href="no_stim.xml" />
+    <xi:include href="../no_stim.xml" />
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 roundworms. The 2D case is good for testing as it is easy to visualize the
