@@ -5,16 +5,18 @@ import h5py
 import numpy as np
 from lxml import etree
 import sys
+from scipy.constants import Avogadro
 
+NA = Avogadro*1e-23
 spine = ['PSD', 'head', 'neck']
 
 
 def nano_molarity(N, V):
-    return 10 * N / V / 6.02214076
+    return 10 * N / V / NA
 
 
 def pico_sd(N, S):
-    return 10 * N / S / 6.02214076
+    return 10 * N / S / NA
 
 
 def get_grid_list(My_file):
