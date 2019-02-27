@@ -275,7 +275,7 @@
   	<Reactant specieID="Da"/>
         <Product  specieID="DaOut"                   />
         <forwardRate> 1.0e-3      </forwardRate>
-        <reverseRate> 0.055e-6      </reverseRate>
+        <reverseRate> 0.0055e-6      </reverseRate>
     </Reaction>
 
    <!--0c. excess DaOut eliminated to prevent baseline shift: DaOut + Dbuf  <->  DaOutbuf  -->
