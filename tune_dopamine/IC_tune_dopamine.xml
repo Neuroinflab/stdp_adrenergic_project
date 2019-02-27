@@ -4,7 +4,7 @@
     <NanoMolarity specieID="LOut" value="2500014.0"/>
     
     <NanoMolarity specieID="Da" value="10" />
-    <NanoMolarity specieID="DaOut" value="200000" />
+    <NanoMolarity specieID="DaOut" value="2000000" />
     <NanoMolarity specieID="Dbuf"            value="0" />
     <NanoMolarity specieID="DaDbuf" value="0" />
     
@@ -16,10 +16,10 @@
     <NanoMolarity specieID="ATP" value="1992779.0"/>
     <NanoMolarity specieID="AMP" value="980.0"/>
     <NanoMolarity specieID="cAMP" value="58.0"/>
-    <NanoMolarity specieID="Epac1" value="488.0"/>
-    <NanoMolarity specieID="Epac1cAMP" value="12.0"/>
+    <NanoMolarity specieID="Epac1" value="2000.0"/>
+    <NanoMolarity specieID="Epac1cAMP" value="0.0"/>
 
-    <NanoMolarity specieID="PDE1" value="8468.0"/>
+    <NanoMolarity specieID="PDE1" value="11468.0"/>
     <NanoMolarity specieID="PDE1CaMCa4" value="295.0"/>
     <NanoMolarity specieID="PDE1CaMCa4cAMP" value="0.0"/>
 
@@ -48,7 +48,7 @@
     <NanoMolarity specieID="GasGTP" value="0.0"/>
     <NanoMolarity specieID="Gsbg" value="0.0"/>
 
-    <NanoMolarity specieID="GsD1R" value="200" />
+    <NanoMolarity specieID="GsD1R" value="500" />
 
     
     <NanoMolarity specieID="PKAcBAR" value="0.0"/>
