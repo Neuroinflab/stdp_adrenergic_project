@@ -1,22 +1,12 @@
 <StimulationSet>
       <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
         <onset>           50000        </onset>
-        <duration>           10         </duration>
-        <rate>               5.0    </rate>
-     </InjectionStim>
+        <duration>       999000.0       </duration>
+        <rate>              2.  </rate>
+      </InjectionStim>
       <InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
         <onset>           50000        </onset>
-        <duration>           10         </duration>
-        <rate>               25.   </rate>
-      </InjectionStim>
-      <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
-        <onset>           50010        </onset>
         <duration>       999000.0       </duration>
-        <rate>               1.2    </rate>
-      </InjectionStim>
-      <InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
-        <onset>           50010        </onset>
-        <duration>       999000.0       </duration>
-        <rate>               0.15    </rate>
+        <rate>               0.35    </rate>
       </InjectionStim>
 </StimulationSet>
