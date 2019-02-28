@@ -17,5 +17,5 @@ v = args.volume*1e-15
 particles = args.mol*unit*6.022e23*v
 
 print('volume', v)
-print('Particles:', round(particles))
+print('Particles:', round(particles/50)) #50ms injection len
 

@@ -2,7 +2,7 @@
 
     <ConcentrationSet>
         <NanoMolarity specieID="Ca"       value="500000"/> <!-- nM/L -->
-        <NanoMolarity specieID="CK" value="5000"/>
+        <NanoMolarity specieID="CK" value="15000"/> <!-- 15uM (?) - deKoninck 1998 / 20uM - Avrama /  90.909nM - Kanaseki et al. 1991 -->
     </ConcentrationSet>
 
 </InitialConditions>

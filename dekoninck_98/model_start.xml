@@ -10,7 +10,7 @@
     <!-- INITIAL CONDITIONS -->
     <xi:include href="ic.xml" />
     <!-- STIMULATION -->
-    <xi:include href="stim/CaM500uM_1ms.xml" />
+    <xi:include href="stim/CaM_50ms.xml" />
     <!-- OUTPUT DEFINITION ? -->
     <!--<xi:include href="io.xml" />-->
 
@@ -19,25 +19,25 @@ roundworms. The 2D case is good for testing as it is easy to visualize the
 results (also, 3D may not work yet...)  -->
 
     <geometry>          2D           </geometry>
-    <depth2D>           0.5          </depth2D>
+    <depth2D>           2.0          </depth2D>
     <distribution>      BINOMIAL     </distribution>
     <algorithm>         INDEPENDENT  </algorithm>
     <simulationSeed>    245         </simulationSeed>
     <outputQuantity>NUMBER</outputQuantity>
 
     <!-- run time for the calculation, milliseconds -->
-    <runtime>1000</runtime>
+    <runtime>6000</runtime>
 
     <!-- set the seed to get the same spines each time testing -->
     <spineSeed>123</spineSeed>
 
     <discretization>
 	    <!-- default largest size for elements in bulk volumes (dendrites), microns -->
-	    <defaultMaxElementSide>1.0</defaultMaxElementSide>
+	    <defaultMaxElementSide>10.0</defaultMaxElementSide>
     </discretization>
 
     <!-- the tolerace is not used yet -->
     <tolerance>0.01</tolerance>
-    <outputInterval>10</outputInterval>
+    <outputInterval>5</outputInterval>
     <calculation>GRID_ADAPTIVE</calculation>
 </SDRun>

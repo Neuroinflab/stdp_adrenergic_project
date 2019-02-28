@@ -1,0 +1,11 @@
+<StimulationSet>
+
+    <InjectionStim specieID="CaM" injectionSite="pointB">
+        <onset> 10 </onset> <!-- in ms-->
+        <duration> 50 </duration> <!-- in ms -->
+        <rate> 3854 </rate> <!-- 1000nM = 19270 particles/1ms through 50ms for 20ml tube --> <!-- particles/ms -->
+        <period> 50 </period> <!-- in ms -->
+        <end>60</end> <!-- in ms -->
+    </InjectionStim>
+
+</StimulationSet>

@@ -207,8 +207,11 @@ if __name__ == '__main__':
     fname = sys.argv[1]
     my_file = h5py.File(fname, 'r')
 
-    v = sum([i[12] for i in my_file['model']['grid'][:]])
-    print('Voxel sum vol:', v)
+    voxels = list([i[12] for i in my_file['model']['grid'][:]])
+    volume_size = sum(voxels)
+    print('voxels no:', len(voxels))
+    print('Micron volume:', volume_size)
+    print('mililitres:', volume_size/1000)
 
     for trial in my_file.keys():
         if trial != 'model':
