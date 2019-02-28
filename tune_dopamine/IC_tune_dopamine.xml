@@ -16,8 +16,8 @@
     <NanoMolarity specieID="ATP" value="1992779.0"/>
     <NanoMolarity specieID="AMP" value="980.0"/>
     <NanoMolarity specieID="cAMP" value="58.0"/>
-    <NanoMolarity specieID="Epac1" value="2000.0"/>
-    <NanoMolarity specieID="Epac1cAMP" value="0.0"/>
+    <NanoMolarity specieID="Epac1" value="1950.0"/>
+    <NanoMolarity specieID="Epac1cAMP" value="50.0"/>
 
     <NanoMolarity specieID="PDE1" value="11468.0"/>
     <NanoMolarity specieID="PDE1CaMCa4" value="295.0"/>
@@ -34,8 +34,8 @@
     <NanoMolarity specieID="PKAc_PDE4_cAMP" value="0.0"/>
     <NanoMolarity specieID="PKAcPDE4" value="0.0"/>
     <NanoMolarity specieID="PDE4cAMP" value="0.0"/>
-   <NanoMolarity specieID="PDE4" value="650.0"/>
-    <NanoMolarity specieID="pPDE4" value="400.0"/>
+    <NanoMolarity specieID="PDE4" value="650.0"/>
+    <NanoMolarity specieID="pPDE4" value="600.0"/>
     
   </ConcentrationSet>
   <ConcentrationSet region="head">
