@@ -3,3 +3,5 @@
 *.txt
 *h5
 *log
+NeuroRDViz/*
+PLoSCompBiol2017/*
