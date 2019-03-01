@@ -29,32 +29,32 @@
   <Specie name="ncxCa" id="ncxCa" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="L" id="L" kdiff="111.4" kdiffunit="mu2/s"/>
   <!--Added from Andy's model-->
-  <Specie name="BAR" id="BAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="bAR" id="bAR" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="Gs" id="Gs" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="Gi" id="Gi" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="LBAR" id="LBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="LBARGs" id="LBARGs" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PKAcLBAR" id="PKAcLBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PKAcpLBAR" id="PKAcpLBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PKAcppLBAR" id="PKAcppLBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PKAcpppLBAR" id="PKAcpppLBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="pLBAR" id="pLBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="ppLBAR" id="ppLBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="pppLBAR" id="pppLBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="ppppLBAR" id="ppppLBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="ppppLBARGi" id="ppppLBARGi" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="LbAR" id="LbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="LbARGs" id="LbARGs" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PKAcLbAR" id="PKAcLbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PKAcpLbAR" id="PKAcpLbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PKAcppLbAR" id="PKAcppLbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PKAcpppLbAR" id="PKAcpppLbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pLbAR" id="pLbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="ppLbAR" id="ppLbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pppLbAR" id="pppLbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="ppppLbAR" id="ppppLbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="ppppLbARGi" id="ppppLbARGi" kdiff="0" kdiffunit="mu2/s"/>
   
-  <Specie name="PKAcBAR" id="PKAcBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PKAcpBAR" id="PKAcpBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PKAcppBAR" id="PKAcppBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PKAcpppBAR" id="PKAcpppBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="pBAR" id="pBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="ppBAR" id="ppBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="pppBAR" id="pppBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="ppppBAR" id="ppppBAR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="ppppBARGi" id="ppppBARGi" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PKAcbAR" id="PKAcbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PKAcpbAR" id="PKAcpbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PKAcppbAR" id="PKAcppbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PKAcpppbAR" id="PKAcpppbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pbAR" id="pbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="ppbAR" id="ppbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pppbAR" id="pppbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="ppppbAR" id="ppppbAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="ppppbARGi" id="ppppbARGi" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="GsBAR" id="GsBAR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="GsbAR" id="GsbAR" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="GasGTP" id="GasGTP" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="GasGDP" id="GasGDP" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="GaiGTP" id="GaiGTP" kdiff="0" kdiffunit="mu2/s"/>
@@ -210,8 +210,8 @@
 <!-- 1) L + R <-> LR    -->
     <Reaction name = "LR_bind" id="LR_bind">
 	<Reactant specieID="L"/>
-	<Reactant specieID="BAR"/>
-	<Product specieID="LBAR"/>
+	<Reactant specieID="bAR"/>
+	<Product specieID="LbAR"/>
 
 	<forwardRate>0.005555e-3</forwardRate><!--ten times higer
 	than previously-->
@@ -220,9 +220,9 @@
     </Reaction>
 <!-- 2) LR + Gs <-> LRGs    -->
     <Reaction name = "LRGs_bind" id="LRGs_bind">
-	<Reactant specieID="LBAR"/>
+	<Reactant specieID="LbAR"/>
 	<Reactant specieID="Gs"/>
-	<Product specieID="LBARGs"/>
+	<Product specieID="LbARGs"/>
 
 	<forwardRate>0.0006e-3</forwardRate>
 	<reverseRate>0.001e-3</reverseRate>
@@ -231,8 +231,8 @@
 <!-- 3) Gs + R <-> GsR    -->
     <Reaction name = "GsR_bind" id="GsR_bind">
 	<Reactant specieID="Gs"/>
-	<Reactant specieID="BAR"/>
-	<Product specieID="GsBAR"/>
+	<Reactant specieID="bAR"/>
+	<Product specieID="GsbAR"/>
 
 	<forwardRate>0.00004e-3</forwardRate>
 	<reverseRate>0.0003e-3</reverseRate>
@@ -241,9 +241,9 @@
 
 <!-- 4) GsR + L <-> LRGs    -->
     <Reaction name = "GsRL_bind" id="GsRL_bind">
-	<Reactant specieID="GsBAR"/>
+	<Reactant specieID="GsbAR"/>
 	<Reactant specieID="L"/>
-	<Product specieID="LBARGs"/>
+	<Product specieID="LbARGs"/>
 
 	<forwardRate>0.0025e-3</forwardRate>
 	<reverseRate>0.5e-3</reverseRate>
@@ -251,8 +251,8 @@
     </Reaction>
 <!-- 5a) LRGs -> LRGsbg + GasGTP -->
     <Reaction name = "GasGTP_bind" id="GasGTP_bind">
-	<Reactant specieID="LBARGs"/>
-	<Product specieID="LBAR"/>
+	<Reactant specieID="LbARGs"/>
+	<Product specieID="LbAR"/>
 	<Product specieID="GasGTP"/>
 	<Product specieID="Gsbg"/>
 	<forwardRate>25e-3</forwardRate>
@@ -388,9 +388,9 @@
 <!-- AMC 06/27/12: Below are the reactions for PKA-mediated LR desensitization and subsequent Gs-to-Gi switching --> 
 <!-- 5c1) LR + PKAc -> PKAcLR -->
     <Reaction name = "LR_phos" id="LR_phos">
-	<Reactant specieID="LBAR"/>
+	<Reactant specieID="LbAR"/>
 	<Reactant specieID="PKAc"/>
-	<Product specieID="PKAcLBAR"/>
+	<Product specieID="PKAcLbAR"/>
 
 	<forwardRate>0.004e-4</forwardRate>
 	<reverseRate>44.8e-04</reverseRate>
@@ -398,8 +398,8 @@
     </Reaction>
 <!-- 5d1) PKAcLR -> pLR + PKAc -->
     <Reaction name = "pLR_reac" id="pLR_reac">
-	<Reactant specieID="PKAcLBAR"/>
-	<Product specieID="pLBAR"/>
+	<Reactant specieID="PKAcLbAR"/>
+	<Product specieID="pLbAR"/>
 	<Product specieID="PKAc"/>
 
 	<forwardRate>1.00e-03</forwardRate>
@@ -408,9 +408,9 @@
     </Reaction>
 <!-- 5c2) pLR + PKAc -> PKApcLR -->
     <Reaction name = "pLR_phos" id="pLR_phos">
-	<Reactant specieID="pLBAR"/>
+	<Reactant specieID="pLbAR"/>
 	<Reactant specieID="PKAc"/>
-	<Product specieID="PKAcpLBAR"/>
+	<Product specieID="PKAcpLbAR"/>
 
 	<forwardRate>0.008e-04</forwardRate>
 	<reverseRate>44.8e-04</reverseRate>
@@ -419,8 +419,8 @@
 
 <!-- 5d2) PKAcpLR -> ppLR + PKAc -->
     <Reaction name = "ppLR_reac" id="ppLR_reac">
-	<Reactant specieID="PKAcpLBAR"/>
-	<Product specieID="ppLBAR"/>
+	<Reactant specieID="PKAcpLbAR"/>
+	<Product specieID="ppLbAR"/>
 	<Product specieID="PKAc"/>
 
 	<forwardRate>1.00e-03</forwardRate>
@@ -429,9 +429,9 @@
     </Reaction>
 <!-- 5c3) ppLR + PKAc -> PKAcppLR -->
     <Reaction name = "ppLR_phos" id="ppLR_phos">
-	<Reactant specieID="ppLBAR"/>
+	<Reactant specieID="ppLbAR"/>
 	<Reactant specieID="PKAc"/>
-	<Product specieID="PKAcppLBAR"/>
+	<Product specieID="PKAcppLbAR"/>
 
 	<forwardRate>0.01712e-03</forwardRate>
 	<reverseRate>44.8e-04</reverseRate>
@@ -439,8 +439,8 @@
     </Reaction>
 <!-- 5d3) PKAcppLR -> pppLR + PKAc -->
     <Reaction name = "pppLR_reac" id="pppLR_reac">
-	<Reactant specieID="PKAcppLBAR"/>
-	<Product specieID="pppLBAR"/>
+	<Reactant specieID="PKAcppLbAR"/>
+	<Product specieID="pppLbAR"/>
 	<Product specieID="PKAc"/>
 
 	<forwardRate>1.00e-03</forwardRate>
@@ -449,9 +449,9 @@
     </Reaction>
 <!-- 5c4) pppLR + PKAc -> PKAcpppLR -->
     <Reaction name = "pppLR_phos" id="pppLR_phos">
-	<Reactant specieID="pppLBAR"/>
+	<Reactant specieID="pppLbAR"/>
 	<Reactant specieID="PKAc"/>
-	<Product specieID="PKAcpppLBAR"/>
+	<Product specieID="PKAcpppLbAR"/>
 
 	<forwardRate>1.712e-03</forwardRate>
 	<reverseRate>44.8e-04</reverseRate>
@@ -459,8 +459,8 @@
     </Reaction>
 <!-- 5d4) PKAcpppLR -> ppppLR + PKAc -->
     <Reaction name = "ppppLR_reac" id="ppppLR_reac">
-	<Reactant specieID="PKAcpppLBAR"/>
-	<Product specieID="ppppLBAR"/>
+	<Reactant specieID="PKAcpppLbAR"/>
+	<Product specieID="ppppLbAR"/>
 	<Product specieID="PKAc"/>
 
 	<forwardRate>1.00e-03</forwardRate>
@@ -469,9 +469,9 @@
     </Reaction>
 <!-- 5e) ppppLR + Gi -> ppppLRGi -->
     <Reaction name = "ppppLRGi_bind" id="ppppLRGi_bind">
-	<Reactant specieID="ppppLBAR"/>
+	<Reactant specieID="ppppLbAR"/>
 	<Reactant specieID="Gi"/>
-	<Product specieID="ppppLBARGi"/>
+	<Product specieID="ppppLbARGi"/>
 
 	<forwardRate>0.15e-3</forwardRate>
 	<reverseRate>0.25e-3</reverseRate>
@@ -479,9 +479,9 @@
     </Reaction>
 <!-- 5f) ppppLRGi -> ppppLR + Gibg + GaiGTP -->
     <Reaction name = "GaiGTP_disso" id="GaiGTP_disso">
-	<Reactant specieID="ppppLBARGi"/>
+	<Reactant specieID="ppppLbARGi"/>
 	<Product specieID="Gibg"/>
-	<Product specieID="ppppLBAR"/>
+	<Product specieID="ppppLbAR"/>
 	<Product specieID="GaiGTP"/>
 	<forwardRate>0.2e-3</forwardRate>
 	<reverseRate>0</reverseRate>
@@ -490,8 +490,8 @@
 
     <!-- 5h1) pLR -> LR -->
    <Reaction name = "pLR_dephos" id="pLR_dephos">
-	<Reactant specieID="pLBAR"/>
-	<Product specieID="LBAR"/>
+	<Reactant specieID="pLbAR"/>
+	<Product specieID="LbAR"/>
 
 	<forwardRate>0.25e-05</forwardRate>
 	<reverseRate>0</reverseRate>
@@ -499,8 +499,8 @@
     </Reaction>
 <!-- 5h2) ppLR -> pLR -->
    <Reaction name = "ppLR_dephos" id="ppLR_dephos">
-	<Reactant specieID="ppLBAR"/>
-	<Product specieID="pLBAR"/>
+	<Reactant specieID="ppLbAR"/>
+	<Product specieID="pLbAR"/>
 
 	<forwardRate>0.25e-05</forwardRate>
 	<reverseRate>0</reverseRate>
@@ -508,8 +508,8 @@
     </Reaction>
 <!-- 5h3) pppLR -> ppLR -->
    <Reaction name = "pppLR_dephos" id="pppLR_dephos">
-	<Reactant specieID="pppLBAR"/>
-	<Product specieID="ppLBAR"/>
+	<Reactant specieID="pppLbAR"/>
+	<Product specieID="ppLbAR"/>
 
 	<forwardRate>0.25e-05</forwardRate>
 	<reverseRate>0</reverseRate>
@@ -517,8 +517,8 @@
     </Reaction>
 <!-- 5h3) ppppLR -> pppLR -->
    <Reaction name = "ppppLR_dephos" id="ppppLR_dephos">
-	<Reactant specieID="ppppLBAR"/>
-	<Product specieID="pppLBAR"/>
+	<Reactant specieID="ppppLbAR"/>
+	<Product specieID="pppLbAR"/>
 
 	<forwardRate>0.25e-05</forwardRate>
 	<reverseRate>0</reverseRate>
@@ -527,9 +527,9 @@
 
 <!-- 5ac1) R + PKAc -> PKAcR -->
     <Reaction name = "R_phos" id="R_phos">
-	<Reactant specieID="BAR"/>
+	<Reactant specieID="bAR"/>
 	<Reactant specieID="PKAc"/>
-	<Product specieID="PKAcBAR"/>
+	<Product specieID="PKAcbAR"/>
 
 	<forwardRate>0.0004e-04</forwardRate>
 	<reverseRate>44.8e-04</reverseRate>
@@ -537,8 +537,8 @@
     </Reaction>
 <!-- 5ad1) PKAcR -> pR + PKAc -->
     <Reaction name = "pR_reac" id="pR_reac">
-	<Reactant specieID="PKAcBAR"/>
-	<Product specieID="pBAR"/>
+	<Reactant specieID="PKAcbAR"/>
+	<Product specieID="pbAR"/>
 	<Product specieID="PKAc"/>
 
 	<forwardRate>1.00e-03</forwardRate>
@@ -547,9 +547,9 @@
     </Reaction>
 <!-- 5ac2) pR + PKAc -> PKAcpR -->
     <Reaction name = "pR_phos" id="pR_phos">
-	<Reactant specieID="pBAR"/>
+	<Reactant specieID="pbAR"/>
 	<Reactant specieID="PKAc"/>
-	<Product specieID="PKAcpBAR"/>
+	<Product specieID="PKAcpbAR"/>
 
 	<forwardRate>0.004e-04</forwardRate>
 	<reverseRate>44.8e-04</reverseRate>
@@ -558,8 +558,8 @@
 
 <!-- 5d2) PKAcpR -> ppR + PKAc -->
     <Reaction name = "ppR_reac" id="ppR_reac">
-	<Reactant specieID="PKAcpBAR"/>
-	<Product specieID="ppBAR"/>
+	<Reactant specieID="PKAcpbAR"/>
+	<Product specieID="ppbAR"/>
 	<Product specieID="PKAc"/>
 
 	<forwardRate>1.00e-03</forwardRate>
@@ -568,9 +568,9 @@
     </Reaction>
 <!-- 5ac3) ppR + PKAc -> PKAcppR -->
     <Reaction name = "ppR_phos" id="ppR_phos">
-	<Reactant specieID="ppBAR"/>
+	<Reactant specieID="ppbAR"/>
 	<Reactant specieID="PKAc"/>
-	<Product specieID="PKAcppBAR"/>
+	<Product specieID="PKAcppbAR"/>
 
 	<forwardRate>0.004e-03</forwardRate>
 	<reverseRate>44.8e-04</reverseRate>
@@ -578,8 +578,8 @@
     </Reaction>
 <!-- 5ad3) PKAcppR -> pppR + PKAc -->
     <Reaction name = "pppR_reac" id="pppR_reac">
-	<Reactant specieID="PKAcppBAR"/>
-	<Product specieID="pppBAR"/>
+	<Reactant specieID="PKAcppbAR"/>
+	<Product specieID="pppbAR"/>
 	<Product specieID="PKAc"/>
 
 	<forwardRate>1.00e-03</forwardRate>
@@ -588,9 +588,9 @@
     </Reaction>
 <!-- 5ac4) pppR + PKAc -> PKAcpppR -->
     <Reaction name = "pppR_phos" id="pppR_phos">
-	<Reactant specieID="pppBAR"/>
+	<Reactant specieID="pppbAR"/>
 	<Reactant specieID="PKAc"/>
-	<Product specieID="PKAcpppBAR"/>
+	<Product specieID="PKAcpppbAR"/>
 
 	<forwardRate>0.4e-03</forwardRate>
 	<reverseRate>44.8e-04</reverseRate>
@@ -598,8 +598,8 @@
     </Reaction>
 <!-- 5ad4) PKAcpppLR -> ppppLR + PKAc -->
     <Reaction name = "ppppR_reac" id="ppppR_reac">
-	<Reactant specieID="PKAcpppBAR"/>
-	<Product specieID="ppppBAR"/>
+	<Reactant specieID="PKAcpppbAR"/>
+	<Product specieID="ppppbAR"/>
 	<Product specieID="PKAc"/>
 
 	<forwardRate>1.00e-03</forwardRate>
@@ -608,9 +608,9 @@
     </Reaction>
 <!-- 5ae) ppppR + Gi -> ppppRGi -->
     <Reaction name = "ppppRGi_bind" id="ppppRGi_bind">
-	<Reactant specieID="ppppBAR"/>
+	<Reactant specieID="ppppbAR"/>
 	<Reactant specieID="Gi"/>
-	<Product specieID="ppppBARGi"/>
+	<Product specieID="ppppbARGi"/>
 
 	<forwardRate>0.075e-3</forwardRate>
 	<reverseRate>0.125e-3</reverseRate>
@@ -618,8 +618,8 @@
     </Reaction>
 <!-- 5af) ppppRGi -> ppppR+Gibg + GaiGTP -->
     <Reaction name = "GaiGTP_disso_r" id="GaiGTP_disso_r">
-	<Reactant specieID="ppppBARGi"/>
-	<Product specieID="ppppBAR"/>
+	<Reactant specieID="ppppbARGi"/>
+	<Product specieID="ppppbAR"/>
 	<Product specieID="Gibg"/>
 	<Product specieID="GaiGTP"/>
 
@@ -629,8 +629,8 @@
     </Reaction>
 <!-- 5ah1) pLR -> LR -->
    <Reaction name = "pR_dephos" id="pR_dephos">
-	<Reactant specieID="pBAR"/>
-	<Product specieID="BAR"/>
+	<Reactant specieID="pbAR"/>
+	<Product specieID="bAR"/>
 
 	<forwardRate>0.25e-05</forwardRate>
 	<reverseRate>0</reverseRate>
@@ -638,8 +638,8 @@
     </Reaction>
 <!-- 5ah2) ppLR -> pLR -->
    <Reaction name = "ppR_dephos" id="ppR_dephos">
-	<Reactant specieID="ppBAR"/>
-	<Product specieID="pBAR"/>
+	<Reactant specieID="ppbAR"/>
+	<Product specieID="pbAR"/>
 
 	<forwardRate>0.25e-05</forwardRate>
 	<reverseRate>0</reverseRate>
@@ -647,8 +647,8 @@
     </Reaction>
 <!-- 5ah3) pppR -> ppR -->
    <Reaction name = "pppR_dephos" id="pppR_dephos">
-	<Reactant specieID="pppBAR"/>
-	<Product specieID="ppBAR"/>
+	<Reactant specieID="pppbAR"/>
+	<Product specieID="ppbAR"/>
 
 	<forwardRate>0.25e-05</forwardRate>
 	<reverseRate>0</reverseRate>
@@ -656,8 +656,8 @@
     </Reaction>
 <!-- 5ah3) ppppR -> pppR -->
    <Reaction name = "ppppR_dephos" id="ppppR_dephos">
-	<Reactant specieID="ppppBAR"/>
-	<Product specieID="pppBAR"/>
+	<Reactant specieID="ppppbAR"/>
+	<Product specieID="pppbAR"/>
 
 	<forwardRate>0.25e-05</forwardRate>
 	<reverseRate>0</reverseRate>
