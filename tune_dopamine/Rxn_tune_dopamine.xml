@@ -20,8 +20,8 @@
 
   <!--Added from Andy's model-->
   <Specie name="LOut" id="LOut" kdiff="10." kdiffunit="mu2/s"/>
-  <Specie name="Epac1" id="Epac1" kdiff="10" kdiffunit="mu2/s"/>
-  <Specie name="Epac1cAMP" id="Epac1cAMP" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="Epac1" id="Epac1" kdiff="5.61" kdiffunit="mu2/s"/>
+  <Specie name="Epac1cAMP" id="Epac1cAMP" kdiff="5.62" kdiffunit="mu2/s"/>
 
   <Specie name="pmca" id="pmca" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="ncx" id="ncx" kdiff="0" kdiffunit="mu2/s"/>
@@ -213,7 +213,7 @@
 	<Reactant specieID="bAR"/>
 	<Product specieID="LbAR"/>
 
-	<forwardRate>7.117e-0</forwardRate><!--ten times higer
+	<forwardRate>7.117e-8</forwardRate><!--ten times higer
 	than previously--><!-- 7.116666666666665e-08 Sykes paper 2014-->
 	<reverseRate>5.2757e-5</reverseRate> <!--5.3998e-5 Sykes paper-->
 	<Q10>0.2</Q10>
@@ -392,7 +392,7 @@
 	<Reactant specieID="PKAc"/>
 	<Product specieID="PKAcLbAR"/>
 
-	<forwardRate>0.004e-4</forwardRate>
+	<forwardRate>0.008e-4</forwardRate>
 	<reverseRate>44.8e-04</reverseRate>
 	<Q10>0.2</Q10>
     </Reaction>
