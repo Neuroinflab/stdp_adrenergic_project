@@ -2,11 +2,11 @@
       <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
         <onset>           50000        </onset>
         <duration>       999000.0       </duration>
-        <rate>              1.2  </rate>
+        <rate>              0.7  </rate>
       </InjectionStim>
       <InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
         <onset>           50000        </onset>
         <duration>       999000.0       </duration>
-        <rate>              3    </rate>
+        <rate>              4.0    </rate>
       </InjectionStim>
 </StimulationSet>
