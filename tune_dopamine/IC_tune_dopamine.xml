@@ -1,10 +1,10 @@
 <InitialConditions>
   <ConcentrationSet>
-    <NanoMolarity specieID="L" value="9.0"/> <!--norepinephrine-->
-    <NanoMolarity specieID="LOut" value="2500014.0"/>
-    
+    <NanoMolarity specieID="ISO" value="9.0"/> <!--norepinephrine-->
+    <NanoMolarity specieID="ISOOut" value="2000000.0"/>
+    <NanoMolarity specieID="DaOut"  value="2000000.0" /> 
     <NanoMolarity specieID="Da" value="10" />
-    <NanoMolarity specieID="DaOut" value="2000000" />
+   
     <NanoMolarity specieID="Dbuf"            value="0" />
     <NanoMolarity specieID="DaDbuf" value="0" />
     
@@ -40,9 +40,9 @@
   </ConcentrationSet>
   <ConcentrationSet region="head">
     <NanoMolarity specieID="bAR" value="200.0"/> <!--bAR-->
-    <NanoMolarity specieID="LbAR" value="0.0"/>
+    <NanoMolarity specieID="ISObAR" value="0.0"/>
     <NanoMolarity specieID="GsbAR" value="900.0"/>
-    <NanoMolarity specieID="LbARGs" value="0.0"/>
+    <NanoMolarity specieID="ISObARGs" value="0.0"/>
     <NanoMolarity specieID="Gs" value="2856.0"/>
     <NanoMolarity specieID="GasGDP" value="0.0"/>
     <NanoMolarity specieID="GasGTP" value="0.0"/>
@@ -61,15 +61,15 @@
     <NanoMolarity specieID="ppppbAR" value="0.0"/>
     <NanoMolarity specieID="ppppbARGi" value="0.0"/>
 
-    <NanoMolarity specieID="PKAcLbAR" value="0.0"/>
-    <NanoMolarity specieID="pLbAR" value="0.0"/>
-    <NanoMolarity specieID="PKAcpLbAR" value="0.0"/>
-    <NanoMolarity specieID="ppLbAR" value="0.0"/>
-    <NanoMolarity specieID="PKAcppLbAR" value="0.0"/>
-    <NanoMolarity specieID="pppLbAR" value="0.0"/>
-    <NanoMolarity specieID="PKAcpppLbAR" value="0.0"/>
-    <NanoMolarity specieID="ppppLbAR" value="0.0"/>
-    <NanoMolarity specieID="ppppLbARGi" value="0.0"/>
+    <NanoMolarity specieID="PKAcISObAR" value="0.0"/>
+    <NanoMolarity specieID="pISObAR" value="0.0"/>
+    <NanoMolarity specieID="PKAcpISObAR" value="0.0"/>
+    <NanoMolarity specieID="ppISObAR" value="0.0"/>
+    <NanoMolarity specieID="PKAcppISObAR" value="0.0"/>
+    <NanoMolarity specieID="pppISObAR" value="0.0"/>
+    <NanoMolarity specieID="PKAcpppISObAR" value="0.0"/>
+    <NanoMolarity specieID="ppppISObAR" value="0.0"/>
+    <NanoMolarity specieID="ppppISObARGi" value="0.0"/>
 
     <NanoMolarity specieID="Gi" value="2000.0"/>
     <NanoMolarity specieID="GaiGTP" value="0.0"/>
@@ -115,9 +115,9 @@
   <SurfaceDensitySet region="dendrite">
    
     <PicoSD specieID="bAR" value="50.0"/>
-    <PicoSD specieID="LbAR" value="1.0"/>
+    <PicoSD specieID="ISObAR" value="1.0"/>
     <PicoSD specieID="GsbAR" value="444.0"/>
-    <PicoSD specieID="LbARGs" value="0.0"/>
+    <PicoSD specieID="ISObARGs" value="0.0"/>
     <PicoSD specieID="Gs" value="954.0"/>
     <PicoSD specieID="GasGTP" value="0.0"/>
     <PicoSD specieID="GasGDP" value="0.0"/>
@@ -135,15 +135,15 @@
     <PicoSD specieID="ppppbAR" value="0.0"/>
     <PicoSD specieID="ppppbARGi" value="0.0"/>
 
-    <PicoSD specieID="PKAcLbAR" value="0.0"/>
-    <PicoSD specieID="pLbAR" value="0.0"/>
-    <PicoSD specieID="PKAcpLbAR" value="0.0"/>
-    <PicoSD specieID="ppLbAR" value="0.0"/>
-    <PicoSD specieID="PKAcppLbAR" value="0.0"/>
-    <PicoSD specieID="pppLbAR" value="0.0"/>
-    <PicoSD specieID="PKAcpppLbAR" value="0.0"/>
-    <PicoSD specieID="ppppLbAR" value="0.0"/>
-    <PicoSD specieID="ppppLbARGi" value="0.0"/>
+    <PicoSD specieID="PKAcISObAR" value="0.0"/>
+    <PicoSD specieID="pISObAR" value="0.0"/>
+    <PicoSD specieID="PKAcpISObAR" value="0.0"/>
+    <PicoSD specieID="ppISObAR" value="0.0"/>
+    <PicoSD specieID="PKAcppISObAR" value="0.0"/>
+    <PicoSD specieID="pppISObAR" value="0.0"/>
+    <PicoSD specieID="PKAcpppISObAR" value="0.0"/>
+    <PicoSD specieID="ppppISObAR" value="0.0"/>
+    <PicoSD specieID="ppppISObARGi" value="0.0"/>
 
     <PicoSD specieID="Gi" value="826.0"/>
     <PicoSD specieID="GaiGTP" value="0.0"/>
