@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 from __future__ import print_function, division
 import h5py
 import numpy as np
@@ -173,18 +172,6 @@ def save_single_file(times, concentrations, species, fname):
     what_to_save = np.zeros((concentrations.shape[0], len(species) + 1))
     what_to_save[:, 0] = times[:concentrations.shape[0]]
     what_to_save[:, 1:] = concentrations
-    camp_idx = species.index('cAMP')
-    ca_idx = species.index('Ca')
-    NE_idx = species.index('L')
-    DA_idx = species.index('Da')
-    dt = times[1] - times[0]
-    idx_t100 = int(51000/dt)
-    print(fname,'cAMP', concentrations[idx_t100:, camp_idx].mean(), concentrations[idx_t100::, camp_idx].var()**0.5,
-          'Ca', concentrations[idx_t100:, ca_idx].mean(), concentrations[idx_t100::, ca_idx].var()**0.5,
-          'NE', concentrations[idx_t100:, NE_idx].mean(), concentrations[idx_t100::, NE_idx].var()**0.5,
-          'Da', concentrations[idx_t100:, DA_idx].mean(), concentrations[idx_t100::, DA_idx].var()**0.5,)
-    np.savetxt(fname, what_to_save, header=header, comments='')
-
 
 def save_concentrations(my_file, fname_base, trial='trial0'):
     times = get_times(my_file, trial=trial)
