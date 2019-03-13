@@ -172,7 +172,7 @@ def save_single_file(times, concentrations, species, fname):
     what_to_save = np.zeros((concentrations.shape[0], len(species) + 1))
     what_to_save[:, 0] = times[:concentrations.shape[0]]
     what_to_save[:, 1:] = concentrations
-
+    np.savetxt(fname, what_to_save, header=header, comments='')
 def save_concentrations(my_file, fname_base, trial='trial0'):
     times = get_times(my_file, trial=trial)
     species = get_all_species(my_file)
@@ -186,7 +186,7 @@ def save_concentrations(my_file, fname_base, trial='trial0'):
     save_single_file(times, totals, species, '%s_%s_%s.txt' % (fname_base, trial, 'total'))
     spine = get_concentrations_region_list(my_file, ['PSD', 'head', 'neck'], trial)
     save_single_file(times, spine, species, '%s_%s_%s.txt' % (fname_base, trial, 'spine'))
-
+    
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
