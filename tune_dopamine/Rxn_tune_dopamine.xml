@@ -372,20 +372,20 @@ than previously-->
     <reverseRate>0.0</reverseRate>
   </Reaction>
   <!--*****************PKAc phosphorylation of DaD1R *******************************-->
-  <!--4. PKAc + DaD1RGs -> PKAcDaD1RGs Km= 125nM-->
+  <!--4. PKAc + DaD1RGs -> PKAcDaD1RGs Km= 250nM-->
   <Reaction name="DaD1RGs phosp1" id="phospDaD1RGs1">
     <Reactant specieID="PKAc" />
     <Reactant specieID="DaD1RGs" />
     <Product specieID="PKAcDaD1RGs" />
     <forwardRate>0.006e-03</forwardRate>
-    <reverseRate>0.6e-03</reverseRate>
+    <reverseRate>1.5e-03</reverseRate>
   </Reaction>
   <!--5. PKAcDaD1RGs -> PKAc + phosphoDaD1RGs -->
   <Reaction name="DaD1RGs phosp2" id="phospDaD1RGs2">
     <Reactant specieID="PKAcDaD1RGs" />
     <Product specieID="pDaD1RGs" />
     <Product specieID="PKAc" />
-    <forwardRate>0.6e-03</forwardRate>
+    <forwardRate>0.06e-03</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
   <!--6a. pDaD1RGs -> pD1RGs - Da dissociation 1 uM-->
