@@ -1,9 +1,9 @@
 <Morphology>
 
-    <Segment   id="seg1"    region="dendrite">
-        <!-- ((radius*2)*depth)*len) -->
-        <start x="1.0"    y="1.5"   z="0.0"  r="4.0" label="pointB"/>
-        <end   x="11.0"    y="1.5"   z="0.0"  r="4.0" label="pointC"/>
+    <!-- ((radius*2)*depth)*len) -->
+    <Segment   id="seg1"    region="dend">
+        <start x="1.0"    y="1.5"   z="0.0"  r="0.45" label="pointB"/>
+        <end   x="1.3"    y="1.5"   z="0.0"  r="0.45" label="pointC"/>
     </Segment>
 
 </Morphology>

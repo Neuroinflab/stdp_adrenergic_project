@@ -1,0 +1,19 @@
+<StimulationSet>
+
+    <InjectionStim specieID="Ca" injectionSite="pointB">
+        <onset>               1           </onset>
+        <duration>            10           </duration> <!-- ms -->
+        <rate>                 33           </rate> <!-- rate/ms -->
+        <period>           250               </period> <!-- 4hz -->
+        <end>              25001          </end> <!-- 25 sec -->
+    </InjectionStim>
+
+    <InjectionStim specieID="CaBuf" injectionSite="pointB">
+        <onset>               201           </onset>
+        <duration>            50           </duration>
+        <rate>                   7           </rate>
+        <period>           250               </period>
+        <end>              25201          </end>
+    </InjectionStim>
+
+</StimulationSet>
