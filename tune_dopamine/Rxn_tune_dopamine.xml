@@ -372,7 +372,7 @@ than previously-->
     <reverseRate>0.0</reverseRate>
   </Reaction>
   <!--*****************PKAc phosphorylation of DaD1R *******************************-->
-  <!--4. PKAc + DaD1RGs -> PKAcDaD1RGs Km= 250nM-->
+  <!--4. PKAc + DaD1RGs -> PKAcDaD1RGs Km= 500nM - affinity for dephosphorylation is 10 lower than for cAMP accumulation for Glioma Cells, so lower the KM even more-->
   <Reaction name="DaD1RGs phosp1" id="phospDaD1RGs1">
     <Reactant specieID="PKAc" />
     <Reactant specieID="DaD1RGs" />
