@@ -16,22 +16,22 @@
     <Specie name="CaMCa4" id="CaMCa4" kdiff="11" kdiffunit="mu2/s"/> <!-- 4 Ca bound Calmodulin-->
 
     <!-- CK -->
-    <Specie name="CK" id="CK" kdiff="0.1" kdiffunit="mu2/s"/>
+    <Specie name="CK" id="CK" kdiff="3.6" kdiffunit="mu2/s"/>
 
-    <Specie name="CKCaMCa2" id="CKCaMCa2" kdiff="0.1" kdiffunit="mu2/s"/> <!--CaMKII bound to 2 Ca bound Calmodulin-->
-    <Specie name="CKpCaMCa2" id="CKpCaMCa2" kdiff="0.1" kdiffunit="mu2/s"/>
-    <Specie name="CKCaMCa4" id="CKCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>
-    <Specie name="CKpCaMCa4" id="CKpCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>
+    <Specie name="CKCaMCa2" id="CKCaMCa2" kdiff="3.6" kdiffunit="mu2/s"/> <!--CaMKII bound to 2 Ca bound Calmodulin-->
+    <Specie name="CKpCaMCa2" id="CKpCaMCa2" kdiff="3.6" kdiffunit="mu2/s"/>
+    <Specie name="CKCaMCa4" id="CKCaMCa4" kdiff="3.6" kdiffunit="mu2/s"/>
+    <Specie name="CKpCaMCa4" id="CKpCaMCa4" kdiff="3.6" kdiffunit="mu2/s"/>
 
-    <Specie name="CKCaMCa2CKCaMCa2" id="CKCaMCa2CKCaMCa2" kdiff="0.1" kdiffunit="mu2/s"/> <!--ok-->
-    <Specie name="CKCaMCa2pCKCaMCa2" id="CKCaMCa2pCKCaMCa2" kdiff="0.1" kdiffunit="mu2/s"/> <!--ok-->
-    <Specie name="CKCaMCa2CKCaMCa4" id="CKCaMCa2CKCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/> <!--ok-->
+    <Specie name="CKCaMCa2CKCaMCa2" id="CKCaMCa2CKCaMCa2" kdiff="3.6" kdiffunit="mu2/s"/> <!--ok-->
+    <Specie name="CKCaMCa2pCKCaMCa2" id="CKCaMCa2pCKCaMCa2" kdiff="3.6" kdiffunit="mu2/s"/> <!--ok-->
+    <Specie name="CKCaMCa2CKCaMCa4" id="CKCaMCa2CKCaMCa4" kdiff="3.6" kdiffunit="mu2/s"/> <!--ok-->
 
-    <Specie name="CKCaMCa4CKCaMCa4" id="CKCaMCa4CKCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/> <!--ok-->
-    <Specie name="CKCaMCa4pCKCaMCa4" id="CKCaMCa4pCKCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/> <!--ok-->
+    <Specie name="CKCaMCa4CKCaMCa4" id="CKCaMCa4CKCaMCa4" kdiff="3.6" kdiffunit="mu2/s"/> <!--ok-->
+    <Specie name="CKCaMCa4pCKCaMCa4" id="CKCaMCa4pCKCaMCa4" kdiff="3.6" kdiffunit="mu2/s"/> <!--ok-->
 
-    <Specie name="CKCaMCa2pCKCaMCa4" id="CKCaMCa2pCKCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>
-    <Specie name="pCKCaMCa2CKCaMCa4" id="pCKCaMCa2CKCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>
+    <Specie name="CKCaMCa2pCKCaMCa4" id="CKCaMCa2pCKCaMCa4" kdiff="3.6" kdiffunit="mu2/s"/>
+    <Specie name="pCKCaMCa2CKCaMCa4" id="pCKCaMCa2CKCaMCa4" kdiff="3.6" kdiffunit="mu2/s"/>
 
 
     <Specie name="CKp" id="CKp" kdiff="1" kdiffunit="mu2/s"/>
