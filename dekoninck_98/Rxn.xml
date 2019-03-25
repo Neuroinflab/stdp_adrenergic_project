@@ -3,9 +3,9 @@
   <Specie name="CamOut" id="CamOut" kdiff="11" kdiffunit="mu2/s"/>
     <Specie name="Ca"            id="Ca"           kdiff="175"    kdiffunit="mu2/s"/>
    
-    <Specie name="CaInact"         id="CaInact"        kdiff="175"    kdiffunit="mu2/s"/>
-    <!-- EGTA -->
-    <Specie name="EGTA"         id="EGTA"        kdiff="220"    kdiffunit="mu2/s"/>
+    <Specie name="CaInact"         id="CaInact"        kdiff="11"    kdiffunit="mu2/s"/>
+    <!-- CaBuf -->
+    <Specie name="CaBuf"         id="CaBuf"        kdiff="11"    kdiffunit="mu2/s"/>
 
     <!-- PP1 -->
     <Specie name="PP1" id="PP1" kdiff="0" kdiffunit="mu2/s"/>
@@ -51,13 +51,13 @@
     </Reaction>
 
  
-    <Reaction name = "Ca_EGTA_buffer" id="Ca_EGTA_buffer">
+    <Reaction name = "Ca_CaBuf_buffer" id="Ca_CaBuf_buffer">
         <Reactant specieID="Ca"/>
-        <Reactant specieID="EGTA"/>
+        <Reactant specieID="CaBuf"/>
         <Product specieID="CaInact"/>
 
-        <forwardRate>2.5e-6</forwardRate>
-        <reverseRate>0.45e-3</reverseRate>
+        <forwardRate>0.01e-3</forwardRate>
+        <reverseRate>0.01e-3</reverseRate>
         <Q10>0.2</Q10>
     </Reaction>
 

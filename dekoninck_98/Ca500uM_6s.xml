@@ -8,7 +8,7 @@
 </InjectionStim>
 
 
-<InjectionStim specieID="EGTA" injectionSite="pointB">
+<InjectionStim specieID="CaBuf" injectionSite="pointB">
         <onset>               8000           </onset>
         <duration>            1000           </duration>
         <rate>                   150           </rate>
