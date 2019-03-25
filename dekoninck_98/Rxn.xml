@@ -1,5 +1,6 @@
 <ReactionScheme>
-    <!-- Ca [Avrama] -->
+  <!-- Ca [Avrama] -->
+  <Specie name="CamOut" id="CamOut" kdiff="11" kdiffunit="mu2/s"/>
     <Specie name="Ca"            id="Ca"           kdiff="175"    kdiffunit="mu2/s"/>
    
     <Specie name="CaInact"         id="CaInact"        kdiff="175"    kdiffunit="mu2/s"/>
@@ -10,9 +11,9 @@
     <Specie name="PP1" id="PP1" kdiff="0" kdiffunit="mu2/s"/>
 
     <!-- CaM -->
-    <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s"/> <!--Calmodulin-->
-    <Specie name="CaMCa2" id="CaMCa2" kdiff="4" kdiffunit="mu2/s"/> <!-- 2 Ca bound Calmodulin-->
-    <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s"/> <!-- 4 Ca bound Calmodulin-->
+    <Specie name="CaM" id="CaM" kdiff="11" kdiffunit="mu2/s"/> <!--Calmodulin-->
+    <Specie name="CaMCa2" id="CaMCa2" kdiff="11" kdiffunit="mu2/s"/> <!-- 2 Ca bound Calmodulin-->
+    <Specie name="CaMCa4" id="CaMCa4" kdiff="11" kdiffunit="mu2/s"/> <!-- 4 Ca bound Calmodulin-->
 
     <!-- CK -->
     <Specie name="CK" id="CK" kdiff="0.1" kdiffunit="mu2/s"/>
@@ -38,6 +39,18 @@
     <Specie name="CKpCaMCa4PP1" id="CKpCaMCa4PP1" kdiff="0" kdiffunit="mu2/s"/>
     <Specie name="CKpCaMCa2PP1" id="CKpCaMCa2PP1" kdiff="0" kdiffunit="mu2/s"/>
 
+
+<!-- Constant Cam    -->
+    <Reaction name = "Cam_buffer" id="Cam_Buffer">
+        <Reactant specieID="CaM"/>
+        <Product specieID="CamOut"/>
+
+        <forwardRate>0.1</forwardRate>
+        <reverseRate>0.001</reverseRate>
+        <Q10>0.2</Q10>
+    </Reaction>
+
+ 
     <Reaction name = "Ca_EGTA_buffer" id="Ca_EGTA_buffer">
         <Reactant specieID="Ca"/>
         <Reactant specieID="EGTA"/>
