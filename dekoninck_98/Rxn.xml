@@ -98,7 +98,7 @@
         <Reactant specieID="CKp"/>
         <Product specieID="CKpCaMCa2"/>
 
-        <forwardRate>1.395e-7</forwardRate>
+        <forwardRate>2.8e-7</forwardRate>
         <reverseRate>6.8e-3</reverseRate>
         <Q10>0.2</Q10>
     </Reaction>
