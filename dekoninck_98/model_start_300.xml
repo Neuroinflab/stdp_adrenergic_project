@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SDRun xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://stochdiff.textensor.org">
+    <!-- this file defines a single run of the calculation, using morphology and
+-	 reaction data brought in from other files -->
+
+    <!-- REACTION -->
+    <xi:include href="Rxn.xml" />
+    <!-- MORPHOLOGY -->
+    <xi:include href="Morph0.9um.xml" />
+    <!-- INITIAL CONDITIONS -->
+    <xi:include href="ic_300.xml" />
+    <!-- STIMULATION -->
+    <xi:include href="Ca500uM_6s.xml" />
+    <!-- OUTPUT DEFINITION ? -->
+    <!--<xi:include href="io.xml" />-->
+
+    <!--2D means the morphology is interpreted like a flatworm, 3D for
+roundworms. The 2D case is good for testing as it is easy to visualize the
+results (also, 3D may not work yet...)  -->
+
+    <geometry>          2D           </geometry>
+    <depth2D>           2.0          </depth2D>
+    <distribution>      BINOMIAL     </distribution>
+    <algorithm>         INDEPENDENT  </algorithm>
+    <simulationSeed>    245         </simulationSeed>
+    <outputQuantity>NUMBER</outputQuantity>
+
+    <!-- run time for the calculation, milliseconds -->
+    <runtime>20000</runtime>
+
+    <!-- set the seed to get the same spines each time testing -->
+    <spineSeed>123</spineSeed>
+
+    <discretization>
+	    <!-- default largest size for elements in bulk volumes (dendrites), microns -->
+	    <defaultMaxElementSide>0.3</defaultMaxElementSide>
+    </discretization>
+
+    <!-- the tolerace is not used yet -->
+    <tolerance>0.01</tolerance>
+    <outputInterval>100</outputInterval>
+    <calculation>GRID_ADAPTIVE</calculation>
+</SDRun>
