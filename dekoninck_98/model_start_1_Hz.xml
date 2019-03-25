@@ -6,11 +6,11 @@
     <!-- REACTION -->
     <xi:include href="Rxn.xml" />
     <!-- MORPHOLOGY -->
-    <xi:include href="simple_morph.xml" />
+    <xi:include href="Morph0.9um.xml" />
     <!-- INITIAL CONDITIONS -->
     <xi:include href="ic.xml" />
     <!-- STIMULATION -->
-    <xi:include href="stim/Ca_1hz_200ms.xml" />
+    <xi:include href="Ca500uM_1hz_200ms.xml" />
     <!-- OUTPUT DEFINITION ? -->
     <!--<xi:include href="io.xml" />-->
 
