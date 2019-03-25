@@ -88,7 +88,7 @@
         <Reactant specieID="CK"/>
         <Product specieID="CKCaMCa2"/>
 
-        <forwardRate>1.395e-7</forwardRate>
+        <forwardRate>0.92e-6</forwardRate>
         <reverseRate>6.8e-3</reverseRate>
         <Q10>0.2</Q10>
     </Reaction>
@@ -103,15 +103,6 @@
         <Q10>0.2</Q10>
     </Reaction>
 
-    <Reaction name="CKp_CaMCa4_bind" id="CKp_CaMCa4_bind">
-        <Reactant specieID="CaMCa4"/>
-        <Reactant specieID="CKp"/>
-        <Product specieID="CKpCaMCa4"/>
-
-        <forwardRate>1.395e-7</forwardRate>
-        <reverseRate>6.8e-3</reverseRate>
-        <Q10>0.2</Q10>
-    </Reaction>
 
     <!--1d) CKCaM + 2Ca <-> CKCaMCa2  -->
     <Reaction name="CKCaMCa2_Ca_bind" id="CKCaMCa2_Ca_bind">
@@ -145,6 +136,15 @@
         <forwardRate>0.04e-3</forwardRate>
         <reverseRate>1.4e-3</reverseRate>
         ><!--changed according to Pepke et al. 2010-->
+        <Q10>0.2</Q10>
+    </Reaction>
+
+        <Reaction name="CKp_CaMCa4_bind" id="CKp_CaMCa4_bind">
+        <Reactant specieID="CaMCa4"/>
+        <Reactant specieID="CKp"/>
+        <Product specieID="CKpCaMCa4"/>
+        <forwardRate>0.04e-3</forwardRate>
+        <reverseRate>0.05e-3</reverseRate>
         <Q10>0.2</Q10>
     </Reaction>
 
@@ -313,7 +313,7 @@
         <Product specieID="CKpCaMCa4PP1"/>
 
         <forwardRate>0.0045e-06</forwardRate>
-        <reverseRate>0.04e-03</reverseRate>
+        <reverseRate>0.02e-03</reverseRate>
     </Reaction>
 
     <!--Dephos of CKpCaMCa4 by PP1 -->
@@ -334,7 +334,7 @@
         <Product specieID="CKpCaMCa2PP1"/>
 
         <forwardRate>0.0045e-06</forwardRate>
-        <reverseRate>0.04e-03</reverseRate>
+        <reverseRate>0.02e-03</reverseRate>
     </Reaction>
 
     <!--Dephos of CKpCaMCa4 by PP1 -->
