@@ -91,7 +91,7 @@
         <Product specieID="CKCaMCa2"/>
 
         <forwardRate>0.92e-6</forwardRate>
-        <reverseRate>6.8e-3</reverseRate>
+        <reverseRate>8e-3</reverseRate>
         <Q10>0.2</Q10>
     </Reaction>
 
@@ -113,7 +113,7 @@
         <Product specieID="CKCaMCa4"/>
 
         <forwardRate>1.2532e-3</forwardRate>
-        <reverseRate>5.93e-3</reverseRate>
+        <reverseRate>8.29e-2</reverseRate>
         ><!--changed according to Pepke et al. 2010-->
         <Q10>0.2</Q10>
     </Reaction>
@@ -136,7 +136,7 @@
         <Product specieID="CKCaMCa4"/>
 
         <forwardRate>0.04e-3</forwardRate>
-        <reverseRate>1.4e-3</reverseRate>
+        <reverseRate>2.3e-3</reverseRate>
         ><!--changed according to Pepke et al. 2010-->
         <Q10>0.2</Q10>
     </Reaction>
@@ -157,7 +157,7 @@
         <Product specieID="CKCaMCa2CKCaMCa2"/>
 
         <forwardRate>1e-5</forwardRate>
-        <reverseRate>0.3</reverseRate>
+        <reverseRate>0.45</reverseRate>
     </Reaction>
 
 
@@ -167,7 +167,7 @@
         <Product specieID="CKCaMCa2pCKCaMCa2"/>
 
         <forwardRate>1e-5</forwardRate>
-        <reverseRate>0.3</reverseRate>
+        <reverseRate>0.6</reverseRate>
     </Reaction>
 
 
@@ -177,7 +177,7 @@
         <Product specieID="CKCaMCa2CKCaMCa4"/>
 
         <forwardRate>1e-5</forwardRate>
-        <reverseRate>0.3</reverseRate>
+        <reverseRate>0.45</reverseRate>
     </Reaction>
 
     <Reaction name="pCKCaMCa2_CKCaMCa4_bind" id="pCKCaMCa2_CKCaMCa4_bind">
@@ -186,7 +186,7 @@
         <Product specieID="pCKCaMCa2CKCaMCa4"/>
 
         <forwardRate>1e-5</forwardRate>
-        <reverseRate>0.3</reverseRate>
+        <reverseRate>0.6</reverseRate>
     </Reaction>
 
 
@@ -196,7 +196,7 @@
         <Product specieID="CKCaMCa2pCKCaMCa4"/>
 
         <forwardRate>1e-5</forwardRate>
-        <reverseRate>0.3</reverseRate>
+        <reverseRate>0.6</reverseRate>
     </Reaction>
 
 
@@ -205,7 +205,7 @@
         <Product specieID="CKCaMCa4CKCaMCa4"/>
 
         <forwardRate>1e-5</forwardRate>
-        <reverseRate>0.3</reverseRate>
+        <reverseRate>0.45</reverseRate>
     </Reaction>
 
     <Reaction name="pCKCaMCa4_CKCaMCa4_bind" id="pCKCaMCa4_CKCaMCa4_bind">
@@ -214,7 +214,7 @@
         <Product specieID="CKCaMCa4pCKCaMCa4"/>
 
         <forwardRate>1e-5</forwardRate>
-        <reverseRate>0.3</reverseRate>
+        <reverseRate>0.6</reverseRate>
     </Reaction>
 
 
