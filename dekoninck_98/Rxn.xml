@@ -112,8 +112,8 @@
         <Reactant specieID="Ca" n="2"/>
         <Product specieID="CKCaMCa4"/>
 
-        <forwardRate>1.2532</forwardRate>
-        <reverseRate>9</reverseRate>
+        <forwardRate>1.2532e-3</forwardRate>
+        <reverseRate>5.93e-3</reverseRate>
         ><!--changed according to Pepke et al. 2010-->
         <Q10>0.2</Q10>
     </Reaction>
@@ -123,8 +123,8 @@
         <Reactant specieID="Ca" n="2"/>
         <Product specieID="CKpCaMCa4"/>
 
-        <forwardRate>1.2532</forwardRate>
-        <reverseRate>9</reverseRate>
+        <forwardRate>1.2532e-3</forwardRate>
+        <reverseRate>6.45e-4</reverseRate>
         ><!--changed according to Pepke et al. 2010-->
         <Q10>0.2</Q10>
     </Reaction>
