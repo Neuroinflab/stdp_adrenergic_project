@@ -10,7 +10,7 @@
     <!-- INITIAL CONDITIONS -->
     <xi:include href="ic.xml" />
     <!-- STIMULATION -->
-    <xi:include href="stim/CaM_50ms.xml" />
+    <xi:include href="stim/Ca_1hz_200ms.xml" />
     <!-- OUTPUT DEFINITION ? -->
     <!--<xi:include href="io.xml" />-->
 
@@ -26,14 +26,14 @@ results (also, 3D may not work yet...)  -->
     <outputQuantity>NUMBER</outputQuantity>
 
     <!-- run time for the calculation, milliseconds -->
-    <runtime>6000</runtime>
+    <runtime>101000</runtime>
 
     <!-- set the seed to get the same spines each time testing -->
     <spineSeed>123</spineSeed>
 
     <discretization>
 	    <!-- default largest size for elements in bulk volumes (dendrites), microns -->
-	    <defaultMaxElementSide>10.0</defaultMaxElementSide>
+	    <defaultMaxElementSide>0.3</defaultMaxElementSide>
     </discretization>
 
     <!-- the tolerace is not used yet -->
