@@ -193,7 +193,7 @@ def save_concentrations(my_file, fname_base, trial='trial0'):
             add = out+'_'
         for i, region in enumerate(regions):
             fname = '%s_%s%s_%s.txt' % (fname_base, add, trial, region)
-        save_single_file(times, concentrations[:, i, :], species, fname)
+            save_single_file(times, concentrations[:, i, :], species, fname)
         if len(regions) > 1:
             totals = get_concentrations_region_list(my_file, regions, trial, out)
             save_single_file(times, totals, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'total'))
