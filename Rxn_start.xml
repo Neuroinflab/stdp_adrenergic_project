@@ -138,15 +138,11 @@ kdiffunit="mu2/s" />
 <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0"
 kdiffunit="mu2/s" />
 
-<Specie name="CK"             id="CK"            kdiff="3.6"   kdiffunit="mu2/s"/>
-<Specie name="CKCaMCa4"       id="CKCaMCa4"      kdiff="3.6"   kdiffunit="mu2/s"/>
+<Specie name="CK"             id="CK"            kdiff="0.1"   kdiffunit="mu2/s"/>
+<Specie name="CKCaMCa4"       id="CKCaMCa4"      kdiff="0.1"   kdiffunit="mu2/s"/>
 <Specie name="CKpCaMCa4"      id="CKpCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
 <Specie name="CKp"            id="CKp"           kdiff="3.6"   kdiffunit="mu2/s"/>
 <Specie name="CKpPP1"         id="CKpPP1"        kdiff="0"     kdiffunit="mu2/s"/>
-<Specie name="CKpCaMCa4PP1"   id="CKpCaMCa4PP1"  kdiff="0"     kdiffunit="mu2/s"/>
-  
-
-  
 
 <Specie name="PKA" id="PKA" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="PKAcAMP2" id="PKAcAMP2" kdiff="0"
@@ -1051,7 +1047,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Reactant specieID="CK"                     />
         <Product  specieID="CKCaMCa4"               />
 
-        <forwardRate> 0.004e-3   </forwardRate>
+        <forwardRate> 0.02e-3   </forwardRate>
         <reverseRate> 2e-3      </reverseRate>
         <!--0.8 from ode file
 	    reverseRate> 0.8e-3      </reverseRate-->
@@ -1096,8 +1092,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Product  specieID="CaMCa4"                 />
         <Product  specieID="CKp"                    />
 
-        <forwardRate> 0.004e-3 </forwardRate>
-        <reverseRate> 0.01e-3   </reverseRate>
+        <forwardRate> 0.0008e-3 </forwardRate>
+        <reverseRate> 0.02e-3   </reverseRate>
         <Q10>    0.2            </Q10>
     </Reaction>
   <!-- CKp + PP1 <-> CKpPP1 -->
@@ -1123,28 +1119,6 @@ id="AC1GaiGTPCaMCa4ATP_diss">
     </Reaction>
 
 
-   <!-- CKpCaMCa4 + PP1 <-> CKpCaMCa4PP1 -->
-    <Reaction name = "CKpCaMCa4PP1_bind" id="CKpCaMPP1_bind">
-        <Reactant specieID="CKpCaMCa4"              />
-        <Reactant specieID="PP1"                    />
-        <Product  specieID="CKpCaMCa4PP1"           />
-
-        <forwardRate> 0.0         </forwardRate>
-        <reverseRate> 0.0         </reverseRate>
-        <Q10>    0.2              </Q10>
-    </Reaction>
-
-<!--Dephos of CKpCaMCa4 by PP1 -->
-    <!-- CKpCaMCa4PP1 -> PP1 + CKCaMCa4 -->
-    <Reaction name = "CKpCaMCa4PP1_reac" id="CKpCaMPP1_reac">
-        <Reactant specieID="CKpCaMCa4PP1"           />
-        <Product  specieID="PP1"                    />
-        <Product  specieID="CKCaMCa4"               />
-
-        <forwardRate> 0.0         </forwardRate>
-        <reverseRate> 0.0         </reverseRate>
-        <Q10>    0.2              </Q10>
-    </Reaction>
  
 <!-- PKA part -->
 <!-- Implements of PKAcAMP4 molecule binds to substrates & consider to effect-->
