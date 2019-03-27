@@ -196,10 +196,10 @@ def save_concentrations(my_file, fname_base, trial='trial0'):
         save_single_file(times, concentrations[:, i, :], species, fname)
         if len(regions) > 1:
             totals = get_concentrations_region_list(my_file, regions, trial, out)
-            save_single_file(times, totals, species, '%s_%s%s_%s.txt' % (fname_base, out, trial, 'total'))
+            save_single_file(times, totals, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'total'))
         if 'PSD' in regions or 'head' in regions or 'neck' in regions:
-            spine = get_concentrations_region_list(my_file, ['PSD', 'head', 'neck'], trial)
-            save_single_file(times, spine, species, '%s_%s_%s.txt' % (fname_base, trial, 'spine'))
+            spine = get_concentrations_region_list(my_file, ['PSD', 'head', 'neck'], trial, out)
+            save_single_file(times, spine, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'spine'))
     
 
 if __name__ == '__main__':
