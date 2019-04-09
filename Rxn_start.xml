@@ -436,8 +436,8 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="PKAc" />
   <Reactant specieID="DaD1RGs" />
   <Product specieID="PKAcDaD1RGs" />
-  <forwardRate>0.006e-03</forwardRate>
-  <reverseRate>1.5e-03</reverseRate>
+  <forwardRate>0.0006e-03</forwardRate>
+  <reverseRate>.25e-03</reverseRate>
 </Reaction>
 <!--5. PKAcDaD1RGs -> PKAc + phosphoDaD1RGs -->
 <Reaction name="DaD1RGs phosp2" id="phospDaD1RGs2">
