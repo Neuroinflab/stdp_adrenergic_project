@@ -51,7 +51,7 @@
     <NanoMolarity specieID="PKAc_PDE4_cAMP" value="0.0"/>
     <NanoMolarity specieID="PKAcPDE4" value="0.0"/>
     <NanoMolarity specieID="PDE4cAMP" value="0.0"/>
-    <NanoMolarity specieID="PDE4" value="750.0"/>
+    <NanoMolarity specieID="PDE4" value="550.0"/>
     <NanoMolarity specieID="pPDE4" value="500.0"/>
   </ConcentrationSet>
   <ConcentrationSet region="head">
@@ -152,11 +152,11 @@
   </ConcentrationSet>
   <SurfaceDensitySet region="dendrite">
    
-    <PicoSD specieID="bAR" value="50.0"/>
+    <PicoSD specieID="bAR" value="0.0"/>
     <PicoSD specieID="ISObAR" value="1.0"/>
-    <PicoSD specieID="GsbAR" value="378.0"/>
+    <PicoSD specieID="GsbAR" value="40.0"/>
     <PicoSD specieID="ISObARGs" value="0.0"/>
-    <PicoSD specieID="Gs" value="954.0"/>
+    <PicoSD specieID="Gs" value="1300.0"/>
     <PicoSD specieID="GasGTP" value="0.0"/>
     <PicoSD specieID="GasGDP" value="0.0"/>
     <PicoSD specieID="GsD1R" value="322" />
