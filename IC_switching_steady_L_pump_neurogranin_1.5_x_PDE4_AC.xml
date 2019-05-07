@@ -6,7 +6,6 @@
     <NanoMolarity specieID="Da" value="10" />
     <NanoMolarity specieID="Dbuf"            value="0" />
     <NanoMolarity specieID="DaDbuf" value="0" />
-   
     <NanoMolarity specieID="Ca" value="71.0"/>
     <NanoMolarity specieID="CaOut" value="1875021.0"/>
     <NanoMolarity specieID="Calbin" value="145713.0"/>
@@ -59,11 +58,12 @@
     <NanoMolarity specieID="ISObAR" value="0.0"/>
     <NanoMolarity specieID="GsbAR" value="716.0"/>
     <NanoMolarity specieID="ISObARGs" value="0.0"/>
-    <NanoMolarity specieID="Gs" value="2856.0"/>
+    <NanoMolarity specieID="Gs" value="4856.0"/>
     <NanoMolarity specieID="GasGDP" value="0.0"/>
     <NanoMolarity specieID="GasGTP" value="0.0"/>
     <NanoMolarity specieID="Gsbg" value="0.0"/>
     <NanoMolarity specieID="GsD1R" value="687" />
+
     <NanoMolarity specieID="PKAcbAR" value="0.0"/>
     <NanoMolarity specieID="pbAR" value="0.0"/>
     <NanoMolarity specieID="PKAcpbAR" value="0.0"/>
@@ -154,7 +154,7 @@
    
     <PicoSD specieID="bAR" value="0.0"/>
     <PicoSD specieID="ISObAR" value="1.0"/>
-    <PicoSD specieID="GsbAR" value="40.0"/>
+    <PicoSD specieID="GsbAR" value="80.0"/>
     <PicoSD specieID="ISObARGs" value="0.0"/>
     <PicoSD specieID="Gs" value="1300.0"/>
     <PicoSD specieID="GasGTP" value="0.0"/>
