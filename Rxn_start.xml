@@ -348,7 +348,7 @@ kdiffunit="mu2/s" />
   <Reactant specieID="ISO" />
   <Product specieID="ISObARGs" />
   <forwardRate>0.0025e-3</forwardRate>
-  <reverseRate>0.5e-3</reverseRate>
+  <reverseRate>0.422e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5a) ISObARGs -> ISObARGsbg + GasGTP -->
