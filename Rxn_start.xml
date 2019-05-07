@@ -313,10 +313,12 @@ kdiffunit="mu2/s" />
   <Reactant specieID="ISO" />
   <Reactant specieID="bAR" />
   <Product specieID="ISObAR" />
-  <forwardRate>0.005555e-3</forwardRate>
+  <forwardRate>7.116666666666665e-08</forwardRate>
   <!--ten times higer
-        than previously-->
-  <reverseRate>5e-3</reverseRate>
+      than previously-->
+  <!-- 7.116666666666665e-08 Sykes paper 2014-->
+  <reverseRate>5.3998e-5</reverseRate>
+  <!--5.3998e-5 Sykes paper-->
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 2) ISObAR + Gs
