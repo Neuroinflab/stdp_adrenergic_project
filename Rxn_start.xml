@@ -1647,7 +1647,7 @@ id="GluR1_S845_S831_PP2B_diss">
   <Reactant specieID="PKAcAMP4" />
   <Product specieID="PKAr" />
   <Product specieID="PKAc" n="2" />
-  <forwardRate>4.8e-05</forwardRate>
-  <reverseRate>5.1e-06</reverseRate>
+  <forwardRate>0.24e-03</forwardRate>
+  <reverseRate>0.0255e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction></ReactionScheme>
