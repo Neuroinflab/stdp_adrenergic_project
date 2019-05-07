@@ -1152,7 +1152,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="cAMP" />
   <Product specieID="Epac1cAMP" />
   <forwardRate>0.031e-6</forwardRate>
-  <reverseRate>6.51e-05</reverseRate>
+  <reverseRate>5.51e-5</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- Inhibitor 1 Phospho and Dephosphorylation -->
@@ -1650,4 +1650,5 @@ id="GluR1_S845_S831_PP2B_diss">
   <forwardRate>0.24e-03</forwardRate>
   <reverseRate>0.0255e-3</reverseRate>
   <Q10>0.2</Q10>
-</Reaction></ReactionScheme>
+</Reaction>
+</ReactionScheme>
