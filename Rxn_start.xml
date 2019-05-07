@@ -569,7 +569,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
 <Reaction name="pISObAR_dephos" id="pISObAR_dephos">
   <Reactant specieID="pISObAR" />
   <Product specieID="ISObAR" />
-  <forwardRate>0.25e-05</forwardRate>
+  <forwardRate>0.3e-05</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -577,7 +577,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
 <Reaction name="ppISObAR_dephos" id="ppISObAR_dephos">
   <Reactant specieID="ppISObAR" />
   <Product specieID="pISObAR" />
-  <forwardRate>0.25e-05</forwardRate>
+  <forwardRate>0.3e-05</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -585,7 +585,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
 <Reaction name="pppISObAR_dephos" id="pppISObAR_dephos">
   <Reactant specieID="pppISObAR" />
   <Product specieID="ppISObAR" />
-  <forwardRate>0.25e-05</forwardRate>
+  <forwardRate>0.3e-05</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -593,7 +593,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
 <Reaction name="ppppISObAR_dephos" id="ppppISObAR_dephos">
   <Reactant specieID="ppppISObAR" />
   <Product specieID="pppISObAR" />
-  <forwardRate>0.25e-05</forwardRate>
+  <forwardRate>0.3e-05</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
