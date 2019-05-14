@@ -16,8 +16,8 @@
     <NanoMolarity specieID="ATP" value="1992779.0"/>
     <NanoMolarity specieID="AMP" value="980.0"/>
     <NanoMolarity specieID="cAMP" value="58.0"/>
-    <NanoMolarity specieID="Epac1" value="2000.0"/>
-    <NanoMolarity specieID="Epac1cAMP" value="12.0"/>
+    <NanoMolarity specieID="Epac1" value="1960.0"/>
+    <NanoMolarity specieID="Epac1cAMP" value="40.0"/>
 
     <NanoMolarity specieID="PDE1" value="11468.0"/>
     <NanoMolarity specieID="PDE1CaMCa4" value="295.0"/>
@@ -32,18 +32,18 @@
     <NanoMolarity specieID="PP2BCaMCa2" value="329.0"/>
     <NanoMolarity specieID="PP2BCaMCa4" value="3.0"/>
     <NanoMolarity specieID="PP2B" value="0.0"/>
-    <NanoMolarity specieID="CK" value="22600.0"/>
+    <NanoMolarity specieID="CK" value="22640.0"/>
     <NanoMolarity specieID="CKCaMCa4" value="100.0"/>
-    <NanoMolarity specieID="CKpCaMCa4" value="400.0"/>
-    <NanoMolarity specieID="CKp" value="100.0"/>
+    <NanoMolarity specieID="CKpCaMCa4" value="450.0"/>
+    <NanoMolarity specieID="CKp" value="10.0"/>
     <NanoMolarity specieID="CKpPP1" value="0.0"/>
  
     <NanoMolarity specieID="PKAc" value="0.0"/> <!--PP1 conc 1.62 muM-->
-    <NanoMolarity specieID="I1" value="732.0"/> <!-- I1 conc 1.2 muM -->
+    <NanoMolarity specieID="I1" value="932.0"/> <!-- I1 conc 1.2 muM -->
     <NanoMolarity specieID="I1PKAc" value="0.0"/>
     <NanoMolarity specieID="Ip35" value="9.0"/>
-    <NanoMolarity specieID="PP1" value="1122.0"/>
-    <NanoMolarity specieID="Ip35PP1" value="443.0"/>
+    <NanoMolarity specieID="PP1" value="1322.0"/>
+    <NanoMolarity specieID="Ip35PP1" value="243.0"/>
     <NanoMolarity specieID="Ip35PP1PP2BCaMCa4" value="0.0"/>
     <NanoMolarity specieID="Ip35PP2BCaMCa4" value="0.0"/>
     <NanoMolarity specieID="pPDE4cAMP" value="0.0"/>
@@ -54,8 +54,8 @@
     <NanoMolarity specieID="pPDE4" value="400.0"/>
   </ConcentrationSet>
   <ConcentrationSet region="head">
-    <NanoMolarity specieID="bAR" value="200.0"/> <!--bAR-->
-    <NanoMolarity specieID="ISObAR" value="0.0"/>
+    <NanoMolarity specieID="bAR" value="100.0"/> <!--bAR-->
+    <NanoMolarity specieID="ISObAR" value="100.0"/>
     <NanoMolarity specieID="GsbAR" value="716.0"/>
     <NanoMolarity specieID="ISObARGs" value="0.0"/>
     <NanoMolarity specieID="Gs" value="4856.0"/>
@@ -143,10 +143,10 @@
   <SurfaceDensitySet region="dendrite">
    
     <PicoSD specieID="bAR" value="0.0"/>
-    <PicoSD specieID="ISObAR" value="1.0"/>
-    <PicoSD specieID="GsbAR" value="80.0"/>
+    <PicoSD specieID="ISObAR" value="10.0"/>
+    <PicoSD specieID="GsbAR" value="70.0"/>
     <PicoSD specieID="ISObARGs" value="0.0"/>
-    <PicoSD specieID="Gs" value="1300.0"/>
+    <PicoSD specieID="Gs" value="1310.0"/>
     <PicoSD specieID="GasGTP" value="0.0"/>
     <PicoSD specieID="GasGDP" value="0.0"/>
     <PicoSD specieID="GsD1R" value="322" />
