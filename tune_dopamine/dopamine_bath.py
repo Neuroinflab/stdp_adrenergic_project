@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 labels = ['trial 0', 'trial 1', 'trial 2', 'trial 3']
 stim_time = 50000
 specie_name = "Epac1cAMP"
-file_list = glob.glob("*dopamine*total.txt")
+file_list = glob.glob("*dopamine_bath*total.txt")
 
 data = []
 times = []
