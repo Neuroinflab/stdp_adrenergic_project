@@ -114,7 +114,11 @@
     <NanoMolarity specieID="ncxCa" value="0.0"/>
     <NanoMolarity specieID="pmca" value="0.0"/>
     <NanoMolarity specieID="pmcaCa" value="0.0"/>
-
+    <NanoMolarity specieID="NMDAR" value="40000.0"/>
+    <!--Swulius et al 2011 (MN Waxham lab) -->
+    <NanoMolarity specieID="PKAcNMDAR" value="0.0"/>
+    <NanoMolarity specieID="pNMDAR" value="0.0"/>
+    <NanoMolarity specieID="PP2BpNMDAR" value="0.0"/>
     <NanoMolarity specieID="GluR1" value="13100.0"/>
     <NanoMolarity specieID="GluR1_CKp" value="0.0"/>
     <NanoMolarity specieID="GluR1_CKCaM" value="0.0"/>
