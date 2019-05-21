@@ -74,7 +74,7 @@
     <NanoMolarity specieID="ppppISObAR" value="0.0"/>
     <NanoMolarity specieID="ppppISObARGi" value="0.0"/>
 
-    <NanoMolarity specieID="Gi" value="2000.0"/>
+    <NanoMolarity specieID="Gi" value="3000.0"/>
     <NanoMolarity specieID="GaiGTP" value="0.0"/>
     <NanoMolarity specieID="GaiGDP" value="0.0"/>
     <NanoMolarity specieID="Gibg" value="0.0"/>
