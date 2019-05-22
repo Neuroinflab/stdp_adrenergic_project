@@ -191,7 +191,7 @@
     <PicoSD specieID="AC1" value="1700"/>
     <PicoSD specieID="AC1CaMCa4" value="0"/>
     <PicoSD specieID="AC1CaMCa4ATP" value="32"/>
-    <PicoSD specieID="AC1GasGTP" value=""/>
+    <PicoSD specieID="AC1GasGTP" value="0"/>
     <PicoSD specieID="AC1GasGTPCaMCa4" value="0"/>
     <PicoSD specieID="AC1GasGTPCaMCa4ATP" value="0"/>
     <PicoSD specieID="AC1GaiGTP" value="0"/>
