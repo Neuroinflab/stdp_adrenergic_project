@@ -50,7 +50,7 @@
     <NanoMolarity specieID="PKAc_PDE4_cAMP" value="0.0"/>
     <NanoMolarity specieID="PKAcPDE4" value="0.0"/>
     <NanoMolarity specieID="PDE4cAMP" value="0.0"/>
-    <NanoMolarity specieID="PDE4" value="2000.0"/>
+    <NanoMolarity specieID="PDE4" value="1500.0"/>
     <NanoMolarity specieID="pPDE4" value="600.0"/>
   </ConcentrationSet>
   <ConcentrationSet region="head">
