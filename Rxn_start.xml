@@ -1317,7 +1317,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_CKCaM" />
   <Product specieID="GluR1_S831" />
   <Product specieID="CKCaMCa4" />
-  <forwardRate>0.4e-3</forwardRate>
+  <forwardRate>0.8e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!--Double check!!! This Km is 8.99e-1.  It is so high that of course all of GluR1 is phosphorylated.  Even if these values agree with Upi's website, we will have to change this to have lower affinity (and perhaps higher affinity of PKAc).  Same goes for the two other forms of activated CaMkinase.-->
@@ -1355,7 +1355,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_CKp" />
   <Product specieID="GluR1_S831" />
   <Product specieID="CKp" />
-  <forwardRate>0.4e-3</forwardRate>
+  <forwardRate>0.8e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5) GluR1_S845 + CKCaM
@@ -1373,7 +1373,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S845_CKCaM" />
   <Product specieID="GluR1_S845_S831" />
   <Product specieID="CKCaMCa4" />
-  <forwardRate>0.4e-3</forwardRate>
+  <forwardRate>0.8e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!--6) GluR1_S845 + CKpCaM
@@ -1393,7 +1393,7 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S845_CKpCaM" />
   <Product specieID="GluR1_S845_S831" />
   <Product specieID="CKpCaMCa4" />
-  <forwardRate>0.5e-3</forwardRate>
+  <forwardRate>0.8e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!--7) GluR1_S845 + CKp
@@ -1411,7 +1411,7 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S845_CKp" />
   <Product specieID="GluR1_S845_S831" />
   <Product specieID="CKp" />
-  <forwardRate>0.4e-3</forwardRate>
+  <forwardRate>0.8e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 8)GluR1_S831 + PKAc
