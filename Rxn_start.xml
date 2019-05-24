@@ -1245,7 +1245,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="NMDAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcNMDAR" />
-  <forwardRate>0.00202e-3</forwardRate>
+  <forwardRate>0.00102e-3</forwardRate>
   <reverseRate>72e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1269,7 +1269,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <reverseRate>8e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
-<!-- GluR1_S845_PP2B -> GluR1 + PP2B -->
+<!-- PP2BpNMDAR -> NMDAR + PP2B -->
 <Reaction name="pNMDAR_PP2B_diss" id="pNMDAR_PP2B_diss">
   <Reactant specieID="PP2BpNMDAR" />
   <Product specieID="NMDAR" />
