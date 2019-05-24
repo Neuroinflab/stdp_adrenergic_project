@@ -61,8 +61,8 @@
     <NanoMolarity specieID="PKAc_PDE4_cAMP" value="0"/>
     <NanoMolarity specieID="PKAcPDE4" value="0"/>
     <NanoMolarity specieID="PDE4cAMP" value="0"/>
-    <NanoMolarity specieID="PDE4" value="1500"/>
-    <NanoMolarity specieID="pPDE4" value="600"/>
+    <NanoMolarity specieID="PDE4" value="1800"/>
+    <NanoMolarity specieID="pPDE4" value="400"/>
   </ConcentrationSet>
   <ConcentrationSet region="head">
     <NanoMolarity specieID="Leak" value="0"/>
