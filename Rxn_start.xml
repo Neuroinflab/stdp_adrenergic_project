@@ -210,68 +210,81 @@ kdiffunit="mu2/s" />
 	kdiffunit="mu2/s" />
 
 
-<!-- Ca pump high affinity -    Ca + pmca
-         <-> pmcaCa -->
-<!-- Ca pump high affinity -    Ca + pmca
-         <-> pmcaCa -->
-<Reaction name="Ca_pump1a" id="Ca_pump1a">
-  <Reactant specieID="Ca" />
-  <Reactant specieID="pmca" />
-  <Product specieID="pmcaCa" />
-  <forwardRate>0.5e-4</forwardRate>
-  <reverseRate>0.007</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- Ca pump high affinity -    pmcaCa
-         <-> pmca + CaOut -->
-<Reaction name="Ca_pump1b" id="Ca_pump1b">
-  <Reactant specieID="pmcaCa" />
-  <Product specieID="pmca" />
-  <Product specieID="CaOut" />
-  <forwardRate>0.0035</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- Ca pump low affinity -    Ca + ncx
-         <-> ncxCa -->
-<Reaction name="Ca_pump2a" id="Ca_pump2a">
-  <Reactant specieID="Ca" />
-  <Reactant specieID="ncx" />
-  <Product specieID="ncxCa" />
-  <forwardRate>1.68e-5</forwardRate>
-  <reverseRate>0.0112</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- Ca pump low affinity -    ncxCa
-         <-> ncx + CaOut -->
-<Reaction name="Ca_pump2b" id="Ca_pump2b">
-  <Reactant specieID="ncxCa" />
-  <Product specieID="ncx" />
-  <Product specieID="CaOut" />
-  <forwardRate>0.0056</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- Ca leak -    CaOut + Leak
-         <-> CaOutLeak -->
-<Reaction name="Ca_leak" id="Ca_leaka">
-  <Reactant specieID="CaOut" />
-  <Reactant specieID="Leak" />
-  <Product specieID="CaOutLeak" />
-  <forwardRate>1.5e-6</forwardRate>
-  <reverseRate>1.1e-3</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- Ca leak -    CaOutLeak
-         <-> Ca + Leak -->
-<Reaction name="Ca_leak" id="Ca_leakb">
-  <Reactant specieID="CaOutLeak" />
-  <Product specieID="Ca" />
-  <Product specieID="Leak" />
-  <forwardRate>1.1e-3</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
+<!--*************************************************************************
+    Now, the reactions themselves   SAME means params are same in both files
+    **************************************************************************-->
+<!--I. *********** Ca pump and buffer rxns  ************* -->
+<!-- i: Ca pump high affinity -    Ca + pmca <-> pmcaCa  SAME-->
+    <Reaction name = "Ca_pump1a" id="Ca_pump1a">
+	<Reactant specieID="Ca"/>
+	<Reactant specieID="pmca"/>
+	<Product specieID="pmcaCa"/>
+
+	<forwardRate>0.05e-3</forwardRate>
+	<reverseRate>9e-3</reverseRate>
+    </Reaction>
+
+<!-- ii: Ca pump high affinity -    pmcaCa <-> pmca + CaOut   SAME-->
+    <Reaction name = "Ca_pump1b" id="Ca_pump1b">
+	<Reactant specieID="pmcaCa"/>
+	<Product specieID="pmca"/>
+	<Product specieID="CaOut"/>
+
+	<forwardRate>3.0e-3</forwardRate>
+	<reverseRate>0</reverseRate>
+    </Reaction>
+
+<!-- iii: Ca pump low affinity -    Ca + ncx <-> ncxCa  SAME-->
+    <Reaction name = "Ca_pump2a" id="Ca_pump2a">
+	<Reactant specieID="Ca"/>
+	<Reactant specieID="ncx"/>
+	<Product specieID="ncxCa"/>
+
+	<forwardRate>0.011e-3</forwardRate>
+	<reverseRate>11.2e-3</reverseRate>
+    </Reaction>
+
+<!-- iv: Ca pump low affinity -    ncxCa <-> ncx + CaOut   SAME-->
+    <Reaction name = "Ca_pump2b" id="Ca_pump2b">
+	<Reactant specieID="ncxCa"/>
+	<Product specieID="ncx"/>
+	<Product specieID="CaOut"/>
+
+	<forwardRate>5.6e-3</forwardRate>
+	<reverseRate>0</reverseRate>
+    </Reaction>
+<!-- v: Ca leak -    CaOut + Leak <-> CaOutLeak  GQ RXN FILE, Leak is sm only-->
+    <Reaction name = "Ca_leak" id="Ca_leak">
+	<Reactant specieID="CaOut"/>
+	<Reactant specieID="Leak"/>
+	<Product specieID="CaOutLeak"/>
+
+        <forwardRate>0.01e-6</forwardRate>
+	<reverseRate>1.1e-3</reverseRate>
+    </Reaction>
+
+<!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
+    <Reaction name = "Ca_leak" id="Ca_leak">
+	<Reactant specieID="CaOutLeak"/>
+	<Product specieID="Ca"/>
+	<Product specieID="Leak"/>
+
+        <forwardRate>1.1e-3</forwardRate>
+	<reverseRate>0</reverseRate>
+    </Reaction>
+
+<!-- vii: Ca Buffer    Ca + Calbindin <-> calbinC  SAME-->
+    <Reaction name = "Ca_buffer" id="Ca_Buffer">
+        <Reactant specieID="Ca"/>
+        <Reactant specieID="Calbin"/>
+        <Product specieID="CalbinC"/>
+
+        <forwardRate>0.028e-3</forwardRate>
+        <reverseRate>19.6</reverseRate>
+    </Reaction>
+
+
+
 <!-- Ca Buffer    Ca + Calbindin
          <-> calbinCa -->
 <Reaction name="Ca_buffer" id="Ca_Buffer">
