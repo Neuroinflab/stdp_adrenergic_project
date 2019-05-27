@@ -197,17 +197,21 @@ kdiffunit="mu2/s" />
 <Specie name="GluR1_S845_PP2B" id="GluR1_S845_PP2B" kdiff="0"
 kdiffunit="mu2/s" />
 <Specie name="GluR1_S845_S831_PP2B" id="GluR1_S845_S831_PP2B"
-kdiff="0" kdiffunit="mu2/s" />
+	kdiff="0" kdiffunit="mu2/s" />
 <Specie name="PDE4" id="PDE4" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="PDE4cAMP" id="PDE4cAMP" kdiff="0"
-kdiffunit="mu2/s" />
+	kdiffunit="mu2/s" />
 <Specie name="PKAcPDE4" id="PKAcPDE4" kdiff="0"
-kdiffunit="mu2/s" />
+	kdiffunit="mu2/s" />
 <Specie name="pPDE4" id="pPDE4" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="pPDE4cAMP" id="pPDE4cAMP" kdiff="0"
-kdiffunit="mu2/s" />
+	kdiffunit="mu2/s" />
 <Specie name="PKAc_PDE4_cAMP" id="PKAc_PDE4_cAMP" kdiff="0"
-kdiffunit="mu2/s" />
+	kdiffunit="mu2/s" />
+
+
+<!-- Ca pump high affinity -    Ca + pmca
+         <-> pmcaCa -->
 <!-- Ca pump high affinity -    Ca + pmca
          <-> pmcaCa -->
 <Reaction name="Ca_pump1a" id="Ca_pump1a">
@@ -278,6 +282,8 @@ kdiffunit="mu2/s" />
   <reverseRate>0.0196</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
+
+
 <!-- Irreversible IC Ca Buffer    Ca + CaB
          <-> CaBCa -->
 <Reaction name="CaIn_buffer" id="CaIn_buffer">
