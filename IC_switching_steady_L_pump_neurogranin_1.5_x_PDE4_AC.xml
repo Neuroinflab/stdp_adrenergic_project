@@ -23,8 +23,8 @@
     <NanoMolarity specieID="ATP" value="1992779"/>
     <NanoMolarity specieID="AMP" value="980"/>
     <NanoMolarity specieID="cAMP" value="58"/>
-    <NanoMolarity specieID="Epac1" value="488"/>
-    <NanoMolarity specieID="Epac1cAMP" value="12"/>
+    <NanoMolarity specieID="Epac1" value="1950"/>
+    <NanoMolarity specieID="Epac1cAMP" value="50"/>
 
     <NanoMolarity specieID="PDE1" value="11468"/>
     <NanoMolarity specieID="PDE1CaMCa4" value="295"/>
