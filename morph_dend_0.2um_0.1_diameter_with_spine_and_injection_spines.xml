@@ -6,10 +6,10 @@
    <SpineType id="spineA">
 	<Section width="0.2" at="0.0" regionClass="neck"/>
 	<Section width="0.2" at="0.2" regionClass="neck"/>
-	<Section width="0.2" at="0.3" regionClass="head"/>
-	<Section width="0.6" at="0.4" regionClass="head"/>  
-	<Section width="0.6" at="0.5" regionClass="PSD"/>
-	<Section width="0.2" at="0.6" label="pointA"/>
+	<Section width="0.2" at="1.0" regionClass="head"/>
+	<Section width="0.6" at="1.1" regionClass="head"/>  
+	<Section width="0.6" at="1.2" regionClass="PSD"/>
+	<Section width="0.2" at="1.3" label="pointA"/>
    </SpineType>
 
     <!-- regionClass labels can apply to sections or segments and label regions for applying initial conditaions etc -->
