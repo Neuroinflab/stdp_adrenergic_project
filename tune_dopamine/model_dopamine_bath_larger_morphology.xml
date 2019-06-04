@@ -6,7 +6,7 @@
     <xi:include href="Rxn_tune_dopamine.xml" />
     <xi:include href="../morph_dend_0.2um_0.1_diameter_with_spine_and_injection_spines.xml"/>
     <xi:include href="IC_tune_dopamine.xml" />       
-    <xi:include href="dopamine_bath_10_um_2um_dendrite.xml" />
+    <xi:include href="../stimulations/dopamine_bath_10_um_2um_dendrite.xml" />
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 roundworms. The 2D case is good for testing as it is easy to visualize the
