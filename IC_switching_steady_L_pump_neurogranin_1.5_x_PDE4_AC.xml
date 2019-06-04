@@ -126,10 +126,10 @@
   
   </ConcentrationSet>
   <ConcentrationSet region="PSD">
-    <NanoMolarity specieID="NMDAR" value="30000"/>
+    <NanoMolarity specieID="NMDAR" value="10000"/>
     <!--Swulius et al 2011 (MN Waxham lab) -->
     <NanoMolarity specieID="PKAcNMDAR" value="0"/>
-    <NanoMolarity specieID="pNMDAR" value="10000"/>
+    <NanoMolarity specieID="pNMDAR" value="3000"/>
     <NanoMolarity specieID="PP2BpNMDAR" value="0"/>
     <NanoMolarity specieID="GluR1" value="13100"/>
     <NanoMolarity specieID="GluR1_CKp" value="0"/>
