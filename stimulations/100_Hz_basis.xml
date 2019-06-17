@@ -705,27 +705,32 @@
         <rate>12.25</rate>
         <end>103000</end>
   </InjectionStim>
-<InjectionStim specieID="Ca" injectionSite="fake[:].pointI">
-        <onset>100000</onset>
-	<duration>3</duration>
-	<rate>2400</rate>
-        <period>10</period>
-        <end>101000</end> 
+  <InjectionStim specieID="Ca" injectionSite="dendrite:submembrane">
+    <onset>100000</onset>
+    <duration>3</duration>
+    <rate>4</rate>
+    <period>10</period>
+    <end>101000</end> 
   </InjectionStim>
-<InjectionStim specieID="CaB" injectionSite="fake[:].pointI">
-        <onset>100000</onset>
-        <duration>1000</duration>
-        <rate>22</rate>
-        <end>101000</end>
-
+  <InjectionStim specieID="CaB" injectionSite="dendrite:submembrane">
+    <onset>101000</onset>
+    <duration>1000</duration>
+    <rate>4</rate>
+    <end>103000</end>
   </InjectionStim>
-
-<InjectionStim specieID="L" injectionSite="sa1[0].pointA">
+<InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
           <onset>100000</onset>
           <duration>3</duration>
-          <rate>0.75</rate>
+          <rate>2</rate>
           <period>10</period>
           <end>101000</end>
 </InjectionStim>
 
+<InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+           <onset>100000</onset>
+           <duration>3</duration>
+          <rate>0.5</rate>
+           <period>10</period>
+           <end>101000</end>
+ </InjectionStim>
 </StimulationSet>
