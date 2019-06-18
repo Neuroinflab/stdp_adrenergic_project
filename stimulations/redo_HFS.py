@@ -77,23 +77,46 @@ def append_new_train(old_specie_inj, new_train, specie):
     old_specie_inj[specie].append(new_train)
 
     
-def change_1_HFS_train(root, specie, what, multiplier=1, addition=0):
+def change_1_HFS_train(root, specie, what, region=None, multiplier=1, addition=0, randomness=True):
+    counter = 0
+    previous_onset = 0
     for son in root:
-        if son.get('specieId') == specie:
-            for grandson in son:
-                if grandson.tag == what:
-                    if '.' in granson.text:
-                        new_value = float(granson.text)
-                    else:
-                        new_value = int(granson.text)
-                    new_value = multiplier*new_value + addition
-                    grandson.text = str(new_value)
+        do = True
+        if son.get('specieID') == specie:
+            if region is None or region == son.get("injectionSite"):
+                counter += 1
+                if randomness and counter > 50:
+                    rand = random.random()
+                    if rand <= .5:
+                        do = False
+
+                for grandson in son:
+                    if grandson.tag == "onset":
+                        onset = float(grandson.text)
+                        if onset > previous_onset +  3000:
+                            counter = 0
+                    if grandson.tag == what:
+                        if '.' in grandson.text:
+                            new_value = float(grandson.text)
+                        else:
+                            new_value = int(grandson.text)
+                        if do:
+                            new_value = multiplier*new_value + addition
+                        else:
+                            new_value = 0
+                        grandson.text = str(new_value)
     return root
         
 
     
 if __name__ == "__main__":
     root = xml_root(fname)
-    print(root)
-    new_root = change_1_HFS_train(root, "Ca", "rate", 0.5, 0)
-    xml_write_to_file("HFS.xml", root)
+    new_root = change_1_HFS_train(root, "Ca", "rate",
+                                  region="sa1[0].pointA",
+                                  multiplier=2.5,
+                                  addition=0)
+    new_root = change_1_HFS_train(new_root, "CaB", "rate",
+                                  region="sa1[0].pointA",
+                                  multiplier=2.,
+                                  addition=0)
+    xml_write_to_file("HFS.xml", new_root)
