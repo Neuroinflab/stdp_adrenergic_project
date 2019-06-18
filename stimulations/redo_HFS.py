@@ -96,10 +96,49 @@ def change_1_HFS_train(root, specie, what, region=None, multiplier=1, addition=0
                         grandson.text = str(new_value)
     return root
         
+def make_trains(train, n, isi=3000):
+    species = train.keys()
+    new_train = OrderedDict()
+    for specie in species:
+        new_train[specie] = []
 
+    for i in range(n):
+        for specie in species:
+            for t in train[specie]:
+                new_value = OrderedDict()
+                for key in t.keys():
+                    if key == "region":
+                        new_value[key] = t[key]
+                    elif key == "onset" or key == "end":
+                        new_value[key] = t[key] + isi*i
+                    else:
+                        new_value[key] = t[key]
+                new_train[specie].append(new_value)
+    return new_train
+
+def make_xml(trains):
+    root = etree.Element("StimulationSet")
+    for specie in trains.keys():
+        for t in trains[specie]:
+            region = t["region"]
+            injection = etree.SubElement(root, "InjectionStim",
+                                         specieID=specie,
+                                         injectionSite=region)
+            for element_tag in t.keys():
+                if element_tag != "region":
+                    new_element = etree.SubElement(injection, element_tag)
+                    new_element.text = str(t[element_tag])
+    return root
     
 if __name__ == "__main__":
     root = xml_root(fname)
+    train = parse_root(root)
+    trains_4x3s = make_trains(train, 4, isi=3000)
+    new_root = make_xml(trains_4x3s)
+    xml_write_to_file("4xHFS_3s.xml", new_root)
+    trains_4x80s = make_trains(train, 4, isi=80000)
+    new_root = make_xml(trains_4x80s)
+    xml_write_to_file("4xHFS_80s.xml", new_root)
     new_root = change_1_HFS_train(root, "Ca", "rate",
                                   region="sa1[0].pointA",
                                   multiplier=2.5,
