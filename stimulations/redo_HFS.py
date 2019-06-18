@@ -1,12 +1,8 @@
 #-*- coding: utf-8 -*-
-from __future__ import division
-import subprocess
-import collections
+from __future__ import division, print_function
 import sys
 import random
 import argparse
-import re
-import numpy as np
 import os.path
 try:
     from lxml import etree
@@ -15,7 +11,8 @@ except ImportError:
     sys.exit("Do install lxml")
 
 fname = "100_Hz_basis.xml"
-
+inj_list = ["onset", "rate", "duration", "period", "interTrainInterval",
+            "numTrains", "end"]
 inj_dict = {"onset": "",
             "duration": "",
             "rate": "",
@@ -23,6 +20,7 @@ inj_dict = {"onset": "",
             "end": "",
             "interTrainInterval": "",
             "numTrains": "",
+            "region":"",
 }
 
 
