@@ -34,14 +34,18 @@ def read_in_entry(entry):
             values[child.tag] = float(child.text)
         else:
             values[child.tag] = int(child.text)
+    return values
             
 def parse_root(root):
-    specie_inj = {}
+    specie_inj = OrderedDict()
     for son in root:
-        if son.get('SpecieId') not in specie_inj:
-            specie_inj[son.get('SpecieId')] = []
+        if son.tag =="StimulationSet":
+            continue
+        if son.get('specieID') not in specie_inj:
+            specie_inj[son.get('specieID')] = []
         values = read_in_entry(son)
-        specie_inj[son.get('SpecieId')].append(values)
+        values["region"] = son.get("injectionSite")
+        specie_inj[son.get('specieID')].append(values)
     return specie_inj
     
 def read_in_file(filename):
@@ -60,9 +64,6 @@ def increase_values(specie_inj, specie, what, multiplier=1., addition=0.):
         for val in what:
             inj[val] = inj[val]*multiplier + addition
     return new_specie_inj
-
-def append_new_train(old_specie_inj, new_train, specie):
-    old_specie_inj[specie].append(new_train)
 
     
 def change_1_HFS_train(root, specie, what, region=None, multiplier=1, addition=0, randomness=True):
