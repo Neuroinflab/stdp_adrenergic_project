@@ -2,8 +2,8 @@
 from __future__ import division, print_function
 import sys
 import random
-import argparse
-import os.path
+from collections import OrderedDict
+
 try:
     from lxml import etree
     print("running with lxml.etree")
@@ -11,18 +11,6 @@ except ImportError:
     sys.exit("Do install lxml")
 
 fname = "100_Hz_basis.xml"
-inj_list = ["onset", "rate", "duration", "period", "interTrainInterval",
-            "numTrains", "end"]
-inj_dict = {"onset": "",
-            "duration": "",
-            "rate": "",
-            "period": "",
-            "end": "",
-            "interTrainInterval": "",
-            "numTrains": "",
-            "region":"",
-}
-
 
 def xml_root(filename):
     '''get root of an xml file. 
