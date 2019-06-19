@@ -2429,51 +2429,51 @@
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
     <onset>101150</onset>
-    <duration>2000</duration>
+    <duration>3000</duration>
     <rate>3.0</rate>
-    <end>104000</end>
+    <end>105000</end>
   </InjectionStim>
   <InjectionStim injectionSite="dendrite:submembrane" specieID="CaB">
     <onset>101150</onset>
-    <duration>2000</duration>
+    <duration>3000</duration>
     <rate>2.2</rate>
-    <end>104000</end>
+    <end>105000</end>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
     <onset>181150</onset>
-    <duration>2000</duration>
+    <duration>3000</duration>
     <rate>3.0</rate>
-    <end>184000</end>
+    <end>185000</end>
   </InjectionStim>
   <InjectionStim injectionSite="dendrite:submembrane" specieID="CaB">
     <onset>181150</onset>
-    <duration>2000</duration>
+    <duration>3000</duration>
     <rate>2.2</rate>
-    <end>184000</end>
+    <end>185000</end>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
     <onset>261150</onset>
-    <duration>2000</duration>
+    <duration>3000</duration>
     <rate>3.0</rate>
-    <end>264000</end>
+    <end>265000</end>
   </InjectionStim>
   <InjectionStim injectionSite="dendrite:submembrane" specieID="CaB">
     <onset>261150</onset>
-    <duration>2000</duration>
+    <duration>3000</duration>
     <rate>2.2</rate>
-    <end>264000</end>
+    <end>265000</end>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
     <onset>341150</onset>
-    <duration>2000</duration>
+    <duration>3000</duration>
     <rate>3.0</rate>
-    <end>344000</end>
+    <end>345000</end>
   </InjectionStim>
   <InjectionStim injectionSite="dendrite:submembrane" specieID="CaB">
     <onset>341150</onset>
-    <duration>2000</duration>
+    <duration>3000</duration>
     <rate>2.2</rate>
-    <end>344000</end>
+    <end>345000</end>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="ISOIbuf">
     <end>101000</end>
