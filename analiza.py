@@ -11,6 +11,7 @@ spine = ['PSD', 'head', 'neck']
 
 
 def nano_molarity(N, V):
+    print(V)
     return 10 * N / V / NA
 
 
@@ -134,6 +135,7 @@ def get_concentrations_region_list(my_file, my_list, trial):
     idxs = sum_indices(my_file, my_list)
     vol = sum_volume(my_file, my_list)
     numbers = data[:, idxs, :].sum(axis=1)
+    print(my_file, my_list, trial, vol)
     return nano_molarity(numbers, vol)
 
 
@@ -184,7 +186,9 @@ def save_concentrations(my_file, fname_base, trial='trial0'):
         save_single_file(times, concentrations[:, i, :], species, fname)
     totals = get_concentrations_region_list(my_file, regions, trial)
     save_single_file(times, totals, species, '%s_%s_%s.txt' % (fname_base, trial, 'total'))
-    spine = get_concentrations_region_list(my_file, ['PSD', 'head', 'neck'], trial)
+    new_regions = [region for region in regions if b'dend' not in region]
+    print(new_regions)
+    spine = get_concentrations_region_list(my_file, new_regions, trial)
     save_single_file(times, spine, species, '%s_%s_%s.txt' % (fname_base, trial, 'spine'))
     
 
