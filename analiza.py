@@ -173,6 +173,9 @@ def save_single_file(times, concentrations, species, fname):
     what_to_save[:, 0] = times[:concentrations.shape[0]]
     what_to_save[:, 1:] = concentrations
     np.savetxt(fname, what_to_save, header=header, comments='')
+    print(fname)
+
+
 def save_concentrations(my_file, fname_base, trial='trial0'):
     times = get_times(my_file, trial=trial)
     species = get_all_species(my_file)
@@ -198,5 +201,4 @@ if __name__ == '__main__':
     for trial in my_file.keys():
         if trial != 'model':
             save_concentrations(my_file, fname[:-3], trial=trial)
-
     print('Done')
