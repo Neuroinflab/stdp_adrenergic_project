@@ -57,22 +57,6 @@
         <end>100080</end>
 
   </InjectionStim>
-<InjectionStim specieID="Ca" injectionSite="dendrite:submembrane">
-        <onset>100000</onset>
-	<duration>3</duration>
-	<rate>4</rate>
-        <period>200</period>
-        <end>280000</end> 
-       
-  </InjectionStim>
 
-<InjectionStim specieID="CaB" injectionSite="dendrite:submembrane">
-        <onset>100050</onset>
-	<duration>40</duration>
-	<rate>4</rate>
-        <period>200</period>
-        <end>280100</end> 
-       
-  </InjectionStim>
 
 </StimulationSet>
