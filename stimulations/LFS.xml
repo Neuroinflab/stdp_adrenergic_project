@@ -49,14 +49,4 @@
        
   </InjectionStim>
 
-<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
-        <onset>100050</onset>
-        <duration>30</duration>
-        <rate>100</rate>
-	<period>200</period>
-        <end>100080</end>
-
-  </InjectionStim>
-
-
 </StimulationSet>
