@@ -137,7 +137,7 @@ if __name__ == "__main__":
     new_root = make_xml(trains_4x3s)
     new_new_root = change_1_HFS_train(new_root, "Ca", "rate",
                                       region="sa1[0].pointA",
-                                      multiplier=2.5,
+                                      multiplier=2,
                                       addition=0)
     # new_new_root = change_1_HFS_train(new_new_root, "CaB", "rate",
     #                                   region="sa1[0].pointA",
@@ -148,7 +148,7 @@ if __name__ == "__main__":
     new_root = make_xml(trains_4x80s)
     new_new_root = change_1_HFS_train(new_root, "Ca", "rate",
                                       region="sa1[0].pointA",
-                                      multiplier=2.5,
+                                      multiplier=2,
                                       addition=0)
     # new_new_root = change_1_HFS_train(new_new_root, "CaB", "rate",
     #                                   region="sa1[0].pointA",
@@ -158,7 +158,7 @@ if __name__ == "__main__":
     xml_write_to_file("4xHFS_80s.xml", new_new_root)
     new_root = change_1_HFS_train(root, "Ca", "rate",
                                   region="sa1[0].pointA",
-                                  multiplier=2.5,
+                                  multiplier=2,
                                   addition=0)
     # new_root = change_1_HFS_train(new_root, "CaB", "rate",
     #                               region="sa1[0].pointA",
