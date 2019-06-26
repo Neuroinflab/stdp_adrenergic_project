@@ -61,8 +61,8 @@
     <NanoMolarity specieID="pPDE4" value="350"/>
   </ConcentrationSet>
   <ConcentrationSet region="head">
-    <NanoMolarity specieID="Leak" value="0"/>
-
+    <NanoMolarity specieID="Leak" value="500"/>
+    <NanoMolarity specieID="CaOutLeak" value="2000"/>
     <NanoMolarity specieID="pmca" value="760"/>
     <NanoMolarity specieID="pmcaCa" value="120"/>
     <NanoMolarity specieID="ncx" value="0"/>
@@ -123,8 +123,8 @@
     <NanoMolarity specieID="PKA" value="4000"/>
     <NanoMolarity specieID="PKAcAMP2" value="1848"/>
     <NanoMolarity specieID="PKAcAMP4" value="1000"/>
-  
   </ConcentrationSet>
+
   <ConcentrationSet region="PSD">
     <NanoMolarity specieID="NMDAR" value="3000"/>
     <!--Swulius et al 2011 (MN Waxham lab) -->
@@ -148,16 +148,21 @@
     <NanoMolarity specieID="GluR1_S845_S831" value="0"/>
     <NanoMolarity specieID="GluR1_S845_S831_PP2B" value="0"/>
     <NanoMolarity specieID="GluR1_S845_S831_PP1" value="0"/>
-  </ConcentrationSet>
-
-  <ConcentrationSet region="neck">
-    <NanoMolarity specieID="Leak" value="0"/>
+    <NanoMolarity specieID="Leak" value="500"/>
+    <NanoMolarity specieID="CaOutLeak" value="2000"/>
     <NanoMolarity specieID="pmca" value="660"/>
     <NanoMolarity specieID="pmcaCa" value="220"/>
     <NanoMolarity specieID="ncx" value="14980"/>
     <NanoMolarity specieID="ncxCa" value="120"/>
-    
+  </ConcentrationSet>
 
+  <ConcentrationSet region="neck">
+    <NanoMolarity specieID="Leak" value="500"/>
+    <NanoMolarity specieID="CaOutLeak" value="2000"/>
+    <NanoMolarity specieID="pmca" value="660"/>
+    <NanoMolarity specieID="pmcaCa" value="220"/>
+    <NanoMolarity specieID="ncx" value="14980"/>
+    <NanoMolarity specieID="ncxCa" value="120"/>
   </ConcentrationSet>
   <SurfaceDensitySet region="dendrite">
     <PicoSD specieID="Leak" value="100"/>
