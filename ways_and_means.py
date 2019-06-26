@@ -1,18 +1,28 @@
 from __future__ import division, print_function
 import numpy as np
-import sys
 import argparse
 parser = argparse.ArgumentParser(description='Print out averages')
 parser.add_argument('files', nargs='+', help='Conc filenames')
 parser.add_argument('--species', dest="species", default='cAMP,Ca',
                     help='Specie list, default cAMP,Ca')
 
+def read_in_species(species):
+    old_species = species.split(',')
+    new_species = []
+    for specie in old_species:
+        new_species.append(specie.strip())
+    return new_species
 
 if __name__ == "__main__":
     args = parser.parse_args()
-    species = args.species.split(",")
+    species = read_in_species(args.species)
+    
     for fname in args.files:
-        f = open(fname)
+        print(fname)
+        try:
+            f = open(fname)
+        except IOError:
+            print("Could not find %s" % fname)
         header = f.readline().split()
         data = np.loadtxt(f)
         for specie in species:
