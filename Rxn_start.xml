@@ -283,16 +283,6 @@ kdiffunit="mu2/s" />
 
 
 
-<!-- Ca Buffer    Ca + Calbindin
-         <-> calbinCa -->
-<Reaction name="Ca_buffer" id="Ca_Buffer">
-  <Reactant specieID="Ca" />
-  <Reactant specieID="Calbin" />
-  <Product specieID="CalbinC" />
-  <forwardRate>2.8e-5</forwardRate>
-  <reverseRate>0.0196</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
 
 
 <!-- G_protein part -->
