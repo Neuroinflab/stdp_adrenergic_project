@@ -366,7 +366,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10520</onset>
 	<duration>3</duration>
-	<rate>0</rate>
+	<rate>85.512508571</rate>
         <end>10523</end> 
        
   </InjectionStim>
@@ -380,7 +380,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10540</onset>
 	<duration>3</duration>
-	<rate>85.4662682892</rate>
+	<rate>0</rate>
         <end>10543</end> 
        
   </InjectionStim>
@@ -408,14 +408,14 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10580</onset>
 	<duration>3</duration>
-	<rate>0</rate>
+	<rate>81.6816790826</rate>
         <end>10583</end> 
        
   </InjectionStim>
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10590</onset>
 	<duration>3</duration>
-	<rate>0</rate>
+	<rate>81.6607820322</rate>
         <end>10593</end> 
        
   </InjectionStim>
@@ -429,7 +429,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10610</onset>
 	<duration>3</duration>
-	<rate>83.459706836</rate>
+	<rate>0</rate>
         <end>10613</end> 
        
   </InjectionStim>
@@ -457,7 +457,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10650</onset>
 	<duration>3</duration>
-	<rate>0</rate>
+	<rate>81.5220611872</rate>
         <end>10653</end> 
        
   </InjectionStim>
@@ -513,7 +513,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10730</onset>
 	<duration>3</duration>
-	<rate>64.7355050898</rate>
+	<rate>0</rate>
         <end>10733</end> 
        
   </InjectionStim>
@@ -534,7 +534,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10760</onset>
 	<duration>3</duration>
-	<rate>55.4394300034</rate>
+	<rate>0</rate>
         <end>10763</end> 
        
   </InjectionStim>
@@ -548,14 +548,14 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10780</onset>
 	<duration>3</duration>
-	<rate>0</rate>
+	<rate>48.0134186158</rate>
         <end>10783</end> 
        
   </InjectionStim>
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10790</onset>
 	<duration>3</duration>
-	<rate>46.147801098</rate>
+	<rate>0</rate>
         <end>10793</end> 
        
   </InjectionStim>
@@ -590,21 +590,21 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10840</onset>
 	<duration>3</duration>
-	<rate>35.4638595272</rate>
+	<rate>0</rate>
         <end>10843</end> 
        
   </InjectionStim>
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10850</onset>
 	<duration>3</duration>
-	<rate>33.0180287366</rate>
+	<rate>0</rate>
         <end>10853</end> 
        
   </InjectionStim>
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10860</onset>
 	<duration>3</duration>
-	<rate>30.5721979462</rate>
+	<rate>0</rate>
         <end>10863</end> 
        
   </InjectionStim>
@@ -618,7 +618,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10880</onset>
 	<duration>3</duration>
-	<rate>25.6805363652</rate>
+	<rate>0</rate>
         <end>10883</end> 
        
   </InjectionStim>
@@ -632,14 +632,14 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10900</onset>
 	<duration>3</duration>
-	<rate>20.7888747842</rate>
+	<rate>0</rate>
         <end>10903</end> 
        
   </InjectionStim>
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10910</onset>
 	<duration>3</duration>
-	<rate>18.3430439937</rate>
+	<rate>0</rate>
         <end>10913</end> 
        
   </InjectionStim>
@@ -660,7 +660,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10940</onset>
 	<duration>3</duration>
-	<rate>0</rate>
+	<rate>11.0055516223</rate>
         <end>10943</end> 
        
   </InjectionStim>
@@ -674,14 +674,14 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10960</onset>
 	<duration>3</duration>
-	<rate>6.11389004128</rate>
+	<rate>0</rate>
         <end>10963</end> 
        
   </InjectionStim>
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10970</onset>
 	<duration>3</duration>
-	<rate>0</rate>
+	<rate>3.66805925078</rate>
         <end>10973</end> 
        
   </InjectionStim>
@@ -695,7 +695,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10990</onset>
 	<duration>3</duration>
-	<rate>0</rate>
+	<rate>0.0</rate>
         <end>10993</end> 
        
 </InjectionStim>
@@ -703,7 +703,7 @@
 <InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
         <onset>11150</onset>
         <duration>3000</duration>
-        <rate>2.5</rate>
+        <rate>2.4</rate>
         <end>15000</end>
   </InjectionStim>
 
@@ -717,7 +717,7 @@
   <InjectionStim specieID="CaB" injectionSite="dendrite:submembrane">
     <onset>11150</onset>
     <duration>3000</duration>
-    <rate>1.5</rate>
+    <rate>1.6</rate>
     <end>15000</end>
   </InjectionStim>
 
