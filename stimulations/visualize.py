@@ -30,14 +30,19 @@ if __name__ == "__main__":
     fnames = glob.glob("%s*csv" % dir_name)
     
     for filename in fnames:
+        if "neck" in filename:
+            continue
         fig = plt.figure()
         ax = fig.add_subplot(1, 1, 1)
         head, res = read_in_file(filename)
-        time = np.arange(0, (res.shape[1])*dt, dt)
         for i, column  in enumerate(res):
-            if "head" in head[i]:
+            if head[i] == "Compartment and Segment":
+                time = column
+            else:
                 ax.plot(time, column, label=head[i])
-                ax.set_title(filename)
+                ax.set_title(filename.split('/')[1])
+                lims = ax.get_xlim()
+                ax.set_xlim([lims[0], 400])
         ax.legend()
     plt.show()
     
