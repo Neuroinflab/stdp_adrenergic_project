@@ -143,6 +143,7 @@ kdiffunit="mu2/s" />
 <Specie name="CKpCaMCa4"      id="CKpCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
 <Specie name="CKp"            id="CKp"           kdiff="3.6"   kdiffunit="mu2/s"/>
 <Specie name="CKpPP1"         id="CKpPP1"        kdiff="0"     kdiffunit="mu2/s"/>
+<Specie name="CKpCaMCa4PP1"         id="CKpCaMCa4PP1"        kdiff="0"     kdiffunit="mu2/s"/>
 
 <Specie name="PKA" id="PKA" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="PKAcAMP2" id="PKAcAMP2" kdiff="0"
@@ -1112,8 +1113,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Reactant specieID="PP1"                    />
         <Product  specieID="CKpPP1"                 />
 
-        <forwardRate> 0.01e-06     </forwardRate>
-        <reverseRate> 0.085e-03   </reverseRate>
+        <forwardRate> 0.009e-06     </forwardRate>
+        <reverseRate>  0.08e-03  </reverseRate>
         <Q10>     0.2             </Q10>
     </Reaction>
 
@@ -1123,13 +1124,33 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Product specieID="PP1"                     />
         <Product specieID="CK"                      />
 
-        <forwardRate> 0.025e-03   </forwardRate>
+        <forwardRate> 0.01e-03   </forwardRate>
         <reverseRate> 0.0         </reverseRate>
         <Q10>    0.2              </Q10>
     </Reaction>
 
 
- 
+    <!-- CKpCaMCa4 + PP1 <-> CKpCaMCa4PP1 -->
+    <Reaction name = "CKpCaMCa4PP1_bind" id="CKpCaMPP1_bind">
+      <Reactant specieID="CKpCaMCa4"              />
+      <Reactant specieID="PP1"                    />
+      <Product  specieID="CKpCaMCa4PP1"           />
+      
+      <forwardRate> 0.0045e-06  </forwardRate>
+      <reverseRate> 0.09e-03   </reverseRate>
+    </Reaction>
+
+    <!--Dephos of CKpCaMCa4 by PP1 -->
+    <!-- CKpCaMCa4PP1 -> PP1 + CKCaMCa4 -->
+    <Reaction name = "CKpCaMCa4PP1_reac" id="CKpCaMPP1_reac">
+      <Reactant specieID="CKpCaMCa4PP1"           />
+      <Product  specieID="PP1"                    />
+      <Product  specieID="CKCaMCa4"               />
+      
+      <forwardRate> 0.0095e-3    </forwardRate>
+      <reverseRate> 0.0         </reverseRate>
+    </Reaction>
+
 <!-- PKA part -->
 <!-- Implements of PKAcAMP4 molecule binds to substrates & consider to effect-->
 <!-- of autophosphorylation (Kd reduced by factor of 10), inspired by Ddavid Johnson's email on June_10th_2009-->
