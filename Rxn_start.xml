@@ -15,6 +15,8 @@
   <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CaBCa" id="CaBCa" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="CaB" id="CaB" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="FixedBuffer" id="FixedBuffer" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="FixedBufferC" id="FixedBufferC" kdiff="0" kdiffunit="mu2/s"/>
 
@@ -306,6 +308,23 @@ kdiffunit="mu2/s" />
          <reverseRate>0</reverseRate>
          <Q10>0.2</Q10>
     </Reaction>
+
+<!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
+<Reaction name="CaCbuf--Ca+Cbuf" id="CaCbuf--Ca+Cbuf">
+  <Reactant specieID="CaCbuf" />
+  <Product specieID="Cbuf" />
+  <Product specieID="Ca" />
+  <forwardRate>20e-03</forwardRate>
+  <reverseRate>0</reverseRate>
+</Reaction>
+<!--0c. excess CaOut eliminated to prevent baseline shift: CaOut + Cbuf
+       <->  CaOutbuf  -->
+<Reaction name="CaOut+Cbuf--NULL" id="CaOut_Cbuf--NULL">
+  <Reactant specieID="CaOut" />
+  <Reactant specieID="Cbuf" />
+  <forwardRate>1e-06</forwardRate>
+  <reverseRate>0</reverseRate>
+</Reaction>
     
 <!-- G_protein part -->
 <Reaction name="ISO_buffer" id="ISO_Buffer">
