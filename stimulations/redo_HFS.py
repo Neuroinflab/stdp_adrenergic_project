@@ -39,7 +39,7 @@ def read_in_entry(entry):
 def parse_root(root):
     specie_inj = OrderedDict()
     for son in root:
-        if son.tag =="StimulationSet":
+        if son.tag !="InjectionStim":
             continue
         if son.get('specieID') not in specie_inj:
             specie_inj[son.get('specieID')] = []
