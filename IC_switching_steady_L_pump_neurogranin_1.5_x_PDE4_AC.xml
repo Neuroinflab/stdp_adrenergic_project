@@ -166,7 +166,7 @@
   </ConcentrationSet>
   <ConcentrationSet region="dendrite">
     <NanoMolarity specieID="FixedBuffer" value="2498500"/>
-    <NanoMolarity specieID="FixedBuffer" value="1500"/>
+    <NanoMolarity specieID="FixedBufferC" value="1500"/>
   </ConcentrationSet>
   <SurfaceDensitySet region="dendrite">
     <PicoSD specieID="Leak" value="100"/>
