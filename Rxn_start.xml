@@ -294,8 +294,8 @@ kdiffunit="mu2/s" />
         <Reactant specieID="FixedBuffer"/>
         <Product specieID="FixedBufferC"/>
 
-        <forwardRate>4e-4</forwardRate>
-        <reverseRate>40</reverseRate>
+        <forwardRate>4e-5</forwardRate>
+        <reverseRate>4</reverseRate>
     </Reaction>
 
 <!-- Irreversible IC Ca Buffer    Ca + CaB <-> CaBCa -->
