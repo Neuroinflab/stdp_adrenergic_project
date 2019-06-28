@@ -1,7 +1,7 @@
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
-    <NanoMolarity specieID="CaOut" value="1996038"/>
+    <NanoMolarity specieID="CaOut" value="20000000"/>
     <NanoMolarity specieID="CaOutLeak"    value="0"/>
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="159982"/>
@@ -163,6 +163,10 @@
     <NanoMolarity specieID="pmcaCa" value="220"/>
     <NanoMolarity specieID="ncx" value="14980"/>
     <NanoMolarity specieID="ncxCa" value="120"/>
+  </ConcentrationSet>
+  <ConcentrationSet region="dendrite">
+    <NanoMolarity specieID="FixedBuffer" value="2498500"/>
+    <NanoMolarity specieID="FixedBuffer" value="1500"/>
   </ConcentrationSet>
   <SurfaceDensitySet region="dendrite">
     <PicoSD specieID="Leak" value="100"/>
