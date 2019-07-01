@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StimulationSet>
 
     <!-- the injectionSite must match a regionLabel deefined in the morphology -->
@@ -40,15 +41,15 @@
 
 <!-- Train I -->
 
-<InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>10000</onset>
 	<duration>3</duration>
-	<rate>100</rate>
+	<rate>93</rate>
         <period>200</period>
         <end>190000</end> 
        
   </InjectionStim>
-<!--<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
+<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
         <onset>10050</onset>
 	<duration>30</duration>
 	<rate>15</rate>
@@ -56,6 +57,6 @@
         <end>190100</end> 
        
   </InjectionStim>
--->
+
   
 </StimulationSet>
