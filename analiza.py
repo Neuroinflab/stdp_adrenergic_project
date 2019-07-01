@@ -22,16 +22,19 @@ def get_grid_list(My_file):
     return np.array(My_file['model']['grid'])
 
 
-def get_times(My_file, trial='trial0'):
-    return np.array(My_file[trial]['output']['__main__']['times'])
+def get_times(My_file, trial='trial0', output="__main__"):
+    return np.array(My_file[trial]['output'][output]['times'])
+
+def get_outputs(my_file):
+    return my_file['model']['output'].keys()
 
 
-def get_populations(my_file, trial='trial0'):
-    return np.array(my_file[trial]['output']['__main__']['population'])
+def get_populations(my_file, trial='trial0', output='__main__'):
+    return np.array(my_file[trial]['output'][output]['population'])
 
 
-def get_all_species(My_file):
-    return [s.decode('utf-8') for s in My_file['model']['output']['__main__']['species']]
+def get_all_species(My_file, output="__main__"):
+    return [s.decode('utf-8') for s in My_file['model']['output'][output]['species']]
 
 
 def get_all_anchored_species(root):
@@ -127,20 +130,21 @@ def get_regions(my_file):
     return sorted(list(set([grid[15] for grid in grid_list])))
 
 
-def get_concentrations_region_list(my_file, my_list, trial):
+def get_concentrations_region_list(my_file, my_list, trial, out):
+
     grid_list = get_grid_list(my_file)
-    data = get_populations(my_file, trial=trial)
     species = get_all_species(my_file)
     idxs = sum_indices(my_file, my_list)
     vol = sum_volume(my_file, my_list)
+    data = get_populations(my_file, trial=trial, output=out)
     numbers = data[:, idxs, :].sum(axis=1)
     return nano_molarity(numbers, vol)
 
 
-def get_concentrations(my_file, trial):
+def get_concentrations(my_file, trial, out):
     grid_list = get_grid_list(my_file)
-    data = get_populations(my_file, trial=trial)
-    species = get_all_species(my_file)
+    data = get_populations(my_file, trial=trial, output=out)
+    species = get_all_species(my_file, output=out)
     regions = get_regions(my_file)
     submembrane_species = get_all_submembrane_species(my_file)
     volume_dict = region_volumes(my_file)
@@ -172,13 +176,12 @@ def save_single_file(times, concentrations, species, fname):
     what_to_save = np.zeros((concentrations.shape[0], len(species) + 1))
     what_to_save[:, 0] = times[:concentrations.shape[0]]
     what_to_save[:, 1:] = concentrations
-    np.savetxt(fname, what_to_save, header=header, comments='')
     print(fname)
+    np.savetxt(fname, what_to_save, header=header, comments='')
 
 
 def save_concentrations(my_file, fname_base, trial='trial0'):
-    times = get_times(my_file, trial=trial)
-    species = get_all_species(my_file)
+    outs = get_outputs(my_file)
     regions = get_regions(my_file)
     concentrations = get_concentrations(my_file, trial)
 
@@ -195,10 +198,10 @@ def save_concentrations(my_file, fname_base, trial='trial0'):
 if __name__ == '__main__':
     if len(sys.argv) == 1:
         sys.exit('No filename given')
-    fname = sys.argv[1]
-    my_file = h5py.File(fname, 'r')
-
+    for fname in sys.argv[1:]:
+        my_file = h5py.File(fname, 'r')
     for trial in my_file.keys():
         if trial != 'model':
             save_concentrations(my_file, fname[:-3], trial=trial)
     print('Done')
+
