@@ -1096,7 +1096,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Q10>    0.2            </Q10>
     </Reaction>
 <!--2a) 3 CKCaMCa4 + 1 CKCaMCa4 <-> 3  CKCaMCa4 + 1 CKpCaMCa4-->
-    <Reaction name = "CKCaM bind" id="CKCaM_bind">
+    <Reaction name = "CKCaM bind1" id="CKCaM_bind1">
         <Reactant specieID="CKCaMCa4"  power="4"        />
         <Product  specieID="CKCaMCa4"   power="3"         />
         <Product  specieID="CKpCaMCa4"           />
@@ -1107,7 +1107,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
     </Reaction>
 
 <!--2b)  2 CKCaMCa4 + 1 CKCaMCa4 <-> 2 CKCaMCa4 + 1 CKpCaMCa4-->
-    <Reaction name = "CKCaM bind" id="CKCaM_bind">
+    <Reaction name = "CKCaM bind2" id="CKCaM_bind2">
         <Reactant specieID="CKCaMCa4"  power="3"        />
         <Product  specieID="CKCaMCa4"  power="2"         />
         <Product  specieID="CKpCaMCa4"           />
@@ -1117,7 +1117,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Q10>     2             </Q10>
     </Reaction>
 <!--2c)  2 CKpCaMCa4 + 2 CKCaMCa4 <-> 3 CKpCaMCa4 + 1 CKCaMCa4-->
-    <Reaction name = "CKCaM bind" id="CKCaM_bind">
+    <Reaction name = "CKCaM bind3" id="CKCaM_bind3">
         <Reactant specieID="CKpCaMCa4"  power="2"        />
         <Reactant specieID="CKCaMCa4"  power="2"        />
         <Product  specieID="CKCaMCa4"           />
