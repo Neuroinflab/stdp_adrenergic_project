@@ -17,6 +17,7 @@
 <Specie name="CKpCaMCa4"      id="CKpCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
 <Specie name="CKp"            id="CKp"           kdiff="3.6"   kdiffunit="mu2/s"/>
 <Specie name="CKpPP1"         id="CKpPP1"        kdiff="0"     kdiffunit="mu2/s"/>
+<Specie name="CKpCaMCa4PP1"         id="CKpCaMCa4PP1"        kdiff="0"     kdiffunit="mu2/s"/>
 <!-- Constant Cam    -->
     <Reaction name = "Cam_buffer" id="Cam_Buffer">
         <Reactant specieID="CaM"/>
@@ -124,7 +125,7 @@
         <Reactant specieID="PP1"                    />
         <Product  specieID="CKpPP1"                 />
 
-        <forwardRate> 0.01e-06     </forwardRate>
+        <forwardRate> 0.009e-06     </forwardRate>
         <reverseRate> 0.085e-03   </reverseRate>
         <Q10>     0.2             </Q10>
     </Reaction>
@@ -135,10 +136,30 @@
         <Product specieID="PP1"                     />
         <Product specieID="CK"                      />
 
-        <forwardRate> 0.025e-03   </forwardRate>
+        <forwardRate> 0.01e-03   </forwardRate>
         <reverseRate> 0.0         </reverseRate>
         <Q10>    0.2              </Q10>
     </Reaction>
+  <!-- CKp + PP1 <-> CKpPP1 -->
+   <Reaction name = "CKpCaMCa4PP1_bind" id="CKpCaMCa4PP1_bind">
+        <Reactant specieID="CKpCaMCa4"                    />
+        <Reactant specieID="PP1"                    />
+        <Product  specieID="CKpCaMCa4PP1"                 />
 
+        <forwardRate> 0.0025e-06     </forwardRate>
+        <reverseRate> 0.085e-03   </reverseRate>
+        <Q10>     0.2             </Q10>
+    </Reaction>
+
+<!-- CKpPP1 -> PP1 + CK -->
+   <Reaction name = "CKpCaMCa4PP1_ reac" id="CKpCaMCa4PP1_reac">
+        <Reactant specieID="CKpCaMCa4PP1"                 />
+        <Product specieID="PP1"                     />
+        <Product specieID="CKCaMCa4"                      />
+
+        <forwardRate> 0.0045e-03   </forwardRate>
+        <reverseRate> 0.0         </reverseRate>
+        <Q10>    0.2              </Q10>
+    </Reaction>
  
 </ReactionScheme>
