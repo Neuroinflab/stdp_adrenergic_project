@@ -52,7 +52,7 @@
 <InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
         <onset>10050</onset>
 	<duration>30</duration>
-	<rate>15</rate>
+	<rate>10</rate>
         <period>200</period>
         <end>190100</end> 
        
