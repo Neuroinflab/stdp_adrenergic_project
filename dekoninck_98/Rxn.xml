@@ -126,7 +126,7 @@
         <Product  specieID="CKpPP1"                 />
 
         <forwardRate> 0.009e-06     </forwardRate>
-        <reverseRate> 0.085e-03   </reverseRate>
+        <reverseRate> 0.08e-03   </reverseRate>
         <Q10>     0.2             </Q10>
     </Reaction>
 
@@ -146,8 +146,8 @@
         <Reactant specieID="PP1"                    />
         <Product  specieID="CKpCaMCa4PP1"                 />
 
-        <forwardRate> 0.0025e-06     </forwardRate>
-        <reverseRate> 0.085e-03   </reverseRate>
+        <forwardRate> 0.00225e-06     </forwardRate>
+        <reverseRate> 0.09e-03   </reverseRate>
         <Q10>     0.2             </Q10>
     </Reaction>
 
