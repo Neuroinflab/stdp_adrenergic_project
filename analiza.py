@@ -183,17 +183,24 @@ def save_single_file(times, concentrations, species, fname):
 def save_concentrations(my_file, fname_base, trial='trial0'):
     outs = get_outputs(my_file)
     regions = get_regions(my_file)
-    concentrations = get_concentrations(my_file, trial)
+    for out in outs:
+        times = get_times(my_file, trial=trial, output=out)
+        species = get_all_species(my_file, output=out)
+        concentrations = get_concentrations(my_file, trial, out)
+        if out == '__main__':
+            add = ''
+        else:
+            add = out+'_'
+        for i, region in enumerate(regions):
+            fname = '%s_%s%s_%s.txt' % (fname_base, add, trial, region)
+            save_single_file(times, concentrations[:, i, :], species, fname)
+    if len(regions) > 1:
+        totals = get_concentrations_region_list(my_file, regions, trial, out)
+        save_single_file(times, totals, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'total'))
+    if 'PSD' in regions or 'head' in regions or 'neck' in regions:
+        spine = get_concentrations_region_list(my_file, ['PSD', 'head', 'neck'], trial, out)
+        save_single_file(times, spine, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'spine'))
 
-    for i, region in enumerate(regions):
-        fname = '%s_%s_%s.txt' % (fname_base, trial, region)
-        save_single_file(times, concentrations[:, i, :], species, fname)
-    totals = get_concentrations_region_list(my_file, regions, trial)
-    save_single_file(times, totals, species, '%s_%s_%s.txt' % (fname_base, trial, 'total'))
-    new_regions = [region for region in regions if b'dend' not in region]
-    spine = get_concentrations_region_list(my_file, new_regions, trial)
-    save_single_file(times, spine, species, '%s_%s_%s.txt' % (fname_base, trial, 'spine'))
-    
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
