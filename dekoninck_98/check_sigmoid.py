@@ -22,5 +22,6 @@ if __name__ == "__main__":
     out = out/out.max()
     plt.figure()
     plt.plot([100, 300, 1000, 5000], out)
+    plt.xscale('log')
     plt.xlabel('CaMCa4 (nM)')
     plt.show()
