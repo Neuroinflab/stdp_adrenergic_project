@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from __future__ import print_function, division
+from __future__ import print_function, division, unicode_literals
 import h5py
 import numpy as np
 from lxml import etree
@@ -192,14 +192,16 @@ def save_concentrations(my_file, fname_base, trial='trial0'):
         else:
             add = out+'_'
         for i, region in enumerate(regions):
-            fname = '%s_%s%s_%s.txt' % (fname_base, add, trial, region)
+            region_name = region.decode("utf-8")
+            fname = '%s_%s%s_%s.txt' % (fname_base, add, trial, region_name)
             save_single_file(times, concentrations[:, i, :], species, fname)
     if len(regions) > 1:
         totals = get_concentrations_region_list(my_file, regions, trial, out)
         save_single_file(times, totals, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'total'))
-    if 'PSD' in regions or 'head' in regions or 'neck' in regions:
-        spine = get_concentrations_region_list(my_file, ['PSD', 'head', 'neck'], trial, out)
-        save_single_file(times, spine, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'spine'))
+
+        if b'PSD' in regions or b'head' in regions or b'neck' in regions:
+            spine = get_concentrations_region_list(my_file, [b'PSD', b'head', b'neck'], trial, out)
+            save_single_file(times, spine, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'spine'))
 
 
 if __name__ == '__main__':
