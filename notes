@@ -10,3 +10,5 @@ Interrogating the Spatiotemporal Landscape of Neuromodulatory GPCR Signaling by 
 2019/2/22 Go through BAR reactions. Rename R to BAR for clarity. Simplify the GasGTP dissociation from BAR and GaiGTP dissociation from ppppBAR -- there is no need for two reactions since NeuroRD accepts reactions with three products.
 
 Add D1R desensitization by phosphorylation by PKAc.
+
+2019/7/2 S831 should be roughly 25%, S845 10-15%. (Diering at el., 2016, PNAS)
