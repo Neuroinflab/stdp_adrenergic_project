@@ -1,9 +1,9 @@
 #-*- coding: utf-8 -*-
-from __future__ import division, print_function
+from __future__ import division, print_function, unicode_literals
 import sys
 import random
 from collections import OrderedDict
-
+import numpy as np
 try:
     from lxml import etree
     print("running with lxml.etree")
@@ -25,7 +25,7 @@ def xml_write_to_file(filename, root):
     write xml tree to a file
     '''
     f = open(filename,'w')
-    f.write(etree.tostring(root, pretty_print=True))
+    f.write(etree.tostring(root, pretty_print=True).decode('utf-8'))
 
 def read_in_entry(entry):
     values = dict()
@@ -93,7 +93,7 @@ def change_1_HFS_train(root, specie, what, region=None, multiplier=1, addition=0
                             new_value = multiplier*new_value + addition
                         else:
                             new_value = 0
-                        grandson.text = str(new_value)
+                        grandson.text = str(np.round(new_value, decimals=2))
     return root
         
 def make_trains(train, n, isi=3000):
