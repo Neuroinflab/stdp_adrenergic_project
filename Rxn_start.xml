@@ -1319,8 +1319,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="PKAc" />
   <Product specieID="GluR1_PKAc" />
-  <forwardRate>0.00402e-3</forwardRate>
-  <reverseRate>24e-3</reverseRate>
+  <forwardRate>0.1206e-3</forwardRate>
+  <reverseRate>720e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- GluR1_PKAc -> GluR1_S845 + PKAc -->
@@ -1338,7 +1338,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKCaMCa4" />
   <Product specieID="GluR1_CKCaM" />
-  <forwardRate>4.224e-8</forwardRate>
+  <forwardRate>8.224e-8</forwardRate>
   <reverseRate>1.6e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1347,7 +1347,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_CKCaM" />
   <Product specieID="GluR1_S831" />
   <Product specieID="CKCaMCa4" />
-  <forwardRate>3e-3</forwardRate>
+  <forwardRate>6e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!--Double check!!! This Km is 8.99e-1.  It is so high that of course all of GluR1 is phosphorylated.  Even if these values agree with Upi's website, we will have to change this to have lower affinity (and perhaps higher affinity of PKAc).  Same goes for the two other forms of activated CaMkinase.-->
@@ -1358,7 +1358,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKpCaMCa4" />
   <Product specieID="GluR1_CKpCaM" />
-  <forwardRate>4.78e-8</forwardRate>
+  <forwardRate>8.78e-8</forwardRate>
   <reverseRate>2e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1367,7 +1367,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_CKpCaM" />
   <Product specieID="GluR1_S831" />
   <Product specieID="CKpCaMCa4" />
-  <forwardRate>3e-3</forwardRate>
+  <forwardRate>6e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 4)GluR1 + CKp
@@ -1376,7 +1376,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKp" />
   <Product specieID="GluR1_CKp" />
-  <forwardRate>4.224e-8</forwardRate>
+  <forwardRate>8.224e-8</forwardRate>
   <reverseRate>1.6e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1385,7 +1385,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_CKp" />
   <Product specieID="GluR1_S831" />
   <Product specieID="CKp" />
-  <forwardRate>3e-3</forwardRate>
+  <forwardRate>6e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5) GluR1_S845 + CKCaM
@@ -1394,7 +1394,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKCaMCa4" />
   <Product specieID="GluR1_S845_CKCaM" />
-  <forwardRate>2.224e-8</forwardRate>
+  <forwardRate>8.224e-8</forwardRate>
   <reverseRate>1.6e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1403,7 +1403,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S845_CKCaM" />
   <Product specieID="GluR1_S845_S831" />
   <Product specieID="CKCaMCa4" />
-  <forwardRate>1e-3</forwardRate>
+  <forwardRate>6e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!--6) GluR1_S845 + CKpCaM
@@ -1413,7 +1413,7 @@ id="GluR1_S845_CKpCaM_bind">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKpCaMCa4" />
   <Product specieID="GluR1_S845_CKpCaM" />
-  <forwardRate>2.78e-8</forwardRate>
+  <forwardRate>8.78e-8</forwardRate>
   <reverseRate>2e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1423,7 +1423,7 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S845_CKpCaM" />
   <Product specieID="GluR1_S845_S831" />
   <Product specieID="CKpCaMCa4" />
-  <forwardRate>1e-3</forwardRate>
+  <forwardRate>6e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!--7) GluR1_S845 + CKp
@@ -1432,7 +1432,7 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKp" />
   <Product specieID="GluR1_S845_CKp" />
-  <forwardRate>2.224e-8</forwardRate>
+  <forwardRate>8.224e-8</forwardRate>
   <reverseRate>1e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1450,8 +1450,8 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S831" />
   <Reactant specieID="PKAc" />
   <Product specieID="GluR1_S831_PKAc" />
-  <forwardRate>0.004e-3</forwardRate>
-  <reverseRate>24e-3</reverseRate>
+  <forwardRate>0.1206e-3</forwardRate>
+  <reverseRate>720e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- GluR1_S831_PKAc -> GluR1_S845_S831 + PKAc -->
@@ -1469,8 +1469,8 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="PP1" />
   <Product specieID="GluR1_S845_PP1" />
-  <forwardRate>0.0087e-3</forwardRate>
-  <reverseRate>6.8e-3</reverseRate>
+  <forwardRate>0.087e-3</forwardRate>
+  <reverseRate>68e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- GluR1_S845_PP1 -> GluR1 + PP1 -->
@@ -1534,8 +1534,8 @@ id="GluR1_S845_S831_PP1_diss2">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="GluR1_S845_PP2B" />
-  <forwardRate>0.0201e-3</forwardRate>
-  <reverseRate>80e-3</reverseRate>
+  <forwardRate>0.00801e-3</forwardRate>
+  <reverseRate>8e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- GluR1_S845_PP2B -> GluR1 + PP2B -->
@@ -1543,7 +1543,7 @@ id="GluR1_S845_S831_PP1_diss2">
   <Reactant specieID="GluR1_S845_PP2B" />
   <Product specieID="GluR1" />
   <Product specieID="PP2BCaMCa4" />
-  <forwardRate>2e-3</forwardRate>
+  <forwardRate>1e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!--13) GluR1_S845_S831 + PP2B
@@ -1553,8 +1553,8 @@ id="GluR1_S845_S831_PP2B_bind">
   <Reactant specieID="GluR1_S845_S831" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="GluR1_S845_S831_PP2B" />
-  <forwardRate>0.0201e-3</forwardRate>
-  <reverseRate>80e-3</reverseRate>
+  <forwardRate>0.0801e-3</forwardRate>
+  <reverseRate>8e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- GluR1_S845_S831_PP2B -> GluR1_S831 + PP2BCaMCa4 -->
@@ -1563,7 +1563,7 @@ id="GluR1_S845_S831_PP2B_diss">
   <Reactant specieID="GluR1_S845_S831_PP2B" />
   <Product specieID="GluR1_S831" />
   <Product specieID="PP2BCaMCa4" />
-  <forwardRate>2e-3</forwardRate>
+  <forwardRate>1e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- PDE Part -->
