@@ -6,7 +6,7 @@
 <InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
         <onset>10000</onset>
         <duration>180000</duration>
-        <rate>0.0025</rate>
+        <rate>0.002</rate>
 
         <end>190000</end>
 
@@ -15,26 +15,8 @@
 <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
         <onset>10000</onset>
         <duration>180000</duration>
-        <rate>0.0025</rate>
+        <rate>0.002</rate>
 
-        <end>190000</end>
-
-</InjectionStim>
-
-
-<InjectionStim specieID="ISOIbuf" injectionSite="dendrite:submembrane">
-        <onset>10000</onset>
-        <duration>180000</duration>
-        <rate>0.001</rate>
-        <end>190000</end>
-
-</InjectionStim>
-
-
-<InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
-        <onset>10000</onset>
-        <duration>180000</duration>
-        <rate>0.001</rate>
         <end>190000</end>
 
 </InjectionStim>
