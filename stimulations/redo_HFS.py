@@ -81,7 +81,7 @@ def change_1_HFS_train(root, specie, what, region=None, multiplier=1, addition=0
                 for grandson in son:
                     if grandson.tag == "onset":
                         onset = float(grandson.text)
-                        if onset > previous_onset +  2000:
+                        if onset > previous_onset +  3000:
                             counter = 0
                         previous_onset = onset
                     if grandson.tag == what:
