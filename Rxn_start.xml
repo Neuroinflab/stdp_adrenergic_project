@@ -1319,7 +1319,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="PKAc" />
   <Product specieID="GluR1_PKAc" />
-  <forwardRate>0.1206e-3</forwardRate>
+  <forwardRate>0.2412e-3</forwardRate>
   <reverseRate>720e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1338,7 +1338,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKCaMCa4" />
   <Product specieID="GluR1_CKCaM" />
-  <forwardRate>8.224e-8</forwardRate>
+  <forwardRate>16.224e-8</forwardRate>
   <reverseRate>1.6e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1358,7 +1358,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKpCaMCa4" />
   <Product specieID="GluR1_CKpCaM" />
-  <forwardRate>8.78e-8</forwardRate>
+  <forwardRate>16.78e-8</forwardRate>
   <reverseRate>2e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1394,7 +1394,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKCaMCa4" />
   <Product specieID="GluR1_S845_CKCaM" />
-  <forwardRate>8.224e-8</forwardRate>
+  <forwardRate>16.224e-8</forwardRate>
   <reverseRate>1.6e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1413,7 +1413,7 @@ id="GluR1_S845_CKpCaM_bind">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKpCaMCa4" />
   <Product specieID="GluR1_S845_CKpCaM" />
-  <forwardRate>8.78e-8</forwardRate>
+  <forwardRate>16.78e-8</forwardRate>
   <reverseRate>2e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1432,7 +1432,7 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKp" />
   <Product specieID="GluR1_S845_CKp" />
-  <forwardRate>8.224e-8</forwardRate>
+  <forwardRate>16.224e-8</forwardRate>
   <reverseRate>1e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1450,7 +1450,7 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S831" />
   <Reactant specieID="PKAc" />
   <Product specieID="GluR1_S831_PKAc" />
-  <forwardRate>0.1206e-3</forwardRate>
+  <forwardRate>0.2412e-3</forwardRate>
   <reverseRate>720e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
