@@ -93,7 +93,6 @@ def change_1_HFS_train(root, specie, what, region=None, multiplier=1, addition=0
                             new_value = multiplier*new_value + addition
                         else:
                             new_value = 0
-                        print(counter, new_value)
                         grandson.text = str(np.round(new_value, decimals=2))
     return root
         
