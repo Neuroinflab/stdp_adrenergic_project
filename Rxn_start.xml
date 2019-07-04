@@ -1295,7 +1295,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="pNMDAR" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="PP2BpNMDAR" />
-  <forwardRate>0.00801e-3</forwardRate>
+  <forwardRate>0.016e-3</forwardRate>
   <reverseRate>8e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1534,7 +1534,7 @@ id="GluR1_S845_S831_PP1_diss2">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="GluR1_S845_PP2B" />
-  <forwardRate>0.0801e-3</forwardRate>
+  <forwardRate>0.1601e-3</forwardRate>
   <reverseRate>80e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1553,7 +1553,7 @@ id="GluR1_S845_S831_PP2B_bind">
   <Reactant specieID="GluR1_S845_S831" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="GluR1_S845_S831_PP2B" />
-  <forwardRate>0.801e-3</forwardRate>
+  <forwardRate>1.601e-3</forwardRate>
   <reverseRate>800e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
