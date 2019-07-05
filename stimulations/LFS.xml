@@ -23,7 +23,7 @@
 
 <!-- Train I -->
 
-<InjectionStim specieID="CaCBuf" injectionSite="sa1[0].pointA">
+<InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
         <onset>100000</onset>
 	<duration>3</duration>
 	<rate>93</rate>
