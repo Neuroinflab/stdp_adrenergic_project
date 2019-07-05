@@ -1,0 +1,8 @@
+<OutputScheme>
+  <OutputSet filename = "out"  dt="10.0">
+    <OutputSpecie name="Ca"/>
+    <OutputSpecie name="CaCbuf"/>
+    <OutputSpecie name="Cbuf"/>
+    <OutputSpecie name="CaOut"/>
+  </OutputSet>
+</OutputScheme>
