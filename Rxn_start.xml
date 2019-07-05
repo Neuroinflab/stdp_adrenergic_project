@@ -304,7 +304,7 @@ kdiffunit="mu2/s" />
          <Reactant specieID="CaB"/>
          <Product specieID="CaBCa"/>
 
-         <forwardRate>2.8e-4</forwardRate>
+         <forwardRate>2.8e-5</forwardRate>
          <reverseRate>0</reverseRate>
          <Q10>0.2</Q10>
     </Reaction>
