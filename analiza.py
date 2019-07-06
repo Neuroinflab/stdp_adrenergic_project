@@ -195,13 +195,13 @@ def save_concentrations(my_file, fname_base, trial='trial0'):
             region_name = region.decode("utf-8")
             fname = '%s_%s%s_%s.txt' % (fname_base, add, trial, region_name)
             save_single_file(times, concentrations[:, i, :], species, fname)
-    if len(regions) > 1:
-        totals = get_concentrations_region_list(my_file, regions, trial, out)
-        save_single_file(times, totals, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'total'))
+        if len(regions) > 1:
+            totals = get_concentrations_region_list(my_file, regions, trial, out)
+            save_single_file(times, totals, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'total'))
 
-        if b'PSD' in regions or b'head' in regions or b'neck' in regions:
-            spine = get_concentrations_region_list(my_file, [b'PSD', b'head', b'neck'], trial, out)
-            save_single_file(times, spine, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'spine'))
+            if b'PSD' in regions or b'head' in regions or b'neck' in regions:
+                spine = get_concentrations_region_list(my_file, [b'PSD', b'head', b'neck'], trial, out)
+                save_single_file(times, spine, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'spine'))
 
 
 if __name__ == '__main__':
