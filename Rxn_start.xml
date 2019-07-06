@@ -15,9 +15,6 @@
   <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CaBCa" id="CaBCa" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="CaB" id="CaB" kdiff="10" kdiffunit="mu2/s"/>
-  <Specie name="FixedBuffer" id="FixedBuffer" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="FixedBufferC" id="FixedBufferC" kdiff="0" kdiffunit="mu2/s"/>
-
   <!--Added from Andy's model-->
   <Specie name="ISOOut" id="ISOOut" kdiff="10." kdiffunit="mu2/s" />
   <Specie name="Ibuf" id="Ibuf" kdiff="1" kdiffunit="mu2/s" />
@@ -288,15 +285,6 @@ kdiffunit="mu2/s" />
         <reverseRate>19.6</reverseRate>
     </Reaction>
 
-    <!-- vii: Fixed Ca Buffer    Ca + FixedBuffer <-> FixedBufferC  SAME-->
-    <Reaction name = "Ca_fixed_buffer" id="Ca_Fixed_Buffer">
-        <Reactant specieID="Ca"/>
-        <Reactant specieID="FixedBuffer"/>
-        <Product specieID="FixedBufferC"/>
-
-        <forwardRate>4e-5</forwardRate>
-        <reverseRate>4</reverseRate>
-    </Reaction>
 
 <!-- Irreversible IC Ca Buffer    Ca + CaB <-> CaBCa -->
     <Reaction name = "CaIn_buffer" id="CaIn_buffer">

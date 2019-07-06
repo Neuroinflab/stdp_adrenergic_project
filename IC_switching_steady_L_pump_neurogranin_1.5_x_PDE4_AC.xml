@@ -164,10 +164,10 @@
     <NanoMolarity specieID="ncx" value="14980"/>
     <NanoMolarity specieID="ncxCa" value="120"/>
   </ConcentrationSet>
-  <ConcentrationSet region="dendrite">
+<!--  <ConcentrationSet region="dendrite">
     <NanoMolarity specieID="FixedBuffer" value="2498500"/>
     <NanoMolarity specieID="FixedBufferC" value="1500"/>
-  </ConcentrationSet>
+  </ConcentrationSet>-->
   <SurfaceDensitySet region="dendrite">
     <PicoSD specieID="Leak" value="100"/>
     <PicoSD specieID="CaOutLeak" value="800"/>
