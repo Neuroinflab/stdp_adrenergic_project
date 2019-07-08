@@ -6,7 +6,7 @@
 <InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
         <onset>100000</onset>
         <duration>180000</duration>
-        <rate>0.002</rate>
+        <rate>0.0025</rate>
 
         <end>280000</end>
 
@@ -15,7 +15,7 @@
 <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
         <onset>100000</onset>
         <duration>180000</duration>
-        <rate>0.002</rate>
+        <rate>0.0025</rate>
 
         <end>280000</end>
 
