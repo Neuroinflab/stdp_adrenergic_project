@@ -25,6 +25,7 @@ def xml_write_to_file(filename, root):
     write xml tree to a file
     '''
     f = open(filename,'w')
+    print("Write to %s" % filename)
     f.write(etree.tostring(root, pretty_print=True).decode('utf-8'))
 
 def read_in_entry(entry):
