@@ -76,7 +76,7 @@ def change_1_HFS_train(root, specie, what, region=None, multiplier=1, addition=0
                 counter += 1
                 if randomness and counter > 50:
                     rand = random.random()
-                    if rand <= .5:
+                    if rand > .6:
                         do = False
                 for grandson in son:
                     if grandson.tag == "onset":
