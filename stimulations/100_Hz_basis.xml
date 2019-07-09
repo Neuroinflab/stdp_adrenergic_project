@@ -718,8 +718,8 @@
   
  <InjectionStim specieID="CaB" injectionSite="dendrite:submembrane">
     <onset>101150</onset>
-    <duration>3000</duration>
-    <rate>4.5</rate>
+    <duration>3200</duration>
+    <rate>4.0</rate>
     <end>105000</end>
   </InjectionStim>
 
