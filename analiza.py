@@ -209,8 +209,8 @@ if __name__ == '__main__':
         sys.exit('No filename given')
     for fname in sys.argv[1:]:
         my_file = h5py.File(fname, 'r')
-    for trial in my_file.keys():
-        if trial != 'model':
-            save_concentrations(my_file, fname[:-3], trial=trial)
+        for trial in my_file.keys():
+            if trial != 'model':
+                save_concentrations(my_file, fname[:-3], trial=trial)
     print('Done')
 
