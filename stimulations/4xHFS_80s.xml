@@ -2430,53 +2430,53 @@
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
     <onset>11150</onset>
     <duration>1000</duration>
-    <rate>1.0</rate>
+    <rate>1.1</rate>
     <end>15000</end>
   </InjectionStim>
   <InjectionStim injectionSite="dendrite:submembrane" specieID="CaB">
     <end>13150</end>
     <period>10</period>
     <onset>11150</onset>
-    <rate>14</rate>
+    <rate>16</rate>
     <duration>3</duration>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
     <onset>91150</onset>
     <duration>1000</duration>
-    <rate>1.0</rate>
+    <rate>1.1</rate>
     <end>95000</end>
   </InjectionStim>
   <InjectionStim injectionSite="dendrite:submembrane" specieID="CaB">
     <end>93150</end>
     <period>10</period>
     <onset>91150</onset>
-    <rate>14</rate>
+    <rate>16</rate>
     <duration>3</duration>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
     <onset>171150</onset>
     <duration>1000</duration>
-    <rate>1.0</rate>
+    <rate>1.1</rate>
     <end>175000</end>
   </InjectionStim>
   <InjectionStim injectionSite="dendrite:submembrane" specieID="CaB">
     <end>173150</end>
     <period>10</period>
     <onset>171150</onset>
-    <rate>14</rate>
+    <rate>16</rate>
     <duration>3</duration>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
     <onset>251150</onset>
     <duration>1000</duration>
-    <rate>1.0</rate>
+    <rate>1.1</rate>
     <end>255000</end>
   </InjectionStim>
   <InjectionStim injectionSite="dendrite:submembrane" specieID="CaB">
     <end>253150</end>
     <period>10</period>
     <onset>251150</onset>
-    <rate>14</rate>
+    <rate>16</rate>
     <duration>3</duration>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="ISOIbuf">
