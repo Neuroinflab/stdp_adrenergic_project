@@ -2437,7 +2437,7 @@
     <end>13150</end>
     <period>10</period>
     <onset>11150</onset>
-    <rate>16</rate>
+    <rate>17</rate>
     <duration>3</duration>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
@@ -2450,7 +2450,7 @@
     <end>16150</end>
     <period>10</period>
     <onset>14150</onset>
-    <rate>16</rate>
+    <rate>17</rate>
     <duration>3</duration>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
@@ -2463,7 +2463,7 @@
     <end>19150</end>
     <period>10</period>
     <onset>17150</onset>
-    <rate>16</rate>
+    <rate>17</rate>
     <duration>3</duration>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
@@ -2476,7 +2476,7 @@
     <end>22150</end>
     <period>10</period>
     <onset>20150</onset>
-    <rate>16</rate>
+    <rate>17</rate>
     <duration>3</duration>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="ISOIbuf">
