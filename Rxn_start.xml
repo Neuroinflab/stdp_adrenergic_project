@@ -163,10 +163,15 @@ kdiffunit="mu2/s" />
 <Specie name="Ip35PP1PP2BCaMCa4" id="Ip35PP1PP2BCaMCa4" kdiff="0"
 kdiffunit="mu2/s" />
 <!-- AddRxns -->
+
+<!--NMDARs-->
 <Specie name="NMDAR" id="NMDAR" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="PKAcNMDAR" id="PKAcNMDAR" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="pNMDAR" id="pNMDAR" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="PP2BpNMDAR" id="PP2BpNMDAR" kdiff="0" kdiffunit="mu2/s" />
+<Specie name="PP1pNMDAR" id="PP1pNMDAR" kdiff="0" kdiffunit="mu2/s" />
+
+<!--AMPARs-->
 <Specie name="GluR1" id="GluR1" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="GluR1_S845" id="GluR1_S845" kdiff="0"
 kdiffunit="mu2/s" />
@@ -1263,7 +1268,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="NMDAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcNMDAR" />
-  <forwardRate>0.0102e-3</forwardRate>
+  <forwardRate>0.0212e-3</forwardRate>
   <reverseRate>720e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1283,8 +1288,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="pNMDAR" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="PP2BpNMDAR" />
-  <forwardRate>0.008e-3</forwardRate>
-  <reverseRate>8e-3</reverseRate>
+  <forwardRate>1.6e-3</forwardRate>
+  <reverseRate>1600e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- PP2BpNMDAR -> NMDAR + PP2B -->
@@ -1292,7 +1297,24 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="PP2BpNMDAR" />
   <Product specieID="NMDAR" />
   <Product specieID="PP2BCaMCa4" />
-  <forwardRate>1e-3</forwardRate>
+  <forwardRate>2e-3</forwardRate>
+  <Q10>0.2</Q10>
+</Reaction>
+<!--pNMDAR dephos by PP1, rate constants from Gutierrez-Arenas, Eriksson, Hellgren Kotaleski, PLoS Comp Biol 2014 -->
+<Reaction name="pNMDARPP1_bind" id="pNMDARPP1_bind">
+  <Reactant specieID="pNMDAR" />
+  <Reactant specieID="PP1" />
+  <Product specieID="PP1pNMDAR" />
+  <forwardRate>3.4e-6</forwardRate>
+  <reverseRate>1600e-3</reverseRate>
+  <Q10>0.2</Q10>
+</Reaction>
+<!-- PP2BpNMDAR -> NMDAR + PP2B -->
+<Reaction name="pNMDARPP1_reac" id="pNMDARPP1_reac">
+  <Reactant specieID="PP1pNMDAR" />
+  <Product specieID="NMDAR" />
+  <Product specieID="PP1" />
+  <forwardRate>2e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 
