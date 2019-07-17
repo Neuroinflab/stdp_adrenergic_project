@@ -82,7 +82,8 @@ def change_1_HFS_train(root, specie, what, region=None, multiplier=1, addition=0
                 for grandson in son:
                     if grandson.tag == "onset":
                         onset = float(grandson.text)
-                        if onset > previous_onset +  10000:
+                        #NMDAR is rephosphorylated after 40s
+                        if onset > previous_onset +  40000:
                             counter = 0
                             previous_onset = onset
                     if grandson.tag == what:
@@ -136,31 +137,31 @@ if __name__ == "__main__":
     train = parse_root(root)
     trains_4x3s = make_trains(train, 4, isi=3000)
     new_root = make_xml(trains_4x3s)
-    # new_new_root = change_1_HFS_train(new_root, "CaCbuf", "rate",
-    #                                   region="sa1[0].pointA",
-    #                                   multiplier=2.3,
-    #                                   addition=0)
+    new_new_root = change_1_HFS_train(new_root, "CaCbuf", "rate",
+                                      region="sa1[0].pointA",
+                                      multiplier=1,
+                                      addition=0)
     # new_new_root = change_1_HFS_train(new_new_root, "CaB", "rate",
     #                                   region="sa1[0].pointA",
     #                                   multiplier=1,
     #                                   addition=0)
-    xml_write_to_file("4xHFS_3s.xml", new_root)
+    xml_write_to_file("4xHFS_3s.xml", new_new_root)
     trains_4x80s = make_trains(train, 4, isi=80000)
     new_root = make_xml(trains_4x80s)
-    # new_new_root = change_1_HFS_train(new_root, "CaCbuf", "rate",
-    #                                   region="sa1[0].pointA",
-    #                                   multiplier=2.3,
-    #                                   addition=0)
+    new_new_root = change_1_HFS_train(new_root, "CaCbuf", "rate",
+                                      region="sa1[0].pointA",
+                                      multiplier=1,
+                                      addition=0)
     # new_new_root = change_1_HFS_train(new_new_root, "CaB", "rate",
     #                                   region="sa1[0].pointA",
     #                                   multiplier=1,
     #                                   addition=0)
     
     xml_write_to_file("4xHFS_80s.xml", new_root)
-    # new_root = change_1_HFS_train(root, "CaCbuf", "rate",
-    #                               region="sa1[0].pointA",
-    #                               multiplier=2.3,
-    #                               addition=0)
+    new_root = change_1_HFS_train(root, "CaCbuf", "rate",
+                                  region="sa1[0].pointA",
+                                  multiplier=1,
+                                  addition=0)
     # new_root = change_1_HFS_train(new_root, "CaB", "rate",
     #                               region="sa1[0].pointA",
     #                               multiplier=1,
