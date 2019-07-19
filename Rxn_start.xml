@@ -1550,7 +1550,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Q10>0.2</Q10>
 </Reaction>
 
-<!--S841_S831-->
+<!--S845_S831-->
 
 <Reaction name="GluR1_S845_CKCaM_bind" id="GluR1_S845_CKCaM_bind">
   <Reactant specieID="GluR1_S845" />
