@@ -30,8 +30,8 @@
     <NanoMolarity specieID="PDE1CaMCa4" value="295"/>
     <NanoMolarity specieID="PDE1CaMCa4cAMP" value="0"/>
 
-    <NanoMolarity specieID="CaM" value="12650"/>
-    <NanoMolarity specieID="CaMCa2" value="120"/>
+    <NanoMolarity specieID="CaM" value="12600"/>
+    <NanoMolarity specieID="CaMCa2" value="200"/>
     <NanoMolarity specieID="CaMCa4" value="3"/>
     <NanoMolarity specieID="NgCaM" value="17992"/>
     <NanoMolarity specieID="Ng" value="2139"/>
@@ -39,9 +39,9 @@
     <NanoMolarity specieID="PP2BCaMCa2" value="329"/>
     <NanoMolarity specieID="PP2BCaMCa4" value="3"/>
     <NanoMolarity specieID="PP2B" value="0"/>
-    <NanoMolarity specieID="CK" value="23000"/>
-    <NanoMolarity specieID="CKCaMCa4" value="50"/>
-    <NanoMolarity specieID="CKpCaMCa4" value="200"/>
+    <NanoMolarity specieID="CK" value="23050"/>
+    <NanoMolarity specieID="CKCaMCa4" value="70"/>
+    <NanoMolarity specieID="CKpCaMCa4" value="150"/>
     <NanoMolarity specieID="CKp" value="20"/>
     <NanoMolarity specieID="CKpPP1" value="0"/>
  
@@ -57,8 +57,8 @@
     <NanoMolarity specieID="PKAc_PDE4_cAMP" value="0"/>
     <NanoMolarity specieID="PKAcPDE4" value="0"/>
     <NanoMolarity specieID="PDE4cAMP" value="0"/>
-    <NanoMolarity specieID="PDE4" value="1400"/>
-    <NanoMolarity specieID="pPDE4" value="350"/>
+    <NanoMolarity specieID="PDE4" value="1350"/>
+    <NanoMolarity specieID="pPDE4" value="400"/>
   </ConcentrationSet>
   <ConcentrationSet region="head">
     <NanoMolarity specieID="Leak" value="500"/>
@@ -132,11 +132,13 @@
     <NanoMolarity specieID="PKAcNMDAR" value="0"/>
     <NanoMolarity specieID="pNMDAR" value="1000"/>
     <NanoMolarity specieID="PP2BpNMDAR" value="0"/>
-    <NanoMolarity specieID="GluR1" value="7000"/>
+    <NanoMolarity specieID="GluR1" value="3000"/>
     <NanoMolarity specieID="GluR1_CKp" value="0"/>
     <NanoMolarity specieID="GluR1_CKCaM" value="0"/>
     <NanoMolarity specieID="GluR1_CKpCaM" value="0"/>
     <NanoMolarity specieID="GluR1_S831" value="2000"/>
+    <NanoMolarity specieID="GluR1_S567" value="4000"/>
+
     <NanoMolarity specieID="GluR1_S831_PP1" value="0"/>
     <NanoMolarity specieID="GluR1_PKAc" value="0"/>
     <NanoMolarity specieID="GluR1_S831_PKAc" value="0"/>
