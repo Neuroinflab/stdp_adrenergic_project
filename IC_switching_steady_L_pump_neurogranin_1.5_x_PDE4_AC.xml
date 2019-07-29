@@ -121,7 +121,7 @@
     <NanoMolarity specieID="AC8CaMCa4ATP" value="500"/>
 
     <NanoMolarity specieID="PKAr" value="0"/>
-    <NanoMolarity specieID="PKA" value="4000"/>
+    <NanoMolarity specieID="PKA" value="5000"/>
     <NanoMolarity specieID="PKAcAMP2" value="1848"/>
     <NanoMolarity specieID="PKAcAMP4" value="1000"/>
   </ConcentrationSet>
@@ -226,7 +226,7 @@
     <PicoSD specieID="AC8CaMCa4" value="0"/>
     <PicoSD specieID="AC8CaMCa4ATP" value="5"/>
     
-    <PicoSD specieID="PKA" value="223"/>
+    <PicoSD specieID="PKA" value="323"/>
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="3"/>
     <PicoSD specieID="PKAcAMP4" value="0"/>
