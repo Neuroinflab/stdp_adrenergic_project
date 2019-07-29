@@ -335,13 +335,13 @@ kdiffunit="mu2/s" />
       <Reactant specieID="CaCbuf" />
       <Product specieID="Cbuf" />
       <Product specieID="Ca" />
-      <forwardRate>20e03</forwardRate>
+      <forwardRate>20e-03</forwardRate>
       <reverseRate>0</reverseRate>
     </Reaction>
     <Reaction name="CaOut+CbufNULL" id="CaOut_CbufNULL">
       <Reactant specieID="CaOut" />
       <Reactant specieID="Cbuf" />
-      <forwardRate>1e06</forwardRate>
+      <forwardRate>1e-06</forwardRate>
       <reverseRate>0</reverseRate>
     </Reaction>
    
