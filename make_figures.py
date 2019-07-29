@@ -53,9 +53,9 @@ if __name__ == '__main__':
         output = args.output_name
     else:
         output = ''
-        for item in fname[-1].split('-')[:-1]:
+        for item in fname[-1].split('_')[:-1]:
             output += item
-            output += '-'
+            output += '_'
     if args.labels:
         args.labels = args.labels.split(',')
         if len(args.labels) != len(fname):
@@ -106,7 +106,7 @@ if __name__ == '__main__':
         axrr[how_many - 1].set_xlabel('time [s]')
         axrr[0].set_title(specie + ' ' + args.units)
 
-        f.savefig(output + '_' + specie + '.png', format='png')
+        f.savefig(output  + specie + '.png', format='png')
 
     how_many = len(fname)
     which_header = range(how_many)
@@ -129,4 +129,4 @@ if __name__ == '__main__':
        
     axrr[how_many - 1].set_xlabel('time [s]')
     axrr[0].set_title('Total PKAc ' + args.units)
-    f.savefig(output + '_total_PKAc.png', format='png')
+    f.savefig(output + 'total_PKAc.png', format='png')
