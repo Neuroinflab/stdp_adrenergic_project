@@ -10,15 +10,16 @@
   <!--Added from Andy's model-->
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
-
+  
   <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
-
+  
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="Calbin" id="Calbin" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CaBCa" id="CaBCa" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="CaB" id="CaB" kdiff="10" kdiffunit="mu2/s"/>
+ 
   <!--Added from Andy's model-->
   <Specie name="ISOOut" id="ISOOut" kdiff="10." kdiffunit="mu2/s" />
   <Specie name="Ibuf" id="Ibuf" kdiff="1" kdiffunit="mu2/s" />
@@ -83,10 +84,6 @@ kdiffunit="mu2/s" />
 <Specie name="DaD1R" id="DaD1R" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="DaD1RGs" id="DaD1RGs" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="GsD1R" id="GsD1R" kdiff="0" kdiffunit="mu2/s" />
-<Specie name="PKAcDaD1RGs" id="PKAcDaD1RGs" kdiff="0"
-kdiffunit="mu2/s" />
-<Specie name="pDaD1RGs" id="pDaD1RGs" kdiff="0"
-kdiffunit="mu2/s" />
 <Specie name="AC1" id="AC1" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="AC1GasGTP" id="AC1GasGTP" kdiff="0"
 kdiffunit="mu2/s" />
@@ -336,18 +333,14 @@ kdiffunit="mu2/s" />
          <reverseRate>0</reverseRate>
          <Q10>0.2</Q10>
     </Reaction>
-
-    <!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
-    <Reaction name="CaCbuf--Ca+Cbuf" id="CaCbuf--Ca+Cbuf">
+    <Reaction name="CaCbufCa+Cbuf" id="CaCbufCa+Cbuf">
       <Reactant specieID="CaCbuf" />
       <Product specieID="Cbuf" />
       <Product specieID="Ca" />
       <forwardRate>20e-03</forwardRate>
       <reverseRate>0</reverseRate>
     </Reaction>
-    <!--0c. excess CaOut eliminated to prevent baseline shift: CaOut + Cbuf
-       <->  CaOutbuf  -->
-    <Reaction name="CaOut+Cbuf--NULL" id="CaOut_Cbuf--NULL">
+    <Reaction name="CaOut+CbufNULL" id="CaOut_CbufNULL">
       <Reactant specieID="CaOut" />
       <Reactant specieID="Cbuf" />
       <forwardRate>1e-06</forwardRate>
@@ -355,7 +348,8 @@ kdiffunit="mu2/s" />
     </Reaction>
    
  
-<!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
+
+    <!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
     
 <!-- G_protein part -->
 <Reaction name="ISO_buffer" id="ISO_Buffer">
@@ -504,6 +498,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <reverseRate>0.0</reverseRate>
 </Reaction>
 <!--*****************PKAc phosphorylation of DaD1R *******************************-->
+<!--4. PKAc + DaD1RGs -> PKAcDaD1RGs Km= 500nM  affinity for dephosphorylation is 10 lower than for cAMP accumulation for Glioma Cells, so lower the KM even more-->
 <!-- AMC 06/27/12: Below are the reactions for PKA-mediated ISObAR desensitization and subsequent Gs-to-Gi switching -->
 <!-- 5c1) ISObAR + PKAc -> PKAcISObAR -->
 <Reaction name="ISObAR_phos" id="ISObAR_phos">
@@ -1377,7 +1372,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="GluR1_S845_PP2B" />
-  <forwardRate>0.0001601e-3</forwardRate>
+  <forwardRate>0.00032e-3</forwardRate>
   <reverseRate>.8e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1531,7 +1526,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Q10>0.2</Q10>
 </Reaction>
 
-<!--S841_S831-->
+<!--S845_S831-->
 
 <Reaction name="GluR1_S845_CKCaM_bind" id="GluR1_S845_CKCaM_bind">
   <Reactant specieID="GluR1_S845" />
@@ -1733,6 +1728,42 @@ id="GluR1_S845_S567_PP1_diss2">
   <forwardRate>0.4e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
+
+<Reaction name="GluR1_S845_S831_PP2B_bind" id="GluR1_S845_S831_PP2B_bind">
+  <Reactant specieID="GluR1_S845_S831" />
+  <Reactant specieID="PP2BCaMCa4" />
+  <Product specieID="GluR1_S845_S831_PP2B" />
+  <forwardRate>0.00032e-3</forwardRate>
+  <reverseRate>.8e-3</reverseRate>
+  <Q10>0.2</Q10>
+</Reaction>
+<!-- GluR1_S845_PP2B -> GluR1 + PP2B -->
+<Reaction name="GluR1_S845_PP2B_diss" id="GluR1_S845_PP2B_diss">
+  <Reactant specieID="GluR1_S845_S831_PP2B" />
+  <Product specieID="GluR1_S831" />
+  <Product specieID="PP2BCaMCa4" />
+  <forwardRate>0.11e-3</forwardRate>
+  <Q10>0.2</Q10>
+</Reaction>
+
+<Reaction name="GluR1_S845_S567_PP2B_bind" id="GluR1_S845_S567_PP2B_bind">
+  <Reactant specieID="GluR1_S845_S567" />
+  <Reactant specieID="PP2BCaMCa4" />
+  <Product specieID="GluR1_S845_S567_PP2B" />
+  <forwardRate>0.00032e-3</forwardRate>
+  <reverseRate>.8e-3</reverseRate>
+  <Q10>0.2</Q10>
+</Reaction>
+<!-- GluR1_S845_PP2B -> GluR1 + PP2B -->
+<Reaction name="GluR1_S845_S567_PP2B_diss" id="GluR1_S845_S567_PP2B_diss">
+  <Reactant specieID="GluR1_S845_S567_PP2B" />
+  <Product specieID="GluR1_S567" />
+  <Product specieID="PP2BCaMCa4" />
+  <forwardRate>0.11e-3</forwardRate>
+  <Q10>0.2</Q10>
+</Reaction>
+
+
 
 <!-- PDE Part -->
 <!--1) PDE1 + CaMCa4
