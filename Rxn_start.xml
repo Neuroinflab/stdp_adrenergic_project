@@ -10,14 +10,16 @@
   <!--Added from Andy's model-->
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
+  
+  <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
+  
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="Calbin" id="Calbin" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CaBCa" id="CaBCa" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="CaB" id="CaB" kdiff="10" kdiffunit="mu2/s"/>
-  <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
-  <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
-
+ 
   <!--Added from Andy's model-->
   <Specie name="ISOOut" id="ISOOut" kdiff="10." kdiffunit="mu2/s" />
   <Specie name="Ibuf" id="Ibuf" kdiff="1" kdiffunit="mu2/s" />
