@@ -39,7 +39,7 @@
 <InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
         <onset>100000</onset>
 	<duration>3</duration>
-	<rate>30</rate>
+	<rate>40</rate>
         <period>200</period>
         <end>280000</end> 
        
