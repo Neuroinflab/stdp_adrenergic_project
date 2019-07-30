@@ -1128,7 +1128,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Reactant specieID="CKp"                    />
         <Reactant specieID="PP1"                    />
         <Product  specieID="CKpPP1"                 />
-        <forwardRate> 0.009e-06     </forwardRate>
+        <forwardRate> 0.0045e-06     </forwardRate>
         <reverseRate>  0.08e-03  </reverseRate>
         <Q10>     0.2             </Q10>
     </Reaction>
@@ -1149,7 +1149,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
       <Reactant specieID="PP1"                    />
       <Product  specieID="CKpCaMCa4PP1"           />
       
-      <forwardRate> 0.00225e-06  </forwardRate>
+      <forwardRate> 0.0005e-06  </forwardRate>
       <reverseRate> 0.09e-03   </reverseRate>
     </Reaction>
 
