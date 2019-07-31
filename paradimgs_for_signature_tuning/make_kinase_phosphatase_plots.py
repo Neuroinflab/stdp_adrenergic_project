@@ -57,7 +57,11 @@ evaluated_species = ["CaMKII", "PKA", "Epac", "Gi"]
 endings = ["spine.txt", "dendrite.txt", "total.txt"]
 
 if __name__ == "__main__":
-    fig, ax = plt.subplots(len(endings), len(evaluated_species))
+    fig, ax = plt.subplots(len(endings),
+                           len(evaluated_species),
+                           figsize =(4*len(endings),
+                                     4*(1+len(evaluated_species))))
+
     for i, filename in enumerate(filenames):
         for j, ending in enumerate(endings):
             pattern = "%s?_%s" % (filename, ending)
