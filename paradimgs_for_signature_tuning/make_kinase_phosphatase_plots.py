@@ -92,5 +92,5 @@ if __name__ == "__main__":
         ax[0][idx].set_title(specie)
 
     
-    ax[0][3].legend()
+    fig.legend(loc=7)
     plt.show()
