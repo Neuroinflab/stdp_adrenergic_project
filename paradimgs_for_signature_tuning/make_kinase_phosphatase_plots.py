@@ -77,16 +77,15 @@ if __name__ == "__main__":
                         this_set = species[specie_set]
                         if specie in this_set:
                             out[:, idx+1] += data[:, k]
-                if z:
-                    for idx in range(len(evaluated_species)):
+
+                for idx in range(len(evaluated_species)):
+                    if idx == 0 and z == 0 and j == 0:
                         ax[j][idx].plot(out[:, 0], out[:, idx+1],
-                                    color=colors[i])
+                                        color=colors[i], label=labels[i])
                     else:
-                        for idx in range(len(evaluated_species)):
-                            ax[j][idx].plot(out[:, 0], out[:, idx+1],
-                                            color=colors[i], label=labels[i])
-                    
-                    
+                        ax[j][idx].plot(out[:, 0], out[:, idx+1],
+                                        color=colors[i])
+
     for j, ending in enumerate(endings):
         ax[j][0].set_ylabel(ending[:-4])
     for idx, specie in enumerate(evaluated_species):
