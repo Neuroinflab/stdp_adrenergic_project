@@ -68,7 +68,7 @@ species = {"CaMKII": ["CKpCaMCa4", "CKp", ],
            }
 
 evaluated_species = ["CaMKII", "PKA", "Epac", "Gi", "PP1",
-                     "PP2B", "S845", "S831", "S567", "pNMDAR"]
+                     "PP2B"]
 endings = ["spine.txt", "dendrite.txt", "total.txt"]
 
 if __name__ == "__main__":
