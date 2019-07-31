@@ -42,7 +42,7 @@ filenames = [
     "model_ISO_bath_HFS_trial",
     ]
 
-species = {"CaMKII": ["CKpCaMCa4", "CKpCaMCa4PP1", "CKp", "CKpPP1"],
+species = {"CaMKII": ["CKpCaMCa4", "CKp", ],
            "Epac":   ["Epac1cAMP"],
            "PKA" : ["PKAc", "GluR1_S831_PKAc", "GluR1_PKAc", "GluR1_S567_PKAc",
                     "I1PKAc","PKAcISObAR","PKAcbAR",
@@ -50,10 +50,25 @@ species = {"CaMKII": ["CKpCaMCa4", "CKpCaMCa4PP1", "CKp", "CKpPP1"],
                     "PKAcppISObAR","PKAcppbAR",
                     "PKAcpppISObAR","PKAcpppbAR",
                     "PKAcNMDAR", "PKAc_PDE4_cAMP", "PKAcPDE4"],
-           "Gi": ["Gibg"]
+           "Gi": ["Gibg"],
+           "PP1": ["CKpCaMCa4PP1", "CKpPP1", "GluR1_S845_PP1",
+                   "GluR1_S567_PP1", "GluR1_S831_PP1",
+                   "GluR1_S845_S831_PP1", "GluR1_S845_S567_PP1",
+                   "GluR1_S845_S831_PP1_2", "GluR1_S845_S567_PP1_2",
+                   "PP1", "PP1pNMDAR"],
+           "PP2B":["PP2BCaMCa4", "GluR1_S845_PP2B",
+                   "GluR1_S845_S831_PP2B", "GluR1_S845_S567_PP2B",
+                   "Ip35PP1PP2BCaMCa4", "Ip35PP2BCaMCa4",
+                   "PP2BpNMDAR"],
+           "S845": ["GluR1_S845", "GluR1_S845_S831", "GluR1_S845_S567"],
+           "S831": ["GluR1_S831", "GluR1_S845_S831"],
+           "S567": ["GluR1_S567",  "GluR1_S845_S567"],
+           "pNMDAR": ["pNMDAR"],
+
            }
 
-evaluated_species = ["CaMKII", "PKA", "Epac", "Gi"]
+evaluated_species = ["CaMKII", "PKA", "Epac", "Gi", "PP1",
+                     "PP2B", "S845", "S831", "S567", "pNMDAR"]
 endings = ["spine.txt", "dendrite.txt", "total.txt"]
 
 if __name__ == "__main__":
