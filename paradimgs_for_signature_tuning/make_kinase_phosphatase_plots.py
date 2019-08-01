@@ -74,8 +74,8 @@ endings = ["spine.txt", "dendrite.txt", "total.txt"]
 if __name__ == "__main__":
     fig, ax = plt.subplots(len(endings),
                            len(evaluated_species),
-                           figsize =(4*len(endings),
-                                     4*(1+len(evaluated_species))))
+                           figsize =(5*len(endings),
+                                     5*(1+len(evaluated_species))))
 
     for i, filename in enumerate(filenames):
         for j, ending in enumerate(endings):
