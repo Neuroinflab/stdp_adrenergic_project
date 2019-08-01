@@ -87,11 +87,11 @@ if __name__ == "__main__":
                 data = np.loadtxt(f)
                 out = np.zeros((len(data), len(evaluated_species)+1))
                 out[:, 0]  = data[:, 0]
-                for k, specie in enumerate(header):
-                    for idx, specie_set in enumerate(evaluated_species):
-                        this_set = species[specie_set]
-                        if specie in this_set:
-                            out[:, idx+1] += data[:, k]
+                for idx, specie_set in enumerate(evaluated_species):
+                    this_set = species[specie_set]
+                    for specie in this_set:
+                        k = header.index(specie)
+                        out[:, idx+1] += data[:, k]
 
                 for idx in range(len(evaluated_species)):
                     if idx == 0 and z == 0 and j == 0:
