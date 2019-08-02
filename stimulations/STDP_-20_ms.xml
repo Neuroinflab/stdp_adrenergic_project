@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StimulationSet>
+
+    <!-- the injectionSite must match a regionLabel deefined in the morphology -->
+   
+    <InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
+      <onset>10000</onset>
+      <duration>1000</duration>
+      <rate>0.0025</rate>
+      <end>11000</end>
+    </InjectionStim>
+    
+    <InjectionStim specieID="ISOIbuf" injectionSite="dendrite:submembrane">
+      <onset>10000</onset>
+      <duration>1000</duration>
+      <rate>0.001</rate>
+      <end>11000</end>
+    </InjectionStim>
+
+    <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+      <onset>10000</onset>
+      <duration>1000</duration>
+      <rate>0.0025</rate>
+      <end>11000</end>
+    </InjectionStim>
+
+    <InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
+      <onset>10000</onset>
+      <duration>1000</duration>
+      <rate>0.001</rate>
+      <end>11000</end>
+    </InjectionStim>
+
+    <!-- Train I -->
+
+    <InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
+      <onset>10000</onset>
+      <duration>3</duration>
+      <rate>40</rate>
+      <period>200</period>
+      <end>11000</end> 
+    </InjectionStim>
+</StimulationSet>
