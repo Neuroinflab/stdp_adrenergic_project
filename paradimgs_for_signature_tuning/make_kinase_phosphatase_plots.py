@@ -19,27 +19,27 @@ colors = ["gray",
           "mediumvioletred"]
 
 labels = [
-    "DA",
-    "ISO",
+    #"DA",
+    #"ISO",
     "LFS",
-    "HFS",
-    "massed",
-    "spaced",
-    "ISO+LFS",
-    "DA+LFS",
-    "ISO+HFS"
+    #"HFS",
+    #"massed",
+    #"spaced",
+    #"ISO+LFS",
+    #"DA+LFS",
+    #"ISO+HFS"
 ]
 
 filenames = [
-    "../cAMP_validation/model_DA_bath_trial",
-    "../cAMP_validation/model_ISO_bath_trial",
+    #"../cAMP_validation/model_DA_bath_trial",
+    #"../cAMP_validation/model_ISO_bath_trial",
     "model_LFS_trial",
-    "model_HFS_trial",
-    "model_4xHFS_3s_trial",
-    "model_4xHFS_80s_trial",
-    "model_ISO_bath_LFS_trial",
-    "model_DA_bath_LFS_trial",
-    "model_ISO_bath_HFS_trial",
+    #"model_HFS_trial",
+    #"model_4xHFS_3s_trial",
+    #"model_4xHFS_80s_trial",
+    #"model_ISO_bath_LFS_trial",
+    #"model_DA_bath_LFS_trial",
+    #"model_ISO_bath_HFS_trial",
     ]
 
 species = {"CaMKII": ["CKpCaMCa4", "CKp", ],
