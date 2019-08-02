@@ -26,23 +26,27 @@ def read_in_file(fname):
 
 
 if __name__ == "__main__":
-    dir_name = "graham_cai_4_spines_stdp_1500ms/"
-    fnames = glob.glob("%s*csv" % dir_name)
-    
-    for filename in fnames:
-        if "neck" in filename:
+    dir_names = glob.glob("graham*")
+
+    for dir_name in dir_names:
+        if "zip" in dir_name:
             continue
-        fig = plt.figure()
-        ax = fig.add_subplot(1, 1, 1)
-        head, res = read_in_file(filename)
-        for i, column  in enumerate(res):
-            if head[i] == "Compartment and Segment":
-                time = column
-            else:
-                ax.plot(time, column, label=head[i])
-                ax.set_title(filename.split('/')[1])
-                lims = ax.get_xlim()
-                ax.set_xlim([lims[0], 400])
-        ax.legend()
+
+        fnames = glob.glob("%s/*csv" % dir_name)
+
+        for filename in fnames:
+            if "neck" in filename:
+                continue
+            fig = plt.figure()
+            ax = fig.add_subplot(1, 1, 1)
+            head, res = read_in_file(filename)
+            for i, column  in enumerate(res):
+                if head[i] == "Compartment and Segment":
+                    time = column
+                else:
+                    ax.plot(time, column, label=head[i])
+                    ax.set_title(filename.split('/')[1])
+                    lims = ax.get_xlim()
+            ax.legend()
     plt.show()
     
