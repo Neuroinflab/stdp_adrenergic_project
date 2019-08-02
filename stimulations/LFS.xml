@@ -41,9 +41,18 @@
 	<duration>3</duration>
 	<rate>40</rate>
         <period>200</period>
+        <end>101000</end> 
+       
+</InjectionStim>
+
+<InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
+        <onset>101000</onset>
+	<duration>3</duration>
+	<rate>25</rate>
+        <period>200</period>
         <end>280000</end> 
        
-  </InjectionStim>
+</InjectionStim>
 <!-- <InjectionStim specieID="CaB" injectionSite="sa1[0].pointA"> -->
 <!--         <onset>100050</onset> -->
 <!-- 	<duration>30</duration> -->
