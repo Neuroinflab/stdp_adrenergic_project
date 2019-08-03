@@ -3,41 +3,55 @@
 
     <!-- the injectionSite must match a regionLabel deefined in the morphology -->
    
-    <InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
-      <onset>10000</onset>
-      <duration>1000</duration>
-      <rate>0.0025</rate>
-      <end>11000</end>
-    </InjectionStim>
-    
-    <InjectionStim specieID="ISOIbuf" injectionSite="dendrite:submembrane">
-      <onset>10000</onset>
-      <duration>1000</duration>
-      <rate>0.001</rate>
-      <end>11000</end>
-    </InjectionStim>
+<InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
+        <onset>10000</onset>
+        <duration>200</duration>
+        <rate>0.0025</rate>
+        <period>5000</period>
+        <end>26000</end>
+</InjectionStim>
 
-    <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
-      <onset>10000</onset>
-      <duration>1000</duration>
-      <rate>0.0025</rate>
-      <end>11000</end>
-    </InjectionStim>
+<InjectionStim specieID="ISOIbuf" injectionSite="dendrite:submembrane">
+        <onset>10000</onset>
+        <duration>200</duration>
+        <rate>0.001</rate>
+	<period>5000</period>
+        <end>26000</end>
+</InjectionStim>
 
-    <InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
-      <onset>10000</onset>
-      <duration>1000</duration>
-      <rate>0.001</rate>
-      <end>11000</end>
-    </InjectionStim>
+<InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+        <onset>10000</onset>
+        <duration>200</duration>
+        <rate>0.0025</rate>
+	<period>5000</period>
+        <end>26000</end>
 
-    <!-- Train I -->
+</InjectionStim>
 
-    <InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
-      <onset>10000</onset>
-      <duration>3</duration>
-      <rate>80</rate>
-      <period>5000</period>
-      <end>26000</end> 
-    </InjectionStim>
+<InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
+        <onset>10000</onset>
+        <duration>200</duration>
+        <rate>0.001</rate>
+	<period>5000</period>
+        <end>26000</end>
+</InjectionStim>
+<!-- Train I -->
+
+<InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
+        <onset>10000</onset>
+	<duration>30</duration>
+	<rate>40</rate>
+        <period>5000</period>
+        <end>26000</end> 
+</InjectionStim>
+
+<InjectionStim specieID="CaCbuf" injectionSite="dendrite:submembrane">
+        <onset>10000</onset>
+	<duration>30</duration>
+	<rate>4</rate>
+        <period>5000</period>
+        <end>26000</end> 
+</InjectionStim>
+
+
 </StimulationSet>
