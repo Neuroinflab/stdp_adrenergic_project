@@ -45,8 +45,12 @@ filename_dict = {
     "t-LTD": "../STDP_paradigms/model_STDP_-20_ms_trial",
     }
 
-species = {"CaMKII": ["CKpCaMCa4", "CKp", ],
-           "Epac":   ["Epac1cAMP"],
+species = {"CaMKII": ["CKCaMCa4", "CKpCaMCa4", "CKp",
+                      "GluR1_CKpCaM", "GluR1_CKp",
+                      "GluR1_CKpCaM2", "GluR1_CKp2",
+                      "GluR1_S845_CKpCaM", "GluR1_S845_CKp",
+                      "GluR1_S845_CKpCaM2", "GluR1_S845_CKp2",],
+           "Epac":  ["Epac1cAMP"],
            "PKA" : ["PKAc", "GluR1_S831_PKAc", "GluR1_PKAc", "GluR1_S567_PKAc",
                     "I1PKAc","PKAcISObAR","PKAcbAR",
                     "PKAcpISObAR","PKAcpbAR",
@@ -107,7 +111,7 @@ def read_in_data(filename, e_species):#basal_fname="../model_start_trial"):
         
         
 if __name__ == "__main__":
-    keys = ["DA", "ISO", "LFS", "t-LTD", "t-LTP"]
+    keys = ["DA", "ISO", "LFS", "HFS", "t-LTD", "t-LTP"]
     fig1, ax1 = plt.subplots(len(endings),
                              len(evaluated_species),
                              figsize =(5*len(endings),
