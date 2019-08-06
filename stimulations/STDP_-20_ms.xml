@@ -62,4 +62,12 @@
 </InjectionStim>
 
 
+<InjectionStim specieID="CaOut" injectionSite="dendrite:submembrane">
+        <onset>500100</onset>
+	<duration>3</duration>
+	<rate>160000</rate>
+        <period>5000</period>
+        <end>500200</end> 
+</InjectionStim>
+
 </StimulationSet>
