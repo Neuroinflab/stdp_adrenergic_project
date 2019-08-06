@@ -3,7 +3,7 @@
 
     <!-- the injectionSite must match a regionLabel deefined in the morphology -->
 
-<InjectionStim specieID="ICI" injectionSite="sa1[0].pointA">
+<!--<InjectionStim specieID="ICI" injectionSite="sa1[0].pointA">
   <onset>0</onset>
   <duration>3000000000</duration>
   <rate>6</rate>
@@ -15,7 +15,7 @@
   <rate>24</rate>
   <end>1250000</end>
 </InjectionStim>  
-
+-->
 <InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
         <onset>400000</onset>
         <duration>200</duration>
