@@ -388,7 +388,7 @@ kdiffunit="mu2/s" />
 	<Reactant specieID="ICI"/>
 	<Product specieID="ICIOut"/>
 	<forwardRate>5e-1</forwardRate>
-	<reverseRate>2e-9</reverseRate>
+	<reverseRate>2e-5</reverseRate>
 	<Q10>0.2</Q10>
 </Reaction>
 
