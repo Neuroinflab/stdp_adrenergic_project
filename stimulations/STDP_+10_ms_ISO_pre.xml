@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-65;5603;1c<StimulationSet>
+<StimulationSet>
 
     <!-- the injectionSite must match a regionLabel deefined in the morphology -->
 <InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
@@ -22,7 +22,7 @@
 <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
         <onset>300000</onset>
         <duration>200</duration>
-        <rate>0.01</rate>
+        <rate>0.1</rate>
 	<period>5000</period>
         <end>700000</end>
 
@@ -31,7 +31,7 @@
 <InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
         <onset>300000</onset>
         <duration>200</duration>
-        <rate>0.01</rate>
+        <rate>0.1</rate>
 	<period>5000</period>
         <end>700000</end>
 </InjectionStim>
