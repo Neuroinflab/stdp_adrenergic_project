@@ -14,7 +14,7 @@ colors = {"DA": "gray",
           "DA+LFS": "dodgerblue",
           "ISO+HFS": "midnightblue",
           "t-LTP": "mediumblue",
-         "t-LTD": "darkmagenta",}
+          "t-LTD": "darkmagenta",}
 #          "yellow"]
 
 labels = {
@@ -105,8 +105,8 @@ def read_in_data(filename, e_species):#basal_fname="../model_start_trial"):
             for a_d in all_data:
                 average_traces[:, 1:] += a_d[:min_len, 1:]
         data_dict[ending] = average_traces
-    for k in range(len(e_species)):
-        average_traces[:, k+1] = average_traces[:, k+1]/len(all_data)
+        for k in range(len(e_species)):
+            average_traces[:, k+1] = average_traces[:, k+1]/len(all_data)
     return data_dict
         
         
