@@ -45,7 +45,7 @@ filename_dict = {
     "t-LTD": "../STDP_paradigms/model_STDP_-20_ms_trial",
     }
 
-species = {"CaMKII": ["CKCaMCa4", "CKpCaMCa4", "CKp",
+species = {"CaMKII": [ "CKpCaMCa4", "CKp", #"CKCaMCa4",
                       "GluR1_CKpCaM", "GluR1_CKp",
                       "GluR1_CKpCaM2", "GluR1_CKp2",
                       "GluR1_S845_CKpCaM", "GluR1_S845_CKp",
