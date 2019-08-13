@@ -387,8 +387,8 @@ kdiffunit="mu2/s" />
 <Reaction name = "SCH23390_pump" id="SCH23390_pump">
 	<Reactant specieID="SCH23390"/>
 	<Product specieID="SCH23390Out"/>
-	<forwardRate>5e-5</forwardRate>
-	<reverseRate>2e-3</reverseRate>
+	<forwardRate>5e-3</forwardRate>
+	<reverseRate>2e-5</reverseRate>
 	<Q10>0.2</Q10>
 </Reaction>
 
