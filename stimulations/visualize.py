@@ -26,7 +26,7 @@ def read_in_file(fname):
 
 
 if __name__ == "__main__":
-    dir_names = glob.glob("graham*")
+    dir_names = glob.glob("?raham*")
 
     for dir_name in dir_names:
         if "zip" in dir_name:
