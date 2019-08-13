@@ -5,7 +5,7 @@
 
     <xi:include href="../Rxn_start.xml" />
     <xi:include href="../morph_dend_0.2um_0.1_diameter_with_spine_and_injection_spines.xml" />
-    <xi:include href="../IC_switching_steady_L_pump_neurogranin_1.5_x_PDE4_AC.xml" />       
+    <xi:include href="../IC_DA.xml" />       
     <xi:include href="../stimulations/STDP_-20_ms_DA_pre.xml" /> <!--paradigm by Zhang et al 2007 PNAS -->
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 roundworms. The 2D case is good for testing as it is easy to visualize the
