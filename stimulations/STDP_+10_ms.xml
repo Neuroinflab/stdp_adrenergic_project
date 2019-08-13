@@ -39,7 +39,7 @@
 
 <InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
         <onset>100000</onset>
-	<duration>4</duration>
+	<duration>3</duration>
 	<rate>800</rate>
         <period>5000</period>
         <end>500000</end> 
@@ -47,7 +47,7 @@
 
 <InjectionStim specieID="CaCbuf" injectionSite="dendrite:submembrane">
         <onset>100000</onset>
-	<duration>6</duration>
+	<duration>3</duration>
 	<rate>2400</rate>
         <period>5000</period>
         <end>500000</end> 
@@ -55,7 +55,7 @@
 
 <InjectionStim specieID="CaB" injectionSite="dendrite:submembrane">
         <onset>100100</onset>
-	<duration>6</duration>
+	<duration>3</duration>
 	<rate>1600</rate>
         <period>5000</period>
         <end>500100</end> 
@@ -63,7 +63,7 @@
 
 <InjectionStim specieID="CaOut" injectionSite="dendrite:submembrane">
         <onset>500100</onset>
-	<duration>6</duration>
+	<duration>3</duration>
 	<rate>160000</rate>
         <period>5000</period>
         <end>500200</end> 
