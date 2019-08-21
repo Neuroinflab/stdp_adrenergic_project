@@ -33,9 +33,10 @@ if __name__ == "__main__":
             continue
 
         fnames = glob.glob("%s/*csv" % dir_name)
-
         for filename in fnames:
             if "neck" in filename:
+                continue
+            if "ica" in filename:
                 continue
             fig = plt.figure()
             ax = fig.add_subplot(1, 1, 1)
@@ -47,6 +48,7 @@ if __name__ == "__main__":
                     ax.plot(time, column, label=head[i])
                     ax.set_title(filename.split('/')[1])
                     lims = ax.get_xlim()
+
             ax.legend()
     plt.show()
     
