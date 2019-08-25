@@ -107,6 +107,7 @@ if __name__ == '__main__':
         axrr[0].set_title(specie + ' ' + args.units)
 
         f.savefig(output  + specie + '.png', format='png')
+        plt.close(f)
 
     how_many = len(fname)
     which_header = range(how_many)
@@ -130,3 +131,4 @@ if __name__ == '__main__':
     axrr[how_many - 1].set_xlabel('time [s]')
     axrr[0].set_title('Total PKAc ' + args.units)
     f.savefig(output + 'total_PKAc.png', format='png')
+    plt.close(f)
