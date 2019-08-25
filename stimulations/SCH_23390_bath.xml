@@ -1,0 +1,12 @@
+<StimulationSet>
+      <InjectionStim specieID="SCH23390" injectionSite="sa1[0].pointA">
+        <onset>           300000        </onset>
+        <duration>       999000.0       </duration>
+        <rate>              1.3  </rate>
+      </InjectionStim>
+      <InjectionStim specieID="SCH23390" injectionSite="dendrite:submembrane">
+        <onset>           300000        </onset>
+        <duration>       999000.0       </duration>
+        <rate>              8.2    </rate>
+      </InjectionStim>
+</StimulationSet>
