@@ -107,9 +107,10 @@ def read_in_data(filename, e_species):#basal_fname="../model_start_trial"):
         
         
 if __name__ == "__main__":
-    keys = ["positive pairing",
-            "negative pairing + DA",
-            "negative pairing + ISO",
+    keys = ["negative pairing",
+            "positive pairing + D1R antagonists",
+            "positive pairing + bAR antagonists",
+            "negative pairing + DA + PKA inhibitors",
             ]
     
     fig1, ax1 = plt.subplots(len(endings)-1,
@@ -170,12 +171,12 @@ if __name__ == "__main__":
         ax2[idx].set_title(specie)
     fig1.legend(loc=7)
     fig2.legend(loc=7)
-    fig1.savefig("Kinases.png", format="png",
+    fig1.savefig("Kinases_LTD.png", format="png",
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
-    fig2.savefig("Receptor_phosphorylation.png", format="png",
+    fig2.savefig("Receptor_phosphorylation_LTD.png", format="png",
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
-    fig1.savefig("Kinases.svg", format="svg",
+    fig1.savefig("Kinases_LTD.svg", format="svg",
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
-    fig2.savefig("Receptor_phosphorylation.svg", format="svg",
+    fig2.savefig("Receptor_phosphorylation_LTD.svg", format="svg",
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
     plt.show()
