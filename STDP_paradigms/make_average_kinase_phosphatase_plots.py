@@ -174,7 +174,7 @@ if __name__ == "__main__":
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
     fig2.savefig("Receptor_phosphorylation.png", format="png",
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
-    ig1.savefig("Kinases.svg", format="svg",
+    fig1.savefig("Kinases.svg", format="svg",
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
     fig2.savefig("Receptor_phosphorylation.svg", format="svg",
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
