@@ -4,17 +4,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import glob
 
-colors = {"DA": "gray",
+colors = {"DA": "magenta",
           "ISO": "maroon",
           "LFS": "gold",
           "HFS": "darkgreen",
           "massed": "forestgreen",
-           "spaced": "darkslategray",
+           "spaced": "purple",
           "ISO+LFS": "orange",
           "DA+LFS": "dodgerblue",
           "ISO+HFS": "midnightblue",
-          "t-LTP": "mediumblue",
-          "t-LTD": "darkmagenta",}
+          "t-LTP": "black",
+          "t-LTD": "gray",}
 #          "yellow"]
 
 labels = {
@@ -23,12 +23,12 @@ labels = {
     "LFS": "LFS",
     "HFS": "HFS",
     "massed": "massed",
-    "spaced": "spaced",
+    "spaced": "4xHFS",
     "ISO+LFS": "ISO+LFS",
     "DA+LFS": "DA+LFS",
     "ISO+HFS": "ISO+HFS",
-    "t-LTP": "t-LTP",
-    "t-LTD": "t-LTD",
+    "t-LTP": "positive pairing",
+    "t-LTD": "negative pairing",
 }
 
 filename_dict = {    
@@ -79,11 +79,11 @@ species = {"CaMKII": [ "CKpCaMCa4", "CKp", #"CKCaMCa4",
 
            }
 
-evaluated_species = ["CaMKII", "PKA", "Epac", "Gi", "PP1",
-                     "PP2B"]
-receptors = ["S845", "S831", "S567", "pNMDAR"]
-endings = ["spine.txt", "dendrite.txt", "total.txt"]
-
+evaluated_species = ["CaMKII", "PKA", "Epac", "Gi",]# "PP1",
+                    # "PP2B"]
+receptors = ["S831", "pNMDAR"]
+endings = ["spine.txt", "dendrite.txt", "PSD.txt"]
+basal_specie = {"S845":1200, "S831":1180, "S567":2400, "pNMDAR":800}
 def read_in_data(filename, e_species):#basal_fname="../model_start_trial"):
     data_dict = {}
     for j, ending in enumerate(endings):
@@ -116,8 +116,8 @@ def read_in_data(filename, e_species):#basal_fname="../model_start_trial"):
         
         
 if __name__ == "__main__":
-    keys = ["DA", "ISO", "LFS", "HFS", "t-LTD", "t-LTP"]
-    fig1, ax1 = plt.subplots(len(endings),
+    keys = [ "HFS", "spaced", "ISO+LFS",  "t-LTP", "t-LTD",]
+    fig1, ax1 = plt.subplots(len(endings)-1,
                              len(evaluated_species),
                              figsize =(5*len(endings),
                                        5*(1+len(evaluated_species))))
@@ -138,37 +138,47 @@ if __name__ == "__main__":
             l = average_traces.shape[0]
             for k, spec in enumerate(evaluated_species+receptors):
                 trace = average_traces[:, k+1]
-                if basal[ending][:, k+1].mean():
-                    trace = trace/basal[ending][:, k+1].mean()
-                # if evaluated_species[k] == "PP1":
-                #     trace = average_traces[:, 1] / trace
-                if spec in evaluated_species:
-                    if k == 0 and j == 0:
-                        ax1[j][k].plot(average_traces[:, 0], trace,
-                                       color=colors[key], label=labels[key])
-                    else:
-                        ax1[j][k].plot(average_traces[:, 0], trace,
-                                       color=colors[key])
-                elif spec in receptors and ending=="spine.txt":
-                    new_k = k - len(evaluated_species)
-                    if new_k == 0:
-                        ax2[new_k//2][new_k%2].plot(average_traces[:, 0], trace,
+                
+                if ending != "PSD.txt":
+                    if spec in evaluated_species:
+                        if k == 0 and j == 0:
+                            ax1[j][k].plot(average_traces[:, 0]/1000, trace,
+                                           color=colors[key], label=labels[key])
+                        else:
+                            ax1[j][k].plot(average_traces[:, 0]/1000, trace,
+                                           color=colors[key])
+                else:
+                    for i, spec in enumerate(receptors):
+                        if j ==0 :
+                        
+                            ax2[i].plot(average_traces[:, 0]/1000, trace/basal_specie[spec],
                                                     color=colors[key], label=labels[key])
-                    else:
-                        ax2[new_k//2][new_k%2].plot(average_traces[:, 0], trace,
-                                                    color=colors[key])
+                        else:
+                            ax2[i].plot(average_traces[:, 0]/1000, trace/basal_specie[spec],
+                                                        color=colors[key])
 
-    for j, ending in enumerate(endings):
-        ax1[j][0].set_ylabel(ending[:-4])
+    for j, ending in enumerate(endings[:-1]):
+        ax1[j][0].set_ylabel(ending[:-4]+"concentration (nM)")
+    for i, specie in enumerate(evaluated_species):
+        ax1[1][i].set_xlabel("time (s)")
+
     for idx, specie in enumerate(evaluated_species):
-        ax1[0][idx].set_title(specie)
+        if specie != "PKA":
+            
+            ax1[0][idx].set_title(specie)
+        else:
+            ax1[0][idx].set_title("PKA targets")
     for idx, specie in enumerate(receptors):
-        ax2[idx//2][idx%2].set_title(specie)
+        ax2[idx].set_title(specie)
     fig1.legend(loc=7)
     fig2.legend(loc=7)
     fig1.savefig("Kinases.png", format="png",
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
     fig2.savefig("Receptor_phosphorylation.png", format="png",
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
-
+    fig1.savefig("Kinases.svg", format="svg",
+                 bbox_inches='tight', transparent=True, pad_inches=0.1)
+    fig2.savefig("Receptor_phosphorylation.svg", format="svg",
+                 bbox_inches='tight', transparent=True, pad_inches=0.1)
+    
     plt.show()
