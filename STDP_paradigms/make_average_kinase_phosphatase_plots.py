@@ -134,26 +134,29 @@ if __name__ == "__main__":
             average_traces = datas[ending]
             l_basal = basal[ending].shape[0]
             l = average_traces.shape[0]
-            for k, spec in enumerate(evaluated_species+receptors):
-                trace = average_traces[:, k+1]
-                
-                if ending != "PSD.txt":
-                    if spec in evaluated_species:
-                        if k == 0 and j == 0:
-                            ax1[j][k].plot(average_traces[:, 0]/1000, trace,
-                                           color=colors[key], label=labels[key])
-                        else:
-                            ax1[j][k].plot(average_traces[:, 0]/1000, trace,
+            if ending != "PSD.txt":
+                for k, spec in enumerate(evaluated_species):
+                    trace = average_traces[:, k+1]
+                    if k == 0 and j == 0:
+                        ax1[j][k].plot(average_traces[:, 0]/1000, trace,
+                                       color=colors[key], label=labels[key])
+                    else:
+                        ax1[j][k].plot(average_traces[:, 0]/1000, trace,
                                            color=colors[key])
-                else:
-                    for i, spec in enumerate(receptors):
-                        if j ==0 :
-                        
-                            ax2[i].plot(average_traces[:, 0]/1000, trace/basal_specie[spec],
-                                                    color=colors[key], label=labels[key])
-                        else:
-                            ax2[i].plot(average_traces[:, 0]/1000, trace/basal_specie[spec],
-                                                        color=colors[key])
+            else:
+                
+                for i, spec in enumerate(receptors):
+                    trace = average_traces[:, len(evaluated_species)+ 1 + i]
+                    print(spec, key, ending)
+                    if j ==0 :
+                    
+                        ax2[i].plot(average_traces[:, 0]/1000,
+                                    trace/basal_specie[spec],
+                                    color=colors[key], label=labels[key])
+                    else:
+                        ax2[i].plot(average_traces[:, 0]/1000,
+                                    trace/basal_specie[spec],
+                                    color=colors[key])
 
     for j, ending in enumerate(endings[:-1]):
         ax1[j][0].set_ylabel(ending[:-4]+"concentration (nM)")
