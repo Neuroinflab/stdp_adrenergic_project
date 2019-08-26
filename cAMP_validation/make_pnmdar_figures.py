@@ -4,17 +4,18 @@ import matplotlib.pyplot as plt
 import glob
 fnames_DA_pnmdar = glob.glob("model_DA_bath_20_uM_trial?_PSD.txt")
 fnames_ISO_pnmdar = glob.glob("model_ISO_bath_trial?_PSD.txt")
+fnames_SCH_pnmdar = glob.glob("model_SCH_23390_bath_trial?_PSD.txt")
 fnames_control_pnmdar = glob.glob("../model_start_trial?_PSD.txt")
 
 fnames_DA_epacs = glob.glob("model_DA_bath_trial?_total.txt")
 fnames_ISO_epacs = glob.glob("model_ISO_bath_trial?_total.txt")
 fnames_control_epacs = glob.glob("../model_start_trial?_total.txt")
 
-labels = [u"Dopamine 20 μM", u"Isoproterenol 1 μM", "control"]
+labels = [u"Dopamine 20 μM", u"Isoproterenol 1 μM", "D1R antagonist", "control"]
 
 list1 = [fnames_DA_epacs, fnames_ISO_epacs]
 
-list2 = [fnames_DA_pnmdar, fnames_ISO_pnmdar]
+list2 = [fnames_DA_pnmdar, fnames_ISO_pnmdar,fnames_SCH_pnmdar ]
 lists = [list1, list2]
 titles = ["cAMP activity",
           "NMDAR phosphorylation"]
@@ -22,7 +23,7 @@ titles = ["cAMP activity",
 fnames = ["cAMP_activity.svg",
           "NMDAR_phosphorylation.svg"]
 
-colors = ["dodgerblue", "forestgreen", "k"]
+colors = ["dodgerblue", "forestgreen","violet", "k"]
 specie = ["Epac1cAMP", "pNMDAR"]
 
 plt.rc('xtick',labelsize=14)
