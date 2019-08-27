@@ -11,6 +11,8 @@ colors = {"positive pairing": "black",
           "negative pairing + DA + PKA inhibitors": "firebrick",
           "negative pairing + ISO": "forestgreen",
           "positive pairing + bAR antagonists": "gold",
+          "ISO+HFS": "blue",
+          "LFS": "orange",
 }
 
 labels = {
@@ -21,6 +23,8 @@ labels = {
     "positive pairing + bAR antagonists": "positive pairing + bAR antagonists",
     "negative pairing + DA + PKA inhibitors": "negative pairing + DA + PKA inhibitors",
     "negative pairing + ISO": "negative pairing + ISO",
+    "ISO+HFS":"ISO+HFS",
+    "LFS":"LFS",
   
 }
 
@@ -32,6 +36,8 @@ filename_dict = {
     "positive pairing + bAR antagonists": "model_STDP_+10_ms_ICI_trial",
     "negative pairing + DA + PKA inhibitors": "model_STDP_-20_ms_DA_pre_blocked_PKA_trial",
     "negative pairing + ISO": "model_STDP_-20_ms_ISO_pre_trial",
+    "ISO+HFS":"../paradimgs_for_signature_tuning/model_ISO_bath_HFS_trial",
+    "LFS":"../paradimgs_for_signature_tuning/model_LFS_trial",
     }
 
 species = {"CaMKII": [ "CKpCaMCa4", "CKp", #"CKCaMCa4",
@@ -110,15 +116,16 @@ if __name__ == "__main__":
     keys = ["positive pairing",
             "negative pairing + DA",
             "negative pairing + ISO",
+            "ISO+HFS",
             ]
     
     fig1, ax1 = plt.subplots(len(endings)-1,
                              len(evaluated_species),
                              figsize =(5*len(endings),
-                                       5*(1+len(evaluated_species))))
+                                       5*(len(evaluated_species)-3)))
     fig2, ax2 = plt.subplots(len(receptors)//2, 2,
-                             figsize =(5*len(receptors),
-                                       5*2))
+                             figsize =(2*len(receptors),
+                                       2))
 
     max_values = {specie:[] for specie in evaluated_species}
     min_values = {specie:[] for specie in evaluated_species}
@@ -156,7 +163,7 @@ if __name__ == "__main__":
                                     color=colors[key])
 
     for j, ending in enumerate(endings[:-1]):
-        ax1[j][0].set_ylabel(ending[:-4]+"concentration (nM)")
+        ax1[j][0].set_ylabel(ending[:-4]+" concentration (nM)")
     for i, specie in enumerate(evaluated_species):
         ax1[1][i].set_xlabel("time (s)")
 
@@ -169,7 +176,6 @@ if __name__ == "__main__":
     for idx, specie in enumerate(receptors):
         ax2[idx].set_title(specie)
     fig1.legend(loc=7)
-    fig2.legend(loc=7)
     fig1.savefig("Kinases.png", format="png",
                  bbox_inches='tight', transparent=True, pad_inches=0.1)
     fig2.savefig("Receptor_phosphorylation.png", format="png",

@@ -116,14 +116,14 @@ def read_in_data(filename, e_species):#basal_fname="../model_start_trial"):
         
         
 if __name__ == "__main__":
-    keys = [ "HFS", "spaced", "ISO+LFS",  "t-LTP", "t-LTD",]
+    keys = [ "HFS", "spaced", "ISO+LFS",  "t-LTP"]
     fig1, ax1 = plt.subplots(len(endings)-1,
                              len(evaluated_species),
                              figsize =(5*len(endings),
-                                       5*(1+len(evaluated_species))))
+                                       5*(len(evaluated_species)-3)))
     fig2, ax2 = plt.subplots(len(receptors)//2, 2,
-                             figsize =(5*len(receptors),
-                                       5*2))
+                             figsize =(2*len(receptors),
+                                       2))
 
     max_values = {specie:[] for specie in evaluated_species}
     min_values = {specie:[] for specie in evaluated_species}
