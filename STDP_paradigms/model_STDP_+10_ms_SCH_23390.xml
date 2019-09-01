@@ -4,7 +4,7 @@
 -	 reaction data brought in from other files --> 
 
     <xi:include href="../Rxn_SCH_23390.xml" />
-    <xi:include href="../morph_dend_0.2um_0.1_diameter_with_spine_and_injection_spines.xml" />
+    <xi:include href="../morph_dend_single_spine.xml" />
     <xi:include href="../IC_SCH_23390.xml" />       
     <xi:include href="../stimulations/STDP_+10_ms_ICI.xml" />
     <!--2D means the morphology is interpreted like a flatworm, 3D for
