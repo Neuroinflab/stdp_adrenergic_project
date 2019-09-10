@@ -11,22 +11,22 @@ data567 = []
 data831 = []
 data845 = []
 
-def get_specie_index(header1, species_1):
-    return [header1.index(specie) for specie in species_1]
+def get_specie_index(header1, which_s):
+    return [header1.index(specie) for specie in header1
+            if which_s in specie]
 
-for fname in fname_list:
+for i, fname in enumerate(fname_list):
     f = open(fname)
     header = f.readline().split()
     data = np.loadtxt(f)
-    idx_567 = get_specie_index(header, species_567)
-    idx_831 = get_specie_index(header, species_831)
-    idx_845 = get_specie_index(header, species_845)
-    for idx in idx_567:
-        data567.append(data[:, idx])
-    for idx in idx_831:
-        data831.append(data[:, idx])
-    for idx in idx_845:
-        data845.append(data[:, idx])
+    idx_567 = get_specie_index(header, "567")
+    idx_831 = get_specie_index(header, "831")
+    idx_845 = get_specie_index(header, "845")
+
+    data567.append(data[:, idx_567].sum(axis=1))
+    data831.append(data[:, idx_831].sum(axis=1))
+    data845.append(data[:, idx_845].sum(axis=1))
+    
 
 print("845", np.array(data845).mean())    
 print("831", np.array(data831).mean())
