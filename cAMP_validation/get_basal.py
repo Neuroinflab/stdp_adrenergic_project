@@ -14,7 +14,7 @@ data845 = []
 def get_specie_index(header1, which_s):
     return [header1.index(specie) for specie in header1
             if which_s in specie]
-
+mini = 100000
 for i, fname in enumerate(fname_list):
     f = open(fname)
     header = f.readline().split()
@@ -26,11 +26,15 @@ for i, fname in enumerate(fname_list):
     data567.append(data[:, idx_567].sum(axis=1))
     data831.append(data[:, idx_831].sum(axis=1))
     data845.append(data[:, idx_845].sum(axis=1))
-    
+    if mini > data.shape[0]:
+        mini = data.shape[0]
 
-print("845", np.array(data845).mean())    
-print("831", np.array(data831).mean())
-print("567", np.array(data567).mean())
+new_data845 = [data[:mini] for data in data845]
+new_data831 = [data[:mini] for data in data831]
+new_data567 = [data[:mini] for data in data567]
+print("845", np.array(new_data845).mean())    
+print("831", np.array(new_data831).mean())
+print("567", np.array(new_data567).mean())
 
     
 
