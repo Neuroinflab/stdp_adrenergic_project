@@ -63,9 +63,9 @@
   <ConcentrationSet region="head">
     <NanoMolarity specieID="Leak" value="500"/>
     <NanoMolarity specieID="CaOutLeak" value="2000"/>
-    <NanoMolarity specieID="pmca" value="560"/>
+    <NanoMolarity specieID="pmca" value="760"/>
     <NanoMolarity specieID="pmcaCa" value="120"/>
-    <NanoMolarity specieID="ncx" value="12980"/>
+    <NanoMolarity specieID="ncx" value="14980"/>
     <NanoMolarity specieID="ncxCa" value="120"/>
     
     <NanoMolarity specieID="bAR" value="200"/> <!--bAR-->
@@ -151,20 +151,14 @@
     <NanoMolarity specieID="GluR1_S845_S831" value="0"/>
     <NanoMolarity specieID="GluR1_S845_S831_PP2B" value="0"/>
     <NanoMolarity specieID="GluR1_S845_S831_PP1" value="0"/>
-    <NanoMolarity specieID="Leak" value="500"/>
-    <NanoMolarity specieID="CaOutLeak" value="2000"/>
-    <NanoMolarity specieID="pmca" value="560"/>
-    <NanoMolarity specieID="pmcaCa" value="220"/>
-    <NanoMolarity specieID="ncx" value="12980"/>
-    <NanoMolarity specieID="ncxCa" value="120"/>
-  </ConcentrationSet>
+   </ConcentrationSet>
 
   <ConcentrationSet region="neck">
     <NanoMolarity specieID="Leak" value="500"/>
     <NanoMolarity specieID="CaOutLeak" value="2000"/>
-    <NanoMolarity specieID="pmca" value="560"/>
+    <NanoMolarity specieID="pmca" value="660"/>
     <NanoMolarity specieID="pmcaCa" value="220"/>
-    <NanoMolarity specieID="ncx" value="12980"/>
+    <NanoMolarity specieID="ncx" value="14980"/>
     <NanoMolarity specieID="ncxCa" value="120"/>
   </ConcentrationSet>
 
