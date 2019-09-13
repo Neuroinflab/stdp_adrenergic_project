@@ -6,12 +6,6 @@
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="159982"/>
     <NanoMolarity specieID="CalbinC" value="18"/>
-    <!-- membrane molecules -->
-    <NanoMolarity specieID="Leak"         value="0"/>
-    <NanoMolarity specieID="pmca"         value="0"/>
-    <NanoMolarity specieID="pmcaCa"       value="0"/>
-    <NanoMolarity specieID="ncx"          value="0"/>
-    <NanoMolarity specieID="ncxCa"        value="0"/>
     
     <NanoMolarity specieID="ISO" value="9"/> <!--norepinephrine-->
     <NanoMolarity specieID="ISOOut" value="2000000"/>
@@ -63,9 +57,9 @@
   <ConcentrationSet region="head">
     <NanoMolarity specieID="Leak" value="500"/>
     <NanoMolarity specieID="CaOutLeak" value="2000"/>
-    <NanoMolarity specieID="pmca" value="760"/>
+    <NanoMolarity specieID="pmca" value="660"/>
     <NanoMolarity specieID="pmcaCa" value="120"/>
-    <NanoMolarity specieID="ncx" value="14980"/>
+    <NanoMolarity specieID="ncx" value="12980"/>
     <NanoMolarity specieID="ncxCa" value="120"/>
     
     <NanoMolarity specieID="bAR" value="200"/> <!--bAR-->
@@ -156,9 +150,9 @@
   <ConcentrationSet region="neck">
     <NanoMolarity specieID="Leak" value="500"/>
     <NanoMolarity specieID="CaOutLeak" value="2000"/>
-    <NanoMolarity specieID="pmca" value="660"/>
+    <NanoMolarity specieID="pmca" value="560"/>
     <NanoMolarity specieID="pmcaCa" value="220"/>
-    <NanoMolarity specieID="ncx" value="14980"/>
+    <NanoMolarity specieID="ncx" value="12980"/>
     <NanoMolarity specieID="ncxCa" value="120"/>
   </ConcentrationSet>
 
