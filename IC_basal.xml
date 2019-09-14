@@ -3,6 +3,7 @@
     <NanoMolarity specieID="Ca" value="75"/>
     <NanoMolarity specieID="CaOut" value="2000000"/>
     <NanoMolarity specieID="CaOutLeak"    value="0"/>
+
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="159982"/>
     <NanoMolarity specieID="CalbinC" value="18"/>
@@ -51,12 +52,12 @@
     <NanoMolarity specieID="PKAc_PDE4_cAMP" value="0"/>
     <NanoMolarity specieID="PKAcPDE4" value="0"/>
     <NanoMolarity specieID="PDE4cAMP" value="0"/>
-    <NanoMolarity specieID="PDE4" value="1500"/>
+    <NanoMolarity specieID="PDE4" value="1600"/>
     <NanoMolarity specieID="pPDE4" value="400"/>
   </ConcentrationSet>
   <ConcentrationSet region="head">
     <NanoMolarity specieID="Leak" value="500"/>
-    <NanoMolarity specieID="CaOutLeak" value="2000"/>
+    <NanoMolarity specieID="CaOutLeak" value="2500"/>
     <NanoMolarity specieID="pmca" value="660"/>
     <NanoMolarity specieID="pmcaCa" value="120"/>
     <NanoMolarity specieID="ncx" value="12980"/>
@@ -149,7 +150,7 @@
 
   <ConcentrationSet region="neck">
     <NanoMolarity specieID="Leak" value="500"/>
-    <NanoMolarity specieID="CaOutLeak" value="2000"/>
+    <NanoMolarity specieID="CaOutLeak" value="2500"/>
     <NanoMolarity specieID="pmca" value="560"/>
     <NanoMolarity specieID="pmcaCa" value="220"/>
     <NanoMolarity specieID="ncx" value="12980"/>
