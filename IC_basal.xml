@@ -36,8 +36,8 @@
     <NanoMolarity specieID="PP2B" value="0"/>
     <NanoMolarity specieID="CK" value="23050"/>
     <NanoMolarity specieID="CKCaMCa4" value="70"/>
-    <NanoMolarity specieID="CKpCaMCa4" value="150"/>
-    <NanoMolarity specieID="CKp" value="20"/>
+    <NanoMolarity specieID="CKpCaMCa4" value="160"/>
+    <NanoMolarity specieID="CKp" value="10"/>
     <NanoMolarity specieID="CKpPP1" value="0"/>
  
     <NanoMolarity specieID="PKAc" value="0"/> <!--PP1 conc 1.62 muM-->
@@ -52,8 +52,8 @@
     <NanoMolarity specieID="PKAc_PDE4_cAMP" value="0"/>
     <NanoMolarity specieID="PKAcPDE4" value="0"/>
     <NanoMolarity specieID="PDE4cAMP" value="0"/>
-    <NanoMolarity specieID="PDE4" value="1600"/>
-    <NanoMolarity specieID="pPDE4" value="400"/>
+    <NanoMolarity specieID="PDE4" value="1500"/>
+    <NanoMolarity specieID="pPDE4" value="500"/>
   </ConcentrationSet>
   <ConcentrationSet region="head">
     <NanoMolarity specieID="Leak" value="500"/>
