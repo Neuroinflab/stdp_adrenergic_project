@@ -5,7 +5,7 @@
 
    <SpineType id="spineA">
 	<Section width="0.2" at="0.0" regionClass="neck"/>
-	<Section width="0.2" at="0.2" regionClass="neck"/>
+	<Section width="0.2" at="0.8" regionClass="neck"/>
 	<Section width="0.2" at="1.0" regionClass="head"/>
 	<Section width="0.6" at="1.1" regionClass="head"/>  
 	<Section width="0.6" at="1.2" regionClass="PSD"/>
