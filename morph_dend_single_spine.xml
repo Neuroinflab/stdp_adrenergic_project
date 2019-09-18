@@ -17,11 +17,11 @@
 <!--PointI as in point of injection-->
     <!-- lengthDensity means you set the number per micron along the segment -->
 
-    <SpineAllocation id="sa1" spineType="spineA" region="dendrite" lengthDensity="0.4"/>
+    <SpineAllocation id="sa1" spineType="spineA" region="dendrite" lengthDensity="0.3"/>
 
     <Segment id="seg1" region="dendrite">
 	<start x="1.0" y="1.0" z="0.0" r="0.3"/>
-	<end x="3.0" y="1.0" z="0.0" r="0.3"/>
+	<end x="4.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
 
 
