@@ -9,7 +9,7 @@
 <InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
         <onset>300000</onset>
 	<duration>1000000</duration>
-	<rate>0.07</rate>
+	<rate>0.1</rate>
         
         <end>1200000</end> 
        
@@ -18,7 +18,7 @@
 <InjectionStim specieID="ISOIbuf" injectionSite="dendrite:submembrane">
         <onset>300000</onset>
 	<duration>10000000</duration>
-	<rate>.4</rate>
+	<rate>.6</rate>
         <end>1200000</end> 
        
   </InjectionStim>
