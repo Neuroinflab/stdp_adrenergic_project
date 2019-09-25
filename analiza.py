@@ -34,7 +34,6 @@ def get_populations(my_file, trial='trial0', output='__main__'):
 
 
 def get_all_species(My_file, output="__main__"):
-    print([s.decode('utf-8') for s in My_file['model']['output'][output]['species']])
     return [s.decode('utf-8') for s in My_file['model']['output'][output]['species']]
 
 
