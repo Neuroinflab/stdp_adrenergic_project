@@ -34,6 +34,7 @@ def get_populations(my_file, trial='trial0', output='__main__'):
 
 
 def get_all_species(My_file, output="__main__"):
+    print([s.decode('utf-8') for s in My_file['model']['output'][output]['species']])
     return [s.decode('utf-8') for s in My_file['model']['output'][output]['species']]
 
 
@@ -62,6 +63,17 @@ def get_all_submembrane_species(my_file):
                             anchored.append(name)
     return list(set(anchored))
 
+def get_output_regions(my_file):
+    root = etree.fromstring(my_file['model']['serialized_config'][0])
+    outputs = {}
+    for son in root:
+        if son.tag.endswith('OutputScheme'):
+            for grandson in son:
+                outputs[grandson.get("filename")] = grandson.get("region")
+    return outputs
+        
+def get_key(cell):
+    return cell[15].decode('utf-8') + '_' + cell[18].decode('utf-8')
 
 def region_volumes(my_file):
     grid_list = get_grid_list(my_file)
@@ -70,7 +82,8 @@ def region_volumes(my_file):
     for region in regions:
         volumes[region] = 0
     for cell in grid_list:
-        volumes[cell[15]] += float(cell[12])
+        key = get_key(cell)
+        volumes[key] += float(cell[12])
     return volumes
 
 
@@ -119,15 +132,16 @@ def get_region_indices(my_file):
     grid_list = get_grid_list(my_file)
     region_ind = {}
     for idx, cell in enumerate(grid_list):
-        if cell[15] not in region_ind:
-            region_ind[cell[15]] = []
-        region_ind[cell[15]].append(idx)
+        key = get_key(cell)
+        if key not in region_ind:
+            region_ind[key] = []
+        region_ind[key].append(idx)
     return region_ind
 
 
 def get_regions(my_file):
     grid_list = get_grid_list(my_file)
-    return sorted(list(set([grid[15] for grid in grid_list])))
+    return sorted(list(set([get_key(grid) for grid in grid_list])))
 
 
 def get_concentrations_region_list(my_file, my_list, trial, out):
@@ -180,28 +194,25 @@ def save_single_file(times, concentrations, species, fname):
     np.savetxt(fname, what_to_save, header=header, comments='')
 
 
-def save_concentrations(my_file, fname_base, trial='trial0'):
-    outs = get_outputs(my_file)
+def save_concentrations(my_file, fname_base, output, trial='trial0'):
     regions = get_regions(my_file)
-    for out in outs:
-        times = get_times(my_file, trial=trial, output=out)
-        species = get_all_species(my_file, output=out)
-        concentrations = get_concentrations(my_file, trial, out)
-        if out == '__main__':
-            add = ''
-        else:
-            add = out+'_'
-        for i, region in enumerate(regions):
-            region_name = region.decode("utf-8")
-            fname = '%s_%s%s_%s.txt' % (fname_base, add, trial, region_name)
-            save_single_file(times, concentrations[:, i, :], species, fname)
-        if len(regions) > 1:
-            totals = get_concentrations_region_list(my_file, regions, trial, out)
-            save_single_file(times, totals, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'total'))
-
-            if b'PSD' in regions or b'head' in regions or b'neck' in regions:
-                spine = get_concentrations_region_list(my_file, [b'PSD', b'head', b'neck'], trial, out)
-                save_single_file(times, spine, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'spine'))
+    times = get_times(my_file, trial=trial, output=output)
+    species = get_all_species(my_file, output=output)
+    concentrations = get_concentrations(my_file, trial, output)
+    if output == '__main__':
+        add = ''
+    else:
+        add = output + '_'
+    for i, region in enumerate(regions):
+        fname = '%s_%s%s_%s.txt' % (fname_base, add, trial, region)
+        save_single_file(times, concentrations[:, i, :], species, fname)
+    if len(regions) > 1:
+        totals = get_concentrations_region_list(my_file, regions, trial, output)
+        save_single_file(times, totals, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'total'))
+        
+        if b'PSD' in regions or b'head' in regions or b'neck' in regions:
+            spine = get_concentrations_region_list(my_file, [b'PSD', b'head', b'neck'], trial, output)
+            save_single_file(times, spine, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'spine'))
 
 
 if __name__ == '__main__':
@@ -209,8 +220,13 @@ if __name__ == '__main__':
         sys.exit('No filename given')
     for fname in sys.argv[1:]:
         my_file = h5py.File(fname, 'r')
+        output_dict = get_output_regions(my_file)
         for trial in my_file.keys():
             if trial != 'model':
-                save_concentrations(my_file, fname[:-3], trial=trial)
+                save_concentrations(my_file, fname[:-3], '__main__', trial=trial)
+                for out in output_dict:
+                    if output_dict[out] is None:
+                        save_concentrations(my_file, fname[:-3], out, trial=trial)
+                    
     print('Done')
 
