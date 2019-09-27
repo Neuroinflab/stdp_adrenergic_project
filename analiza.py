@@ -137,6 +137,22 @@ def get_region_indices(my_file):
         region_ind[key].append(idx)
     return region_ind
 
+def get_spines(regions):
+    out = {}
+    for region in regions:
+        try:
+            end = region.split("_")[1]
+        except IndexError:
+            continue
+        if end == "":
+            continue
+
+        if end in out:
+            out[end].append(region)
+        else:
+            out[end] = [region]
+    return out
+
 
 def get_regions(my_file):
     grid_list = get_grid_list(my_file)
@@ -165,6 +181,7 @@ def get_concentrations(my_file, trial, out):
     concentrations = np.zeros((data.shape[0], len(regions), len(species)))
     numbers = np.zeros_like(concentrations)
     region_indices = get_region_indices(my_file)
+
     for i, reg in enumerate(regions):
         # get numbers
         numbers[:, i, :] = data[:, region_indices[reg], :].sum(axis=1)
@@ -208,10 +225,14 @@ def save_concentrations(my_file, fname_base, output, trial='trial0'):
     if len(regions) > 1:
         totals = get_concentrations_region_list(my_file, regions, trial, output)
         save_single_file(times, totals, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'total'))
-        
-        if b'PSD' in regions or b'head' in regions or b'neck' in regions:
-            spine = get_concentrations_region_list(my_file, [b'PSD', b'head', b'neck'], trial, output)
-            save_single_file(times, spine, species, '%s_%s%s_%s.txt' % (fname_base, add, trial, 'spine'))
+        spines_dict = get_spines(regions)
+        for spine_name in spines_dict.keys():
+            spine_reg = spines_dict[spine_name]
+            spine = get_concentrations_region_list(my_file, spine_reg,
+                                                   trial, output)
+            save_single_file(times, spine, species,
+                             '%s_%s%s_%s.txt' % (fname_base, add,
+                                                 trial, spine_name))
 
 
 if __name__ == '__main__':
