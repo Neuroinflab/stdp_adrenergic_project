@@ -36,31 +36,41 @@
 </InjectionStim>
 <!-- Train I -->
 
-<InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>100000</onset>
 	<duration>3</duration>
-	<rate>222.77</rate>
+	<rate>111.77</rate>
         <period>200</period>
         <end>101000</end> 
        
 </InjectionStim>
 
-<InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
+<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
+        <onset>100050</onset>
+	<duration>3</duration>
+	<rate>100</rate>
+        <period>200</period>
+        <end>101000</end>
+       
+  </InjectionStim>
+
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>101000</onset>
 	<duration>3</duration>
-	<rate>111</rate>
+	<rate>55</rate>
         <period>200</period>
         <end>280000</end> 
        
 </InjectionStim>
-<!-- <InjectionStim specieID="CaB" injectionSite="sa1[0].pointA"> -->
-<!--         <onset>100050</onset> -->
-<!-- 	<duration>30</duration> -->
-<!-- 	<rate>7.6</rate> -->
-<!--         <period>200</period> -->
-<!--         <end>280100</end>  -->
+<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
+        <onset>101050</onset>
+	<duration>3</duration>
+	<rate>50</rate>
+        <period>200</period>
+        <end>280100</end>
        
-<!--   </InjectionStim> -->
+  </InjectionStim>
 
 
 </StimulationSet>
