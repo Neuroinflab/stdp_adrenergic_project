@@ -21,8 +21,8 @@ lists = [list1, list2]
 titles = ["cAMP activity",
           "NMDAR phosphorylation"]
 
-fnames = ["cAMP_activity.svg",
-          "NMDAR_phosphorylation.svg"]
+fnames = ["cAMP_activity.png",
+          "NMDAR_phosphorylation.png"]
 
 colors = ["dodgerblue", "forestgreen","violet", "k"]
 specie = ["Epac1cAMP", "pNMDAR"]
@@ -82,7 +82,7 @@ def make_data(f_list, specie, control=False):
 
 
 if __name__ == '__main__':
-
+    print(lists)
     for i, par in enumerate(lists):
         title = titles[i]
         fig, ax = plt.subplots(1, 1)
