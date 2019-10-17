@@ -131,7 +131,7 @@ kdiffunit="mu2/s" />
 <!-- 4 Ca bound Calmodulin-->
 <!-- -->
 
-<Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0"
+<Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="3"
 kdiffunit="mu2/s" />
 
 
@@ -153,24 +153,6 @@ kdiffunit="mu2/s" />
 kdiffunit="mu2/s" />
 <!-- AddRxns -->
 
-<!--NMDARs-->
-<Specie name="NMDAR" id="NMDAR" kdiff="0" kdiffunit="mu2/s" />
-<Specie name="PKAcNMDAR" id="PKAcNMDAR" kdiff="0" kdiffunit="mu2/s" />
-<Specie name="pNMDAR" id="pNMDAR" kdiff="0" kdiffunit="mu2/s" />
-<Specie name="PP2BpNMDAR" id="PP2BpNMDAR" kdiff="0" kdiffunit="mu2/s" />
-<Specie name="PP1pNMDAR" id="PP1pNMDAR" kdiff="0" kdiffunit="mu2/s" />
-
-<!--AMPARs-->
-<Specie name="GluR1" id="GluR1" kdiff="0" kdiffunit="mu2/s" />
-<Specie name="GluR1_S845" id="GluR1_S845" kdiff="0"
-	kdiffunit="mu2/s" />
-<Specie name="GluR1_PKAc" id="GluR1_PKAc" kdiff="0"
-	kdiffunit="mu2/s" />
-
-<Specie name="GluR1_S845_PP2B" id="GluR1_S845_PP2B" kdiff="0"
-	kdiffunit="mu2/s" />
-<Specie name="GluR1_S845_PP1" id="GluR1_S845_PP1" kdiff="0"
-	kdiffunit="mu2/s" />
 
 
 <Specie name="PDE4" id="PDE4" kdiff="0" kdiffunit="mu2/s" />
@@ -1044,126 +1026,6 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
-<!-- NMDA receptor is phosporylation by PKAc -->
-<!-- And also dephosphorylation by  PP2B -->
-<!--For now, rate constants are adopted from Upi Bhalla's model of AMPARs-->
-<!--1)affinity of phospho_GluR1 by PKAc is 7.5 uM; k1=0.074072 #^-1s^-1, k2=24s^-1, k3=6s^-1;kf=0.00402 nM^-1s^-1 -->
-<!--1) NMDAR + PKAc        <-> NMDAR_PKAc -->
-<Reaction name="NMDAR_PKAc_bind" id="NMDAR_PKAc_bind">
-  <Reactant specieID="NMDAR" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAcNMDAR" />
-  <forwardRate>0.0242e-3</forwardRate>
-  <reverseRate>720e-3</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-
-<!-- NMDAR_PKAc -> pNMDAR + PKAc -->
-<Reaction name="pNMDAR_PKAc_diss" id="pNMDAR_PKAc_diss">
-  <Reactant specieID="PKAcNMDAR" />
-  <Product specieID="pNMDAR" />
-  <Product specieID="PKAc" />
-  <forwardRate>6.e-3</forwardRate>
-  <Q10>0.2</Q10>
-</Reaction>
-
-<!--12) pNMDAR + PP2B
-        <-> PP2BpNMDAR -->
-<Reaction name="pNMDAR_PP2B_bind" id="pNMDAR_PP2B_bind">
-  <Reactant specieID="pNMDAR" />
-  <Reactant specieID="PP2BCaMCa4" />
-  <Product specieID="PP2BpNMDAR" />
-  <forwardRate>.6e-3</forwardRate>
-  <reverseRate>160e-3</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- PP2BpNMDAR -> NMDAR + PP2B -->
-<Reaction name="pNMDAR_PP2B_diss" id="pNMDAR_PP2B_diss">
-  <Reactant specieID="PP2BpNMDAR" />
-  <Product specieID="NMDAR" />
-  <Product specieID="PP2BCaMCa4" />
-  <forwardRate>2e-3</forwardRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!--pNMDAR dephos by PP1, rate constants from Gutierrez-Arenas, Eriksson, Hellgren Kotaleski, PLoS Comp Biol 2014 -->
-<Reaction name="pNMDARPP1_bind" id="pNMDARPP1_bind">
-  <Reactant specieID="pNMDAR" />
-  <Reactant specieID="PP1" />
-  <Product specieID="PP1pNMDAR" />
-  <forwardRate>3.4e-6</forwardRate>
-  <reverseRate>1600e-3</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- PP2BpNMDAR -> NMDAR + PP2B -->
-<Reaction name="pNMDARPP1_reac" id="pNMDARPP1_reac">
-  <Reactant specieID="PP1pNMDAR" />
-  <Product specieID="NMDAR" />
-  <Product specieID="PP1" />
-  <forwardRate>2e-3</forwardRate>
-  <Q10>0.2</Q10>
-</Reaction>
-
-
-<!-- AMPA receptor is phosporylation by PKAc,PhospCaMKII -->
-<!-- And also dephosphorylation by PP1 and PP2B -->
-<!--For now, rate constants have been fitted to exp. data mostly from Coultrap et al. 2014 for CaMKII and PP1 and doi: 10.4161/cib.4.5.15890 and Yan et a 1999 (Greengard lab) -->
-<!-- S845 -->
-<!--1) GluR1 + PKAc
-    <-> GluR1_PKAc -->
-
-
-<Reaction name="GluR1_PKAc_bind" id="GluR1_PKAc_bind">
-  <Reactant specieID="GluR1" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="GluR1_PKAc" />
-  <forwardRate>0.00009e-3</forwardRate>
-  <reverseRate>0.72e-3</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- GluR1_PKAc -> GluR1_S845 + PKAc -->
-<Reaction name="GluR1_PKAc_diss" id="GluR1_PKAc_diss">
-  <Reactant specieID="GluR1_PKAc" />
-  <Product specieID="GluR1_S845" />
-  <Product specieID="PKAc" />
-  <forwardRate>6.e-3</forwardRate>
-  <Q10>0.2</Q10>
-</Reaction>
-
-<Reaction name="GluR1_S845_PP1_bind" id="GluR1_S845_PP1_bind">
-  <Reactant specieID="GluR1_S845" />
-  <Reactant specieID="PP1" />
-  <Product specieID="GluR1_S845_PP1" />
-  <forwardRate>0.0000087e-2</forwardRate>
-  <reverseRate>.68e-3</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- GluR1_S845_PP1 -> GluR1 + PP1 -->
-<Reaction name="GluR1_S845_PP1_diss" id="GluR1_S845_PP1_diss">
-  <Reactant specieID="GluR1_S845_PP1" />
-  <Product specieID="GluR1" />
-  <Product specieID="PP1" />
-  <forwardRate>0.1e-3</forwardRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<Reaction name="GluR1_S845_PP2B_bind" id="GluR1_S845_PP2B_bind">
-  <Reactant specieID="GluR1_S845" />
-  <Reactant specieID="PP2BCaMCa4" />
-  <Product specieID="GluR1_S845_PP2B" />
-  <forwardRate>0.0064e-3</forwardRate>
-  <reverseRate>.8e-3</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- GluR1_S845_PP2B -> GluR1 + PP2B -->
-<Reaction name="GluR1_S845_PP2B_diss" id="GluR1_S845_PP2B_diss">
-  <Reactant specieID="GluR1_S845_PP2B" />
-  <Product specieID="GluR1" />
-  <Product specieID="PP2BCaMCa4" />
-  <forwardRate>0.11e-3</forwardRate>
-  <Q10>0.2</Q10>
-</Reaction>
-
-
-
 <!-- PDE Part -->
 <!--1) PDE1 + CaMCa4
         <-> PDE1CaM -->

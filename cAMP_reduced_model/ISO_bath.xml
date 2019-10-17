@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StimulationSet>
+
+    <!-- the injectionSite must match a regionLabel deefined in the morphology -->
+   
+
+<!-- Train I -->
+
+<InjectionStim specieID="ISOIbuf" injectionSite="dendrite:submembrane">
+        <onset>300000</onset>
+	<duration>10000000</duration>
+	<rate>.6</rate>
+        <end>1200000</end> 
+       
+  </InjectionStim>
+
+</StimulationSet>

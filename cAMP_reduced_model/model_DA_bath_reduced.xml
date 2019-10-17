@@ -4,9 +4,9 @@
 -	 reaction data brought in from other files --> 
 
     <xi:include href="Rxn_reduced.xml" />
-    <xi:include href="../morph_dend_single_spine.xml" />
+    <xi:include href="morph_dend.xml" />
     <xi:include href="IC_reduced.xml" />
-    <xi:include href="../stimulations/dopamine_bath_10_um_2um_dendrite.xml" />
+    <xi:include href="DA_bath.xml" />
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 roundworms. The 2D case is good for testing as it is easy to visualize the
