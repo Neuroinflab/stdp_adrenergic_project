@@ -9,7 +9,7 @@
 <InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
         <onset>100000</onset>
 	<duration>1000000</duration>
-	<rate>0.07</rate>
+	<rate>0.1</rate>
         
         <end>1200000</end> 
        
@@ -18,7 +18,7 @@
 <InjectionStim specieID="ISOIbuf" injectionSite="dendrite:submembrane">
         <onset>100000</onset>
 	<duration>10000000</duration>
-	<rate>.4</rate>
+	<rate>.6</rate>
         <end>1200000</end> 
        
 </InjectionStim>
@@ -41,14 +41,44 @@
 </InjectionStim>
 <!-- Train I -->
 
-<InjectionStim specieID="CaCbuf" injectionSite="sa1[0].pointA">
-        <onset>400000</onset>
+<!-- Train I -->
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>100000</onset>
 	<duration>3</duration>
-	<rate>60</rate>
+	<rate>168</rate>
         <period>200</period>
-        <end>580000</end> 
+        <end>101000</end> 
+       
+</InjectionStim>
+
+<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
+        <onset>100050</onset>
+	<duration>3</duration>
+	<rate>150</rate>
+        <period>200</period>
+        <end>101000</end>
        
   </InjectionStim>
+
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>101000</onset>
+	<duration>3</duration>
+	<rate>82.5</rate>
+        <period>200</period>
+        <end>280000</end> 
+       
+</InjectionStim>
+<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
+        <onset>101050</onset>
+	<duration>3</duration>
+	<rate>75</rate>
+        <period>200</period>
+        <end>280100</end>
+       
+  </InjectionStim>
+
 
 
 </StimulationSet>
