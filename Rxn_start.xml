@@ -202,6 +202,8 @@ kdiffunit="mu2/s" />
 	kdiff="0" kdiffunit="mu2/s" />
 <Specie name="GluR1_S831_PP1" id="GluR1_S831_PP1" kdiff="0"
 	kdiffunit="mu2/s" />
+<Specie name="GluR1_S845_PP1" id="GluR1_S845_PP1" kdiff="0"
+	kdiffunit="mu2/s" />
 <Specie name="GluR1_S845_PP2B" id="GluR1_S845_PP2B" kdiff="0"
 	kdiffunit="mu2/s" />
 <Specie name="GluR1_S845_S831_PP2B" id="GluR1_S845_S831_PP2B"
