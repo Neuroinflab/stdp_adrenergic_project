@@ -1431,14 +1431,14 @@ id="AC1GaiGTPCaMCa4ATP_diss">
 <Reaction name="GluR1_S845_CKCaM_bind" id="GluR1_S845_CKCaM_bind">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKCaMCa4" />
-  <Product specieID="GluR1_S845_CKCaM2" />
+  <Product specieID="GluR1_S845_CKCaM" />
   <forwardRate>16e-8</forwardRate>
   <reverseRate>0.2e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- GluR1_S845_CKCaM -> GluR1_S845_S831 + CKCaM -->
 <Reaction name="GluR1_S845_CKCaM_diss" id="GluR1_S845_CKCaM_diss">
-  <Reactant specieID="GluR1_S845_CKCaM2" />
+  <Reactant specieID="GluR1_S845_CKCaM" />
   <Product specieID="GluR1_S845_S831" />
   <Product specieID="CKCaMCa4" />
   <forwardRate>6e-3</forwardRate>
@@ -1450,7 +1450,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
 id="GluR1_S845_CKpCaM_bind">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKpCaMCa4" />
-  <Product specieID="GluR1_S845_CKpCaM2" />
+  <Product specieID="GluR1_S845_CKpCaM" />
   <forwardRate>16e-8</forwardRate>
   <reverseRate>0.5e-3</reverseRate>
   <Q10>0.2</Q10>
@@ -1458,7 +1458,7 @@ id="GluR1_S845_CKpCaM_bind">
 <!-- GluR1_S845_CKpCaM -> GluR1_S845_S831 + CKpCaM -->
 <Reaction name="GluR1_S845_CKpCaM_diss"
 id="GluR1_S845_CKpCaM_diss">
-  <Reactant specieID="GluR1_S845_CKpCaM2" />
+  <Reactant specieID="GluR1_S845_CKpCaM" />
   <Product specieID="GluR1_S845_S831" />
   <Product specieID="CKpCaMCa4" />
   <forwardRate>6e-3</forwardRate>
@@ -1469,14 +1469,14 @@ id="GluR1_S845_CKpCaM_diss">
 <Reaction name="GluR1_S845_CKp_bind" id="GluR1_S845_CKp_bind">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKp" />
-  <Product specieID="GluR1_S845_CKp2" />
+  <Product specieID="GluR1_S845_CKp" />
   <forwardRate>32e-8</forwardRate>
   <reverseRate>0.5e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- GluR1_CKp -> GluR1_S845_S831 + CKp -->
 <Reaction name="GluR1_S845_CKp_diss" id="GluR1_S845_CKp_diss">
-  <Reactant specieID="GluR1_S845_CKp2" />
+  <Reactant specieID="GluR1_S845_CKp" />
   <Product specieID="GluR1_S845_S831" />
   <Product specieID="CKp" />
   <forwardRate>6e-3</forwardRate>
