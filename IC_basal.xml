@@ -25,7 +25,7 @@
     <NanoMolarity specieID="PDE1CaMCa4" value="600"/>
     <NanoMolarity specieID="PDE1CaMCa4cAMP" value="0"/>
 
-    <NanoMolarity specieID="CaM" value="12200"/>
+    <NanoMolarity specieID="CaM" value="12000"/>
     <NanoMolarity specieID="CaMCa2" value="200"/>
     <NanoMolarity specieID="CaMCa4" value="3"/>
     <NanoMolarity specieID="NgCaM" value="17992"/>
@@ -200,9 +200,9 @@
     <PicoSD specieID="GaiGDP" value="0"/>
     <PicoSD specieID="Gibg" value="0"/>
 
-    <PicoSD specieID="AC1" value="1700"/>
-    <PicoSD specieID="AC1CaMCa4" value="0"/>
-    <PicoSD specieID="AC1CaMCa4ATP" value="32"/>
+    <PicoSD specieID="AC1" value="1500"/>
+    <PicoSD specieID="AC1CaMCa4" value="25"/>
+    <PicoSD specieID="AC1CaMCa4ATP" value="200"/>
     <PicoSD specieID="AC1GasGTP" value="0"/>
     <PicoSD specieID="AC1GasGTPCaMCa4" value="0"/>
     <PicoSD specieID="AC1GasGTPCaMCa4ATP" value="0"/>
