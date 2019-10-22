@@ -28,8 +28,8 @@
     <NanoMolarity specieID="CaM" value="12000"/>
     <NanoMolarity specieID="CaMCa2" value="200"/>
     <NanoMolarity specieID="CaMCa4" value="3"/>
-    <NanoMolarity specieID="NgCaM" value="17992"/>
-    <NanoMolarity specieID="Ng" value="2139"/>
+    <NanoMolarity specieID="NgCaM" value="18250"/>
+    <NanoMolarity specieID="Ng" value="2400"/>
     <NanoMolarity specieID="PP2BCaM" value="2473"/>
     <NanoMolarity specieID="PP2BCaMCa2" value="429"/>
     <NanoMolarity specieID="PP2BCaMCa4" value="3"/>
