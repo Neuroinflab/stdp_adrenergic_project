@@ -1258,7 +1258,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="PKAcNMDAR" />
   <Product specieID="pNMDAR" />
   <Product specieID="PKAc" />
-  <forwardRate>3.e-3</forwardRate>
+  <forwardRate>2.e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 
@@ -1285,8 +1285,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="pNMDAR" />
   <Reactant specieID="PP1" />
   <Product specieID="PP1pNMDAR" />
-  <forwardRate>0.0026e-3</forwardRate>
-  <reverseRate>24e-3</reverseRate>
+  <forwardRate>0.017e-3</forwardRate>
+  <reverseRate>8e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- PP2BpNMDAR -> NMDAR + PP2B -->
