@@ -546,7 +546,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="bAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcbAR" />
-  <forwardRate>0.0003e-05</forwardRate>
+  <forwardRate>0.0004e-05</forwardRate>
   <reverseRate>44.8e-05</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
