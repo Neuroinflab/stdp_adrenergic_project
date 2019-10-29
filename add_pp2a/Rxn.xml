@@ -322,11 +322,11 @@
       <reverseRate>   0.04e-03  </reverseRate>
     </Reaction>
 
-    <!--Dephos of pPP2A by PP2A -->
-    <!-- PP2ApPP2A -> PP2A + PP2A -->
+    
     <Reaction name = "PP2ACKp_reac" id="PP2ACKp_reac">
       <Reactant specieID="PP2ACKp"           />
-      <Product  specieID="PP2A"  />
+      <Product  specieID="pPP2A"  />
+      <Product  specieID="CKp"  />
       <forwardRate> 5e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
@@ -346,7 +346,8 @@
 
     <Reaction name = "PP2ACKpCaMCa4_reac" id="PP2ACKpCaMCa4_reac">
       <Reactant specieID="PP2ACKpCaMCa4"           />
-      <Product  specieID="PP2A"  />
+      <Product  specieID="pPP2A"  />
+      <Reactant specieID="CKpCaMCa4"           />
       <forwardRate> 5e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
@@ -366,6 +367,7 @@
     <Reaction name = "PP2ACKCaMCa4_reac" id="PP2ACKCaMCa4_reac">
       <Reactant specieID="PP2ACKCaMCa4"           />
       <Product  specieID="PP2A"  />
+      <Product  specieID="CKCaMCa4"  />
       <forwardRate> 5e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
