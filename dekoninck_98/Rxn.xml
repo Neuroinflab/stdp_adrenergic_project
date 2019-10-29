@@ -6,8 +6,6 @@
   <!-- CaBuf -->
   <Specie name="CaBuf" id="CaBuf" kdiff="11" kdiffunit="mu2/s"/>
   <!-- PP1 -->
-  <Specie name="PP1" id="PP1" kdiff="0" kdiffunit="mu2/s"/>
-  <!-- CaM -->
   <Specie name="CaM" id="CaM" kdiff="11" kdiffunit="mu2/s"/> <!--Calmodulin-->
   <Specie name="CaMCa2" id="CaMCa2" kdiff="11" kdiffunit="mu2/s"/> <!-- 2 Ca bound Calmodulin-->
   <Specie name="CaMCa4" id="CaMCa4" kdiff="11" kdiffunit="mu2/s"/> <!-- 4 Ca bound Calmodulin-->
@@ -16,8 +14,6 @@
 <Specie name="CKCaMCa4"       id="CKCaMCa4"      kdiff="3.6"   kdiffunit="mu2/s"/>
 <Specie name="CKpCaMCa4"      id="CKpCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
 <Specie name="CKp"            id="CKp"           kdiff="3.6"   kdiffunit="mu2/s"/>
-<Specie name="CKpPP1"         id="CKpPP1"        kdiff="0"     kdiffunit="mu2/s"/>
-<Specie name="CKpCaMCa4PP1"         id="CKpCaMCa4PP1"        kdiff="0"     kdiffunit="mu2/s"/>
 <!-- Constant Cam    -->
     <Reaction name = "Cam_buffer" id="Cam_Buffer">
         <Reactant specieID="CaM"/>
@@ -118,48 +114,6 @@
         <forwardRate> 0.001e-3 </forwardRate>
         <reverseRate> 0.02e-3   </reverseRate>
         <Q10>    0.2            </Q10>
-    </Reaction>
-  <!-- CKp + PP1 <-> CKpPP1 -->
-    <Reaction name = "CKp bind" id="CKp_bind">
-        <Reactant specieID="CKp"                    />
-        <Reactant specieID="PP1"                    />
-        <Product  specieID="CKpPP1"                 />
-
-        <forwardRate> 0.009e-06     </forwardRate>
-        <reverseRate> 0.08e-03   </reverseRate>
-        <Q10>     0.2             </Q10>
-    </Reaction>
-
-<!-- CKpPP1 -> PP1 + CK -->
-    <Reaction name = "CKpPP1 reac" id="CKpPP1_reac">
-        <Reactant specieID="CKpPP1"                 />
-        <Product specieID="PP1"                     />
-        <Product specieID="CK"                      />
-
-        <forwardRate> 0.01e-03   </forwardRate>
-        <reverseRate> 0.0         </reverseRate>
-        <Q10>    0.2              </Q10>
-    </Reaction>
-  <!-- CKp + PP1 <-> CKpPP1 -->
-   <Reaction name = "CKpCaMCa4PP1_bind" id="CKpCaMCa4PP1_bind">
-        <Reactant specieID="CKpCaMCa4"                    />
-        <Reactant specieID="PP1"                    />
-        <Product  specieID="CKpCaMCa4PP1"                 />
-
-        <forwardRate> 0.00225e-06     </forwardRate>
-        <reverseRate> 0.09e-03   </reverseRate>
-        <Q10>     0.2             </Q10>
-    </Reaction>
-
-<!-- CKpPP1 -> PP1 + CK -->
-   <Reaction name = "CKpCaMCa4PP1_ reac" id="CKpCaMCa4PP1_reac">
-        <Reactant specieID="CKpCaMCa4PP1"                 />
-        <Product specieID="PP1"                     />
-        <Product specieID="CKCaMCa4"                      />
-
-        <forwardRate> 0.0045e-03   </forwardRate>
-        <reverseRate> 0.0         </reverseRate>
-        <Q10>    0.2              </Q10>
     </Reaction>
  
 </ReactionScheme>

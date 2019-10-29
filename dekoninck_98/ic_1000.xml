@@ -4,7 +4,6 @@
         <NanoMolarity specieID="CK" value="20000"/> <!-- 15uM (?) - deKoninck 1998 / 20uM - Avrama /  90.909nM - Kanaseki et al. 1991 -->
 	<NanoMolarity specieID="CaM"       value="100"/>
        	<NanoMolarity specieID="CamOut"       value="100000"/>
-	<NanoMolarity specieID="PP1"       value="1500"/>
     </ConcentrationSet>
 
 </InitialConditions>
