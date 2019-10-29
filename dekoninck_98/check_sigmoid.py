@@ -3,10 +3,10 @@ from __future__ import print_function, division
 import matplotlib.pyplot as plt
 import numpy as np
 flist = [
-    "model_start_100_trial0_dend.txt",
-    "model_start_300_trial0_dend.txt",
-    "model_start_1000_trial0_dend.txt",
-    "model_start_5000_trial0_dend.txt",
+    "model_start_100_trial0_dend_.txt",
+    "model_start_300_trial0_dend_.txt",
+    "model_start_1000_trial0_dend_.txt",
+    "model_start_5000_trial0_dend_.txt",
     ]
 
 if __name__ == "__main__":
