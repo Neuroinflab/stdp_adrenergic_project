@@ -278,7 +278,7 @@
       <Reactant specieID="PP2A"                    />
       <Product  specieID="CKpCaMCa4PP2A"           />
       
-      <forwardRate> 0.016e-06  </forwardRate>
+      <forwardRate> 0.0016e-06  </forwardRate>
       <reverseRate>   0.08e-03  </reverseRate>
     </Reaction>
 
@@ -347,7 +347,7 @@
     <Reaction name = "PP2ACKpCaMCa4_reac" id="PP2ACKpCaMCa4_reac">
       <Reactant specieID="PP2ACKpCaMCa4"           />
       <Product  specieID="pPP2A"  />
-      <Reactant specieID="CKpCaMCa4"           />
+      <Product specieID="CKpCaMCa4"           />
       <forwardRate> 5e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
@@ -366,7 +366,7 @@
 
     <Reaction name = "PP2ACKCaMCa4_reac" id="PP2ACKCaMCa4_reac">
       <Reactant specieID="PP2ACKCaMCa4"           />
-      <Product  specieID="PP2A"  />
+      <Product  specieID="pPP2A"  />
       <Product  specieID="CKCaMCa4"  />
       <forwardRate> 5e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
