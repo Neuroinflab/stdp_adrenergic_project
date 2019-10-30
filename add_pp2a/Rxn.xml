@@ -318,8 +318,8 @@
       <Reactant specieID="PP2A"                    />
       <Product  specieID="PP2ACKp"           />
       
-      <forwardRate> 0.4e-06  </forwardRate>
-      <reverseRate>   0.04e-03  </reverseRate>
+      <forwardRate> 0.4e-07  </forwardRate>
+      <reverseRate>   0.04e-04  </reverseRate>
     </Reaction>
 
     
@@ -338,8 +338,8 @@
       <Reactant specieID="PP2A"                    />
       <Product  specieID="PP2ACKpCaMCa4"           />
       
-      <forwardRate> 0.4e-06  </forwardRate>
-      <reverseRate>   0.04e-03  </reverseRate>
+      <forwardRate> 0.4e-07  </forwardRate>
+      <reverseRate>   0.04e-04  </reverseRate>
     </Reaction>
 
 
@@ -358,8 +358,8 @@
       <Reactant specieID="PP2A"                    />
       <Product  specieID="PP2ACKCaMCa4"           />
       
-      <forwardRate> 0.4e-06  </forwardRate>
-      <reverseRate>   0.04e-03  </reverseRate>
+      <forwardRate> 0.4e-07  </forwardRate>
+      <reverseRate>   0.04e-04  </reverseRate>
     </Reaction>
 
 
