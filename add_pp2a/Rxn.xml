@@ -40,6 +40,9 @@
   <Specie name="CKpCaMCa4PP2A"      id="CKpCaMCa4PP2A"     kdiff="3.6"   kdiffunit="mu2/s"/>
   <Specie name="CKpPP2A"            id="CKpPP2A"           kdiff="3.6"   kdiffunit="mu2/s"/>
 
+   <Specie name="CKpCaMCa4pPP2A"      id="CKpCaMCa4pPP2A"     kdiff="3.6"   kdiffunit="mu2/s"/>
+  <Specie name="CKppPP2A"            id="CKppPP2A"           kdiff="3.6"   kdiffunit="mu2/s"/>
+
   <Specie name="PP2ACKpCaMCa4"      id="PP2ACKpCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
   <Specie name="PP2ACKCaMCa4"      id="PP2ACKCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
   <Specie name="PP2ACKp"            id="PP2ACKp"           kdiff="3.6"   kdiffunit="mu2/s"/>
@@ -293,6 +296,51 @@
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
+
+ <!-- CKp + PP2A <-> CKpPP2A -->
+    <Reaction name = "CKp bind" id="CKp_bind">
+        <Reactant specieID="CKp"                    />
+        <Reactant specieID="pPP2A"                    />
+        <Product  specieID="CKppPP2A"                 />
+        <forwardRate> 0.08e-06     </forwardRate>
+        <reverseRate>  0.08e-03  </reverseRate>
+        <Q10>     0.2             </Q10>
+    </Reaction>
+
+<!-- CKpPP2A -> PP2A + CK -->
+    <Reaction name = "CKpPP2A reac" id="CKpPP2A_reac">
+        <Reactant specieID="CKppPP2A"                 />
+        <Product specieID="pPP2A"                     />
+        <Product specieID="CK"                      />
+        <forwardRate> 0.01e-03   </forwardRate>
+        <reverseRate> 0.0         </reverseRate>
+        <Q10>    0.2              </Q10>
+    </Reaction>
+
+    <!-- CKpCaMCa4 + PP2A <-> CKpCaMCa4PP2A -->
+    <Reaction name = "CKpCaMCa4pPP2A_bind" id="CKpCaMpPP2A_bind">
+      <Reactant specieID="CKpCaMCa4"              />
+      <Reactant specieID="pPP2A"                    />
+      <Product  specieID="CKpCaMCa4pPP2A"           />
+      
+      <forwardRate> 0.0008e-06  </forwardRate>
+      <reverseRate>   0.08e-03  </reverseRate>
+    </Reaction>
+
+    <!--Dephos of CKpCaMCa4 by PP2A -->
+    <!-- CKpCaMCa4PP2A -> PP2A + CKCaMCa4 -->
+    <Reaction name = "CKpCaMCa4pPP2A_reac" id="CKpCaMpPP2A_reac">
+      <Reactant specieID="CKpCaMCa4pPP2A"           />
+      <Product  specieID="pPP2A"                    />
+      <Product  specieID="CKCaMCa4"               />
+      
+      <forwardRate> 0.001e-3    </forwardRate>
+      <reverseRate> 0.0         </reverseRate>
+    </Reaction>
+
+
+
+    
     <!-- PP2A activation-->
      <Reaction name = "pPP2APP2A_bind" id="pPP2A_PP2A_bind">
       <Reactant specieID="pPP2A"              />
@@ -309,6 +357,14 @@
       <Reactant specieID="PP2ApPP2A"           />
       <Product  specieID="PP2A"   power="2"                 />
       <forwardRate> 0.02e-3    </forwardRate>
+      <reverseRate> 0.0         </reverseRate>
+    </Reaction>
+
+
+    <Reaction name = "pPP2A_dephos" id="pPP2A_dephos">
+      <Reactant specieID="pPP2A"           />
+      <Product  specieID="PP2A"   power="2"                 />
+      <forwardRate> 0.002e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
