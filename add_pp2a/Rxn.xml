@@ -292,7 +292,7 @@
       <Product  specieID="PP2A"                    />
       <Product  specieID="CKCaMCa4"               />
       
-      <forwardRate> 0.0045e-3    </forwardRate>
+      <forwardRate> 0.01e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
@@ -327,14 +327,14 @@
       <reverseRate>   0.08e-03  </reverseRate>
     </Reaction>
 
-    <!--Dephos of CKpCaMCa4 by PP2A -->
+    <!--Dephos of CKpCaMCa4 by pPP2A -->
     <!-- CKpCaMCa4PP2A -> PP2A + CKCaMCa4 -->
     <Reaction name = "CKpCaMCa4pPP2A_reac" id="CKpCaMpPP2A_reac">
       <Reactant specieID="CKpCaMCa4pPP2A"           />
       <Product  specieID="pPP2A"                    />
       <Product  specieID="CKCaMCa4"               />
       
-      <forwardRate> 0.001e-3    </forwardRate>
+      <forwardRate> 0.005e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
