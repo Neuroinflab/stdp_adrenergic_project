@@ -33,11 +33,11 @@
     <NanoMolarity specieID="PP2BCaMCa4" value="5"/>
 
     <NanoMolarity specieID="PKAc" value="0"/> <!--PP1 conc 1.62 muM-->
-    <NanoMolarity specieID="I1" value="932"/> <!-- I1 conc 1.2 muM -->
+    <NanoMolarity specieID="I1" value="1400"/> <!-- I1 conc 1.2 muM -->
     <NanoMolarity specieID="I1PKAc" value="0"/>
     <NanoMolarity specieID="Ip35" value="9"/>
-    <NanoMolarity specieID="PP1" value="1322"/>
-    <NanoMolarity specieID="Ip35PP1" value="243"/>
+    <NanoMolarity specieID="PP1" value="1222"/>
+    <NanoMolarity specieID="Ip35PP1" value="343"/>
     <NanoMolarity specieID="Ip35PP1PP2BCaMCa4" value="0"/>
     <NanoMolarity specieID="Ip35PP2BCaMCa4" value="0"/>
     <NanoMolarity specieID="pPDE4cAMP" value="0"/>
@@ -90,9 +90,9 @@
     <PicoSD specieID="GaiGDP" value="0"/>
     <PicoSD specieID="Gibg" value="0"/>
 
-    <PicoSD specieID="AC1" value="1700"/>
-    <PicoSD specieID="AC1CaMCa4" value="0"/>
-    <PicoSD specieID="AC1CaMCa4ATP" value="32"/>
+    <PicoSD specieID="AC1" value="1500"/>
+    <PicoSD specieID="AC1CaMCa4" value="25"/>
+    <PicoSD specieID="AC1CaMCa4ATP" value="200"/>
     <PicoSD specieID="AC1GasGTP" value="0"/>
     <PicoSD specieID="AC1GasGTPCaMCa4" value="0"/>
     <PicoSD specieID="AC1GasGTPCaMCa4ATP" value="0"/>
@@ -107,10 +107,10 @@
     <PicoSD specieID="AC8CaMCa4" value="0"/>
     <PicoSD specieID="AC8CaMCa4ATP" value="5"/>
     
-    <PicoSD specieID="PKA" value="323"/>
+    <PicoSD specieID="PKA" value="500"/>
     <PicoSD specieID="PKAr" value="0"/>
-    <PicoSD specieID="PKAcAMP2" value="3"/>
-    <PicoSD specieID="PKAcAMP4" value="0"/>
+    <PicoSD specieID="PKAcAMP2" value="20"/>
+    <PicoSD specieID="PKAcAMP4" value="5"/>
  
   </SurfaceDensitySet>
 </InitialConditions>
