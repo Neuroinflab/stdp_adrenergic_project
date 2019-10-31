@@ -6,7 +6,6 @@
     <xi:include href="Rxn_start.xml" />
     <xi:include href="morph_dend_single_spine.xml" />
     <xi:include href="IC_basal.xml" />
-    <xi:include href="no_stim.xml" />
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 roundworms. The 2D case is good for testing as it is easy to visualize the
