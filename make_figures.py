@@ -21,6 +21,9 @@ def Parser():
                         help='name of the output files')
     parser.add_argument('--logscale', action="store_true",
                         help='Use logscale for y-axis')
+    parser.add_argument('--from_zero', action="store_true",
+                        help='Use logscale for y-axis')
+
     return parser
 
 
@@ -87,7 +90,8 @@ if __name__ == '__main__':
         for i in range(how_many):
             j = which_header[i]
             axrr[i].plot(data[j][:, 0] / 1000, data[j][:, which[i]])
-            axrr[i].set_ylim(0, 1.05 * data[j][:, which[i]].max())
+            if args.from_zero:
+                axrr[i].set_ylim(0, 1.05 * data[j][:, which[i]].max())
            
             start, end = axrr[i].get_ylim()
             # axrr[i].yaxis.set_ticks(np.arange(start, end, (end-start)/3.))
