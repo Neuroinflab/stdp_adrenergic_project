@@ -423,7 +423,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="ISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcISObAR" />
-  <forwardRate>0.0004e-4</forwardRate>
+  <forwardRate>0.008e-4</forwardRate>
   <reverseRate>44.8e-05</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -441,7 +441,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="pISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcpISObAR" />
-  <forwardRate>0.006e-04</forwardRate>
+  <forwardRate>0.008e-04</forwardRate>
   <reverseRate>44.8e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -459,7 +459,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="ppISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcppISObAR" />
-  <forwardRate>0.034e-03</forwardRate>
+  <forwardRate>0.01712e-03</forwardRate>
   <reverseRate>44.8e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -477,7 +477,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="pppISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcpppISObAR" />
-  <forwardRate>13.4e-03</forwardRate>
+  <forwardRate>1.712e-03</forwardRate>
   <reverseRate>44.8e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -495,8 +495,8 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="ppppISObAR" />
   <Reactant specieID="Gi" />
   <Product specieID="ppppISObARGi" />
-  <forwardRate>0.15e-2</forwardRate>
-  <reverseRate>0.25e-2</reverseRate>
+  <forwardRate>0.15e-3</forwardRate>
+  <reverseRate>0.25e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5f) ppppISObARGi -> ppppISObARGibg + GaiGTP -->
@@ -505,7 +505,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Product specieID="Gibg" />
   <Product specieID="ppppISObAR" />
   <Product specieID="GaiGTP" />
-  <forwardRate>0.2e-3</forwardRate>
+  <forwardRate>0.05e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -582,7 +582,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="ppbAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcppbAR" />
-  <forwardRate>0.016e-03</forwardRate>
+  <forwardRate>0.004e-03</forwardRate>
   <reverseRate>44.8e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -600,7 +600,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="pppbAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcpppbAR" />
-  <forwardRate>1.6e-03</forwardRate>
+  <forwardRate>0.4e-03</forwardRate>
   <reverseRate>44.8e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -618,8 +618,8 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="ppppbAR" />
   <Reactant specieID="Gi" />
   <Product specieID="ppppbARGi" />
-  <forwardRate>0.75e-3</forwardRate>
-  <reverseRate>0.125e-2</reverseRate>
+  <forwardRate>0.075e-3</forwardRate>
+  <reverseRate>0.125e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5af) ppppbARGi -> ppppbARGibg + GaiGTP -->
@@ -628,7 +628,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Product specieID="ppppbAR" />
   <Product specieID="Gibg" />
   <Product specieID="GaiGTP" />
-  <forwardRate>0.1e-3</forwardRate>
+  <forwardRate>0.05e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
