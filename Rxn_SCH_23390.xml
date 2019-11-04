@@ -21,6 +21,7 @@
   <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
   
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
+
   <Specie name="Calbin" id="Calbin" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CaBCa" id="CaBCa" kdiff="10" kdiffunit="mu2/s"/>
@@ -1561,7 +1562,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKCaMCa4" />
   <Product specieID="GluR1_CKCaM" />
-  <forwardRate>16e-8</forwardRate>
+  <forwardRate>12e-8</forwardRate>
   <reverseRate>.2e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1578,7 +1579,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKpCaMCa4" />
   <Product specieID="GluR1_CKpCaM" />
-  <forwardRate>16e-8</forwardRate>
+  <forwardRate>12e-8</forwardRate>
   <reverseRate>0.5e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1595,7 +1596,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKp" />
   <Product specieID="GluR1_CKp" />
-  <forwardRate>32e-8</forwardRate>
+  <forwardRate>24e-8</forwardRate>
   <reverseRate>0.5e-4</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1647,7 +1648,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKCaMCa4" />
   <Product specieID="GluR1_S845_CKCaM" />
-  <forwardRate>16e-8</forwardRate>
+  <forwardRate>12e-8</forwardRate>
   <reverseRate>0.2e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1666,7 +1667,7 @@ id="GluR1_S845_CKpCaM_bind">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKpCaMCa4" />
   <Product specieID="GluR1_S845_CKpCaM" />
-  <forwardRate>16e-8</forwardRate>
+  <forwardRate>12e-8</forwardRate>
   <reverseRate>0.5e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1685,7 +1686,7 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKp" />
   <Product specieID="GluR1_S845_CKp" />
-  <forwardRate>32e-8</forwardRate>
+  <forwardRate>24e-8</forwardRate>
   <reverseRate>0.5e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
