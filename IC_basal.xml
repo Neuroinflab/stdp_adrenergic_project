@@ -167,8 +167,8 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
-    <PicoSD specieID="PDE4" value="450"/>
-    <PicoSD specieID="pPDE4" value="250"/>
+    <PicoSD specieID="PDE4" value="50"/>
+    <PicoSD specieID="pPDE4" value="50"/>
 
   
   </SurfaceDensitySet>
