@@ -55,42 +55,20 @@
     <PicoSD specieID="pmcaCa" value="29"/>
     <PicoSD specieID="ncx" value="2840"/>
     <PicoSD specieID="ncxCa" value="160"/>
-    <PicoSD specieID="bAR" value="50"/>
-    <PicoSD specieID="ISObAR" value="1"/>
-    <PicoSD specieID="GsbAR" value="378"/>
-    <PicoSD specieID="ISObARGs" value="0"/>
-    <PicoSD specieID="Gs" value="989"/>
+    <PicoSD specieID="GsbAR" value="430"/>
+    <PicoSD specieID="Gs" value="10000"/>
     <PicoSD specieID="GasGTP" value="0"/>
     <PicoSD specieID="GasGDP" value="0"/>
-    <PicoSD specieID="GsD1R" value="633" />
+
+    <PicoSD specieID="GsD1R" value="860" />
     <PicoSD specieID="DaD1R" value="0" />
-    
-    <PicoSD specieID="PKAcbAR" value="0"/>
-    <PicoSD specieID="pbAR" value="0"/>
-    <PicoSD specieID="PKAcpbAR" value="0"/>
-    <PicoSD specieID="ppbAR" value="0"/>
-    <PicoSD specieID="PKAcppbAR" value="0"/>
-    <PicoSD specieID="pppbAR" value="0"/>
-    <PicoSD specieID="PKAcpppbAR" value="0"/>
-    <PicoSD specieID="ppppbAR" value="0"/>
-    <PicoSD specieID="ppppbARGi" value="0"/>
-
-    <PicoSD specieID="PKAcISObAR" value="0"/>
-    <PicoSD specieID="pISObAR" value="0"/>
-    <PicoSD specieID="PKAcpISObAR" value="0"/>
-    <PicoSD specieID="ppISObAR" value="0"/>
-    <PicoSD specieID="PKAcppISObAR" value="0"/>
-    <PicoSD specieID="pppISObAR" value="0"/>
-    <PicoSD specieID="PKAcpppISObAR" value="0"/>
-    <PicoSD specieID="ppppISObAR" value="0"/>
-    <PicoSD specieID="ppppISObARGi" value="0"/>
-
-    <PicoSD specieID="Gi" value="826"/>
+  
+    <PicoSD specieID="Gi" value="10000"/>
     <PicoSD specieID="GaiGTP" value="0"/>
     <PicoSD specieID="GaiGDP" value="0"/>
     <PicoSD specieID="Gibg" value="0"/>
 
-    <PicoSD specieID="AC1" value="1500"/>
+    <PicoSD specieID="AC1" value="750"/>
     <PicoSD specieID="AC1CaMCa4" value="25"/>
     <PicoSD specieID="AC1CaMCa4ATP" value="200"/>
     <PicoSD specieID="AC1GasGTP" value="0"/>
@@ -103,7 +81,7 @@
     <PicoSD specieID="AC1GasGTPGaiGTPCaMCa4" value="0"/>
     <PicoSD specieID="AC1GsGiCaMCa4ATP" value="0"/>    
 
-    <PicoSD specieID="AC8" value="470"/>
+    <PicoSD specieID="AC8" value="1500"/>
     <PicoSD specieID="AC8CaMCa4" value="0"/>
     <PicoSD specieID="AC8CaMCa4ATP" value="5"/>
     
