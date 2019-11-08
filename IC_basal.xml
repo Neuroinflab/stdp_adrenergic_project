@@ -59,6 +59,16 @@
     <NanoMolarity specieID="PDE4" value="1050"/>
     <NanoMolarity specieID="pPDE4" value="350"/>
   </ConcentrationSet>
+   <ConcentrationSet region="PSD">
+    <NanoMolarity specieID="NMDAR" value="3000"/>
+    <!--Swulius et al 2011 (MN Waxham lab) -->
+    <NanoMolarity specieID="PKAcNMDAR" value="0"/>
+    <NanoMolarity specieID="pNMDAR" value="650"/>
+    <NanoMolarity specieID="PP2BpNMDAR" value="0"/>
+    <NanoMolarity specieID="GluR1" value="7000"/>
+    <NanoMolarity specieID="GluR1_S831" value="2000"/>
+    <NanoMolarity specieID="GluR1_S845" value="1000"/>
+   </ConcentrationSet>
   <ConcentrationSet region="head">
     <NanoMolarity specieID="Leak" value="500"/>
     <NanoMolarity specieID="CaOutLeak" value="2500"/>
@@ -125,17 +135,6 @@
     <NanoMolarity specieID="PKAcAMP2" value="2000"/>
     <NanoMolarity specieID="PKAcAMP4" value="1000"/>
   </ConcentrationSet>
-
-  <ConcentrationSet region="PSD">
-    <NanoMolarity specieID="NMDAR" value="3000"/>
-    <!--Swulius et al 2011 (MN Waxham lab) -->
-    <NanoMolarity specieID="PKAcNMDAR" value="0"/>
-    <NanoMolarity specieID="pNMDAR" value="650"/>
-    <NanoMolarity specieID="PP2BpNMDAR" value="0"/>
-    <NanoMolarity specieID="GluR1" value="7000"/>
-    <NanoMolarity specieID="GluR1_S831" value="2000"/>
-    <NanoMolarity specieID="GluR1_S845" value="1000"/>
-   </ConcentrationSet>
 
   <ConcentrationSet region="neck">
     <NanoMolarity specieID="Leak" value="500"/>
