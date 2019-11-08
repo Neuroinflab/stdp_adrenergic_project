@@ -56,9 +56,10 @@
     <NanoMolarity specieID="PKAc_PDE4_cAMP" value="0"/>
     <NanoMolarity specieID="PKAcPDE4" value="0"/>
     <NanoMolarity specieID="PDE4cAMP" value="0"/>
-    <NanoMolarity specieID="PDE4" value="1050"/>
-    <NanoMolarity specieID="pPDE4" value="350"/>
+    <NanoMolarity specieID="PDE4" value="450"/>
+    <NanoMolarity specieID="pPDE4" value="250"/>
   </ConcentrationSet>
+
    <ConcentrationSet region="PSD">
     <NanoMolarity specieID="NMDAR" value="3000"/>
     <!--Swulius et al 2011 (MN Waxham lab) -->
@@ -69,6 +70,7 @@
     <NanoMolarity specieID="GluR1_S831" value="2000"/>
     <NanoMolarity specieID="GluR1_S845" value="1000"/>
    </ConcentrationSet>
+
   <ConcentrationSet region="head">
     <NanoMolarity specieID="Leak" value="500"/>
     <NanoMolarity specieID="CaOutLeak" value="2500"/>
@@ -77,45 +79,25 @@
     <NanoMolarity specieID="ncx" value="10980"/>
     <NanoMolarity specieID="ncxCa" value="120"/>
     
-    <NanoMolarity specieID="bAR" value="200"/> <!--bAR-->
+    <NanoMolarity specieID="bAR" value="0"/> <!--bAR-->
     <NanoMolarity specieID="ISObAR" value="0"/>
-    <NanoMolarity specieID="GsbAR" value="716"/>
+    <NanoMolarity specieID="GsbAR" value="900"/>
     <NanoMolarity specieID="ISObARGs" value="0"/>
-    <NanoMolarity specieID="Gs" value="2856"/>
+    <NanoMolarity specieID="Gs" value="10000"/>
     <NanoMolarity specieID="GasGDP" value="0"/>
     <NanoMolarity specieID="GasGTP" value="0"/>
     <NanoMolarity specieID="Gsbg" value="0"/>
-    <NanoMolarity specieID="GsD1R" value="1400" />
-    <NanoMolarity specieID="D1R" value="400" />
-    
-    <NanoMolarity specieID="PKAcbAR" value="0"/>
-    <NanoMolarity specieID="pbAR" value="0"/>
-    <NanoMolarity specieID="PKAcpbAR" value="0"/>
-    <NanoMolarity specieID="ppbAR" value="0"/>
-    <NanoMolarity specieID="PKAcppbAR" value="0"/>
-    <NanoMolarity specieID="pppbAR" value="0"/>
-    <NanoMolarity specieID="PKAcpppbAR" value="0"/>
-    <NanoMolarity specieID="ppppbAR" value="0"/>
-    <NanoMolarity specieID="ppppbARGi" value="0"/>
+    <NanoMolarity specieID="GsD1R" value="1800" />
 
-    <NanoMolarity specieID="PKAcISObAR" value="0"/>
-    <NanoMolarity specieID="pISObAR" value="0"/>
-    <NanoMolarity specieID="PKAcpISObAR" value="0"/>
-    <NanoMolarity specieID="ppISObAR" value="0"/>
-    <NanoMolarity specieID="PKAcppISObAR" value="0"/>
-    <NanoMolarity specieID="pppISObAR" value="0"/>
-    <NanoMolarity specieID="PKAcpppISObAR" value="0"/>
-    <NanoMolarity specieID="ppppISObAR" value="0"/>
-    <NanoMolarity specieID="ppppISObARGi" value="0"/>
 
-    <NanoMolarity specieID="Gi" value="2000"/>
+    <NanoMolarity specieID="Gi" value="10000"/>
     <NanoMolarity specieID="GaiGTP" value="0"/>
     <NanoMolarity specieID="GaiGDP" value="0"/>
     <NanoMolarity specieID="Gibg" value="0"/>
 
-    <NanoMolarity specieID="AC1" value="18150"/>
+    <NanoMolarity specieID="AC1" value="3000"/>
     <NanoMolarity specieID="AC1CaMCa4" value="63"/>
-    <NanoMolarity specieID="AC1CaMCa4ATP" value="1800"/>
+    <NanoMolarity specieID="AC1CaMCa4ATP" value="600"/>
     <NanoMolarity specieID="AC1GasGTP" value="0"/>
     <NanoMolarity specieID="AC1GasGTPCaMCa4" value="0"/>
     <NanoMolarity specieID="AC1GasGTPCaMCa4ATP" value="0"/>
@@ -126,9 +108,9 @@
     <NanoMolarity specieID="AC1GasGTPGaiGTPCaMCa4" value="0"/>
     <NanoMolarity specieID="AC1GsGiCaMCa4ATP" value="0"/>
 
-    <NanoMolarity specieID="AC8" value="64200"/>
+    <NanoMolarity specieID="AC8" value="1000"/>
     <NanoMolarity specieID="AC8CaMCa4" value="0"/>
-    <NanoMolarity specieID="AC8CaMCa4ATP" value="500"/>
+    <NanoMolarity specieID="AC8CaMCa4ATP" value="0"/>
 
     <NanoMolarity specieID="PKAr" value="0"/>
     <NanoMolarity specieID="PKA" value="5000"/>
@@ -136,6 +118,7 @@
     <NanoMolarity specieID="PKAcAMP4" value="1000"/>
   </ConcentrationSet>
 
+ 
   <ConcentrationSet region="neck">
     <NanoMolarity specieID="Leak" value="500"/>
     <NanoMolarity specieID="CaOutLeak" value="2500"/>
@@ -152,42 +135,21 @@
     <PicoSD specieID="pmcaCa" value="29"/>
     <PicoSD specieID="ncx" value="2840"/>
     <PicoSD specieID="ncxCa" value="160"/>
-    <PicoSD specieID="bAR" value="50"/>
-    <PicoSD specieID="ISObAR" value="1"/>
-    <PicoSD specieID="GsbAR" value="378"/>
+
+    <PicoSD specieID="GsbAR" value="230"/>
     <PicoSD specieID="ISObARGs" value="0"/>
-    <PicoSD specieID="Gs" value="989"/>
+    <PicoSD specieID="Gs" value="10000"/>
     <PicoSD specieID="GasGTP" value="0"/>
     <PicoSD specieID="GasGDP" value="0"/>
-    <PicoSD specieID="GsD1R" value="633" />
+    <PicoSD specieID="GsD1R" value="260" />
     <PicoSD specieID="DaD1R" value="0" />
     
-    <PicoSD specieID="PKAcbAR" value="0"/>
-    <PicoSD specieID="pbAR" value="0"/>
-    <PicoSD specieID="PKAcpbAR" value="0"/>
-    <PicoSD specieID="ppbAR" value="0"/>
-    <PicoSD specieID="PKAcppbAR" value="0"/>
-    <PicoSD specieID="pppbAR" value="0"/>
-    <PicoSD specieID="PKAcpppbAR" value="0"/>
-    <PicoSD specieID="ppppbAR" value="0"/>
-    <PicoSD specieID="ppppbARGi" value="0"/>
-
-    <PicoSD specieID="PKAcISObAR" value="0"/>
-    <PicoSD specieID="pISObAR" value="0"/>
-    <PicoSD specieID="PKAcpISObAR" value="0"/>
-    <PicoSD specieID="ppISObAR" value="0"/>
-    <PicoSD specieID="PKAcppISObAR" value="0"/>
-    <PicoSD specieID="pppISObAR" value="0"/>
-    <PicoSD specieID="PKAcpppISObAR" value="0"/>
-    <PicoSD specieID="ppppISObAR" value="0"/>
-    <PicoSD specieID="ppppISObARGi" value="0"/>
-
-    <PicoSD specieID="Gi" value="826"/>
+    <PicoSD specieID="Gi" value="10000"/>
     <PicoSD specieID="GaiGTP" value="0"/>
     <PicoSD specieID="GaiGDP" value="0"/>
     <PicoSD specieID="Gibg" value="0"/>
 
-    <PicoSD specieID="AC1" value="1500"/>
+    <PicoSD specieID="AC1" value="420"/>
     <PicoSD specieID="AC1CaMCa4" value="25"/>
     <PicoSD specieID="AC1CaMCa4ATP" value="200"/>
     <PicoSD specieID="AC1GasGTP" value="0"/>
@@ -200,7 +162,7 @@
     <PicoSD specieID="AC1GasGTPGaiGTPCaMCa4" value="0"/>
     <PicoSD specieID="AC1GsGiCaMCa4ATP" value="0"/>    
 
-    <PicoSD specieID="AC8" value="470"/>
+    <PicoSD specieID="AC8" value="1000"/>
     <PicoSD specieID="AC8CaMCa4" value="0"/>
     <PicoSD specieID="AC8CaMCa4ATP" value="5"/>
     
