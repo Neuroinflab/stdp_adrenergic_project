@@ -712,7 +712,7 @@
   <InjectionStim specieID="CaCbuf" injectionSite="dendrite:submembrane">
     <onset>100000</onset>
     <duration>3</duration>
-    <rate>6</rate>
+    <rate>50</rate>
     <period>10</period>
     <end>101000</end> 
   </InjectionStim>
@@ -721,7 +721,7 @@
   <InjectionStim specieID="CaB" injectionSite="dendrite:submembrane">
     <onset>101150</onset>
     <duration>3</duration>
-    <rate>26</rate>
+    <rate>10</rate>
     <period>10</period>
     <end>103150</end>
   </InjectionStim>
