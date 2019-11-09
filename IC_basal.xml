@@ -44,25 +44,19 @@
     <NanoMolarity specieID="pPP2A" value="250"/>
     <NanoMolarity specieID="PP2ApPP2A" value="50"/>
     
-    <NanoMolarity specieID="PKAc" value="0"/> <!--PP1 conc 1.62 muM-->
     <NanoMolarity specieID="I1" value="1400"/> <!-- I1 conc 1.2 muM -->
     <NanoMolarity specieID="I1PKAc" value="0"/>
     <NanoMolarity specieID="Ip35" value="9"/>
     <NanoMolarity specieID="PP1" value="1222"/>
     <NanoMolarity specieID="Ip35PP1" value="341"/>
-    <NanoMolarity specieID="Ip35PP1PP2BCaMCa4" value="0"/>
-    <NanoMolarity specieID="Ip35PP2BCaMCa4" value="0"/>
     </ConcentrationSet>
 
    <ConcentrationSet region="PSD">
-    <NanoMolarity specieID="NMDAR" value="3000"/>
+    <NanoMolarity specieID="NMDAR" value="4000"/>
     <!--Swulius et al 2011 (MN Waxham lab) -->
     <NanoMolarity specieID="PKAcNMDAR" value="0"/>
-    <NanoMolarity specieID="pNMDAR" value="650"/>
     <NanoMolarity specieID="PP2BpNMDAR" value="0"/>
-    <NanoMolarity specieID="GluR1" value="7000"/>
-    <NanoMolarity specieID="GluR1_S831" value="2000"/>
-    <NanoMolarity specieID="GluR1_S845" value="1000"/>
+    <NanoMolarity specieID="GluR1" value="10000"/>
    </ConcentrationSet>
 
   <ConcentrationSet region="head">
@@ -110,8 +104,8 @@
     <NanoMolarity specieID="PKA" value="5000"/>
     <NanoMolarity specieID="PKAcAMP2" value="2000"/>
     <NanoMolarity specieID="PKAcAMP4" value="1000"/>
-    <NanoMolarity specieID="PDE4" value="450"/>
-    <NanoMolarity specieID="pPDE4" value="250"/>
+    <NanoMolarity specieID="PDE4" value="500"/>
+    <NanoMolarity specieID="pPDE4" value="150"/>
 
   </ConcentrationSet>
 
@@ -146,9 +140,9 @@
     <PicoSD specieID="GaiGDP" value="0"/>
     <PicoSD specieID="Gibg" value="0"/>
 
-    <PicoSD specieID="AC1" value="420"/>
+    <PicoSD specieID="AC1" value="320"/>
     <PicoSD specieID="AC1CaMCa4" value="25"/>
-    <PicoSD specieID="AC1CaMCa4ATP" value="200"/>
+    <PicoSD specieID="AC1CaMCa4ATP" value="0"/>
     <PicoSD specieID="AC1GasGTP" value="0"/>
     <PicoSD specieID="AC1GasGTPCaMCa4" value="0"/>
     <PicoSD specieID="AC1GasGTPCaMCa4ATP" value="0"/>
