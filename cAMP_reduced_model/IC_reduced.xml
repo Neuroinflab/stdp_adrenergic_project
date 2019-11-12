@@ -40,12 +40,6 @@
     <NanoMolarity specieID="Ip35PP1" value="343"/>
     <NanoMolarity specieID="Ip35PP1PP2BCaMCa4" value="0"/>
     <NanoMolarity specieID="Ip35PP2BCaMCa4" value="0"/>
-    <NanoMolarity specieID="pPDE4cAMP" value="0"/>
-    <NanoMolarity specieID="PKAc_PDE4_cAMP" value="0"/>
-    <NanoMolarity specieID="PKAcPDE4" value="0"/>
-    <NanoMolarity specieID="PDE4cAMP" value="0"/>
-    <NanoMolarity specieID="PDE4" value="1050"/>
-    <NanoMolarity specieID="pPDE4" value="350"/>
   </ConcentrationSet>
 
   <SurfaceDensitySet region="dendrite">
@@ -55,7 +49,7 @@
     <PicoSD specieID="pmcaCa" value="29"/>
     <PicoSD specieID="ncx" value="2840"/>
     <PicoSD specieID="ncxCa" value="160"/>
-    <PicoSD specieID="GsbAR" value="430"/>
+    <PicoSD specieID="GsbAR" value="300"/>
     <PicoSD specieID="Gs" value="10000"/>
     <PicoSD specieID="GasGTP" value="0"/>
     <PicoSD specieID="GasGDP" value="0"/>
@@ -69,8 +63,8 @@
     <PicoSD specieID="Gibg" value="0"/>
 
     <PicoSD specieID="AC1" value="750"/>
-    <PicoSD specieID="AC1CaMCa4" value="25"/>
-    <PicoSD specieID="AC1CaMCa4ATP" value="200"/>
+    <PicoSD specieID="AC1CaMCa4" value="5"/>
+    <PicoSD specieID="AC1CaMCa4ATP" value="40"/>
     <PicoSD specieID="AC1GasGTP" value="0"/>
     <PicoSD specieID="AC1GasGTPCaMCa4" value="0"/>
     <PicoSD specieID="AC1GasGTPCaMCa4ATP" value="0"/>
@@ -89,6 +83,7 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
- 
+  <PicoSD specieID="PDE4" value="50"/>
+  <PicoSD specieID="pPDE4" value="50"/>
   </SurfaceDensitySet>
 </InitialConditions>
