@@ -104,7 +104,7 @@
     <NanoMolarity specieID="PKA" value="5000"/>
     <NanoMolarity specieID="PKAcAMP2" value="2000"/>
     <NanoMolarity specieID="PKAcAMP4" value="1000"/>
-    <NanoMolarity specieID="PDE4" value="500"/>
+    <NanoMolarity specieID="PDE4" value="400"/>
     <NanoMolarity specieID="pPDE4" value="150"/>
 
   </ConcentrationSet>
@@ -127,7 +127,7 @@
     <PicoSD specieID="ncx" value="2840"/>
     <PicoSD specieID="ncxCa" value="160"/>
 
-    <PicoSD specieID="GsbAR" value="200"/>
+    <PicoSD specieID="GsbAR" value="100"/>
     <PicoSD specieID="ISObARGs" value="0"/>
     <PicoSD specieID="Gs" value="10000"/>
     <PicoSD specieID="GasGTP" value="0"/>
@@ -150,7 +150,7 @@
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
     <PicoSD specieID="PDE4" value="50"/>
-    <PicoSD specieID="pPDE4" value="50"/>
+    <PicoSD specieID="pPDE4" value="20"/>
 
   
   </SurfaceDensitySet>
