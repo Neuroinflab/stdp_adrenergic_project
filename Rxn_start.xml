@@ -1463,7 +1463,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="PKAc" />
   <Product specieID="GluR1_PKAc" />
-  <forwardRate>0.00009e-3</forwardRate>
+  <forwardRate>0.00018e-3</forwardRate>
   <reverseRate>0.72e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1675,7 +1675,7 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S831" />
   <Reactant specieID="PKAc" />
   <Product specieID="GluR1_S831_PKAc" />
-  <forwardRate>0.00009e-3</forwardRate>
+  <forwardRate>0.00018e-3</forwardRate>
   <reverseRate>0.72e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
