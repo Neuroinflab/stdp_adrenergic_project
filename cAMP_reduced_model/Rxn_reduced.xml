@@ -280,7 +280,7 @@ kdiffunit="mu2/s" />
   <Reactant specieID="Gs" />
   <Product specieID="ISObARGs" />
   <forwardRate>0.0006e-3</forwardRate>
-  <reverseRate>0.01e-3</reverseRate>
+  <reverseRate>0.001e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 3) Gs + bAR
@@ -290,7 +290,7 @@ kdiffunit="mu2/s" />
   <Reactant specieID="bAR" />
   <Product specieID="GsbAR" />
   <forwardRate>0.00004e-3</forwardRate>
-  <reverseRate>0.003e-3</reverseRate>
+  <reverseRate>0.0003e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 4) GsbAR + ISO
@@ -353,7 +353,7 @@ kdiffunit="mu2/s" />
   <Reactant specieID="Gs" />
   <Product specieID="DaD1RGs" />
   <forwardRate>0.03e-03</forwardRate>
-  <reverseRate>0.4e-03</reverseRate>
+  <reverseRate>0.2e-03</reverseRate>
 </Reaction>
 <!-- 1b. Gsabg + D1R
          <-> GsD1R         Kd=35   source: PMR-->
@@ -362,7 +362,7 @@ kdiffunit="mu2/s" />
   <Reactant specieID="D1R" />
   <Product specieID="GsD1R" />
   <forwardRate>0.01e-03</forwardRate>
-  <reverseRate>0.4e-03</reverseRate>
+  <reverseRate>0.2e-03</reverseRate>
 </Reaction>
 <!-- 2b. GsD1R + Da
          < - > DaD1RGs       Kd=1000   source: Falkenburger J Gen Phys off-rate, Dreyer J Neurosci-->
