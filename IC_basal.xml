@@ -49,6 +49,9 @@
     <NanoMolarity specieID="Ip35" value="9"/>
     <NanoMolarity specieID="PP1" value="1222"/>
     <NanoMolarity specieID="Ip35PP1" value="341"/>
+    <NanoMolarity specieID="PDE4" value="300"/>
+    <NanoMolarity specieID="pPDE4" value="150"/>
+
     </ConcentrationSet>
 
    <ConcentrationSet region="PSD">
@@ -104,8 +107,6 @@
     <NanoMolarity specieID="PKA" value="5000"/>
     <NanoMolarity specieID="PKAcAMP2" value="2000"/>
     <NanoMolarity specieID="PKAcAMP4" value="1000"/>
-    <NanoMolarity specieID="PDE4" value="400"/>
-    <NanoMolarity specieID="pPDE4" value="150"/>
 
   </ConcentrationSet>
 
@@ -149,9 +150,5 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
-    <PicoSD specieID="PDE4" value="70"/>
-    <PicoSD specieID="pPDE4" value="27"/>
-
-  
   </SurfaceDensitySet>
 </InitialConditions>
