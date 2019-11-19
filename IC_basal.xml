@@ -10,7 +10,7 @@
     
     <NanoMolarity specieID="ISO" value="9"/> <!--norepinephrine-->
     <NanoMolarity specieID="ISOOut" value="2000000"/>
-    <NanoMolarity specieID="DaOut"  value="2000000" /> 
+    <NanoMolarity specieID="DaOut"  value="20000000" /> 
     <NanoMolarity specieID="Da" value="10" />
     <NanoMolarity specieID="Dbuf"            value="0" />
     <NanoMolarity specieID="DaDbuf" value="0" />
