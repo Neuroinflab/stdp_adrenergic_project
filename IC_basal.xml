@@ -50,7 +50,7 @@
     <NanoMolarity specieID="PP1" value="1222"/>
     <NanoMolarity specieID="Ip35PP1" value="341"/>
     <NanoMolarity specieID="PDE4" value="250"/>
-    <NanoMolarity specieID="pPDE4" value="70"/>
+    <NanoMolarity specieID="pPDE4" value="100"/>
 
     </ConcentrationSet>
 
@@ -67,7 +67,7 @@
     <NanoMolarity specieID="CaOutLeak" value="2500"/>
     <NanoMolarity specieID="pmca" value="560"/>
     <NanoMolarity specieID="pmcaCa" value="120"/>
-    <NanoMolarity specieID="ncx" value="10980"/>
+    <NanoMolarity specieID="ncx" value="8980"/>
     <NanoMolarity specieID="ncxCa" value="120"/>
     
     <NanoMolarity specieID="bAR" value="0"/> <!--bAR-->
@@ -116,7 +116,7 @@
     <NanoMolarity specieID="CaOutLeak" value="2500"/>
     <NanoMolarity specieID="pmca" value="560"/>
     <NanoMolarity specieID="pmcaCa" value="220"/>
-    <NanoMolarity specieID="ncx" value="12980"/>
+    <NanoMolarity specieID="ncx" value="10980"/>
     <NanoMolarity specieID="ncxCa" value="120"/>
   </ConcentrationSet>
 
