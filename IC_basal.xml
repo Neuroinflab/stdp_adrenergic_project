@@ -133,7 +133,7 @@
     <PicoSD specieID="Gs" value="10000"/>
     <PicoSD specieID="GasGTP" value="0"/>
     <PicoSD specieID="GasGDP" value="0"/>
-    <PicoSD specieID="GsD1R" value="260" />
+    <PicoSD specieID="GsD1R" value="750" />
     <PicoSD specieID="DaD1R" value="0" />
     
     <PicoSD specieID="Gi" value="10000"/>
