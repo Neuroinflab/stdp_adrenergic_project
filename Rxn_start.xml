@@ -1224,7 +1224,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
     <Reaction name = "pPP2A_dephos" id="pPP2A_dephos">
       <Reactant specieID="pPP2A"           />
       <Product  specieID="PP2A"           />
-      <forwardRate> 0.02e-3    </forwardRate>
+      <forwardRate> 0.2e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
