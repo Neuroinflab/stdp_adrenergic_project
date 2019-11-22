@@ -1420,7 +1420,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="pNMDAR" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="PP2BpNMDAR" />
-  <forwardRate>1e-3</forwardRate>
+  <forwardRate>2e-3</forwardRate>
   <reverseRate>160e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
