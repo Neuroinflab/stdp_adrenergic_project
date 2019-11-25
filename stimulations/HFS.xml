@@ -721,9 +721,9 @@
   <InjectionStim specieID="CaB" injectionSite="dendrite:submembrane">
     <onset>101150</onset>
     <duration>3</duration>
-    <rate>22</rate>
+    <rate>20</rate>
     <period>10</period>
-    <end>105150</end>
+    <end>105550</end>
   </InjectionStim>
 
 <InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
