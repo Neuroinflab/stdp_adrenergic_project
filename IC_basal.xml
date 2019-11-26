@@ -50,16 +50,17 @@
     <NanoMolarity specieID="PP1" value="1222"/>
     <NanoMolarity specieID="Ip35PP1" value="341"/>
     <NanoMolarity specieID="PDE4" value="300"/>
-    <NanoMolarity specieID="pPDE4" value="100"/>
+    <NanoMolarity specieID="pPDE4" value="130"/>
 
     </ConcentrationSet>
 
    <ConcentrationSet region="PSD">
-    <NanoMolarity specieID="NMDAR" value="4000"/>
-    <!--Swulius et al 2011 (MN Waxham lab) -->
-    <NanoMolarity specieID="PKAcNMDAR" value="0"/>
-    <NanoMolarity specieID="PP2BpNMDAR" value="0"/>
-    <NanoMolarity specieID="GluR1" value="10000"/>
+     <NanoMolarity specieID="NMDAR" value="3000"/>
+     <NanoMolarity specieID="pNMDAR" value="1000"/>
+     <!--Swulius et al 2011 (MN Waxham lab) -->
+     <NanoMolarity specieID="PKAcNMDAR" value="0"/>
+     <NanoMolarity specieID="PP2BpNMDAR" value="0"/>
+     <NanoMolarity specieID="GluR1" value="10000"/>
    </ConcentrationSet>
 
   <ConcentrationSet region="head">
