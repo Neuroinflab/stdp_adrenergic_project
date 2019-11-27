@@ -309,7 +309,7 @@ kdiffunit="mu2/s" />
   <Product specieID="ISObAR" />
   <Product specieID="GasGTP" />
   <Product specieID="Gsbg" />
-  <forwardRate>25e-3</forwardRate>
+  <forwardRate>2.5e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -338,13 +338,13 @@ kdiffunit="mu2/s" />
   <reverseRate>0</reverseRate>
 </Reaction>
 <!--1a. Da + D1R
-        <-> DaD1R      Kd=3000  source: Sunahara et al. Nature 1991-->
+        <-> DaD1R      Kd=2000  source: Richfield - ‎1989, Neuroscience -->
 <Reaction name="Da+D1R--DaD1R" id="Da+D1R--DaD1R">
   <Reactant specieID="Da" />
   <Reactant specieID="D1R" />
   <Product specieID="DaD1R" />
   <forwardRate>0.00166667e-03</forwardRate>
-  <reverseRate>5e-03</reverseRate>
+  <reverseRate>3.4e-03</reverseRate>
 </Reaction>
 <!-- 2a. DaD1R + Gsabg
          <-> DaD1RGs      Kd=11.666667   source: Zhuang J Neurosci 2000-->
@@ -371,7 +371,7 @@ kdiffunit="mu2/s" />
   <Reactant specieID="Da" />
   <Product specieID="DaD1RGs" />
   <forwardRate>0.005e-03</forwardRate>
-  <reverseRate>5e-03</reverseRate>
+  <reverseRate>3.4e-03</reverseRate>
 </Reaction>
 <!-- 3.  DaD1RGs
          <-> DaD1R + GsaGTP +Gbg-->
@@ -381,7 +381,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Product specieID="DaD1R" />
   <Product specieID="GasGTP" />
   <Product specieID="Gsbg" />
-  <forwardRate>0.15e-03</forwardRate>
+  <forwardRate>1.5e-03</forwardRate>
   <reverseRate>0.0</reverseRate>
 </Reaction>
 <!--*****************PKAc phosphorylation of DaD1R *******************************-->
@@ -891,6 +891,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <reverseRate>36.e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
+
+
 
 <!-- PKA part -->
 <!-- Implements of PKAcAMP4 molecule binds to substrates & consider to effect-->
