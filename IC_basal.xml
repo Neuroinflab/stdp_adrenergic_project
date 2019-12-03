@@ -1,4 +1,4 @@
-1<InitialConditions>
+<InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
     <NanoMolarity specieID="CaOut" value="2000000"/>
