@@ -75,7 +75,7 @@
     <NanoMolarity specieID="ISObAR" value="0"/>
     <NanoMolarity specieID="GsbAR" value="900"/>
     <NanoMolarity specieID="ISObARGs" value="0"/>
-    <NanoMolarity specieID="Gs" value="10000"/>
+    <NanoMolarity specieID="Gs" value="90000"/>
     <NanoMolarity specieID="GasGDP" value="0"/>
     <NanoMolarity specieID="GasGTP" value="0"/>
     <NanoMolarity specieID="Gsbg" value="0"/>
