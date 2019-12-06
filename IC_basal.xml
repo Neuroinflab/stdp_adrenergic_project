@@ -11,7 +11,7 @@
     <NanoMolarity specieID="ISO" value="9"/> <!--norepinephrine-->
     <NanoMolarity specieID="ISOOut" value="2000000"/>
     <NanoMolarity specieID="DaOut"  value="4000000" /> 
-    <NanoMolarity specieID="Da" value="100" />
+    <NanoMolarity specieID="Da" value="20" />
     <NanoMolarity specieID="Dbuf"            value="0" />
     <NanoMolarity specieID="DaDbuf" value="0" />
    
@@ -40,9 +40,9 @@
     <NanoMolarity specieID="CKp" value="50"/>
     <NanoMolarity specieID="CKpPP1" value="0"/>
 
-    <NanoMolarity specieID="PP2A" value="200"/>
-    <NanoMolarity specieID="pPP2A" value="150"/>
-    <NanoMolarity specieID="PP2ApPP2A" value="50"/>
+    <NanoMolarity specieID="PP2A" value="340"/>
+    <NanoMolarity specieID="pPP2A" value="40"/>
+    <NanoMolarity specieID="PP2ApPP2A" value="20"/>
     
     <NanoMolarity specieID="I1" value="1400"/> <!-- I1 conc 1.2 muM -->
     <NanoMolarity specieID="I1PKAc" value="0"/>
@@ -81,7 +81,6 @@
     <NanoMolarity specieID="Gsbg" value="0"/>
     <NanoMolarity specieID="GsD1R" value="1800" />
 
-
     <NanoMolarity specieID="Gi" value="10000"/>
     <NanoMolarity specieID="GaiGTP" value="0"/>
     <NanoMolarity specieID="GaiGDP" value="0"/>
@@ -105,9 +104,9 @@
     <NanoMolarity specieID="AC8CaMCa4ATP" value="0"/>
 
     <NanoMolarity specieID="PKAr" value="0"/>
-    <NanoMolarity specieID="PKA" value="6000"/>
-    <NanoMolarity specieID="PKAcAMP2" value="2000"/>
-    <NanoMolarity specieID="PKAcAMP4" value="1000"/>
+    <NanoMolarity specieID="PKA" value="3000"/>
+    <NanoMolarity specieID="PKAcAMP2" value="4000"/>
+    <NanoMolarity specieID="PKAcAMP4" value="2000"/>
 
   </ConcentrationSet>
 
