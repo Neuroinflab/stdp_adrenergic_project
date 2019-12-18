@@ -429,8 +429,8 @@ kdiffunit="mu2/s" />
 <Reaction name="Da--DaOut" id="Da--DaOut">
   <Reactant specieID="Da" />
   <Product specieID="DaOut" />
-  <forwardRate>1.0e-3</forwardRate>
-  <reverseRate>0.0055e-6</reverseRate>
+  <forwardRate>1.0e-4</forwardRate>
+  <reverseRate>0.0055e-7</reverseRate>
 </Reaction>
 <!--0c. excess DaOut eliminated to prevent baseline shift: DaOut + Dbuf
        <->  DaOutbuf  -->
