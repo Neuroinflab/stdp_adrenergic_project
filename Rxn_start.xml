@@ -497,7 +497,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="ISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcISObAR" />
-  <forwardRate>0.006e-5</forwardRate>
+  <forwardRate>0.012e-5</forwardRate>
   <reverseRate>22.8e-06</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -620,7 +620,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="bAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcbAR" />
-  <forwardRate>0.064e-06</forwardRate>
+  <forwardRate>0.128e-06</forwardRate>
   <reverseRate>89.6e-06</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
