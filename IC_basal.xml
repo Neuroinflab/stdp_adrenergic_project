@@ -49,7 +49,7 @@
     <NanoMolarity specieID="Ip35" value="9"/>
     <NanoMolarity specieID="PP1" value="1222"/>
     <NanoMolarity specieID="Ip35PP1" value="341"/>
-    <NanoMolarity specieID="PDE4" value="190"/>
+    <NanoMolarity specieID="PDE4" value="300"/>
     <NanoMolarity specieID="pPDE4" value="70"/>
 
     </ConcentrationSet>
@@ -73,21 +73,21 @@
     
     <NanoMolarity specieID="bAR" value="0"/> <!--bAR-->
     <NanoMolarity specieID="ISObAR" value="0"/>
-    <NanoMolarity specieID="GsbAR" value="1700"/>
+    <NanoMolarity specieID="GsbAR" value="3000"/>
 
     <NanoMolarity specieID="ISObARGs" value="100"/>
-    <NanoMolarity specieID="Gs" value="90000"/>
+    <NanoMolarity specieID="Gs" value="300000"/>
     <NanoMolarity specieID="GasGDP" value="0"/>
     <NanoMolarity specieID="GasGTP" value="0"/>
     <NanoMolarity specieID="Gsbg" value="0"/>
-    <NanoMolarity specieID="GsD1R" value="1700" />
+    <NanoMolarity specieID="GsD1R" value="3000" />
     <NanoMolarity specieID="DaD1RGs" value="100" />
-    <NanoMolarity specieID="Gi" value="10000"/>
+    <NanoMolarity specieID="Gi" value="300000"/>
     <NanoMolarity specieID="GaiGTP" value="0"/>
     <NanoMolarity specieID="GaiGDP" value="0"/>
     <NanoMolarity specieID="Gibg" value="0"/>
 
-    <NanoMolarity specieID="AC1" value="3300"/>
+    <NanoMolarity specieID="AC1" value="9300"/>
     <NanoMolarity specieID="AC1CaMCa4" value="63"/>
     <NanoMolarity specieID="AC1CaMCa4ATP" value="300"/>
     <NanoMolarity specieID="AC1GasGTP" value="0"/>
