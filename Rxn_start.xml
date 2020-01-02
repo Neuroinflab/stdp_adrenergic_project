@@ -1216,7 +1216,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
     <Reaction name = "PP2ApPP2A_reac" id="PP2ApPP2A_reac">
       <Reactant specieID="PP2ApPP2A"           />
       <Product  specieID="PP2A"   power="2"                 />
-      <forwardRate> 0.02e-3    </forwardRate>
+      <forwardRate> 0.2e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
