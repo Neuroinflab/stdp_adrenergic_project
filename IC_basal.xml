@@ -40,9 +40,8 @@
     <NanoMolarity specieID="CKp" value="50"/>
     <NanoMolarity specieID="CKpPP1" value="0"/>
 
-    <NanoMolarity specieID="PP2A" value="340"/>
-    <NanoMolarity specieID="pPP2A" value="40"/>
-    <NanoMolarity specieID="PP2ApPP2A" value="20"/>
+    <NanoMolarity specieID="PP2A" value="375"/>
+    <NanoMolarity specieID="pPP2A" value="25"/>
     
     <NanoMolarity specieID="I1" value="1400"/> <!-- I1 conc 1.2 muM -->
     <NanoMolarity specieID="I1PKAc" value="0"/>
