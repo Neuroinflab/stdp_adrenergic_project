@@ -112,7 +112,7 @@
 	  kdiffunit="mu2/s" />
   <Specie name="PDE1CaMCa4cAMP" id="PDE1CaMCa4cAMP" kdiff="0"
 	  kdiffunit="mu2/s" />
-  <Specie name="AMP" id="AMP" kdiff="84.8" kdiffunit="mu2/s" />
+
   <Specie name="Ng" id="Ng" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="NgCaM" id="NgCaM" kdiff="0" kdiffunit="mu2/s" />
   <!-- -->
@@ -1017,7 +1017,6 @@ id="AC1GaiGTPCaMCa4ATP_diss">
 <Reaction name="PDE1cAMP_disso" id="PDE1cAMP_disso">
   <Reactant specieID="PDE1CaMCa4cAMP" />
   <Product specieID="PDE1CaMCa4" />
-  <Product specieID="AMP" />
   <forwardRate>11e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
@@ -1046,7 +1045,6 @@ id="AC1GaiGTPCaMCa4ATP_diss">
 <Reaction name="PDE4 actvcomp" id="PDE4cat">
   <Reactant specieID="PDE4cAMP" />
   <Product specieID="PDE4" />
-  <Product specieID="AMP" />
   <forwardRate>17.233e-03</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
@@ -1091,7 +1089,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
 <Reaction name="pPDE4 actvcomp" id="pPDE4cat">
   <Reactant specieID="pPDE4cAMP" />
   <Product specieID="pPDE4" />
-  <Product specieID="AMP" />
+
   <forwardRate>0.3446674</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
