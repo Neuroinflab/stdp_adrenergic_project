@@ -103,7 +103,7 @@
 	  kdiff="0" kdiffunit="mu2/s" />
   <Specie name="AC1GsGiCaMCa4ATP" id="AC1GsGiCaMCa4ATP" kdiff="0"
 	  kdiffunit="mu2/s" />
-  <Specie name="ATP" id="ATP" kdiff="1" kdiffunit="mu2/s" />
+
   <Specie name="cAMP" id="cAMP" kdiff="86.4" kdiffunit="mu2/s" />
   <Specie name="AC1CaMCa4" id="AC1CaMCa4" kdiff="0"
 	  kdiffunit="mu2/s" />
@@ -119,7 +119,7 @@
 	  kdiffunit="mu2/s" />
   <Specie name="PDE1CaMCa4cAMP" id="PDE1CaMCa4cAMP" kdiff="0"
 	  kdiffunit="mu2/s" />
-  <Specie name="AMP" id="AMP" kdiff="84.8" kdiffunit="mu2/s" />
+
   <Specie name="Ng" id="Ng" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="NgCaM" id="NgCaM" kdiff="0" kdiffunit="mu2/s" />
   <!-- -->
@@ -802,9 +802,9 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
 <Reaction name="AC1GasGTPCaMCa4_ATP_Reac"
 id="AC1GasGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GasGTPCaMCa4" />
-  <Reactant specieID="ATP" />
+<!--  <Reactant specieID="ATP" />-->
   <Product specieID="AC1GasGTPCaMCa4ATP" />
-  <forwardRate>0.01e-3</forwardRate>
+  <forwardRate>20e-3</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -814,7 +814,7 @@ id="AC1GasGTPCaMCa4ATP_diss">
   <Reactant specieID="AC1GasGTPCaMCa4ATP" />
   <Product specieID="cAMP" />
   <Product specieID="AC1GasGTPCaMCa4" />
-  <forwardRate>0.02842</forwardRate>
+  <forwardRate>56.84e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -844,9 +844,9 @@ id="AC1GasGTPGaiGTP_CaMCa4_Reac">
 <Reaction name="AC1GasGTPGaiGTPCaMCa4_ATP_Reac"
 id="AC1GasGTPGaiGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GasGTPGaiGTPCaMCa4" />
-  <Reactant specieID="ATP" />
+
   <Product specieID="AC1GsGiCaMCa4ATP" />
-  <forwardRate>0.01e-3</forwardRate>
+  <forwardRate>20e-3</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -855,7 +855,7 @@ id="AC1GasGTPGaiGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GsGiCaMCa4ATP" />
   <Product specieID="cAMP" />
   <Product specieID="AC1GasGTPGaiGTPCaMCa4" />
-  <forwardRate>2.842e-3</forwardRate>
+  <forwardRate>0.05684</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -876,9 +876,9 @@ id="AC1GasGTPGaiGTPCaMCa4_ATP_Reac">
 <Reaction name="AC1GaiGTPCaMCa4_ATP_Reac"
 id="AC1GaiGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GaiGTPCaMCa4" />
-  <Reactant specieID="ATP" />
+
   <Product specieID="AC1GaiGTPCaMCa4ATP" />
-  <forwardRate>0.01e-3</forwardRate>
+  <forwardRate>20e-3</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -908,7 +908,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="AC1CaMCa4" />
   <Reactant specieID="ATP" />
   <Product specieID="AC1CaMCa4ATP" />
-  <forwardRate>0.01e-3</forwardRate>
+  <forwardRate>20</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -948,7 +948,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="AC8CaMCa4" />
   <Reactant specieID="ATP" />
   <Product specieID="AC8CaMCa4ATP" />
-  <forwardRate>0.01e-3</forwardRate>
+  <forwardRate>20</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -957,7 +957,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="AC8CaMCa4ATP" />
   <Product specieID="cAMP" />
   <Product specieID="AC8CaMCa4" />
-  <forwardRate>2.842e-3</forwardRate>
+  <forwardRate>56.84e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1819,19 +1819,19 @@ id="GluR1_S845_S831_PP2A_diss2">
 <Reaction name="PDE1cAMP_disso" id="PDE1cAMP_disso">
   <Reactant specieID="PDE1CaMCa4cAMP" />
   <Product specieID="PDE1CaMCa4" />
-  <Product specieID="AMP" />
+
   <forwardRate>11e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!--6) AMP -> ATP  -->
-<Reaction name="ATP_regen" id="ATP_regen">
+<!--<Reaction name="ATP_regen" id="ATP_regen">
   <Reactant specieID="AMP" />
   <Product specieID="ATP" />
   <forwardRate>1e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
-</Reaction>
+</Reaction>-->
 <!-- Below PDE4B/D reactions from Rodrigo:PKAc compete with I1 and PDE4B/D -->
 <!-- Current affinity with PKAc to PDE4B/D too high so nothing left binding for I1-->
 <!-- 07)  cAMP + PDE4
@@ -1848,7 +1848,7 @@ id="GluR1_S845_S831_PP2A_diss2">
 <Reaction name="PDE4 actvcomp" id="PDE4cat">
   <Reactant specieID="PDE4cAMP" />
   <Product specieID="PDE4" />
-  <Product specieID="AMP" />
+
   <forwardRate>17.233e-03</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
@@ -1893,7 +1893,7 @@ id="GluR1_S845_S831_PP2A_diss2">
 <Reaction name="pPDE4 actvcomp" id="pPDE4cat">
   <Reactant specieID="pPDE4cAMP" />
   <Product specieID="pPDE4" />
-  <Product specieID="AMP" />
+
   <forwardRate>0.3446674</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>

@@ -15,8 +15,6 @@
     <NanoMolarity specieID="Dbuf"            value="0" />
     <NanoMolarity specieID="DaDbuf" value="0" />
    
-    <NanoMolarity specieID="ATP" value="1994000"/>
-    <NanoMolarity specieID="AMP" value="500"/>
     <NanoMolarity specieID="cAMP" value="58"/>
     <NanoMolarity specieID="Epac1" value="1950"/>
     <NanoMolarity specieID="Epac1cAMP" value="50"/>
