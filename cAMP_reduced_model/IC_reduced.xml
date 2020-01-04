@@ -15,8 +15,6 @@
     <NanoMolarity specieID="Dbuf"            value="0" />
     <NanoMolarity specieID="DaDbuf" value="0" />
    
-    <NanoMolarity specieID="ATP" value="1992779"/>
-    <NanoMolarity specieID="AMP" value="980"/>
     <NanoMolarity specieID="cAMP" value="58"/>
     <NanoMolarity specieID="Epac1" value="1950"/>
     <NanoMolarity specieID="Epac1cAMP" value="50"/>
@@ -40,6 +38,9 @@
     <NanoMolarity specieID="Ip35PP1" value="343"/>
     <NanoMolarity specieID="Ip35PP1PP2BCaMCa4" value="0"/>
     <NanoMolarity specieID="Ip35PP2BCaMCa4" value="0"/>
+    <NanoMolarity specieID="PDE4" value="250"/>
+    <NanoMolarity specieID="pPDE4" value="200"/>
+
   </ConcentrationSet>
 
   <SurfaceDensitySet region="dendrite">
@@ -83,7 +84,5 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
-    <PicoSD specieID="PDE4" value="100"/>
-    <PicoSD specieID="pPDE4" value="50"/>
   </SurfaceDensitySet>
 </InitialConditions>
