@@ -38,8 +38,8 @@
     <NanoMolarity specieID="Ip35PP1" value="343"/>
     <NanoMolarity specieID="Ip35PP1PP2BCaMCa4" value="0"/>
     <NanoMolarity specieID="Ip35PP2BCaMCa4" value="0"/>
-    <NanoMolarity specieID="PDE4" value="250"/>
-    <NanoMolarity specieID="pPDE4" value="200"/>
+    <NanoMolarity specieID="PDE4" value="550"/>
+    <NanoMolarity specieID="pPDE4" value="300"/>
 
   </ConcentrationSet>
 
