@@ -798,7 +798,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
 <Reaction name="AC1CaMCa4ATP_bind" id="AC1CaMCa4ATP_bind">
   <Reactant specieID="AC1CaMCa4" />
   <Product specieID="AC1CaMCa4ATP" />
-  <forwardRate>20</forwardRate>
+  <forwardRate>2</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -837,7 +837,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
 <Reaction name="AC8CaMCa4_ATP_bind" id="AC8CaMCa4_ATP_bind">
   <Reactant specieID="AC8CaMCa4" />
   <Product specieID="AC8CaMCa4ATP" />
-  <forwardRate>20</forwardRate>
+  <forwardRate>2</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
