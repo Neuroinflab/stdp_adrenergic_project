@@ -126,7 +126,10 @@
   
   <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="3"
 	  kdiffunit="mu2/s" />
-
+  <Specie name="Fura2" id="Fura2" kdiff="60"
+	kdiffunit="mu2/s" />
+  <Specie name="Fura2_Ca" id="Fura2_Ca" kdiff="60"
+	  kdiffunit="mu2/s" />
 
 <Specie name="PKA" id="PKA" kdiff="0" kdiffunit="mu2/s" />
 <Specie name="PKAcAMP2" id="PKAcAMP2" kdiff="0"
@@ -233,7 +236,15 @@ kdiffunit="mu2/s" />
         <reverseRate>19.6</reverseRate>
     </Reaction>
 
+<!-- viiI: Fura2 Buffer    Ca + Fura2 <-> Fura2_Ca  -->
+    <Reaction name = "Fura2_Ca" id="Fura2_Ca">
+        <Reactant specieID="Ca"/>
+        <Reactant specieID="Fura2"/>
+        <Product specieID="Fura2_Ca"/>
 
+        <forwardRate>0.001</forwardRate>
+        <reverseRate>0.185</reverseRate>
+    </Reaction>
 
     <!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
     
@@ -919,7 +930,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="cAMP" />
   <Product specieID="Epac1cAMP" />
   <forwardRate>0.033e-6</forwardRate>
-  <reverseRate>8e-05</reverseRate>
+  <reverseRate>5e-05</reverseRate> <!-- 1.5 uM in agreement with Mironov-->
   <Q10>0.2</Q10>
 </Reaction>
 <!-- Inhibitor 1 Phospho and Dephosphorylation -->
