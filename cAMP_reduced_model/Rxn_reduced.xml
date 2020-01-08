@@ -14,13 +14,21 @@
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="Calbin" id="Calbin" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s" />
+  <Specie name="Fura2" id="Fura2" kdiff="60" kdiffunit="mu2/s" />
+  <Specie name="Fura2_Ca" id="Fura2_Ca" kdiff="60" kdiffunit="mu2/s" />
+
   <!--Added from Andy's model-->
   <Specie name="ISOOut" id="ISOOut" kdiff="10." kdiffunit="mu2/s" />
   <Specie name="Ibuf" id="Ibuf" kdiff="1" kdiffunit="mu2/s" />
   <Specie name="ISOIbuf" id="ISOIbuf" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="cAMP" id="cAMP" kdiff="86.4" kdiffunit="mu2/s" />
   <Specie name="Epac1" id="Epac1" kdiff="5.61" kdiffunit="mu2/s" />
   <Specie name="Epac1cAMP" id="Epac1cAMP" kdiff="5.62"
 	  kdiffunit="mu2/s" />
+  <Specie name="8cAMP" id="8cAMP" kdiff="86.4" kdiffunit="mu2/s" />
+  <Specie name="Epac18cAMP" id="Epac18cAMP" kdiff="5.6" kdiffunit="mu2/s" />
+
+  
   <Specie name="pmca" id="pmca" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ncx" id="ncx" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pmcaCa" id="pmcaCa" kdiff="0" kdiffunit="mu2/s" />
@@ -97,7 +105,7 @@
 	  kdiff="0" kdiffunit="mu2/s" />
   <Specie name="AC1GsGiCaMCa4ATP" id="AC1GsGiCaMCa4ATP" kdiff="0"
 	  kdiffunit="mu2/s" />
-  <Specie name="cAMP" id="cAMP" kdiff="86.4" kdiffunit="mu2/s" />
+
   <Specie name="AC1CaMCa4" id="AC1CaMCa4" kdiff="0"
 	  kdiffunit="mu2/s" />
   <Specie name="AC1CaMCa4ATP" id="AC1CaMCa4ATP" kdiff="0"
@@ -125,10 +133,6 @@
   <!-- -->
   
   <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="3"
-	  kdiffunit="mu2/s" />
-  <Specie name="Fura2" id="Fura2" kdiff="60"
-	kdiffunit="mu2/s" />
-  <Specie name="Fura2_Ca" id="Fura2_Ca" kdiff="60"
 	  kdiffunit="mu2/s" />
 
 <Specie name="PKA" id="PKA" kdiff="0" kdiffunit="mu2/s" />
@@ -933,6 +937,18 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <reverseRate>5e-05</reverseRate> <!-- 1.5 uM in agreement with Mironov-->
   <Q10>0.2</Q10>
 </Reaction>
+
+<!--1a) Epac1-camps + 8cAMP
+        <-> Epac1-camps_8cAMP -->
+<Reaction name="Epac_camps_8cAMP_bind" id="Epac_camps_8cAMP_bind">
+  <Reactant specieID="Epac1" />
+  <Reactant specieID="8cAMP" />
+  <Product specieID="Epac18cAMP" />
+  <forwardRate>3.6e-8</forwardRate>
+  <reverseRate>5e-05</reverseRate> <!-- 1.5 uM * 0.9 in agreement with Christensen et al 2003-->
+  <Q10>0.2</Q10>
+</Reaction>
+
 <!-- Inhibitor 1 Phospho and Dephosphorylation -->
 <!-- Hemmings et al J Biol Chem 259 14491-->
 <!--1) I1 + PKAc
