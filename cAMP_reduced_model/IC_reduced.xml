@@ -23,7 +23,7 @@
     <NanoMolarity specieID="PDE1CaMCa4" value="600"/>
     <NanoMolarity specieID="PDE1CaMCa4cAMP" value="0"/>
 
-    <NanoMolarity specieID="CaM" value="12000"/>
+    <NanoMolarity specieID="CaM" value="10000"/>
     <NanoMolarity specieID="CaMCa2" value="200"/>
     <NanoMolarity specieID="CaMCa4" value="3"/>
     <NanoMolarity specieID="NgCaM" value="18250"/>
@@ -38,7 +38,7 @@
     <NanoMolarity specieID="Ip35PP1" value="343"/>
     <NanoMolarity specieID="Ip35PP1PP2BCaMCa4" value="0"/>
     <NanoMolarity specieID="Ip35PP2BCaMCa4" value="0"/>
-    <NanoMolarity specieID="PDE4" value="150"/>
+    <NanoMolarity specieID="PDE4" value="320"/>
     <NanoMolarity specieID="pPDE4" value="50"/>
 
   </ConcentrationSet>
