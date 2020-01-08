@@ -25,8 +25,6 @@
   <Specie name="Epac1" id="Epac1" kdiff="5.61" kdiffunit="mu2/s" />
   <Specie name="Epac1cAMP" id="Epac1cAMP" kdiff="5.62"
 	  kdiffunit="mu2/s" />
-  <Specie name="8cAMP" id="8cAMP" kdiff="86.4" kdiffunit="mu2/s" />
-  <Specie name="Epac18cAMP" id="Epac18cAMP" kdiff="5.6" kdiffunit="mu2/s" />
 
   
   <Specie name="pmca" id="pmca" kdiff="0" kdiffunit="mu2/s" />
@@ -935,17 +933,6 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Product specieID="Epac1cAMP" />
   <forwardRate>0.033e-6</forwardRate>
   <reverseRate>5e-05</reverseRate> <!-- 1.5 uM in agreement with Mironov-->
-  <Q10>0.2</Q10>
-</Reaction>
-
-<!--1a) Epac1-camps + 8cAMP
-        <-> Epac1-camps_8cAMP -->
-<Reaction name="Epac_camps_8cAMP_bind" id="Epac_camps_8cAMP_bind">
-  <Reactant specieID="Epac1" />
-  <Reactant specieID="8cAMP" />
-  <Product specieID="Epac18cAMP" />
-  <forwardRate>3.6e-8</forwardRate>
-  <reverseRate>5e-05</reverseRate> <!-- 1.5 uM * 0.9 in agreement with Christensen et al 2003-->
   <Q10>0.2</Q10>
 </Reaction>
 
