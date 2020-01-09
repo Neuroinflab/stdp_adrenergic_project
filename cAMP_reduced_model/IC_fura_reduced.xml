@@ -81,9 +81,9 @@
     <PicoSD specieID="AC8CaMCa4" value="0"/>
     <PicoSD specieID="AC8CaMCa4ATP" value="5"/>
     
-    <PicoSD specieID="PKA" value="500"/>
+    <PicoSD specieID="PKA" value="1000"/>
     <PicoSD specieID="PKAr" value="0"/>
-    <PicoSD specieID="PKAcAMP2" value="20"/>
-    <PicoSD specieID="PKAcAMP4" value="5"/>
+    <PicoSD specieID="PKAcAMP2" value="500"/>
+    <PicoSD specieID="PKAcAMP4" value="500"/>
   </SurfaceDensitySet>
 </InitialConditions>
