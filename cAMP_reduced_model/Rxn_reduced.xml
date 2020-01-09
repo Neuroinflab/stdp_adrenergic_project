@@ -16,7 +16,9 @@
   <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="Fura2" id="Fura2" kdiff="60" kdiffunit="mu2/s" />
   <Specie name="Fura2_Ca" id="Fura2_Ca" kdiff="60" kdiffunit="mu2/s" />
-
+  <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
+  
   <!--Added from Andy's model-->
   <Specie name="ISOOut" id="ISOOut" kdiff="10." kdiffunit="mu2/s" />
   <Specie name="Ibuf" id="Ibuf" kdiff="1" kdiffunit="mu2/s" />
@@ -269,6 +271,19 @@ kdiffunit="mu2/s" />
         <reverseRate>0.185</reverseRate>
     </Reaction>
 
+     <Reaction name="CaCbufCa+Cbuf" id="CaCbufCa+Cbuf">
+      <Reactant specieID="CaCbuf" />
+      <Product specieID="Cbuf" />
+      <Product specieID="Ca" />
+      <forwardRate>20e-03</forwardRate>
+      <reverseRate>0</reverseRate>
+    </Reaction>
+    <Reaction name="CaOut+CbufNULL" id="CaOut_CbufNULL">
+      <Reactant specieID="CaOut" />
+      <Reactant specieID="Cbuf" />
+      <forwardRate>1e-06</forwardRate>
+      <reverseRate>0</reverseRate>
+    </Reaction>
     <!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
     
 <!-- G_protein part -->
