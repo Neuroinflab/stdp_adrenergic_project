@@ -130,7 +130,11 @@
   <!-- 4 Ca bound Calmodulin-->
   <!-- -->
   
-  <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="3"
+  <Specie name="PP2B" id="PP2B" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PP2CaMCa2" id="PP2BCaMCa2" kdiff="0"
+	  kdiffunit="mu2/s" />
+  <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0"
 	  kdiffunit="mu2/s" />
 
 <Specie name="PKA" id="PKA" kdiff="0" kdiffunit="mu2/s" />
@@ -897,6 +901,71 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Product specieID="NgCaM" />
   <forwardRate>28.e-6</forwardRate>
   <reverseRate>36.e-3</reverseRate>
+  <Q10>0.2</Q10>
+</Reaction>
+
+
+<!--3) CaM  + PP2B
+        <-> PP2CaM -->
+<Reaction name="PP2_bind" id="PP2_bind">
+  <Reactant specieID="CaM" />
+  <Reactant specieID="PP2B" />
+  <Product specieID="PP2BCaM" />
+  <forwardRate>4.6e-06</forwardRate>
+  <reverseRate>1.2e-6</reverseRate>
+  <Q10>0.2</Q10>
+</Reaction>
+<!--4) CaMCa2  + PP2B
+        <-> PP2BCaMCa2 -->
+<Reaction name="PP2CaMC2_bind" id="PP2CaMC2_bind">
+  <Reactant specieID="CaMCa2" />
+  <Reactant specieID="PP2B" />
+  <Product specieID="PP2BCaMCa2" />
+  <forwardRate>4.6e-5</forwardRate>
+  <reverseRate>1.2e-6</reverseRate>
+  <!--
+
+            <forwardRate>1e-3
+            </forwardRate>
+            <reverseRate>0.3e-3
+            </reverseRate>
+        -->
+  <Q10>0.2</Q10>
+</Reaction>
+<!--5) CaMCa4  + PP2
+        <-> PP2B -->
+<Reaction name="PP2CaMCa4_bind" id="PP2CaMCa4_bind">
+  <Reactant specieID="CaMCa4" />
+  <Reactant specieID="PP2B" />
+  <Product specieID="PP2BCaMCa4" />
+  <forwardRate>4.6e-5</forwardRate>
+  <reverseRate>1.2e-6</reverseRate>
+  <Q10>0.2</Q10>
+</Reaction>
+<!--6) PP2BCaM  + 2Ca
+        <-> PP2BCaMCa2 -->
+<Reaction name="PP2CaMCa_bind" id="PP2CaMCa_bind">
+  <Reactant specieID="PP2BCaM" />
+  <Reactant specieID="Ca" n="2" />
+  <Product specieID="PP2BCaMCa2" />
+  <forwardRate>6.e-4</forwardRate>
+  <reverseRate>9.1e-2</reverseRate>
+  <Q10>0.2</Q10>
+</Reaction>
+<!--7) PP2CaMC2  + 2Ca
+        <-> PP2B -->
+<Reaction name="PP2CaMCa2Ca_bind" id="PP2CaMCa2Ca_bind">
+  <Reactant specieID="PP2BCaMCa2" />
+  <Reactant specieID="Ca" n="2" />
+  <Product specieID="PP2BCaMCa4" />
+  <forwardRate>0.0001</forwardRate>
+  <reverseRate>1</reverseRate>
+  <!--
+            <forwardRate>0.1e-3
+            </forwardRate>
+            <reverseRate>10e-3
+            </reverseRate>
+        -->
   <Q10>0.2</Q10>
 </Reaction>
 

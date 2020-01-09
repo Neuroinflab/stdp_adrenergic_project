@@ -29,7 +29,11 @@
     <NanoMolarity specieID="CaMCa4" value="3"/>
     <NanoMolarity specieID="NgCaM" value="18250"/>
     <NanoMolarity specieID="Ng" value="2400"/>
-    <NanoMolarity specieID="PP2BCaMCa4" value="5"/>
+    <NanoMolarity specieID="PP2BCaM" value="2473"/>
+    <NanoMolarity specieID="PP2BCaMCa2" value="429"/>
+    <NanoMolarity specieID="PP2BCaMCa4" value="3"/>
+    <NanoMolarity specieID="PP2B" value="0"/>
+
 
     <NanoMolarity specieID="PKAc" value="0"/> <!--PP1 conc 1.62 muM-->
     <NanoMolarity specieID="I1" value="1400"/> <!-- I1 conc 1.2 muM -->
