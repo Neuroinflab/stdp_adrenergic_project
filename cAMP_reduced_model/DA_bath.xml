@@ -1,7 +1,7 @@
 <StimulationSet>
           <InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
-        <onset>           30000        </onset>
+        <onset>           300000        </onset>
         <duration>       999000.0       </duration>
-        <rate>              0.21    </rate>
+        <rate>              0.41    </rate>
       </InjectionStim>
 </StimulationSet>

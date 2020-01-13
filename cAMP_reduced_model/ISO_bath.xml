@@ -7,9 +7,9 @@
 <!-- Train I -->
 
 <InjectionStim specieID="ISOIbuf" injectionSite="dendrite:submembrane">
-        <onset>30000</onset>
+        <onset>300000</onset>
 	<duration>10000000</duration>
-	<rate>.21</rate>
+	<rate>.42</rate>
         <end>1200000</end> 
        
   </InjectionStim>
