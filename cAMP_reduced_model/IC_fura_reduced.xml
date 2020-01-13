@@ -50,10 +50,10 @@
   <SurfaceDensitySet region="dendrite">
     <PicoSD specieID="Leak" value="100"/>
     <PicoSD specieID="CaOutLeak" value="800"/>
-    <PicoSD specieID="pmca" value="71"/>
+    <PicoSD specieID="pmca" value="81"/>
     <PicoSD specieID="pmcaCa" value="29"/>
     <PicoSD specieID="ncx" value="2840"/>
-    <PicoSD specieID="ncxCa" value="160"/>
+    <PicoSD specieID="ncxCa" value="360"/>
     <PicoSD specieID="GsbAR" value="300"/>
     <PicoSD specieID="Gs" value="10000"/>
     <PicoSD specieID="GasGTP" value="0"/>
