@@ -1319,8 +1319,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="Epac1" />
   <Reactant specieID="cAMP" />
   <Product specieID="Epac1cAMP" />
-  <forwardRate>0.033e-6</forwardRate>
-  <reverseRate>8e-05</reverseRate>
+  <forwardRate>0.0165e-6</forwardRate>
+  <reverseRate>2.5e-05</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- Inhibitor 1 Phospho and Dephosphorylation -->
