@@ -412,7 +412,7 @@ kdiffunit="mu2/s" />
   <Product specieID="ISObAR" />
   <Product specieID="GasGTP" />
   <Product specieID="Gsbg" />
-  <forwardRate>.5e-3</forwardRate>
+  <forwardRate>0.75e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -484,7 +484,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Product specieID="DaD1R" />
   <Product specieID="GasGTP" />
   <Product specieID="Gsbg" />
-  <forwardRate>.3e-03</forwardRate>
+  <forwardRate>.6e-03</forwardRate>
   <reverseRate>0.0</reverseRate>
 </Reaction>
 <!--*****************PKAc phosphorylation of DaD1R *******************************-->
@@ -497,8 +497,8 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="ISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcISObAR" />
-  <forwardRate>0.012e-5</forwardRate>
-  <reverseRate>22.8e-06</reverseRate>
+  <forwardRate>0.008e-4</forwardRate>
+  <reverseRate>44.8e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5d1) PKAcISObAR -> pISObAR + PKAc -->
@@ -515,8 +515,8 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="pISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcpISObAR" />
-  <forwardRate>0.032e-05</forwardRate>
-  <reverseRate>44.8e-05</reverseRate>
+  <forwardRate>0.08e-04</forwardRate>
+  <reverseRate>44.8e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5d2) PKAcpISObAR -> ppISObAR + PKAc -->
@@ -533,7 +533,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="ppISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcppISObAR" />
-  <forwardRate>0.01712e-03</forwardRate>
+  <forwardRate>0.034e-03</forwardRate>
   <reverseRate>44.8e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -551,7 +551,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="pppISObAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcpppISObAR" />
-  <forwardRate>3.4e-04</forwardRate>
+  <forwardRate>3.4e-03</forwardRate>
   <reverseRate>44.8e-05</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -579,7 +579,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Product specieID="Gibg" />
   <Product specieID="ppppISObAR" />
   <Product specieID="GaiGTP" />
-  <forwardRate>0.15e-3</forwardRate>
+  <forwardRate>0.5e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -620,8 +620,8 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="bAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcbAR" />
-  <forwardRate>0.128e-05</forwardRate>
-  <reverseRate>89.6e-05</reverseRate>
+  <forwardRate>0.008e-04</forwardRate>
+  <reverseRate>44.8e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5ad1) PKAcbAR -> pbAR + PKAc -->
@@ -638,8 +638,8 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Reactant specieID="pbAR" />
   <Reactant specieID="PKAc" />
   <Product specieID="PKAcpbAR" />
-  <forwardRate>0.08e-05</forwardRate>
-  <reverseRate>22.4e-05</reverseRate>
+  <forwardRate>0.008e-04</forwardRate>
+  <reverseRate>44.8e-04</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 5d2) PKAcpbAR -> ppbAR + PKAc -->
@@ -702,7 +702,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Product specieID="ppppbAR" />
   <Product specieID="Gibg" />
   <Product specieID="GaiGTP" />
-  <forwardRate>0.15e-3</forwardRate>
+  <forwardRate>0.03e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -743,7 +743,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
 <Reaction name="GasGTP_disso" id="GasGTP_disso">
   <Reactant specieID="GasGTP" />
   <Product specieID="GasGDP" />
-  <forwardRate>10e-3</forwardRate>
+  <forwardRate>0.001</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -804,7 +804,7 @@ id="AC1GasGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GasGTPCaMCa4" />
 <!--  <Reactant specieID="ATP" />-->
   <Product specieID="AC1GasGTPCaMCa4ATP" />
-  <forwardRate>20e-3</forwardRate>
+  <forwardRate>20</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -835,8 +835,8 @@ id="AC1GasGTPGaiGTP_CaMCa4_Reac">
   <Reactant specieID="AC1GasGTPGaiGTP" />
   <Reactant specieID="CaMCa4" />
   <Product specieID="AC1GasGTPGaiGTPCaMCa4" />
-  <forwardRate>0.006e-3</forwardRate>
-  <reverseRate>0.9e-3</reverseRate>
+  <forwardRate>0.0006e-5</forwardRate>
+  <reverseRate>0.09e-5</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 2c) FCaM + ATP
@@ -846,8 +846,8 @@ id="AC1GasGTPGaiGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GasGTPGaiGTPCaMCa4" />
 
   <Product specieID="AC1GsGiCaMCa4ATP" />
-  <forwardRate>20e-3</forwardRate>
-  <reverseRate>2273e-3</reverseRate>
+  <forwardRate>20</forwardRate>
+  <reverseRate>2273e-4</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 2d) FCaMATP -> FCaM + cAMP    -->
@@ -855,7 +855,7 @@ id="AC1GasGTPGaiGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GsGiCaMCa4ATP" />
   <Product specieID="cAMP" />
   <Product specieID="AC1GasGTPGaiGTPCaMCa4" />
-  <forwardRate>0.05684</forwardRate>
+  <forwardRate>0.005684</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -878,7 +878,7 @@ id="AC1GaiGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GaiGTPCaMCa4" />
 
   <Product specieID="AC1GaiGTPCaMCa4ATP" />
-  <forwardRate>20e-3</forwardRate>
+  <forwardRate>20</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -908,7 +908,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="AC1CaMCa4" />
 <!--  <Reactant specieID="ATP" />-->
   <Product specieID="AC1CaMCa4ATP" />
-  <forwardRate>2</forwardRate>
+  <forwardRate>20</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -946,9 +946,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
          <-> AC8CaMATP   -->
 <Reaction name="AC8CaMCa4_ATP_bind" id="AC8CaMCa4_ATP_bind">
   <Reactant specieID="AC8CaMCa4" />
-<!--  <Reactant specieID="ATP" />-->
   <Product specieID="AC8CaMCa4ATP" />
-  <forwardRate>2</forwardRate>
+  <forwardRate>20</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -957,7 +956,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="AC8CaMCa4ATP" />
   <Product specieID="cAMP" />
   <Product specieID="AC8CaMCa4" />
-  <forwardRate>56.84e-3</forwardRate>
+  <forwardRate>28.e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
