@@ -131,8 +131,8 @@
     <PicoSD specieID="Gs" value="10000"/>
     <PicoSD specieID="GasGTP" value="0"/>
     <PicoSD specieID="GasGDP" value="0"/>
-    <PicoSD specieID="GsD1R" value="560" />
-    <PicoSD specieID="DaD1RGs" value="40" />
+    <PicoSD specieID="GsD1R" value="580" />
+    <PicoSD specieID="DaD1RGs" value="20" />
     
     <PicoSD specieID="Gi" value="10000"/>
     <PicoSD specieID="GaiGTP" value="0"/>
