@@ -46,7 +46,7 @@
     <NanoMolarity specieID="Ip35" value="9"/>
     <NanoMolarity specieID="PP1" value="1222"/>
     <NanoMolarity specieID="Ip35PP1" value="341"/>
-    <NanoMolarity specieID="PDE4" value="1000"/>
+    <NanoMolarity specieID="PDE4" value="1400"/>
     <NanoMolarity specieID="pPDE4" value="500"/>
 
     </ConcentrationSet>
@@ -126,7 +126,7 @@
     <PicoSD specieID="ncx" value="2840"/>
     <PicoSD specieID="ncxCa" value="160"/>
 
-    <PicoSD specieID="GsbAR" value="280"/>
+    <PicoSD specieID="GsbAR" value="500"/>
     <PicoSD specieID="ISObARGs" value="20"/>
     <PicoSD specieID="Gs" value="10000"/>
     <PicoSD specieID="GasGTP" value="0"/>
