@@ -1120,8 +1120,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Reactant specieID="CKp"                    />
         <Reactant specieID="PP1"                    />
         <Product  specieID="CKpPP1"                 />
-        <forwardRate> 0.0045e-06     </forwardRate>
-        <reverseRate>  0.08e-03  </reverseRate>
+        <forwardRate> 0.045e-06     </forwardRate>
+        <reverseRate>  0.8e-03  </reverseRate>
         <Q10>     0.2             </Q10>
     </Reaction>
 
@@ -1141,8 +1141,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
       <Reactant specieID="PP1"                    />
       <Product  specieID="CKpCaMCa4PP1"           />
       
-      <forwardRate> 0.0005e-06  </forwardRate>
-      <reverseRate> 0.09e-03   </reverseRate>
+      <forwardRate> 0.005e-06  </forwardRate>
+      <reverseRate> 0.9e-03   </reverseRate>
     </Reaction>
 
     <!--Dephos of CKpCaMCa4 by PP1 -->
@@ -1436,8 +1436,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="pNMDAR" />
   <Reactant specieID="PP1" />
   <Product specieID="PP1pNMDAR" />
-  <forwardRate>3.4e-6</forwardRate>
-  <reverseRate>1600e-3</reverseRate>
+  <forwardRate>6.8e-6</forwardRate>
+  <reverseRate>3200e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- PP2BpNMDAR -> NMDAR + PP2B -->
@@ -1584,8 +1584,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S831" />
   <Reactant specieID="PP1" />
   <Product specieID="GluR1_S831_PP1" />
-  <forwardRate>14e-6</forwardRate>
-  <reverseRate>28e-3</reverseRate>
+  <forwardRate>14e-5</forwardRate>
+  <reverseRate>28e-2</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- GluR1_S831_PP1 -> GluR1 + PP1 -->
@@ -1719,8 +1719,8 @@ id="GluR1_S845_S831_PP1_bind2">
   <Reactant specieID="GluR1_S845_S831" />
   <Reactant specieID="PP1" />
   <Product specieID="GluR1_S845_S831_PP1_2" />
-  <forwardRate>14e-6</forwardRate>
-  <reverseRate>28e-3</reverseRate>
+  <forwardRate>14e-5</forwardRate>
+  <reverseRate>28e-2</reverseRate>
   
   <Q10>0.2</Q10>
 </Reaction>
