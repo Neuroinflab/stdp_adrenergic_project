@@ -44,38 +44,38 @@
 <!-- Train I -->
 
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
-        <onset>100000</onset>
+        <onset>300000</onset>
 	<duration>3</duration>
 	<rate>168</rate>
         <period>200</period>
-        <end>101000</end> 
+        <end>301000</end> 
        
 </InjectionStim>
 
 <InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
-        <onset>100050</onset>
+        <onset>300050</onset>
 	<duration>3</duration>
 	<rate>150</rate>
         <period>200</period>
-        <end>101000</end>
+        <end>301000</end>
        
   </InjectionStim>
 
 
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
-        <onset>101000</onset>
+        <onset>301000</onset>
 	<duration>3</duration>
-	<rate>82.5</rate>
+	<rate>100.</rate>
         <period>200</period>
-        <end>280000</end> 
+        <end>480000</end> 
        
 </InjectionStim>
 <InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
-        <onset>101050</onset>
+        <onset>301050</onset>
 	<duration>3</duration>
-	<rate>75</rate>
+	<rate>50</rate>
         <period>200</period>
-        <end>280100</end>
+        <end>480100</end>
        
   </InjectionStim>
 
