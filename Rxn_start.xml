@@ -1368,7 +1368,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="Ip35PP2BCaMCa4" />
   <Product specieID="I1" />
   <Product specieID="PP2BCaMCa4" />
-  <forwardRate>0.0055</forwardRate>
+  <forwardRate>0.015</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1388,7 +1388,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Product specieID="I1" />
   <Product specieID="PP1" />
   <Product specieID="PP2BCaMCa4" />
-  <forwardRate>0.0055</forwardRate>
+  <forwardRate>0.015</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
