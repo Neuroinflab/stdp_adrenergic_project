@@ -1067,7 +1067,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Reactant specieID="CK"                     />
         <Product  specieID="CKCaMCa4"               />
 
-        <forwardRate> 0.01e-3   </forwardRate>
+        <forwardRate> 0.02e-3   </forwardRate>
         <reverseRate> 1.95e-3      </reverseRate>
         <!--0.8 from ode file
 	    reverseRate> 0.8e-3      </reverseRate-->
@@ -1111,7 +1111,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
         <Product  specieID="CaMCa4"                 />
         <Product  specieID="CKp"                    />
 
-        <forwardRate> 0.0008e-3 </forwardRate>
+        <forwardRate> 0.001e-3 </forwardRate>
         <reverseRate> 0.02e-3   </reverseRate>
         <Q10>    0.2            </Q10>
     </Reaction>
