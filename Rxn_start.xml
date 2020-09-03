@@ -6,7 +6,7 @@
        Chosen katp=1 sec(not 10 sec) is enough   -->
   <!-- Suggested by avrama Ca kdiff=600 for helping fast decay on Feb.24th 2009-->
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
-  <Specie name="CaOut" id="CaOut" kdiff="3." kdiffunit="mu2/s" />
+  <Specie name="CaOut" id="CaOut" kdiff="2." kdiffunit="mu2/s" />
   <!--Added from Andy's model-->
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
@@ -249,8 +249,8 @@ kdiffunit="mu2/s" />
 	<Reactant specieID="pmca"/>
 	<Product specieID="pmcaCa"/>
 
-	<forwardRate>0.05e-3</forwardRate>
-	<reverseRate>9e-3</reverseRate>
+	<forwardRate>0.5e-4</forwardRate>
+	<reverseRate>0.007</reverseRate>
     </Reaction>
 
 <!-- ii: Ca pump high affinity -    pmcaCa <-> pmca + CaOut   SAME-->
@@ -259,7 +259,7 @@ kdiffunit="mu2/s" />
 	<Product specieID="pmca"/>
 	<Product specieID="CaOut"/>
 
-	<forwardRate>3.0e-3</forwardRate>
+	<forwardRate>0.0035</forwardRate>
 	<reverseRate>0</reverseRate>
     </Reaction>
 
@@ -269,8 +269,8 @@ kdiffunit="mu2/s" />
 	<Reactant specieID="ncx"/>
 	<Product specieID="ncxCa"/>
 
-	<forwardRate>0.011e-3</forwardRate>
-	<reverseRate>11.2e-3</reverseRate>
+	<forwardRate>1.68e-5</forwardRate>
+	<reverseRate>0.0112</reverseRate>
     </Reaction>
 
 <!-- iv: Ca pump low affinity -    ncxCa <-> ncx + CaOut   SAME-->
@@ -279,7 +279,7 @@ kdiffunit="mu2/s" />
 	<Product specieID="ncx"/>
 	<Product specieID="CaOut"/>
 
-	<forwardRate>5.6e-3</forwardRate>
+	<forwardRate>0.0056</forwardRate>
 	<reverseRate>0</reverseRate>
     </Reaction>
 <!-- v: Ca leak -    CaOut + Leak <-> CaOutLeak  GQ RXN FILE, Leak is sm only-->
@@ -288,7 +288,7 @@ kdiffunit="mu2/s" />
 	<Reactant specieID="Leak"/>
 	<Product specieID="CaOutLeak"/>
 
-        <forwardRate>0.01e-6</forwardRate>
+        <forwardRate>1.5e-6</forwardRate>
 	<reverseRate>1.1e-3</reverseRate>
     </Reaction>
 
@@ -308,8 +308,8 @@ kdiffunit="mu2/s" />
         <Reactant specieID="Calbin"/>
         <Product specieID="CalbinC"/>
 
-        <forwardRate>0.028e-3</forwardRate>
-        <reverseRate>19.6</reverseRate>
+        <forwardRate>2.8e-5</forwardRate>
+        <reverseRate>0.0196</reverseRate>
     </Reaction>
 
 
