@@ -3,7 +3,7 @@
     <!-- this file defines a single run of the calculation, using morphology and
 -	 reaction data brought in from other files --> 
 
-    <xi:include href="Rxn_start.xml" />
+    <xi:include href="Rxn_short_dend.xml" />
     <xi:include href="morph_short_dend.xml" />
     <xi:include href="IC_short_dend_basal.xml" />
 
@@ -42,7 +42,7 @@ results (also, 3D may not work yet...)  -->
 
 
     <!-- the tolerace is not used yet -->
-    <tolerance>0.01</tolerance>
+    <tolerance>0.02</tolerance>
 
     <outputInterval>200</outputInterval>
 
