@@ -18,7 +18,7 @@
     <NanoMolarity specieID="Epac1cAMP" value="50"/>
 
     <NanoMolarity specieID="PDE1" value="10160"/>
-    <NanoMolarity specieID="PDE1CaMCa4" value="0"/>
+    <NanoMolarity specieID="PDE1CaMCa4" value="1400"/>
     <NanoMolarity specieID="PDE1CaMCa4cAMP" value="0"/>
 
     <NanoMolarity specieID="CaM" value="9000"/>
