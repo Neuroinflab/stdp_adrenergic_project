@@ -10,7 +10,9 @@
   <!--Added from Andy's model-->
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
-  
+    <Specie name="fixedbuffer" id="fixedbuffer" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="fixedbufferCa" id="fixedbufferCa" kdiff="0" kdiffunit="mu2/s"/>
+
   <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
   
@@ -25,8 +27,7 @@
   <Specie name="Ibuf" id="Ibuf" kdiff="1" kdiffunit="mu2/s" />
   <Specie name="ISOIbuf" id="ISOIbuf" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="Epac1" id="Epac1" kdiff="5.61" kdiffunit="mu2/s" />
-  <Specie name="Epac1cAMP" id="Epac1cAMP" kdiff="5.62"
-	  kdiffunit="mu2/s" />
+  <Specie name="Epac1cAMP" id="Epac1cAMP" kdiff="5.62" kdiffunit="mu2/s" />
   <Specie name="pmca" id="pmca" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ncx" id="ncx" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pmcaCa" id="pmcaCa" kdiff="0" kdiffunit="mu2/s" />
@@ -37,38 +38,25 @@
   <Specie name="Gs" id="Gs" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="Gi" id="Gi" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ISObAR" id="ISObAR" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="ISObARGs" id="ISObARGs" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcISObAR" id="PKAcISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcpISObAR" id="PKAcpISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcppISObAR" id="PKAcppISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcpppISObAR" id="PKAcpppISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="ISObARGs" id="ISObARGs" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcISObAR" id="PKAcISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcpISObAR" id="PKAcpISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcppISObAR" id="PKAcppISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcpppISObAR" id="PKAcpppISObAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pISObAR" id="pISObAR" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="ppISObAR" id="ppISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="pppISObAR" id="pppISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="ppppISObAR" id="ppppISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="ppppISObARGi" id="ppppISObARGi" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="ppISObAR" id="ppISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pppISObAR" id="pppISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="ppppISObAR" id="ppppISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="ppppISObARGi" id="ppppISObARGi" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="PKAcbAR" id="PKAcbAR" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="PKAcpbAR" id="PKAcpbAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcppbAR" id="PKAcppbAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcpppbAR" id="PKAcpppbAR" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="PKAcpbAR" id="PKAcpbAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcppbAR" id="PKAcppbAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcpppbAR" id="PKAcpppbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pbAR" id="pbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ppbAR" id="ppbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pppbAR" id="pppbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ppppbAR" id="ppppbAR" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="ppppbARGi" id="ppppbARGi" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="ppppbARGi" id="ppppbARGi" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GsbAR" id="GsbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GasGTP" id="GasGTP" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GasGDP" id="GasGDP" kdiff="0" kdiffunit="mu2/s" />
@@ -85,72 +73,55 @@
   <Specie name="DaD1RGs" id="DaD1RGs" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GsD1R" id="GsD1R" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="AC1" id="AC1" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="AC1GasGTP" id="AC1GasGTP" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GasGTPCaMCa4" id="AC1GasGTPCaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GasGTPCaMCa4ATP" id="AC1GasGTPCaMCa4ATP" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GaiGTP" id="AC1GaiGTP" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GaiGTPCaMCa4" id="AC1GaiGTPCaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GaiGTPCaMCa4ATP" id="AC1GaiGTPCaMCa4ATP" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GasGTPGaiGTP" id="AC1GasGTPGaiGTP" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="AC1GasGTP" id="AC1GasGTP" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GasGTPCaMCa4" id="AC1GasGTPCaMCa4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GasGTPCaMCa4ATP" id="AC1GasGTPCaMCa4ATP" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GaiGTP" id="AC1GaiGTP" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GaiGTPCaMCa4" id="AC1GaiGTPCaMCa4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GaiGTPCaMCa4ATP" id="AC1GaiGTPCaMCa4ATP" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GasGTPGaiGTP" id="AC1GasGTPGaiGTP" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="AC1GasGTPGaiGTPCaMCa4" id="AC1GasGTPGaiGTPCaMCa4"
 	  kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="AC1GsGiCaMCa4ATP" id="AC1GsGiCaMCa4ATP" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="AC1GsGiCaMCa4ATP" id="AC1GsGiCaMCa4ATP" kdiff="0" kdiffunit="mu2/s" />
 
   <Specie name="cAMP" id="cAMP" kdiff="86.4" kdiffunit="mu2/s" />
-  <Specie name="AC1CaMCa4" id="AC1CaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1CaMCa4ATP" id="AC1CaMCa4ATP" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="AC1CaMCa4" id="AC1CaMCa4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1CaMCa4ATP" id="AC1CaMCa4ATP" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="AC8" id="AC8" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="AC8CaMCa4" id="AC8CaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC8CaMCa4ATP" id="AC8CaMCa4ATP" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="AC8CaMCa4" id="AC8CaMCa4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC8CaMCa4ATP" id="AC8CaMCa4ATP" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="PDE1" id="PDE1" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="PDE1CaMCa4" id="PDE1CaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PDE1CaMCa4cAMP" id="PDE1CaMCa4cAMP" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="PDE1CaMCa4" id="PDE1CaMCa4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PDE1CaMCa4cAMP" id="PDE1CaMCa4cAMP" kdiff="0" kdiffunit="mu2/s" />
 
   <Specie name="Ng" id="Ng" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="NgCaM" id="NgCaM" kdiff="0" kdiffunit="mu2/s" />
   <!-- -->
-  <Specie name="CaM" id="CaM" kdiff="11" kdiffunit="mu2/s"/>
-  <Specie name="CaMCa2" id="CaMCa2" kdiff="11" kdiffunit="mu2/s"/>
-  <Specie name="CaMCa3" id="CaMCa3" kdiff="11" kdiffunit="mu2/s"/>
-  <Specie name="CaMCa4" id="CaMCa4" kdiff="11" kdiffunit="mu2/s"/>
-  <Specie name="PP2B" id="PP2B" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PP2BCaMCa2" id="PP2BCaMCa2" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PP2BCaMCa3" id="PP2BCaMCa3" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0" kdiffunit="mu2/s"/>
-  
-  <Specie name="CK" id="CK" kdiff="7.62" kdiffunit="mu2/s"/>
+    <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMCa2" id="CaMCa2" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="PP2B" id="PP2B" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PP2CaMCa2" id="PP2BCaMCa2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0" kdiffunit="mu2/s" />
+
+  <Specie name="CK" id="CK" kdiff="0.1" kdiffunit="mu2/s"/>
   <Specie name="CKCaMCa4" id="CKCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>
-  <Specie name="CKpCaMCa4" id="CKpCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>
-  <Specie name="CKp" id="CKp" kdiff="0.1" kdiffunit="mu2/s"/>
-  <Specie name="Complex" id="Complex" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="pComplex" id="pComplex" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="CKpPP1" id="CKpPP1" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CKpCaMCa4" id="CKpCaMCa4" kdiff="3.6" kdiffunit="mu2/s"/>
+  <Specie name="CKp" id="CKp" kdiff="3.6" kdiffunit="mu2/s"/>
   <Specie name="CKpCaMCa4PP1" id="CKpCaMCa4PP1" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CKpPP1" id="CKpPP1" kdiff="0" kdiffunit="mu2/s"/>
+
   
   <Specie name="CKpCaMCa4PP2A" id="CKpCaMCa4PP2A" kdiff="0.1" kdiffunit="mu2/s"/>
-  <Specie name="CKpPP2A"            id="CKpPP2A"           kdiff="0.1"   kdiffunit="mu2/s"/>
-  <Specie name="PP2A"             id="PP2A"            kdiff="3.6"   kdiffunit="mu2/s"/>
+  <Specie name="CKpPP2A" id="CKpPP2A"           kdiff="0.1"   kdiffunit="mu2/s"/>
+  <Specie name="PP2A"  id="PP2A" kdiff="3.6"   kdiffunit="mu2/s"/>
   
   <Specie name="PP2ACKpCaMCa4"      id="PP2ACKpCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
   <Specie name="PP2ACKCaMCa4"      id="PP2ACKCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
-  <Specie name="PP2ACKp"            id="PP2ACKp"           kdiff="3.6"   kdiffunit="mu2/s"/>
-  <Specie name="pPP2A"             id="pPP2A"            kdiff="3.6"   kdiffunit="mu2/s"/>
-  <Specie name="PP2ApPP2A"             id="PP2ApPP2A"            kdiff="3.6"   kdiffunit="mu2/s"/>
+  <Specie name="PP2ACKp" id="PP2ACKp"           kdiff="3.6"   kdiffunit="mu2/s"/>
+  <Specie name="pPP2A"  id="pPP2A" kdiff="3.6"   kdiffunit="mu2/s"/>
+  <Specie name="PP2ApPP2A"  id="PP2ApPP2A" kdiff="3.6"   kdiffunit="mu2/s"/>
 
 
 <Specie name="PKA" id="PKA" kdiff="0" kdiffunit="mu2/s" />
