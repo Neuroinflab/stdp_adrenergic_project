@@ -7,8 +7,6 @@
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="150000"/>
     <NanoMolarity specieID="CalbinC" value="15000"/>
-    <NanoMolarity specieID="ATP" value="2000000"/>
-    <NanoMolarity specieID="AMP" value="980"/>
     <NanoMolarity specieID="fixedbuffer" value="2000000"/>
     <NanoMolarity specieID="fixedbufferCa" value="0"/>
 
