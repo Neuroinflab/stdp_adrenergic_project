@@ -6,7 +6,7 @@
        Chosen katp=1 sec(not 10 sec) is enough   -->
   <!-- Suggested by avrama Ca kdiff=600 for helping fast decay on Feb.24th 2009-->
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
-  <Specie name="CaOut" id="CaOut" kdiff="2." kdiffunit="mu2/s" />
+  <Specie name="CaOut" id="CaOut" kdiff="3." kdiffunit="mu2/s" />
   <!--Added from Andy's model-->
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
