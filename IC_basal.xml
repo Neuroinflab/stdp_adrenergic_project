@@ -118,9 +118,9 @@
   <ConcentrationSet region="neck">
     <NanoMolarity specieID="Leak" value="0"/>
     <NanoMolarity specieID="CaOutLeak" value="5000"/>
-    <NanoMolarity specieID="pmca" value="600"/>
+    <NanoMolarity specieID="pmca" value="550"/>
     <NanoMolarity specieID="pmcaCa" value="0"/>
-    <NanoMolarity specieID="ncx" value="12000"/>
+    <NanoMolarity specieID="ncx" value="11000"/>
     <NanoMolarity specieID="ncxCa" value="1000"/>
   </ConcentrationSet>
 
