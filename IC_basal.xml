@@ -50,14 +50,14 @@
     </ConcentrationSet>
 
    <ConcentrationSet region="PSD">
-     <!--     <NanoMolarity specieID="NMDAR" value="3000"/>
-	  <NanoMolarity specieID="pNMDAR" value="1000"/> -->
-	  <!--Swulius et al 2011 (MN Waxham lab) -->
-     <!--     <NanoMolarity specieID="PKAcNMDAR" value="0"/>
+         <NanoMolarity specieID="NMDAR" value="3000"/>
+	  <NanoMolarity specieID="pNMDAR" value="1000"/>
+	  <!-- Swulius et al 2011 (MN Waxham lab) -->
+         <NanoMolarity specieID="PKAcNMDAR" value="0"/>
 	  <NanoMolarity specieID="PP2BpNMDAR" value="0"/>
 	  <NanoMolarity specieID="GluR1" value="7000"/>
 	  <NanoMolarity specieID="GluR1_S831" value="1500"/>
-	  <NanoMolarity specieID="GluR1_S845" value="1500"/> -->
+	  <NanoMolarity specieID="GluR1_S845" value="1500"/>
      <NanoMolarity specieID="Leak" value="0"/>
     <NanoMolarity specieID="CaOutLeak" value="5000"/>
     <NanoMolarity specieID="pmca" value="600"/>
