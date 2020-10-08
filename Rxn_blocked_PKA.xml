@@ -6,11 +6,12 @@
        Chosen katp=1 sec(not 10 sec) is enough   -->
   <!-- Suggested by avrama Ca kdiff=600 for helping fast decay on Feb.24th 2009-->
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
-  <Specie name="CaOut" id="CaOut" kdiff="3." kdiffunit="mu2/s" />
+  <Specie name="CaOut" id="CaOut" kdiff="10." kdiffunit="mu2/s" />
   <!--Added from Andy's model-->
-  <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
-	  kdiffunit="mu2/s" />
-  
+  <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="fixedbuffer" id="fixedbuffer" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="fixedbufferCa" id="fixedbufferCa" kdiff="0" kdiffunit="mu2/s"/>
+
   <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
   
@@ -25,8 +26,7 @@
   <Specie name="Ibuf" id="Ibuf" kdiff="1" kdiffunit="mu2/s" />
   <Specie name="ISOIbuf" id="ISOIbuf" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="Epac1" id="Epac1" kdiff="5.61" kdiffunit="mu2/s" />
-  <Specie name="Epac1cAMP" id="Epac1cAMP" kdiff="5.62"
-	  kdiffunit="mu2/s" />
+  <Specie name="Epac1cAMP" id="Epac1cAMP" kdiff="5.62" kdiffunit="mu2/s" />
   <Specie name="pmca" id="pmca" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ncx" id="ncx" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pmcaCa" id="pmcaCa" kdiff="0" kdiffunit="mu2/s" />
@@ -37,38 +37,25 @@
   <Specie name="Gs" id="Gs" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="Gi" id="Gi" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ISObAR" id="ISObAR" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="ISObARGs" id="ISObARGs" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcISObAR" id="PKAcISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcpISObAR" id="PKAcpISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcppISObAR" id="PKAcppISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcpppISObAR" id="PKAcpppISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="ISObARGs" id="ISObARGs" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcISObAR" id="PKAcISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcpISObAR" id="PKAcpISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcppISObAR" id="PKAcppISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcpppISObAR" id="PKAcpppISObAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pISObAR" id="pISObAR" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="ppISObAR" id="ppISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="pppISObAR" id="pppISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="ppppISObAR" id="ppppISObAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="ppppISObARGi" id="ppppISObARGi" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="ppISObAR" id="ppISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pppISObAR" id="pppISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="ppppISObAR" id="ppppISObAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="ppppISObARGi" id="ppppISObARGi" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="PKAcbAR" id="PKAcbAR" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="PKAcpbAR" id="PKAcpbAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcppbAR" id="PKAcppbAR" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PKAcpppbAR" id="PKAcpppbAR" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="PKAcpbAR" id="PKAcpbAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcppbAR" id="PKAcppbAR" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcpppbAR" id="PKAcpppbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pbAR" id="pbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ppbAR" id="ppbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pppbAR" id="pppbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ppppbAR" id="ppppbAR" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="ppppbARGi" id="ppppbARGi" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="ppppbARGi" id="ppppbARGi" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GsbAR" id="GsbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GasGTP" id="GasGTP" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GasGDP" id="GasGDP" kdiff="0" kdiffunit="mu2/s" />
@@ -84,76 +71,60 @@
   <Specie name="DaD1R" id="DaD1R" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="DaD1RGs" id="DaD1RGs" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GsD1R" id="GsD1R" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PKAcDaD1RGs"   id="PKAcDaD1RGs"   kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pDaD1RGs"  id="pDaD1RGs"  kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pGsD1R"    id="pGsD1R"    kdiff="0" kdiffunit="mu2/s"/>
+
   <Specie name="AC1" id="AC1" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="AC1GasGTP" id="AC1GasGTP" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GasGTPCaMCa4" id="AC1GasGTPCaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GasGTPCaMCa4ATP" id="AC1GasGTPCaMCa4ATP" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GaiGTP" id="AC1GaiGTP" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GaiGTPCaMCa4" id="AC1GaiGTPCaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GaiGTPCaMCa4ATP" id="AC1GaiGTPCaMCa4ATP" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1GasGTPGaiGTP" id="AC1GasGTPGaiGTP" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="AC1GasGTP" id="AC1GasGTP" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GasGTPCaMCa4" id="AC1GasGTPCaMCa4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GasGTPCaMCa4ATP" id="AC1GasGTPCaMCa4ATP" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GaiGTP" id="AC1GaiGTP" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GaiGTPCaMCa4" id="AC1GaiGTPCaMCa4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GaiGTPCaMCa4ATP" id="AC1GaiGTPCaMCa4ATP" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1GasGTPGaiGTP" id="AC1GasGTPGaiGTP" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="AC1GasGTPGaiGTPCaMCa4" id="AC1GasGTPGaiGTPCaMCa4"
 	  kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="AC1GsGiCaMCa4ATP" id="AC1GsGiCaMCa4ATP" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="ATP" id="ATP" kdiff="1" kdiffunit="mu2/s" />
+  <Specie name="AC1GsGiCaMCa4ATP" id="AC1GsGiCaMCa4ATP" kdiff="0" kdiffunit="mu2/s" />
+
   <Specie name="cAMP" id="cAMP" kdiff="86.4" kdiffunit="mu2/s" />
-  <Specie name="AC1CaMCa4" id="AC1CaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC1CaMCa4ATP" id="AC1CaMCa4ATP" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="AC1CaMCa4" id="AC1CaMCa4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC1CaMCa4ATP" id="AC1CaMCa4ATP" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="AC8" id="AC8" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="AC8CaMCa4" id="AC8CaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AC8CaMCa4ATP" id="AC8CaMCa4ATP" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="AC8CaMCa4" id="AC8CaMCa4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="AC8CaMCa4ATP" id="AC8CaMCa4ATP" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="PDE1" id="PDE1" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="PDE1CaMCa4" id="PDE1CaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PDE1CaMCa4cAMP" id="PDE1CaMCa4cAMP" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="AMP" id="AMP" kdiff="84.8" kdiffunit="mu2/s" />
+  <Specie name="PDE1CaMCa4" id="PDE1CaMCa4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PDE1CaMCa4cAMP" id="PDE1CaMCa4cAMP" kdiff="0" kdiffunit="mu2/s" />
+
   <Specie name="Ng" id="Ng" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="NgCaM" id="NgCaM" kdiff="0" kdiffunit="mu2/s" />
   <!-- -->
-  <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s" />
-  <!--Calmodulin-->
+    <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s" />
   <Specie name="CaMCa2" id="CaMCa2" kdiff="4" kdiffunit="mu2/s" />
-  <!-- 2 Ca bound Calmodulin-->
   <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s" />
-  <!-- 4 Ca bound Calmodulin-->
-  <!-- -->
   <Specie name="PP2B" id="PP2B" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="PP2CaMCa2" id="PP2BCaMCa2" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0"
-	  kdiffunit="mu2/s" />
+  <Specie name="PP2CaMCa2" id="PP2BCaMCa2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0" kdiffunit="mu2/s" />
+
+  <Specie name="CK" id="CK" kdiff="0.1" kdiffunit="mu2/s"/>
+  <Specie name="CKCaMCa4" id="CKCaMCa4" kdiff="0.1" kdiffunit="mu2/s"/>
+  <Specie name="CKpCaMCa4" id="CKpCaMCa4" kdiff="3.6" kdiffunit="mu2/s"/>
+  <Specie name="CKp" id="CKp" kdiff="3.6" kdiffunit="mu2/s"/>
+  <Specie name="CKpCaMCa4PP1" id="CKpCaMCa4PP1" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CKpPP1" id="CKpPP1" kdiff="0" kdiffunit="mu2/s"/>
+
   
-  <Specie name="CK"             id="CK"            kdiff="0.1"   kdiffunit="mu2/s"/>
-  <Specie name="CKCaMCa4"       id="CKCaMCa4"      kdiff="0.1"   kdiffunit="mu2/s"/>
-  <Specie name="CKpCaMCa4"      id="CKpCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
-  <Specie name="CKp"            id="CKp"           kdiff="3.6"   kdiffunit="mu2/s"/>
-  <Specie name="CKpPP1"         id="CKpPP1"        kdiff="0"     kdiffunit="mu2/s"/>
-  
-  <Specie name="CKpCaMCa4PP1"         id="CKpCaMCa4PP1"        kdiff="0"     kdiffunit="mu2/s"/>
-  
-  <Specie name="CKpCaMCa4PP2A"      id="CKpCaMCa4PP2A"     kdiff="3.6"   kdiffunit="mu2/s"/>
-  <Specie name="CKpPP2A"            id="CKpPP2A"           kdiff="3.6"   kdiffunit="mu2/s"/>
-  <Specie name="PP2A"             id="PP2A"            kdiff="3.6"   kdiffunit="mu2/s"/>
+  <Specie name="CKpCaMCa4PP2A" id="CKpCaMCa4PP2A" kdiff="0.1" kdiffunit="mu2/s"/>
+  <Specie name="CKpPP2A" id="CKpPP2A"           kdiff="0.1"   kdiffunit="mu2/s"/>
+  <Specie name="PP2A"  id="PP2A" kdiff="3.6"   kdiffunit="mu2/s"/>
   
   <Specie name="PP2ACKpCaMCa4"      id="PP2ACKpCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
   <Specie name="PP2ACKCaMCa4"      id="PP2ACKCaMCa4"     kdiff="3.6"   kdiffunit="mu2/s"/>
-  <Specie name="PP2ACKp"            id="PP2ACKp"           kdiff="3.6"   kdiffunit="mu2/s"/>
-  <Specie name="pPP2A"             id="pPP2A"            kdiff="3.6"   kdiffunit="mu2/s"/>
-  <Specie name="PP2ApPP2A"             id="PP2ApPP2A"            kdiff="3.6"   kdiffunit="mu2/s"/>
+  <Specie name="PP2ACKp" id="PP2ACKp"           kdiff="3.6"   kdiffunit="mu2/s"/>
+  <Specie name="pPP2A"  id="pPP2A" kdiff="3.6"   kdiffunit="mu2/s"/>
+  <Specie name="PP2ApPP2A"  id="PP2ApPP2A" kdiff="3.6"   kdiffunit="mu2/s"/>
 
 
 <Specie name="PKA" id="PKA" kdiff="0" kdiffunit="mu2/s" />
@@ -197,6 +168,7 @@ kdiffunit="mu2/s" />
 	kdiffunit="mu2/s" />
 <Specie name="GluR1_CKp" id="GluR1_CKp" kdiff="0"
 	kdiffunit="mu2/s" />
+
 <Specie name="GluR1_S845_CKCaM" id="GluR1_S845_CKCaM" kdiff="0"
 	kdiffunit="mu2/s" />
 <Specie name="GluR1_S845_CKpCaM" id="GluR1_S845_CKpCaM" kdiff="0"
@@ -248,8 +220,8 @@ kdiffunit="mu2/s" />
 	<Reactant specieID="pmca"/>
 	<Product specieID="pmcaCa"/>
 
-	<forwardRate>0.05e-3</forwardRate>
-	<reverseRate>9e-3</reverseRate>
+	<forwardRate>0.5e-4</forwardRate>
+	<reverseRate>0.007</reverseRate>
     </Reaction>
 
 <!-- ii: Ca pump high affinity -    pmcaCa <-> pmca + CaOut   SAME-->
@@ -258,7 +230,7 @@ kdiffunit="mu2/s" />
 	<Product specieID="pmca"/>
 	<Product specieID="CaOut"/>
 
-	<forwardRate>3.0e-3</forwardRate>
+	<forwardRate>0.0035</forwardRate>
 	<reverseRate>0</reverseRate>
     </Reaction>
 
@@ -268,8 +240,8 @@ kdiffunit="mu2/s" />
 	<Reactant specieID="ncx"/>
 	<Product specieID="ncxCa"/>
 
-	<forwardRate>0.011e-3</forwardRate>
-	<reverseRate>11.2e-3</reverseRate>
+	<forwardRate>1.68e-5</forwardRate>
+	<reverseRate>0.0112</reverseRate>
     </Reaction>
 
 <!-- iv: Ca pump low affinity -    ncxCa <-> ncx + CaOut   SAME-->
@@ -278,7 +250,7 @@ kdiffunit="mu2/s" />
 	<Product specieID="ncx"/>
 	<Product specieID="CaOut"/>
 
-	<forwardRate>5.6e-3</forwardRate>
+	<forwardRate>0.0056</forwardRate>
 	<reverseRate>0</reverseRate>
     </Reaction>
 <!-- v: Ca leak -    CaOut + Leak <-> CaOutLeak  GQ RXN FILE, Leak is sm only-->
@@ -287,7 +259,7 @@ kdiffunit="mu2/s" />
 	<Reactant specieID="Leak"/>
 	<Product specieID="CaOutLeak"/>
 
-        <forwardRate>0.01e-6</forwardRate>
+        <forwardRate>1.5e-6</forwardRate>
 	<reverseRate>1.1e-3</reverseRate>
     </Reaction>
 
@@ -307,10 +279,18 @@ kdiffunit="mu2/s" />
         <Reactant specieID="Calbin"/>
         <Product specieID="CalbinC"/>
 
-        <forwardRate>0.028e-3</forwardRate>
-        <reverseRate>19.6</reverseRate>
+        <forwardRate>2.8e-5</forwardRate>
+        <reverseRate>0.0196</reverseRate>
     </Reaction>
-
+    <!-- fixed immobile buffer-->
+    <Reaction name = "Ca_fixedbuffer" id="Ca_fixedBuffer">
+        <Reactant specieID="Ca"/>
+        <Reactant specieID="fixedbuffer"/>
+        <Product specieID="fixedbufferCa"/>
+        <forwardRate>0.004e-1</forwardRate>
+        <reverseRate>20.0</reverseRate>
+        <Q10>0.2</Q10>
+    </Reaction>
 
 <!-- Irreversible IC Ca Buffer    Ca + CaB <-> CaBCa -->
     <Reaction name = "CaIn_buffer" id="CaIn_buffer">
@@ -411,7 +391,7 @@ kdiffunit="mu2/s" />
   <Product specieID="ISObAR" />
   <Product specieID="GasGTP" />
   <Product specieID="Gsbg" />
-  <forwardRate>25e-3</forwardRate>
+  <forwardRate>0.75e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -428,8 +408,8 @@ kdiffunit="mu2/s" />
 <Reaction name="Da--DaOut" id="Da--DaOut">
   <Reactant specieID="Da" />
   <Product specieID="DaOut" />
-  <forwardRate>1.0e-3</forwardRate>
-  <reverseRate>0.0055e-6</reverseRate>
+  <forwardRate>1.0e-4</forwardRate>
+  <reverseRate>0.0055e-7</reverseRate>
 </Reaction>
 <!--0c. excess DaOut eliminated to prevent baseline shift: DaOut + Dbuf
        <->  DaOutbuf  -->
@@ -440,31 +420,31 @@ kdiffunit="mu2/s" />
   <reverseRate>0</reverseRate>
 </Reaction>
 <!--1a. Da + D1R
-        <-> DaD1R      Kd=3000  source: Sunahara et al. Nature 1991-->
+        <-> DaD1R      Kd=2000  source: Richfield - ‎1989, Neuroscience -->
 <Reaction name="Da+D1R--DaD1R" id="Da+D1R--DaD1R">
   <Reactant specieID="Da" />
   <Reactant specieID="D1R" />
   <Product specieID="DaD1R" />
   <forwardRate>0.00166667e-03</forwardRate>
-  <reverseRate>5e-03</reverseRate>
+  <reverseRate>3.4e-03</reverseRate>
 </Reaction>
-<!-- 2a. DaD1R + Gsabg
+<!-- 2a. DaD1R + Gasbg
          <-> DaD1RGs      Kd=11.666667   source: Zhuang J Neurosci 2000-->
 <Reaction name="DaD1R+Gs--DaD1RGs" id="DaD1R+Gs--DaD1RGs">
   <Reactant specieID="DaD1R" />
   <Reactant specieID="Gs" />
   <Product specieID="DaD1RGs" />
   <forwardRate>0.03e-03</forwardRate>
-  <reverseRate>0.4e-03</reverseRate>
+  <reverseRate>0.2e-03</reverseRate>
 </Reaction>
-<!-- 1b. Gsabg + D1R
+<!-- 1b. Gasbg + D1R
          <-> GsD1R         Kd=35   source: PMR-->
-<Reaction name="Gsabg+D1R--GsD1R" id="Gsabg+D1R--GsD1R">
+<Reaction name="Gasbg+D1R--GsD1R" id="Gasbg+D1R--GsD1R">
   <Reactant specieID="Gs" />
   <Reactant specieID="D1R" />
   <Product specieID="GsD1R" />
   <forwardRate>0.01e-03</forwardRate>
-  <reverseRate>0.4e-03</reverseRate>
+  <reverseRate>0.2e-03</reverseRate>
 </Reaction>
 <!-- 2b. GsD1R + Da
          < - > DaD1RGs       Kd=1000   source: Falkenburger J Gen Phys off-rate, Dreyer J Neurosci-->
@@ -473,94 +453,55 @@ kdiffunit="mu2/s" />
   <Reactant specieID="Da" />
   <Product specieID="DaD1RGs" />
   <forwardRate>0.005e-03</forwardRate>
-  <reverseRate>5e-03</reverseRate>
+  <reverseRate>3.4e-03</reverseRate>
 </Reaction>
 <!-- 3.  DaD1RGs
-         <-> DaD1R + GsaGTP +Gbg-->
-<Reaction name="DaD1RGs-DaD1R+GsaGTP+Gbg reac"
-id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
+         <-> DaD1R + GasGTP +Gbg-->
+<Reaction name="DaD1RGs-DaD1R+GasGTP+Gbg reac"
+id="DaD1RGs-DaD1R+GasGTP+Gbg_id">
   <Reactant specieID="DaD1RGs" />
   <Product specieID="DaD1R" />
   <Product specieID="GasGTP" />
   <Product specieID="Gsbg" />
-  <forwardRate>0.15e-03</forwardRate>
+  <forwardRate>.6e-03</forwardRate>
   <reverseRate>0.0</reverseRate>
 </Reaction>
+
 <!--*****************PKAc phosphorylation of DaD1R *******************************-->
 <!--4. PKAc + DaD1RGs -> PKAcDaD1RGs Km= 500nM  affinity for dephosphorylation is 10 lower than for cAMP accumulation for Glioma Cells, so lower the KM even more-->
+
+<!--6a. pDaD1RGs -> pD1RGs - Da dissociation 1 uM-->
+<Reaction name = "Da_dissoc" id="Da_dissoc">
+<Reactant specieID="pDaD1RGs"  />
+<Product  specieID="pGsD1R"   />
+<Product  specieID="Da"   />
+
+<forwardRate>  0.1    </forwardRate>
+<reverseRate>  0.1e-3    </reverseRate>
+</Reaction>
+
+<!--6b. pD1RGs -> D1RGs - fast dephos of unbound receptor -->
+<Reaction name = "Da_dissoc" id="Da_dissoc">
+<Reactant specieID="pGsD1R"  />
+<Product  specieID="GsD1R"   />
+
+<forwardRate>  0.02e-3    </forwardRate>
+<reverseRate>  0    </reverseRate>
+</Reaction>
+
+<!--6c. pDaD1RGs -> DaD1RGs -->
+<Reaction name = "dephosD1R" id="dphospD1R">
+<Reactant specieID="pDaD1RGs"  />
+<Product  specieID="Gs"   />
+<Product  specieID="D1R"   />
+<Product  specieID="Da"   />
+
+<forwardRate>  0.0002e-03    </forwardRate>
+<reverseRate>  0    </reverseRate>
+</Reaction>
+
+
 <!-- AMC 06/27/12: Below are the reactions for PKA-mediated ISObAR desensitization and subsequent Gs-to-Gi switching -->
-<!-- 5c1) ISObAR + PKAc -> PKAcISObAR -->
-<Reaction name="ISObAR_phos" id="ISObAR_phos">
-  <Reactant specieID="ISObAR" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAcISObAR" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5d1) PKAcISObAR -> pISObAR + PKAc -->
-<Reaction name="pISObAR_reac" id="pISObAR_reac">
-  <Reactant specieID="PKAcISObAR" />
-  <Product specieID="pISObAR" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5c2) pISObAR + PKAc -> PKApcISObAR -->
-<Reaction name="pISObAR_phos" id="pISObAR_phos">
-  <Reactant specieID="pISObAR" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAcpISObAR" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5d2) PKAcpISObAR -> ppISObAR + PKAc -->
-<Reaction name="ppISObAR_reac" id="ppISObAR_reac">
-  <Reactant specieID="PKAcpISObAR" />
-  <Product specieID="ppISObAR" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5c3) ppISObAR + PKAc -> PKAcppISObAR -->
-<Reaction name="ppISObAR_phos" id="ppISObAR_phos">
-  <Reactant specieID="ppISObAR" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAcppISObAR" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5d3) PKAcppISObAR -> pppISObAR + PKAc -->
-<Reaction name="pppISObAR_reac" id="pppISObAR_reac">
-  <Reactant specieID="PKAcppISObAR" />
-  <Product specieID="pppISObAR" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5c4) pppISObAR + PKAc -> PKAcpppISObAR -->
-<Reaction name="pppISObAR_phos" id="pppISObAR_phos">
-  <Reactant specieID="pppISObAR" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAcpppISObAR" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5d4) PKAcpppISObAR -> ppppISObAR + PKAc -->
-<Reaction name="ppppISObAR_reac" id="ppppISObAR_reac">
-  <Reactant specieID="PKAcpppISObAR" />
-  <Product specieID="ppppISObAR" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
 <!-- 5e) ppppISObAR + Gi -> ppppISObARGi -->
 <Reaction name="ppppISObARGi_bind" id="ppppISObARGi_bind">
   <Reactant specieID="ppppISObAR" />
@@ -576,7 +517,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Product specieID="Gibg" />
   <Product specieID="ppppISObAR" />
   <Product specieID="GaiGTP" />
-  <forwardRate>0.2e-3</forwardRate>
+  <forwardRate>0.5e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -612,78 +553,6 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
-<!-- 5ac1) bAR + PKAc -> PKAcbAR -->
-<Reaction name="bAR_phos" id="bAR_phos">
-  <Reactant specieID="bAR" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAcbAR" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5ad1) PKAcbAR -> pbAR + PKAc -->
-<Reaction name="pbAR_reac" id="pbAR_reac">
-  <Reactant specieID="PKAcbAR" />
-  <Product specieID="pbAR" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5ac2) pbAR + PKAc -> PKAcpbAR -->
-<Reaction name="pbAR_phos" id="pbAR_phos">
-  <Reactant specieID="pbAR" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAcpbAR" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5d2) PKAcpbAR -> ppbAR + PKAc -->
-<Reaction name="ppbAR_reac" id="ppbAR_reac">
-  <Reactant specieID="PKAcpbAR" />
-  <Product specieID="ppbAR" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5ac3) ppbAR + PKAc -> PKAcppbAR -->
-<Reaction name="ppbAR_phos" id="ppbAR_phos">
-  <Reactant specieID="ppbAR" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAcppbAR" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5ad3) PKAcppbAR -> pppbAR + PKAc -->
-<Reaction name="pppbAR_reac" id="pppbAR_reac">
-  <Reactant specieID="PKAcppbAR" />
-  <Product specieID="pppbAR" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5ac4) pppbAR + PKAc -> PKAcpppbAR -->
-<Reaction name="pppbAR_phos" id="pppbAR_phos">
-  <Reactant specieID="pppbAR" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAcpppbAR" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 5ad4) PKAcpppISObAR -> ppppISObAR + PKAc -->
-<Reaction name="ppppbAR_reac" id="ppppbAR_reac">
-  <Reactant specieID="PKAcpppbAR" />
-  <Product specieID="ppppbAR" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
 <!-- 5ae) ppppbAR + Gi -> ppppbARGi -->
 <Reaction name="ppppbARGi_bind" id="ppppbARGi_bind">
   <Reactant specieID="ppppbAR" />
@@ -699,7 +568,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <Product specieID="ppppbAR" />
   <Product specieID="Gibg" />
   <Product specieID="GaiGTP" />
-  <forwardRate>0.1e-3</forwardRate>
+  <forwardRate>0.03e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -735,11 +604,12 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
+
 <!-- 6a) GasGTP -> GasGDP    -->
 <Reaction name="GasGTP_disso" id="GasGTP_disso">
   <Reactant specieID="GasGTP" />
   <Product specieID="GasGDP" />
-  <forwardRate>10e-3</forwardRate>
+  <forwardRate>0.001</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -771,7 +641,7 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
 </Reaction>
 <!--Fine, but I in future would like to compare above to Linderman who studies G proteins.  Above is old from Destexhe-->
 <!-- AC part:AC1 & AC8 activation through CaMCa4  -->
-<!-- Add 1 more reaction(11) for AC1 bound CaMCa4 form binds Gsa-->
+<!-- Add 1 more reaction(11) for AC1 bound CaMCa4 form binds Gas-->
 <!-- reaction 4, kcat adjusted by 4X faster than previous due to facilitate-->
 <!-- 1a) GasGTP + AC1
          <-> E(AC1GasGTP)   -->
@@ -798,9 +668,9 @@ id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
 <Reaction name="AC1GasGTPCaMCa4_ATP_Reac"
 id="AC1GasGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GasGTPCaMCa4" />
-  <Reactant specieID="ATP" />
+<!--  <Reactant specieID="ATP" />-->
   <Product specieID="AC1GasGTPCaMCa4ATP" />
-  <forwardRate>0.01e-3</forwardRate>
+  <forwardRate>20</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -810,7 +680,7 @@ id="AC1GasGTPCaMCa4ATP_diss">
   <Reactant specieID="AC1GasGTPCaMCa4ATP" />
   <Product specieID="cAMP" />
   <Product specieID="AC1GasGTPCaMCa4" />
-  <forwardRate>0.02842</forwardRate>
+  <forwardRate>56.84e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -831,8 +701,8 @@ id="AC1GasGTPGaiGTP_CaMCa4_Reac">
   <Reactant specieID="AC1GasGTPGaiGTP" />
   <Reactant specieID="CaMCa4" />
   <Product specieID="AC1GasGTPGaiGTPCaMCa4" />
-  <forwardRate>0.006e-3</forwardRate>
-  <reverseRate>0.9e-3</reverseRate>
+  <forwardRate>0.0006e-5</forwardRate>
+  <reverseRate>0.09e-5</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 2c) FCaM + ATP
@@ -840,10 +710,10 @@ id="AC1GasGTPGaiGTP_CaMCa4_Reac">
 <Reaction name="AC1GasGTPGaiGTPCaMCa4_ATP_Reac"
 id="AC1GasGTPGaiGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GasGTPGaiGTPCaMCa4" />
-  <Reactant specieID="ATP" />
+
   <Product specieID="AC1GsGiCaMCa4ATP" />
-  <forwardRate>0.01e-3</forwardRate>
-  <reverseRate>2273e-3</reverseRate>
+  <forwardRate>20</forwardRate>
+  <reverseRate>2273e-4</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- 2d) FCaMATP -> FCaM + cAMP    -->
@@ -851,7 +721,7 @@ id="AC1GasGTPGaiGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GsGiCaMCa4ATP" />
   <Product specieID="cAMP" />
   <Product specieID="AC1GasGTPGaiGTPCaMCa4" />
-  <forwardRate>2.842e-3</forwardRate>
+  <forwardRate>0.005684</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -872,9 +742,9 @@ id="AC1GasGTPGaiGTPCaMCa4_ATP_Reac">
 <Reaction name="AC1GaiGTPCaMCa4_ATP_Reac"
 id="AC1GaiGTPCaMCa4_ATP_Reac">
   <Reactant specieID="AC1GaiGTPCaMCa4" />
-  <Reactant specieID="ATP" />
+
   <Product specieID="AC1GaiGTPCaMCa4ATP" />
-  <forwardRate>0.01e-3</forwardRate>
+  <forwardRate>20</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -902,9 +772,9 @@ id="AC1GaiGTPCaMCa4ATP_diss">
          <-> AC1CaMATP    -->
 <Reaction name="AC1CaMCa4ATP_bind" id="AC1CaMCa4ATP_bind">
   <Reactant specieID="AC1CaMCa4" />
-  <Reactant specieID="ATP" />
+<!--  <Reactant specieID="ATP" />-->
   <Product specieID="AC1CaMCa4ATP" />
-  <forwardRate>0.01e-3</forwardRate>
+  <forwardRate>20</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -942,9 +812,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
          <-> AC8CaMATP   -->
 <Reaction name="AC8CaMCa4_ATP_bind" id="AC8CaMCa4_ATP_bind">
   <Reactant specieID="AC8CaMCa4" />
-  <Reactant specieID="ATP" />
   <Product specieID="AC8CaMCa4ATP" />
-  <forwardRate>0.01e-3</forwardRate>
+  <forwardRate>20</forwardRate>
   <reverseRate>2273e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -953,7 +822,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="AC8CaMCa4ATP" />
   <Product specieID="cAMP" />
   <Product specieID="AC8CaMCa4" />
-  <forwardRate>2.842e-3</forwardRate>
+  <forwardRate>28.e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -969,8 +838,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <reverseRate>9.1e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
-<!--2) CaMCa2  + 2Ca
-        <-> CaMCa4 -->
+<!--2) CaMCa2  + 2Ca    <-> CaMCa4 -->
 <!--This is the N-site-->
 <Reaction name="CaMCa2_bind" id="CaMCa2_bind">
   <Reactant specieID="CaMCa2" />
@@ -980,6 +848,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <reverseRate>1000e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
+
 <!-- Kubota, Putkey, Waxham, 2007, Biophys J, 92:3848-3859, constants
      k5 and k_5-->
 <!--2a) CaM  + Ng
@@ -993,193 +862,176 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <reverseRate>36.e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
-<!--3) CaM  + PP2B
-        <-> PP2CaM -->
-<Reaction name="PP2_bind" id="PP2_bind">
-  <Reactant specieID="CaM" />
-  <Reactant specieID="PP2B" />
-  <Product specieID="PP2BCaM" />
-  <forwardRate>4.6e-06</forwardRate>
-  <reverseRate>1.2e-6</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!--4) CaMCa2  + PP2B
-        <-> PP2BCaMCa2 -->
-<Reaction name="PP2CaMC2_bind" id="PP2CaMC2_bind">
-  <Reactant specieID="CaMCa2" />
-  <Reactant specieID="PP2B" />
-  <Product specieID="PP2BCaMCa2" />
-  <forwardRate>4.6e-5</forwardRate>
-  <reverseRate>1.2e-6</reverseRate>
-  <!--
 
-            <forwardRate>1e-3
-            </forwardRate>
-            <reverseRate>0.3e-3
-            </reverseRate>
-        -->
-  <Q10>0.2</Q10>
-</Reaction>
-<!--5) CaMCa4  + PP2
-        <-> PP2B -->
-<Reaction name="PP2CaMCa4_bind" id="PP2CaMCa4_bind">
-  <Reactant specieID="CaMCa4" />
-  <Reactant specieID="PP2B" />
-  <Product specieID="PP2BCaMCa4" />
-  <forwardRate>4.6e-5</forwardRate>
-  <reverseRate>1.2e-6</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!--6) PP2BCaM  + 2Ca
-        <-> PP2BCaMCa2 -->
-<Reaction name="PP2CaMCa_bind" id="PP2CaMCa_bind">
-  <Reactant specieID="PP2BCaM" />
-  <Reactant specieID="Ca" n="2" />
-  <Product specieID="PP2BCaMCa2" />
-  <forwardRate>6.e-4</forwardRate>
-  <reverseRate>9.1e-2</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!--7) PP2CaMC2  + 2Ca
-        <-> PP2B -->
-<Reaction name="PP2CaMCa2Ca_bind" id="PP2CaMCa2Ca_bind">
-  <Reactant specieID="PP2BCaMCa2" />
+<!--3) CaM  + PP2B        <-> PP2CaM --> 
+<Reaction name="PP2_bind" id="PP2_bind"> 
+  <Reactant specieID="CaM" /> 
+  <Reactant specieID="PP2B" /> 
+  <Product specieID="PP2BCaM" /> 
+  <forwardRate>4.6e-06</forwardRate> 
+  <reverseRate>1.2e-6</reverseRate> 
+  <Q10>0.2</Q10> 
+</Reaction> 
+<!--4) CaMCa2  + PP2B 
+        <-> PP2BCaMCa2 --> 
+<Reaction name="PP2CaMC2_bind" id="PP2CaMC2_bind"> 
+  <Reactant specieID="CaMCa2" /> 
+  <Reactant specieID="PP2B" /> 
+  <Product specieID="PP2BCaMCa2" /> 
+  <forwardRate>4.6e-5</forwardRate> 
+  <reverseRate>1.2e-6</reverseRate> 
+  <Q10>0.2</Q10> 
+</Reaction> 
+<!--5) CaMCa4  + PP2 
+        <-> PP2B --> 
+<Reaction name="PP2CaMCa4_bind" id="PP2CaMCa4_bind"> 
+  <Reactant specieID="CaMCa4" /> 
+  <Reactant specieID="PP2B" /> 
+  <Product specieID="PP2BCaMCa4" /> 
+  <forwardRate>4.6e-5</forwardRate> 
+  <reverseRate>1.2e-6</reverseRate> 
+  <Q10>0.2</Q10> 
+</Reaction> 
+<!--6) PP2BCaM  + 2Ca 
+        <-> PP2BCaMCa2 --> 
+<Reaction name="PP2CaMCa_bind" id="PP2CaMCa_bind"> 
+  <Reactant specieID="PP2BCaM" /> 
+  <Reactant specieID="Ca" n="2" /> 
+  <Product specieID="PP2BCaMCa2" /> 
+  <forwardRate>6.e-4</forwardRate> 
+  <reverseRate>9.1e-2</reverseRate> 
+  <Q10>0.2</Q10> 
+</Reaction> 
+<!--7) PP2CaMC2  + 2Ca 
+        <-> PP2B --> 
+<Reaction name="PP2CaMCa2Ca_bind" id="PP2CaMCa2Ca_bind"> 
+  <Reactant specieID="PP2BCaMCa2" /> 
   <Reactant specieID="Ca" n="2" />
   <Product specieID="PP2BCaMCa4" />
   <forwardRate>0.0001</forwardRate>
   <reverseRate>1</reverseRate>
-  <!--
-            <forwardRate>0.1e-3
-            </forwardRate>
-            <reverseRate>10e-3
-            </reverseRate>
-        -->
   <Q10>0.2</Q10>
 </Reaction>
 <!--These are fine.-->
 
- <!--1) CaMCa4 + CK <-> CKCaMCa4  -->
-    <Reaction name = "CK bind" id="CK_bind">
-        <Reactant specieID="CaMCa4"                 />
-        <Reactant specieID="CK"                     />
-        <Product  specieID="CKCaMCa4"               />
+  <!--1) CaMCa4 + CK <-> CKCam  -->
+    <Reaction name = "CK_bind" id="CK_bind">
+	<Reactant specieID="CaMCa4"/>
+	<Reactant specieID="CK"/>
+	<Product specieID="CKCaMCa4"/>
 
-        <forwardRate> 0.02e-3   </forwardRate>
-        <reverseRate> 1.95e-3      </reverseRate>
-        <!--0.8 from ode file
-	    reverseRate> 0.8e-3      </reverseRate-->
-        <Q10>    0.2            </Q10>
+	<forwardRate>0.02e-3</forwardRate>
+	<reverseRate>1.95e-3</reverseRate>
+	<Q10>0.2</Q10>
     </Reaction>
+
 <!--2a) 3 CKCaMCa4 + 1 CKCaMCa4 <-> 3  CKCaMCa4 + 1 CKpCaMCa4-->
     <Reaction name = "CKCaM bind1" id="CKCaM_bind1">
         <Reactant specieID="CKCaMCa4"  power="4"        />
         <Product  specieID="CKCaMCa4"   power="3"         />
         <Product  specieID="CKpCaMCa4"           />
-        <forwardRate> 35.0e-18 </forwardRate>
+        <forwardRate> 70.0e-18 </forwardRate>
         <reverseRate> 0e-3     </reverseRate>
-        <Q10>     2             </Q10>
+	<Q10>     2  </Q10>
     </Reaction>
-
 <!--2b)  2 CKCaMCa4 + 1 CKCaMCa4 <-> 2 CKCaMCa4 + 1 CKpCaMCa4-->
     <Reaction name = "CKCaM bind2" id="CKCaM_bind2">
         <Reactant specieID="CKCaMCa4"  power="3"        />
         <Product  specieID="CKCaMCa4"  power="2"         />
         <Product  specieID="CKpCaMCa4"           />
-
-        <forwardRate> 120.0e-12 </forwardRate>
+        <forwardRate> 8.0e-12 </forwardRate>
         <reverseRate> 0e-3     </reverseRate>
-        <Q10>     2             </Q10>
-    </Reaction>
+        <Q10>     2  </Q10>
+</Reaction>
+
 <!--2c)  2 CKpCaMCa4 + 2 CKCaMCa4 <-> 3 CKpCaMCa4 + 1 CKCaMCa4-->
     <Reaction name = "CKCaM bind3" id="CKCaM_bind3">
         <Reactant specieID="CKpCaMCa4"  power="2"        />
         <Reactant specieID="CKCaMCa4"  power="2"        />
         <Product  specieID="CKCaMCa4"           />
         <Product  specieID="CKpCaMCa4" power="3"         />
-
-        <forwardRate> 100.1e-18 </forwardRate>
+        <forwardRate> 110.1e-18 </forwardRate>
         <reverseRate> 0e-3     </reverseRate>
-        <Q10>     2             </Q10>
-    </Reaction>
-
+        <Q10>     2  </Q10>
+  </Reaction>
 <!-- CKpCaMCaMCa4 <-> CKp + CaMCa4 -->
     <Reaction name = "CKp auto" id="CKp_auto">
-        <Reactant specieID="CKpCaMCa4"              />
-        <Product  specieID="CaMCa4"                 />
-        <Product  specieID="CKp"                    />
+        <Reactant specieID="CKpCaMCa4"   />
+        <Product  specieID="CaMCa4"      />
+        <Product  specieID="CKp"         />
 
         <forwardRate> 0.001e-3 </forwardRate>
         <reverseRate> 0.02e-3   </reverseRate>
-        <Q10>    0.2            </Q10>
-    </Reaction>
+        <Q10>    0.2 </Q10>
+
+</Reaction>
   <!-- CKp + PP1 <-> CKpPP1 -->
     <Reaction name = "CKp bind" id="CKp_bind">
-        <Reactant specieID="CKp"                    />
-        <Reactant specieID="PP1"                    />
-        <Product  specieID="CKpPP1"                 />
-        <forwardRate> 0.0045e-06     </forwardRate>
-        <reverseRate>  0.08e-03  </reverseRate>
-        <Q10>     0.2             </Q10>
-    </Reaction>
+        <Reactant specieID="CKp"         />
+        <Reactant specieID="PP1"         />
+        <Product  specieID="CKpPP1"      />
+        <forwardRate> 0.045e-06     </forwardRate>
+        <reverseRate>  0.8e-03  </reverseRate>
+        <Q10>     0.2  </Q10>
+</Reaction>
 
 <!-- CKpPP1 -> PP1 + CK -->
     <Reaction name = "CKpPP1 reac" id="CKpPP1_reac">
-        <Reactant specieID="CKpPP1"                 />
-        <Product specieID="PP1"                     />
-        <Product specieID="CK"                      />
+        <Reactant specieID="CKpPP1"      />
+        <Product specieID="PP1"          />
+        <Product specieID="CK"           />
         <forwardRate> 0.01e-03   </forwardRate>
         <reverseRate> 0.0         </reverseRate>
-        <Q10>    0.2              </Q10>
-    </Reaction>
-
-    <!-- CKpCaMCa4 + PP1 <-> CKpCaMCa4PP1 -->
+        <Q10>    0.2   </Q10>
+     </Reaction>
+ -    <!-- CKpCaMCa4 + PP1 <-> CKpCaMCa4PP1 -->
     <Reaction name = "CKpCaMCa4PP1_bind" id="CKpCaMPP1_bind">
-      <Reactant specieID="CKpCaMCa4"              />
-      <Reactant specieID="PP1"                    />
+      <Reactant specieID="CKpCaMCa4"   />
+      <Reactant specieID="PP1"         />
       <Product  specieID="CKpCaMCa4PP1"           />
       
-      <forwardRate> 0.0005e-06  </forwardRate>
-      <reverseRate> 0.09e-03   </reverseRate>
-    </Reaction>
+      <forwardRate> 0.01e-06  </forwardRate>
+      <reverseRate> 0.9e-03   </reverseRate>
+</Reaction>
 
-    <!--Dephos of CKpCaMCa4 by PP1 -->
-    <!-- CKpCaMCa4PP1 -> PP1 + CKCaMCa4 -->
+<!-- CKpCaMCa4PP1 -> PP1 + CKCaMCa4 -->
     <Reaction name = "CKpCaMCa4PP1_reac" id="CKpCaMPP1_reac">
       <Reactant specieID="CKpCaMCa4PP1"           />
-      <Product  specieID="PP1"                    />
-      <Product  specieID="CKCaMCa4"               />
+      <Product  specieID="PP1"         />
+      <Product  specieID="CKCaMCa4"    />
       
       <forwardRate> 0.0045e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
-    </Reaction>
+     </Reaction>
 
+<!--Don't know why I didn't consider this before, but I wonder if we can produce Dekoninck and Schulman better if both products are pComplex for above, and if CKpCaMCa4 is product in previous reaction.  I might try this at some point using the xpp Dupont simulations, or single comp Dupont stochastic sims.-->
 
-<!-- CKp + PP2A <-> CKpPP2A -->
+ <!-- CKp + PP2A <-> CKpPP2A -->
     <Reaction name = "CKp bind" id="CKp_bind">
-        <Reactant specieID="CKp"                    />
-        <Reactant specieID="PP2A"                    />
-        <Product  specieID="CKpPP2A"                 />
+        <Reactant specieID="CKp"         />
+        <Reactant specieID="PP2A"         />
+        <Product  specieID="CKpPP2A"      />
         <forwardRate> 0.016e-06     </forwardRate>
         <reverseRate>  0.08e-03  </reverseRate>
-        <Q10>     0.2             </Q10>
+        <Q10>     0.2  </Q10>
     </Reaction>
 
 <!-- CKpPP2A -> PP2A + CK -->
     <Reaction name = "CKpPP2A reac" id="CKpPP2A_reac">
-        <Reactant specieID="CKpPP2A"                 />
-        <Product specieID="PP2A"                     />
-        <Product specieID="CK"                      />
+        <Reactant specieID="CKpPP2A"      />
+        <Product specieID="PP2A"          />
+        <Product specieID="CK"           />
         <forwardRate> 0.035e-03   </forwardRate>
         <reverseRate> 0.0         </reverseRate>
-        <Q10>    0.2              </Q10>
+        <Q10>    0.2   </Q10>
     </Reaction>
 
     <!-- CKpCaMCa4 + PP2A <-> CKpCaMCa4PP2A -->
     <Reaction name = "CKpCaMCa4PP2A_bind" id="CKpCaMPP2A_bind">
-      <Reactant specieID="CKpCaMCa4"              />
-      <Reactant specieID="PP2A"                    />
+      <Reactant specieID="CKpCaMCa4"   />
+      <Reactant specieID="PP2A"         />
       <Product  specieID="CKpCaMCa4PP2A"           />
-      
+     
       <forwardRate> 0.0016e-06  </forwardRate>
       <reverseRate>   0.08e-03  </reverseRate>
     </Reaction>
@@ -1188,9 +1040,9 @@ id="AC1GaiGTPCaMCa4ATP_diss">
     <!-- CKpCaMCa4PP2A -> PP2A + CKCaMCa4 -->
     <Reaction name = "CKpCaMCa4PP2A_reac" id="CKpCaMPP2A_reac">
       <Reactant specieID="CKpCaMCa4PP2A"           />
-      <Product  specieID="PP2A"                    />
-      <Product  specieID="CKCaMCa4"               />
-      
+      <Product  specieID="PP2A"         />
+      <Product  specieID="CKCaMCa4"    />
+     
       <forwardRate> 0.01e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
@@ -1200,10 +1052,10 @@ id="AC1GaiGTPCaMCa4ATP_diss">
 
    <!-- PP2A activation-->
      <Reaction name = "pPP2APP2A_bind" id="pPP2A_PP2A_bind">
-      <Reactant specieID="pPP2A"              />
-      <Reactant specieID="PP2A"                    />
+      <Reactant specieID="pPP2A"   />
+      <Reactant specieID="PP2A"         />
       <Product  specieID="PP2ApPP2A"           />
-      
+     
       <forwardRate> 0.08e-06  </forwardRate>
       <reverseRate> 0.04e-03  </reverseRate>
     </Reaction>
@@ -1212,8 +1064,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
     <!-- PP2ApPP2A -> PP2A + PP2A -->
     <Reaction name = "PP2ApPP2A_reac" id="PP2ApPP2A_reac">
       <Reactant specieID="PP2ApPP2A"           />
-      <Product  specieID="PP2A"   power="2"                 />
-      <forwardRate> 0.02e-3    </forwardRate>
+      <Product  specieID="PP2A"   power="2"      />
+      <forwardRate> 0.2e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
@@ -1221,21 +1073,21 @@ id="AC1GaiGTPCaMCa4ATP_diss">
     <Reaction name = "pPP2A_dephos" id="pPP2A_dephos">
       <Reactant specieID="pPP2A"           />
       <Product  specieID="PP2A"           />
-      <forwardRate> 0.002e-3    </forwardRate>
+      <forwardRate> 0.2e-3    </forwardRate>
       <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
     <!-- PP2A phosphorylation by CaMKII -->
     <Reaction name = "PP2ACKp_bind" id="PP2ACKp_bind">
-      <Reactant specieID="CKp"              />
-      <Reactant specieID="PP2A"                    />
+      <Reactant specieID="CKp"   />
+      <Reactant specieID="PP2A"         />
       <Product  specieID="PP2ACKp"           />
-      
+     
       <forwardRate> 0.2e-07  </forwardRate>
       <reverseRate>   0.02e-04  </reverseRate>
     </Reaction>
 
-    
+   
     <Reaction name = "PP2ACKp_reac" id="PP2ACKp_reac">
       <Reactant specieID="PP2ACKp"           />
       <Product  specieID="pPP2A"  />
@@ -1245,12 +1097,12 @@ id="AC1GaiGTPCaMCa4ATP_diss">
     </Reaction>
 
 
-            <!-- PP2A phosphorylation by CaMKII -->
+ <!-- PP2A phosphorylation by CaMKII -->
     <Reaction name = "PP2ACKpCaMCa4_bind" id="PP2ACKpCaMCa4_bind">
-      <Reactant specieID="CKpCaMCa4"              />
-      <Reactant specieID="PP2A"                    />
+      <Reactant specieID="CKpCaMCa4"   />
+      <Reactant specieID="PP2A"         />
       <Product  specieID="PP2ACKpCaMCa4"           />
-      
+     
       <forwardRate> 0.2e-07  </forwardRate>
       <reverseRate>   0.02e-04  </reverseRate>
     </Reaction>
@@ -1267,10 +1119,10 @@ id="AC1GaiGTPCaMCa4ATP_diss">
 
 
     <Reaction name = "PP2ACKCaMCa4_bind" id="PP2ACKCaMCa4_bind">
-      <Reactant specieID="CKCaMCa4"              />
-      <Reactant specieID="PP2A"                    />
+      <Reactant specieID="CKCaMCa4"   />
+      <Reactant specieID="PP2A"         />
       <Product  specieID="PP2ACKCaMCa4"           />
-      
+     
       <forwardRate> 0.2e-08  </forwardRate>
       <reverseRate> 0.02e-05  </reverseRate>
     </Reaction>
@@ -1286,7 +1138,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
     </Reaction>
 
 
-    
+   
 <!-- PKA part -->
 <!-- Implements of PKAcAMP4 molecule binds to substrates & consider to effect-->
 <!-- of autophosphorylation (Kd reduced by factor of 10), inspired by Ddavid Johnson's email on June_10th_2009-->
@@ -1316,31 +1168,14 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="Epac1" />
   <Reactant specieID="cAMP" />
   <Product specieID="Epac1cAMP" />
-  <forwardRate>0.033e-6</forwardRate>
-  <reverseRate>8e-05</reverseRate>
+  <forwardRate>0.0165e-6</forwardRate>
+  <reverseRate>2.5e-05</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- Inhibitor 1 Phospho and Dephosphorylation -->
 <!-- Hemmings et al J Biol Chem 259 14491-->
 <!--1) I1 + PKAc
         <-> I1PKAc -->
-<Reaction name="I1_bind" id="I1_bind">
-  <Reactant specieID="I1" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="I1PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!--2) I1PKAc -> Ip35 + PKAc: default kb=0 -->
-<Reaction name="I1PKAc_reac" id="I1PKAc_reac">
-  <Reactant specieID="I1PKAc" />
-  <Product specieID="Ip35" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
 <!--3) Ip35 + PP1
         <-> Ip35pp1 -->
 <Reaction name="Ip35_bind" id="Ip35_bind">
@@ -1366,7 +1201,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="Ip35PP2BCaMCa4" />
   <Product specieID="I1" />
   <Product specieID="PP2BCaMCa4" />
-  <forwardRate>0.055</forwardRate>
+  <forwardRate>0.015</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1386,32 +1221,13 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Product specieID="I1" />
   <Product specieID="PP1" />
   <Product specieID="PP2BCaMCa4" />
-  <forwardRate>0.055</forwardRate>
+  <forwardRate>0.015</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- NMDA receptor is phosporylation by PKAc -->
 <!-- And also dephosphorylation by  PP2B -->
-<!--For now, rate constants are adopted from Upi Bhalla's model of AMPARs-->
-<!--1)affinity of phospho_GluR1 by PKAc is 7.5 uM; k1=0.074072 #^-1s^-1, k2=24s^-1, k3=6s^-1;kf=0.00402 nM^-1s^-1 -->
-<!--1) NMDAR + PKAc        <-> NMDAR_PKAc -->
-<Reaction name="NMDAR_PKAc_bind" id="NMDAR_PKAc_bind">
-  <Reactant specieID="NMDAR" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAcNMDAR" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-
-<!-- NMDAR_PKAc -> pNMDAR + PKAc -->
-<Reaction name="pNMDAR_PKAc_diss" id="pNMDAR_PKAc_diss">
-  <Reactant specieID="PKAcNMDAR" />
-  <Product specieID="pNMDAR" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <Q10>0.2</Q10>
-</Reaction>
+<!--1) NMDAR + PKAc        <-> NMDAR_PKAc-->
 
 <!--12) pNMDAR + PP2B
         <-> PP2BpNMDAR -->
@@ -1419,7 +1235,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="pNMDAR" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="PP2BpNMDAR" />
-  <forwardRate>.3e-3</forwardRate>
+  <forwardRate>.6e-3</forwardRate>
   <reverseRate>160e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1428,7 +1244,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="PP2BpNMDAR" />
   <Product specieID="NMDAR" />
   <Product specieID="PP2BCaMCa4" />
-  <forwardRate>1e-3</forwardRate>
+  <forwardRate>2e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!--pNMDAR dephos by PP1, rate constants from Gutierrez-Arenas, Eriksson, Hellgren Kotaleski, PLoS Comp Biol 2014 -->
@@ -1436,8 +1252,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="pNMDAR" />
   <Reactant specieID="PP1" />
   <Product specieID="PP1pNMDAR" />
-  <forwardRate>0.017e-3</forwardRate>
-  <reverseRate>8e-3</reverseRate>
+  <forwardRate>6.8e-6</forwardRate>
+  <reverseRate>3200e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- PP2BpNMDAR -> NMDAR + PP2B -->
@@ -1445,7 +1261,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="PP1pNMDAR" />
   <Product specieID="NMDAR" />
   <Product specieID="PP1" />
-  <forwardRate>1e-3</forwardRate>
+  <forwardRate>2e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 
@@ -1456,24 +1272,6 @@ id="AC1GaiGTPCaMCa4ATP_diss">
 <!-- S845 -->
 <!--1) GluR1 + PKAc
     <-> GluR1_PKAc -->
-
-
-<Reaction name="GluR1_PKAc_bind" id="GluR1_PKAc_bind">
-  <Reactant specieID="GluR1" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="GluR1_PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- GluR1_PKAc -> GluR1_S845 + PKAc -->
-<Reaction name="GluR1_PKAc_diss" id="GluR1_PKAc_diss">
-  <Reactant specieID="GluR1_PKAc" />
-  <Product specieID="GluR1_S845" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <Q10>0.2</Q10>
-</Reaction>
 
 <Reaction name="GluR1_S845_PP1_bind" id="GluR1_S845_PP1_bind">
   <Reactant specieID="GluR1_S845" />
@@ -1514,7 +1312,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="GluR1_S845_PP2B" />
-  <forwardRate>0.0064e-3</forwardRate>
+  <forwardRate>0.0128e-3</forwardRate>
   <reverseRate>.8e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1533,7 +1331,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKCaMCa4" />
   <Product specieID="GluR1_CKCaM" />
-  <forwardRate>12e-8</forwardRate>
+  <forwardRate>10e-8</forwardRate>
   <reverseRate>.2e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1550,7 +1348,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKpCaMCa4" />
   <Product specieID="GluR1_CKpCaM" />
-  <forwardRate>12e-8</forwardRate>
+  <forwardRate>10e-8</forwardRate>
   <reverseRate>0.5e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1567,7 +1365,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1" />
   <Reactant specieID="CKp" />
   <Product specieID="GluR1_CKp" />
-  <forwardRate>24e-8</forwardRate>
+  <forwardRate>10e-8</forwardRate>
   <reverseRate>0.5e-4</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1584,8 +1382,8 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S831" />
   <Reactant specieID="PP1" />
   <Product specieID="GluR1_S831_PP1" />
-  <forwardRate>14e-6</forwardRate>
-  <reverseRate>28e-3</reverseRate>
+  <forwardRate>14e-5</forwardRate>
+  <reverseRate>28e-2</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!-- GluR1_S831_PP1 -> GluR1 + PP1 -->
@@ -1593,7 +1391,7 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S831_PP1" />
   <Product specieID="GluR1" />
   <Product specieID="PP1" />
-  <forwardRate>0.5e-3</forwardRate>
+  <forwardRate>1e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 
@@ -1610,18 +1408,16 @@ id="AC1GaiGTPCaMCa4ATP_diss">
   <Reactant specieID="GluR1_S831_PP2A" />
   <Product specieID="GluR1" />
   <Product specieID="PP2A" />
-  <forwardRate>0.5e-3</forwardRate>
+  <forwardRate>1e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 
-
-<!--S845_S831-->
 
 <Reaction name="GluR1_S845_CKCaM_bind" id="GluR1_S845_CKCaM_bind">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKCaMCa4" />
   <Product specieID="GluR1_S845_CKCaM" />
-  <forwardRate>12e-8</forwardRate>
+  <forwardRate>10e-8</forwardRate>
   <reverseRate>0.2e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1640,7 +1436,7 @@ id="GluR1_S845_CKpCaM_bind">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKpCaMCa4" />
   <Product specieID="GluR1_S845_CKpCaM" />
-  <forwardRate>12e-8</forwardRate>
+  <forwardRate>10e-8</forwardRate>
   <reverseRate>0.5e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1659,7 +1455,7 @@ id="GluR1_S845_CKpCaM_diss">
   <Reactant specieID="GluR1_S845" />
   <Reactant specieID="CKp" />
   <Product specieID="GluR1_S845_CKp" />
-  <forwardRate>24e-8</forwardRate>
+  <forwardRate>10e-8</forwardRate>
   <reverseRate>0.5e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1672,35 +1468,21 @@ id="GluR1_S845_CKpCaM_diss">
   <Q10>0.2</Q10>
 </Reaction>
 
-<Reaction name="GluR1_S831_PKAc_bind" id="GluR1_S831_PKAc_bind">
-  <Reactant specieID="GluR1_S831" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="GluR1_S831_PKAc" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- GluR1_PKAc -> GluR1_S845 + PKAc -->
-<Reaction name="GluR1_S831_PKAc_diss" id="GluR1_S831_PKAc_diss">
-  <Reactant specieID="GluR1_S831_PKAc" />
-  <Product specieID="GluR1_S845_S831" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
-  <Q10>0.2</Q10>
-</Reaction>
+
 <!--S845-S831-->
 
 <!--10) GluR1_S845_S831 + PP1
     <-> GluR1_S845_S831_PP1 -->
 
+
 <Reaction name="GluR1_S845_S831_PP1_bind"
-id="GluR1_S845_S831_PP1_bind">
+	      id="GluR1_S845_S831_PP1_bind">
   <Reactant specieID="GluR1_S845_S831" />
   <Reactant specieID="PP1" />
   <Product specieID="GluR1_S845_S831_PP1" />
   <forwardRate>0.0000087e-2</forwardRate>
   <reverseRate>.68e-3</reverseRate>
-  
+ 
   <Q10>0.2</Q10>
 </Reaction>
 <!--10a) GluR1_S845_S831_PP1 -> GluR1_S845 + PP1 -->
@@ -1718,18 +1500,18 @@ id="GluR1_S845_S831_PP1_bind2">
   <Reactant specieID="GluR1_S845_S831" />
   <Reactant specieID="PP1" />
   <Product specieID="GluR1_S845_S831_PP1_2" />
-  <forwardRate>14e-6</forwardRate>
-  <reverseRate>28e-3</reverseRate>
-  
+  <forwardRate>14e-5</forwardRate>
+  <reverseRate>28e-2</reverseRate>
+ 
   <Q10>0.2</Q10>
 </Reaction>
-  
+ 
 <Reaction name="GluR1_S845_S831_PP1_diss2"
 id="GluR1_S845_S831_PP1_diss2">
   <Reactant specieID="GluR1_S845_S831_PP1_2" />
   <Product specieID="GluR1_S845" />
   <Product specieID="PP1" />
-  <forwardRate>0.5e-3</forwardRate>
+  <forwardRate>1e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 
@@ -1740,7 +1522,7 @@ id="GluR1_S845_S831_PP2A_bind">
   <Product specieID="GluR1_S845_S831_PP2A" />
   <forwardRate>0.0000087e-2</forwardRate>
   <reverseRate>.68e-3</reverseRate>
-  
+ 
   <Q10>0.2</Q10>
 </Reaction>
 <!--10a) GluR1_S845_S831_PP2A -> GluR1_S845 + PP2A -->
@@ -1760,16 +1542,16 @@ id="GluR1_S845_S831_PP2A_bind2">
   <Product specieID="GluR1_S845_S831_PP2A_2" />
   <forwardRate>14e-6</forwardRate>
   <reverseRate>28e-3</reverseRate>
-  
+ 
   <Q10>0.2</Q10>
 </Reaction>
-  
+ 
 <Reaction name="GluR1_S845_S831_PP2A_diss2"
 id="GluR1_S845_S831_PP2A_diss2">
   <Reactant specieID="GluR1_S845_S831_PP2A_2" />
   <Product specieID="GluR1_S845" />
   <Product specieID="PP2A" />
-  <forwardRate>0.5e-3</forwardRate>
+  <forwardRate>1e-3</forwardRate>
   <Q10>0.2</Q10>
 </Reaction>
 
@@ -1778,7 +1560,7 @@ id="GluR1_S845_S831_PP2A_diss2">
   <Reactant specieID="GluR1_S845_S831" />
   <Reactant specieID="PP2BCaMCa4" />
   <Product specieID="GluR1_S845_S831_PP2B" />
-  <forwardRate>0.00064e-3</forwardRate>
+  <forwardRate>0.0128e-3</forwardRate>
   <reverseRate>.8e-3</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1817,19 +1599,19 @@ id="GluR1_S845_S831_PP2A_diss2">
 <Reaction name="PDE1cAMP_disso" id="PDE1cAMP_disso">
   <Reactant specieID="PDE1CaMCa4cAMP" />
   <Product specieID="PDE1CaMCa4" />
-  <Product specieID="AMP" />
+
   <forwardRate>11e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
 <!--6) AMP -> ATP  -->
-<Reaction name="ATP_regen" id="ATP_regen">
+<!--<Reaction name="ATP_regen" id="ATP_regen">
   <Reactant specieID="AMP" />
   <Product specieID="ATP" />
   <forwardRate>1e-3</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
-</Reaction>
+</Reaction>-->
 <!-- Below PDE4B/D reactions from Rodrigo:PKAc compete with I1 and PDE4B/D -->
 <!-- Current affinity with PKAc to PDE4B/D too high so nothing left binding for I1-->
 <!-- 07)  cAMP + PDE4
@@ -1846,26 +1628,8 @@ id="GluR1_S845_S831_PP2A_diss2">
 <Reaction name="PDE4 actvcomp" id="PDE4cat">
   <Reactant specieID="PDE4cAMP" />
   <Product specieID="PDE4" />
-  <Product specieID="AMP" />
+
   <forwardRate>17.233e-03</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 09)  PKAc + PDE4 -> PKAcPDE4 -->
-<Reaction name="PDE4 phosp1" id="phospPDE41">
-  <Reactant specieID="PKAc" />
-  <Reactant specieID="PDE4" />
-  <Product specieID="PKAcPDE4" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 10)  PKAcPDE4 -> PKAc + pPDE4 -->
-<Reaction name="PDE4 phosp2" id="phospPDE42">
-  <Reactant specieID="PKAcPDE4" />
-  <Product specieID="pPDE4" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1891,27 +1655,8 @@ id="GluR1_S845_S831_PP2A_diss2">
 <Reaction name="pPDE4 actvcomp" id="pPDE4cat">
   <Reactant specieID="pPDE4cAMP" />
   <Product specieID="pPDE4" />
-  <Product specieID="AMP" />
+
   <forwardRate>0.3446674</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 21)  PDE4cAMP + PKAc
-         <-> PKAc_PDE4_cAMP -->
-<Reaction name="PKAc_PDE4_cAMP-bind" id="PKAc_PDE4_cAMP-bind">
-  <Reactant specieID="PDE4cAMP" />
-  <Reactant specieID="PKAc" />
-  <Product specieID="PKAc_PDE4_cAMP" />
-  <forwardRate>0</forwardRate>
-  <reverseRate>0</reverseRate>
-  <Q10>0.2</Q10>
-</Reaction>
-<!-- 22)  PKAc_PDE4_cAMP -> pPDE4cAMP + PKAc -->
-<Reaction name="PKAc_PDE4_cAMP-diss" id="PKAc_PDE4_cAMP-diss">
-  <Reactant specieID="PKAc_PDE4_cAMP" />
-  <Product specieID="pPDE4cAMP" />
-  <Product specieID="PKAc" />
-  <forwardRate>0</forwardRate>
   <reverseRate>0</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
@@ -1919,15 +1664,15 @@ id="GluR1_S845_S831_PP2A_diss2">
 <!-- 1) PDE4 + rolipram -> PDE4_rolipram -->
 <!--
         <Reaction name = "PDE4_Roli_bind" id="PDE4_Roli_bind">
-            <Reactant specieID="Roli"       />
-            <Reactant specieID="PDE4"       />
-            <Product  specieID="PDE4Roli"           />
-            <forwardRate>  0.4216e-03
-            </forwardRate>
-            <reverseRate> 9.5e-03
-            </reverseRate>
-            <Q10>         0.2
-            </Q10>
+ <Reactant specieID="Roli"       />
+ <Reactant specieID="PDE4"       />
+ <Product  specieID="PDE4Roli"           />
+ <forwardRate>  0.4216e-03
+ </forwardRate>
+ <reverseRate> 9.5e-03
+ </reverseRate>
+ <Q10>         0.2
+ </Q10>
            </Reaction>
       -->
 <!-- 2. pPDE4 + rolipram -> pPDE4_rolipram -->
