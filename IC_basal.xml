@@ -44,8 +44,8 @@
     <NanoMolarity specieID="Ip35" value="10"/>
     <NanoMolarity specieID="PP1" value="1100"/>
     <NanoMolarity specieID="Ip35PP1" value="500"/>
-    <NanoMolarity specieID="PDE4" value="1600"/>
-    <NanoMolarity specieID="pPDE4" value="900"/>
+    <NanoMolarity specieID="PDE4" value="1000"/>
+    <NanoMolarity specieID="pPDE4" value="560"/>
 
     </ConcentrationSet>
 
@@ -160,11 +160,4 @@
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
   </SurfaceDensitySet>
-  <!--
-      <ConcentrationSet region="dendrite">
-   <NanoMolarity specieID="PDE4" value="250"/>
-   <NanoMolarity specieID="pPDE4" value="80"/>
-   
- </ConcentrationSet>
- -->
 </InitialConditions>
