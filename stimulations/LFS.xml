@@ -4,73 +4,62 @@
     <!-- the injectionSite must match a regionLabel deefined in the morphology -->
    
 <InjectionStim specieID="ISOIbuf" injectionSite="sa1[0].pointA">
-        <onset>100000</onset>
+        <onset>300000</onset>
         <duration>180000</duration>
         <rate>0.0025</rate>
 
-        <end>280000</end>
-
-</InjectionStim>
-<InjectionStim specieID="ISOIbuf" injectionSite="dendrite:submembrane">
-        <onset>100000</onset>
-        <duration>180000</duration>
-        <rate>0.001</rate>
-        <end>280000</end>
+        <end>580000</end>
 
 </InjectionStim>
 <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
-        <onset>100000</onset>
+        <onset>300000</onset>
         <duration>180000</duration>
         <rate>0.0025</rate>
 
-        <end>280000</end>
+        <end>580000</end>
 
 </InjectionStim>
 
-<InjectionStim specieID="DaDbuf" injectionSite="dendrite:submembrane">
-        <onset>100000</onset>
-        <duration>180000</duration>
-        <rate>0.001</rate>
-        <end>280000</end>
-
-</InjectionStim>
 <!-- Train I -->
 
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
-        <onset>100000</onset>
-	<duration>3</duration>
-	<rate>111.77</rate>
-        <period>200</period>
-        <end>101000</end> 
-       
-</InjectionStim>
-
-<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
-        <onset>100050</onset>
+        <onset>300000</onset>
 	<duration>3</duration>
 	<rate>100</rate>
         <period>200</period>
-        <end>101000</end>
+        <end>301000</end> 
+       
+</InjectionStim>
+
+<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
+        <onset>300040</onset>
+	<duration>3</duration>
+	<rate>100</rate>
+        <period>200</period>
+        <end>301100</end>
        
   </InjectionStim>
 
-
-<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
-        <onset>101000</onset>
-	<duration>3</duration>
-	<rate>55</rate>
-        <period>200</period>
-        <end>280000</end> 
-       
-</InjectionStim>
-<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
-        <onset>101050</onset>
+  <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>301000</onset>
 	<duration>3</duration>
 	<rate>50</rate>
         <period>200</period>
-        <end>280100</end>
+        <end>580000</end> 
+       
+</InjectionStim>
+
+<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
+        <onset>301040</onset>
+	<duration>3</duration>
+	<rate>50</rate>
+        <period>200</period>
+        <end>580100</end>
        
   </InjectionStim>
+
+
+
 
 
 </StimulationSet>

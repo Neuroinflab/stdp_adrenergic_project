@@ -89,7 +89,7 @@
         <Product  specieID="CKCaMCa4"  power="2"         />
         <Product  specieID="CKpCaMCa4"           />
 
-        <forwardRate> 120.0e-12 </forwardRate>
+        <forwardRate> 4.0e-12 </forwardRate>
         <reverseRate> 0e-3     </reverseRate>
         <Q10>     2             </Q10>
     </Reaction>
@@ -100,7 +100,7 @@
         <Product  specieID="CKCaMCa4"           />
         <Product  specieID="CKpCaMCa4" power="3"         />
 
-        <forwardRate> 100.1e-18 </forwardRate>
+        <forwardRate> 55.1e-18 </forwardRate>
         <reverseRate> 0e-3     </reverseRate>
         <Q10>     2             </Q10>
     </Reaction>

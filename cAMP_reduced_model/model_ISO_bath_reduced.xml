@@ -28,7 +28,7 @@ results (also, 3D may not work yet...)  -->
     <discretization>
 	<!-- default largest size for elements in bulk volumes (dendrites), microns -->	
 	<defaultMaxElementSide>0.2</defaultMaxElementSide>
-       <MaxElementSide region="dendrite">0.12</MaxElementSide>
+       <MaxElementSide region="dendrite">1</MaxElementSide>
 
 	<!-- discretization for spines, microns -->
 	<spineDeltaX>0.1</spineDeltaX>
@@ -43,7 +43,7 @@ results (also, 3D may not work yet...)  -->
 
 
     <!-- the tolerace is not used yet -->
-    <tolerance>0.006</tolerance>
+    <tolerance>0.004</tolerance>
 
     <outputInterval>200</outputInterval>
 

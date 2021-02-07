@@ -1,0 +1,7 @@
+<StimulationSet>
+          <InjectionStim specieID="8cAMP" injectionSite="dendrite:submembrane">
+        <onset>           10000        </onset>
+        <duration>       40000.0       </duration>
+        <rate>              0.11    </rate>
+      </InjectionStim>
+</StimulationSet>

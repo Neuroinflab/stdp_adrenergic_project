@@ -3,9 +3,10 @@
     <!-- this file defines a single run of the calculation, using morphology and
 -	 reaction data brought in from other files --> 
 
-    <xi:include href="Rxn_start.xml" />
-    <xi:include href="morph_dend_single_spine.xml" />
-    <xi:include href="IC_basal.xml" />
+    <xi:include href="Rxn_reduced.xml" />
+    <xi:include href="morph_dend.xml" />
+    <xi:include href="IC_reduced.xml" />
+    <xi:include href="ISO_bath.xml" />
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 roundworms. The 2D case is good for testing as it is easy to visualize the
@@ -42,7 +43,7 @@ results (also, 3D may not work yet...)  -->
 
 
     <!-- the tolerace is not used yet -->
-    <tolerance>0.006</tolerance>
+    <tolerance>0.004</tolerance>
 
     <outputInterval>200</outputInterval>
 

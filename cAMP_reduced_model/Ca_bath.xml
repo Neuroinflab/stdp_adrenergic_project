@@ -1,0 +1,9 @@
+<StimulationSet>
+            <InjectionStim specieID="CaCbuf" injectionSite="dendrite:submembrane">
+        <onset>           100000        </onset>
+        <duration>       10000       </duration>
+        <rate>            6      </rate>
+	  </InjectionStim>
+         
+
+</StimulationSet>

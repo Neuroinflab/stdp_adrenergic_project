@@ -43,7 +43,7 @@ results (also, 3D may not work yet...)  -->
 
 
     <!-- the tolerace is not used yet -->
-    <tolerance>0.006</tolerance>
+    <tolerance>0.01</tolerance>
 
     <outputInterval>200</outputInterval>
 

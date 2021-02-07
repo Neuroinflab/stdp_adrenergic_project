@@ -3,10 +3,10 @@
     <!-- this file defines a single run of the calculation, using morphology and
 -	 reaction data brought in from other files --> 
 
-    <xi:include href="../Rxn_SCH_23390_no_pump.xml" />
-    <xi:include href="../morph_dend_single_spine.xml" />
-    <xi:include href="../IC_basal.xml" />
-    <xi:include href="../stimulations/SCH_23390_bath.xml" />
+    <xi:include href="Rxn_8cAMPs.xml" />
+    <xi:include href="morph_dend.xml" />
+    <xi:include href="IC_reduced.xml" />
+    <xi:include href="camp_bath.xml" />
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 roundworms. The 2D case is good for testing as it is easy to visualize the
@@ -20,7 +20,7 @@ results (also, 3D may not work yet...)  -->
     <outputQuantity>NUMBER</outputQuantity>
 
     <!-- run time for the calculation, milliseconds -->
-    <runtime>1000000</runtime>
+    <runtime>200000</runtime>
 
     <!-- set the seed to get the same spines each time testing -->
     <spineSeed>123</spineSeed>
@@ -43,7 +43,7 @@ results (also, 3D may not work yet...)  -->
 
 
     <!-- the tolerace is not used yet -->
-    <tolerance>0.01</tolerance>
+    <tolerance>0.004</tolerance>
 
     <outputInterval>200</outputInterval>
 
